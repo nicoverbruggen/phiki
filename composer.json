@@ -10,7 +10,6 @@
             "homepage": "https://ryangjchandler.co.uk"
         }
     ],
-    "bin": "bin/phiki",
     "require": {
         "php": "^8.4",
         "league/commonmark": "^2.5.3"
