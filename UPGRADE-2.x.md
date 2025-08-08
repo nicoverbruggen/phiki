@@ -22,6 +22,12 @@ We apologise for any inconvenience this causes in your own projects. Pull reques
 
 ## Medium impact
 
+### Removed support for terminal highlighting
+
+We've removed support for generating ANSI-backed highlighted code in the terminal. This means you'll no longer be able to call `Phiki::codeToTerminal()`.
+
+We've also removed the `phiki` binary that shipped with 1.x as it also wasn't used very often and added unnecessary maintenance burden to the project.
+
 ## Low impact
 
 ### `DefaultGrammars` and `DefaultThemes` removed
