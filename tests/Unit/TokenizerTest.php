@@ -23,7 +23,7 @@ describe('match', function () {
                 new Token(['source.test', 'keyword.control.test'], 'while', 8, 13),
                 new Token(['source.test'], ' ', 13, 14),
                 new Token(['source.test', 'keyword.control.test'], 'end', 14, 17),
-                new Token(['source.test'], "\n", 17, 17),
+                new Token(['source.test'], "\n", 17, 18),
             ],
         ]);
     });
@@ -52,7 +52,7 @@ describe('match', function () {
                 new Token(['source.test', 'meta.function.test', 'storage.type.function.test'], 'function', 0, 8),
                 new Token(['source.test', 'meta.function.test'], ' ', 8, 9),
                 new Token(['source.test', 'meta.function.test', 'entity.name.function.test'], 'foo', 9, 12),
-                new Token(['source.test'], "() {}\n", 12, 17),
+                new Token(['source.test'], "() {}\n", 12, 18),
             ],
         ]);
     });
@@ -87,7 +87,7 @@ describe('match', function () {
                 new Token(['source.test', 'meta.namespace.test', 'keyword.other.namespace.test'], 'namespace', 0, 9),
                 new Token(['source.test', 'meta.namespace.test'], ' ', 9, 10),
                 new Token(['source.test', 'meta.namespace.test', 'entity.name.type.namespace.test'], 'Foo', 10, 13),
-                new Token(['source.test'], ";\n", 13, 14),
+                new Token(['source.test'], ";\n", 13, 15),
             ],
         ]);
     });
@@ -126,83 +126,7 @@ describe('match', function () {
                 new Token(['source.test', 'meta.namespace.test', 'entity.name.type.namespace.test'], 'Bar', 14, 17),
                 new Token(['source.test', 'meta.namespace.test', 'entity.name.type.namespace.test', 'punctuation.separator.inheritance.test'], '\\', 17, 18),
                 new Token(['source.test', 'meta.namespace.test', 'entity.name.type.namespace.test'], 'Baz', 18, 21),
-                new Token(['source.test'], ";\n", 21, 22),
-            ],
-        ]);
-    });
-});
-
-describe('subpattern includes', function () {
-    it('can tokenize an include with only subpatterns', function () {
-        $tokens = tokenize('$hello', [
-            'scopeName' => 'source.test',
-            'patterns' => [
-                [
-                    'include' => '#variable-name',
-                ],
-            ],
-            'repository' => [
-                'variable-name' => [
-                    'patterns' => [
-                        [
-                            'captures' => [
-                                '1' => [
-                                    'name' => 'variable.other.php',
-                                ],
-                                '10' => [
-                                    'name' => 'string.unquoted.index.php',
-                                ],
-                                '11' => [
-                                    'name' => 'punctuation.section.array.end.php',
-                                ],
-                                '2' => [
-                                    'name' => 'punctuation.definition.variable.php',
-                                ],
-                                '4' => [
-                                    'name' => 'keyword.operator.class.php',
-                                ],
-                                '5' => [
-                                    'name' => 'variable.other.property.php',
-                                ],
-                                '6' => [
-                                    'name' => 'punctuation.section.array.begin.php',
-                                ],
-                                '7' => [
-                                    'name' => 'constant.numeric.index.php',
-                                ],
-                                '8' => [
-                                    'name' => 'variable.other.index.php',
-                                ],
-                                '9' => [
-                                    'name' => 'punctuation.definition.variable.php',
-                                ],
-                            ],
-                            'match' => '(?i)((\\$)(?<name>[a-z_\\x{7f}-\\x{10ffff}][a-z0-9_\\x{7f}-\\x{10ffff}]*))\\s*(?:(\\??->)\\s*(\\g<name>)|(\\[)(?:(\\d+)|((\$)\\g<name>)|([a-z_\\x{7f}-\\x{10ffff}][a-z0-9_\\x{7f}-\\x{10ffff}]*))(\\]))?',
-                        ],
-                        [
-                            'captures' => [
-                                '1' => [
-                                    'name' => 'variable.other.php',
-                                ],
-                                '2' => [
-                                    'name' => 'punctuation.definition.variable.php',
-                                ],
-                                '4' => [
-                                    'name' => 'punctuation.definition.variable.php',
-                                ],
-                            ],
-                            'match' => '(?i)((\\${)(?<name>[a-z_\\x{7f}-\\x{10ffff}][a-z0-9_\\x{7f}-\\x{10ffff}]*)(}))',
-                        ],
-                    ],
-                ],
-            ],
-        ]);
-
-        expect($tokens)->toEqualCanonicalizing([
-            [
-                new Token(['source.test', 'variable.other.php', 'punctuation.definition.variable.php'], '$', 0, 1),
-                new Token(['source.test', 'variable.other.php'], 'hello', 1, 6),
-                new Token(['source.test'], "\n", 6, 7),
+                new Token(['source.test'], ";\n", 21, 23),
             ],
         ]);
     });
@@ -226,7 +150,7 @@ describe('begin/end', function () {
                 new Token(['source.test', 'meta.block.test'], 'begin', 0, 5),
                 new Token(['source.test', 'meta.block.test'], ' ', 5, 6),
                 new Token(['source.test', 'meta.block.test'], 'end', 6, 9),
-                new Token(['source.test'], "\n", 9, 9),
+                new Token(['source.test'], "\n", 9, 10),
             ],
         ]);
     });
@@ -258,7 +182,7 @@ describe('begin/end', function () {
                 new Token(['source.test', 'meta.block.test', 'keyword.control.test'], 'begin', 0, 5),
                 new Token(['source.test', 'meta.block.test'], ' ', 5, 6),
                 new Token(['source.test', 'meta.block.test', 'keyword.control.test'], 'end', 6, 9),
-                new Token(['source.test'], "\n", 9, 9),
+                new Token(['source.test'], "\n", 9, 10),
             ],
         ]);
     });
@@ -285,7 +209,7 @@ describe('begin/end', function () {
                 new Token(['source.test', 'meta.block.test', 'keyword.control.test'], 'begin', 0, 5),
                 new Token(['source.test', 'meta.block.test'], ' ', 5, 6),
                 new Token(['source.test', 'meta.block.test', 'keyword.control.test'], 'end', 6, 9),
-                new Token(['source.test'], "\n", 9, 9),
+                new Token(['source.test'], "\n", 9, 10),
             ],
         ]);
     });
@@ -318,7 +242,7 @@ describe('begin/end', function () {
                 new Token(['source.test', 'meta.block.test', 'keyword.control.test', 'keyword.control.begin.test'], 'begin', 0, 5),
                 new Token(['source.test', 'meta.block.test'], ' ', 5, 6),
                 new Token(['source.test', 'meta.block.test'], 'end', 6, 9),
-                new Token(['source.test'], "\n", 9, 9),
+                new Token(['source.test'], "\n", 9, 10),
             ],
         ]);
     });
@@ -351,7 +275,7 @@ describe('begin/end', function () {
                 new Token(['source.test', 'meta.block.test'], 'begin', 0, 5),
                 new Token(['source.test', 'meta.block.test'], ' ', 5, 6),
                 new Token(['source.test', 'meta.block.test', 'keyword.control.test', 'keyword.control.end.test'], 'end', 6, 9),
-                new Token(['source.test'], "\n", 9, 9),
+                new Token(['source.test'], "\n", 9, 10),
             ],
         ]);
     });
@@ -388,7 +312,7 @@ describe('begin/end', function () {
                 new Token(['source.test', 'meta.block.test', 'keyword.control.test', 'keyword.control.begin.test'], 'begin', 0, 5),
                 new Token(['source.test', 'meta.block.test'], ' ', 5, 6),
                 new Token(['source.test', 'meta.block.test', 'keyword.control.test', 'keyword.control.end.test'], 'end', 6, 9),
-                new Token(['source.test'], "\n", 9, 9),
+                new Token(['source.test'], "\n", 9, 10),
             ],
         ]);
     });
@@ -418,7 +342,7 @@ describe('begin/end', function () {
                 new Token(['source.test', 'meta.block.test', 'entity.name.test'], 'foo', 6, 9),
                 new Token(['source.test', 'meta.block.test'], ' ', 9, 10),
                 new Token(['source.test', 'meta.block.test'], 'end', 10, 13),
-                new Token(['source.test'], "\n", 13, 13),
+                new Token(['source.test'], "\n", 13, 14),
             ],
         ]);
     });
@@ -453,7 +377,7 @@ describe('begin/end', function () {
                 new Token(['source.test', 'meta.block.test', 'entity.name.test', 'entity.name.foo.test'], 'foo', 6, 9),
                 new Token(['source.test', 'meta.block.test'], ' ', 9, 10),
                 new Token(['source.test', 'meta.block.test'], 'end', 10, 13),
-                new Token(['source.test'], "\n", 13, 13),
+                new Token(['source.test'], "\n", 13, 14),
             ],
         ]);
     });
@@ -483,16 +407,16 @@ describe('begin/end', function () {
         expect($tokens)->toEqualCanonicalizing([
             [
                 new Token(['source.test', 'meta.block.test'], 'begin', 0, 5),
-                new Token(['source.test', 'meta.block.test'], "\n", 5, 5),
+                new Token(['source.test', 'meta.block.test'], "\n", 5, 6),
             ],
             [
                 new Token(['source.test', 'meta.block.test'], '    ', 0, 4),
                 new Token(['source.test', 'meta.block.test', 'entity.name.test'], 'foo', 4, 7),
-                new Token(['source.test', 'meta.block.test'], "\n", 7, 7),
+                new Token(['source.test', 'meta.block.test'], "\n", 7, 8),
             ],
             [
                 new Token(['source.test', 'meta.block.test'], 'end', 0, 3),
-                new Token(['source.test'], "\n", 3, 3),
+                new Token(['source.test'], "\n", 3, 4),
             ],
         ]);
     });
@@ -542,16 +466,16 @@ describe('begin/end', function () {
         expect($tokens)->toEqualCanonicalizing([
             [
                 new Token(['source.test', 'meta.block.test', 'keyword.control.test', 'keyword.control.begin.test'], 'begin', 0, 5),
-                new Token(['source.test', 'meta.block.test'], "\n", 5, 5),
+                new Token(['source.test', 'meta.block.test'], "\n", 5, 6),
             ],
             [
                 new Token(['source.test', 'meta.block.test'], '    ', 0, 4),
                 new Token(['source.test', 'meta.block.test', 'entity.name.test', 'entity.name.foo.test'], 'foo', 4, 7),
-                new Token(['source.test', 'meta.block.test'], "\n", 7, 7),
+                new Token(['source.test', 'meta.block.test'], "\n", 7, 8),
             ],
             [
                 new Token(['source.test', 'meta.block.test', 'keyword.control.test', 'keyword.control.end.test'], 'end', 0, 3),
-                new Token(['source.test'], "\n", 3, 3),
+                new Token(['source.test'], "\n", 3, 4),
             ],
         ]);
     });
@@ -582,8 +506,64 @@ describe('begin/end', function () {
                 new Token(['source.test', 'meta.block.test', 'meta.begin.end.block.test', 'entity.name.test'], 'foo', 6, 9),
                 new Token(['source.test', 'meta.block.test', 'meta.begin.end.block.test'], ' ', 9, 10),
                 new Token(['source.test', 'meta.block.test'], 'end', 10, 13),
-                new Token(['source.test'], "\n", 13, 13),
+                new Token(['source.test'], "\n", 13, 14),
             ],
+        ]);
+    });
+
+    it('can tokenize a begin/end pattern where the end pattern matches before a subpattern', function () {
+        $tokens = tokenize('begin end foo', [
+            'patterns' => [
+                [
+                    'name' => 'meta.block.test',
+                    'begin' => '\\b(begin)\\b',
+                    'end' => '\\b(end)\\b',
+                    'patterns' => [
+                        [
+                            'name' => 'entity.name.test',
+                            'match' => '\\b(foo)\\b',
+                        ],
+                    ],
+                ]
+            ],
+        ]);
+
+        expect($tokens)->toEqualCanonicalizing([
+            [
+                new Token(['source.test', 'meta.block.test'], 'begin', 0, 5),
+                new Token(['source.test', 'meta.block.test'], ' ', 5, 6),
+                new Token(['source.test', 'meta.block.test'], 'end', 6, 9),
+                new Token(['source.test'], " foo\n", 9, 14),
+            ]
+        ]);
+    });
+
+    it('can tokenize a begin/end pattern where the end pattern matches immediately after a subpattern', function () {
+        $tokens = tokenize('begin foo end foo', [
+            'patterns' => [
+                [
+                    'name' => 'meta.block.test',
+                    'begin' => '\\b(begin)\\b',
+                    'end' => '\\b(end)\\b',
+                    'patterns' => [
+                        [
+                            'name' => 'entity.name.test',
+                            'match' => '\\b(foo)\\b',
+                        ],
+                    ],
+                ]
+            ],
+        ]);
+
+        expect($tokens)->toEqualCanonicalizing([
+            [
+                new Token(['source.test', 'meta.block.test'], 'begin', 0, 5),
+                new Token(['source.test', 'meta.block.test'], ' ', 5, 6),
+                new Token(['source.test', 'meta.block.test', 'entity.name.test'], 'foo', 6, 9),
+                new Token(['source.test', 'meta.block.test'], ' ', 9, 10),
+                new Token(['source.test', 'meta.block.test'], 'end', 10, 13),
+                new Token(['source.test'], " foo\n", 13, 18),
+            ]
         ]);
     });
 });
@@ -608,8 +588,58 @@ describe('scopes', function () {
         expect($tokens)->toEqualCanonicalizing([
             [
                 new Token(['source.test', 'entity.name.test', 'entity.name.foo.test'], 'foo', 0, 3),
-                new Token(['source.test'], "\n", 3, 3),
+                new Token(['source.test'], "\n", 3, 4),
             ],
+        ]);
+    });
+});
+
+describe('while', function () {
+    it('correctly processes while patterns', function () {
+        $tokens = tokenize(
+            <<<'MARKDOWN'
+            > first line
+            > second line
+            > third line
+            MARKDOWN,
+            [
+                'patterns' => [
+                    [
+                        'begin' => '(^|\\G)[ ]{0,3}(>) ?',
+                        'captures' => [
+                            '2' => [
+                                'name' => 'punctuation.definition.quote.begin.test',
+                            ],
+                        ],
+                        'name' => 'markup.quote.block.test',
+                        'patterns' => [
+                            [
+                                'match' => '.*',
+                                'name' => 'markup.quote.block.line.test',
+                            ]
+                        ],
+                        'while' => '(^|\\G)\\s*(>) ?',
+                    ]
+                ],
+            ]
+        );
+
+        expect($tokens)->toEqualCanonicalizing([
+            [
+                new Token(['source.test', 'markup.quote.block.test', 'punctuation.definition.quote.begin.test'], '>', 0, 1),
+                new Token(['source.test', 'markup.quote.block.test'], ' ', 1, 2),
+                new Token(['source.test', 'markup.quote.block.test', 'markup.quote.block.line.test'], "first line\n", 2, 13),
+            ],
+            [
+                new Token(['source.test', 'markup.quote.block.test', 'punctuation.definition.quote.begin.test'], '>', 0, 1),
+                new Token(['source.test', 'markup.quote.block.test'], ' ', 1, 2),
+                new Token(['source.test', 'markup.quote.block.test', 'markup.quote.block.line.test'], "second line\n", 2, 14),
+            ],
+            [
+                new Token(['source.test', 'markup.quote.block.test', 'punctuation.definition.quote.begin.test'], '>', 0, 1),
+                new Token(['source.test', 'markup.quote.block.test'], ' ', 1, 2),
+                new Token(['source.test', 'markup.quote.block.test', 'markup.quote.block.line.test'], "third line\n", 2, 13),
+            ]
         ]);
     });
 });

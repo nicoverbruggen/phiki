@@ -3,6 +3,7 @@
 namespace Phiki\Grammar;
 
 use Phiki\Contracts\InjectionSelectorParserInputInterface;
+use Phiki\Contracts\PatternInterface;
 use Phiki\Exceptions\MissingRequiredGrammarKeyException;
 use Phiki\Exceptions\UnreachableException;
 use Phiki\Grammar\Injections\Composite;
@@ -51,7 +52,7 @@ class Parser
         return new ParsedGrammar($name, $scopeName, $patterns, $repository, $injections);
     }
 
-    protected function pattern(array $pattern): Pattern|false
+    protected function pattern(array $pattern): PatternInterface|false
     {
         if (isset($pattern['match'])) {
             return new MatchPattern(
@@ -147,6 +148,15 @@ class Parser
 
         foreach ($captures as $index => $capture) {
             $result[$index] = $this->capture($capture, strval($index));
+        }
+
+        $captureIndices = array_keys($result);
+        $maxCaptureIdx = $captureIndices === [] ? 0 : max(array_keys($result));
+
+        for ($i = 0; $i <= $maxCaptureIdx; $i++) {
+            if (! isset($result[$i])) {
+                $result[$i] = null;
+            }
         }
 
         return $result;

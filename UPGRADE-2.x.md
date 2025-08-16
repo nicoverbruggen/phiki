@@ -6,12 +6,6 @@ This section contains all of the necessary steps to upgrade Phiki from `v1.x` to
 
 ## High impact
 
-### Minimum PHP version increased to PHP 8.4
-
-PHP 8.4 uses a newer version of the PCRE2 engine which adds basic support for variable-length lookbehind assertions. This is something that was mentioned in the `README` of Phiki 1.x as a huge limitation when it comes to supporting more complicated TextMate grammars since other engines like Oniguruma and ECMAScript support "true" variable-length lookbehinds.
-
-By bumping Phiki's minimum PHP version to PHP 8.4 we can truly take advantage of this functionality and improve compatibility across the board.
-
 ### Grammar changes
 
 In order to improve Phiki's reliabilty when it comes to processing input text and outputting accurate HTML, we've made the decision to strip back the grammars that Phiki ships with.
@@ -37,3 +31,7 @@ The `Phiki\Grammar\DefaultGrammars` and `Phiki\Theme\DefaultThemes` classes have
 Phiki is already a large and complex codebase so the slimmer we can make it, the better.
 
 These classes were for internal use only so hopefully they won't affect your userland code.
+
+### `Phiki\Tokenizer` namespace change
+
+The `Tokenizer` class was previously found at `Phiki\Tokenizer`. As part of the new tokenizer system, we've moved this into a new namespace `Phiki\TextMate\Tokenizer` since it now uses multiple classes and would otherwise make the root namespace a mess.

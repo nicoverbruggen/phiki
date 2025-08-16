@@ -2,7 +2,7 @@
 
 Phiki is a syntax highlighter written in PHP. It uses TextMate grammar files and Visual Studio Code themes to generate syntax highlighted code for the web.
 
-The name and public API of Phiki is heavily inspired by [Shiki](https://shiki.style/), a package that does more or less the same thing in the JavaScript ecosystem. The actual implementation of the highlighter is inspired by the [`vscode-textmate`](https://github.com/microsoft/vscode-textmate) package which Shiki uses internally, but isn't a 1-1 translation since the internal APIs of Phiki differ to `vscode-textmate`.
+The name and public API of Phiki is heavily inspired by [Shiki](https://shiki.style/), a package that does more or less the same thing in the JavaScript ecosystem. The actual implementation of the package is also heavily inspired by [`vscode-textmate`](https://github.com/microsoft/vscode-textmate) which is the powerhouse of a package behind Visual Studio Code, Shiki, and others.
 
 ## Installation
 
@@ -187,32 +187,6 @@ $environment
         'dark' => Theme::GithubDark,
     ]));
 ```
-
-## Known Limitations & Implementation Notes
-
-The implementation of this package is inspired by existing art, namely `vscode-textmate`. The main reason that implementing a TextMate-based syntax highlighter in PHP is a complex task is down to the fact that `vscode-textmate` (and the TextMate editor) uses the [Oniguruma](https://github.com/kkos/oniguruma) engine for handling regular expressions.
-
-PHP uses the PCRE2 engine which doesn't have support for all of Oniguruma's features. To reduce the risk of broken RegExs, Phiki performs a series of transformations with solid success rates:
-
-* Properly escape unescaped forward-slashes (`/`).
-* Translate `\h` and `\H` to PCRE equivalents.
-* Translate `\p{xx}` to PCRE-compatible versions.
-* Escape invalid leading range characters (`[-...]`).
-* Properly escape unescaped close-set characters (`]`).
-* Translate unsupported Unicode escape sequences (`\uXXXX`).
-
-One of the biggest differences between PCRE2 and Oniguruma is that Oniguruma has support for "variable-length lookbehinds". Variable-length lookbehinds, both positive and negative, are normally created when a quantifier such as `+` or `*` is used inside of the lookbehind.
-
-PCRE2 **does not** support these types of infinite-length lookbehinds and they're impossible to translate into PCRE2-compatible equivalents. If you're using PHP 8.4 however, you can get very close since Phiki performs a series of patches on grammar files to translate `*` into a `{0,254}` and `+` into a `{1,255}`.
-
-**These patches are not identical or perfect** – there is still a chance of running into errors in your application when highlighting code! If you do encounter an error with a message like the one below, please check the [Issues](https://github.com/phikiphp/phiki/issues) page or create a new issue with information about the grammar / language you're highlighting and a reproduction case.
-
-```
-preg_match(): Compilation failed: length of lookbehind assertion is not limited at offset...
-```
-
-> [!NOTE]
-> If you're running Phiki on PHP 8.2 or PHP 8.3, then you're still going to run into warnings or errors with these patched grammars since those versions of PHP do not use the latest version of PCRE2.
 
 ## Credits
 
