@@ -1,18 +1,17 @@
 <?php
 
-use Phiki\Highlighter;
-use Phiki\Theme\ParsedTheme;
+use Phiki\Highlighting\Highlighter;
+use Phiki\Theme\Theme;
 
-describe('Highlighter', function () {
-    it('can be constructed', function () {
-        $theme = ParsedTheme::fromArray([
-            'name' => 'test',
-            'colors' => [
-                'editor.background' => '#000',
-                'editor.foreground' => '#fff',
-            ],
-        ]);
+it('can be constructed', function () {
+    $theme = Theme::parse([
+        'name' => 'test',
+        'colors' => [
+            'editor.background' => '#000',
+            'editor.foreground' => '#fff',
+        ],
+        'tokenColors' => [],
+    ]);
 
-        expect(new Highlighter(['default' => $theme]))->toBeInstanceOf(Highlighter::class);
-    });
+    expect(new Highlighter(['default' => $theme]))->toBeInstanceOf(Highlighter::class);
 });

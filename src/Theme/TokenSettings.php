@@ -4,7 +4,7 @@ namespace Phiki\Theme;
 
 use Phiki\Support\Color;
 
-readonly class TokenSettings
+class TokenSettings
 {
     public function __construct(
         public ?string $background,
@@ -12,36 +12,39 @@ readonly class TokenSettings
         public ?string $fontStyle,
     ) {}
 
-    public function toAnsiEscape(): string
+    /**
+     * Take an array of token settings and flatten them into a single TokenSettings instance
+     * without overriding values set by previous items in the array.
+     * 
+     * @param array<TokenSettings> $settings
+     */
+    public static function flatten(array $settings): TokenSettings
     {
-        $codes = [];
+        $flattened = [
+            'background' => null,
+            'foreground' => null,
+            'fontStyle' => null,
+        ];
 
-        if (isset($this->background)) {
-            $codes[] = Color::hexToAnsi($this->background) + 10;
-        }
-
-        if (isset($this->foreground)) {
-            $codes[] = Color::hexToAnsi($this->foreground);
-        }
-
-        $fontStyles = explode(' ', $this->fontStyle ?? '');
-        $decorations = [];
-
-        foreach ($fontStyles as $fontStyle) {
-            if ($fontStyle === 'underline') {
-                $decorations[] = Color::ANSI_UNDERLINE;
+        foreach ($settings as $setting) {
+            if (! isset($flattened['background']) && isset($setting->background)) {
+                $flattened['background'] = $setting->background;
             }
 
-            if ($fontStyle === 'italic') {
-                $decorations[] = Color::ANSI_ITALIC;
+            if (! isset($flattened['foreground']) && isset($setting->foreground)) {
+                $flattened['foreground'] = $setting->foreground;
             }
 
-            if ($fontStyle === 'bold') {
-                $decorations[] = Color::ANSI_BOLD;
+            if (! isset($flattened['fontStyle']) && isset($setting->fontStyle)) {
+                $flattened['fontStyle'] = $setting->fontStyle;
             }
         }
 
-        return "\033[".implode(';', $decorations).';38;5;'.implode(';', $codes).'m';
+        return new TokenSettings(
+            $flattened['background'],
+            $flattened['foreground'],
+            $flattened['fontStyle']
+        );
     }
 
     public function toCssVarString(string $prefix): string
