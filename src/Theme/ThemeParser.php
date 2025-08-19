@@ -10,7 +10,7 @@ class ThemeParser
     public function parse(array $theme): ParsedTheme
     {
         if (! isset($theme['name'])) {
-            throw new InvalidThemeException("Themes must have a `name` property.");
+            throw new InvalidThemeException('Themes must have a `name` property.');
         }
 
         $name = $theme['name'];
@@ -35,6 +35,7 @@ class ThemeParser
                 // This is the common case for a single scope without any AND or OR operators.
                 if (! str_contains($part, ' ') && ! str_contains($part, ',')) {
                     $scope[] = new Scope([$part]);
+
                     continue;
                 }
 

@@ -2,16 +2,13 @@
 
 namespace Phiki\TextMate;
 
-use Phiki\Grammar\Grammar;
-use Phiki\Grammar\ParsedGrammar;
-
 class AttributedScopeStack
 {
     /**
      * Create a new instance.
      */
     private function __construct(
-        public AttributedScopeStack | null $parent,
+        public ?AttributedScopeStack $parent,
         public ScopeStack $scopePath,
     ) {}
 
@@ -40,7 +37,7 @@ class AttributedScopeStack
 
     /**
      * Get the scope names for this stack.
-     * 
+     *
      * @return list<string>
      */
     public function getScopeNames(): array

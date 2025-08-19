@@ -3,7 +3,6 @@
 namespace Phiki\TextMate;
 
 use Phiki\Contracts\PatternInterface;
-use Phiki\Exceptions\IndeterminateStateException;
 use Phiki\Grammar\EndPattern;
 use Phiki\Grammar\WhilePattern;
 
@@ -18,14 +17,14 @@ class StateStack
      * Create a new instance.
      */
     public function __construct(
-        public StateStack | null $parent,
+        public ?StateStack $parent,
         public PatternInterface $pattern,
         public int $enterPos,
         public int $anchorPos,
         public bool $beginRuleCapturedEOL,
-        public string | null $endRule,
-        public AttributedScopeStack | null $nameScopesList,
-        public AttributedScopeStack | null $contentNameScopesList,
+        public ?string $endRule,
+        public ?AttributedScopeStack $nameScopesList,
+        public ?AttributedScopeStack $contentNameScopesList,
     ) {
         $this->depth = $parent ? $parent->depth + 1 : 0;
     }
@@ -33,7 +32,7 @@ class StateStack
     /**
      * Pop the current state stack.
      */
-    public function pop(): StateStack | null
+    public function pop(): ?StateStack
     {
         return $this->parent;
     }
@@ -53,7 +52,7 @@ class StateStack
     /**
      * Push the given data into a new state stack.
      */
-    public function push(PatternInterface $pattern, int $enterPos, int $anchorPos, bool $beginRuleCapturedEOL, string | null $endRule, AttributedScopeStack | null $nameScopesList, AttributedScopeStack | null $contentNameScopesList): StateStack
+    public function push(PatternInterface $pattern, int $enterPos, int $anchorPos, bool $beginRuleCapturedEOL, ?string $endRule, ?AttributedScopeStack $nameScopesList, ?AttributedScopeStack $contentNameScopesList): StateStack
     {
         return new StateStack(
             parent: $this,
@@ -81,7 +80,7 @@ class StateStack
     /**
      * Generate a near-identical state stack with the given end rule.
      */
-    public function withEndRule(EndPattern | WhilePattern $rule): StateStack
+    public function withEndRule(EndPattern|WhilePattern $rule): StateStack
     {
         $stack = clone $this;
         $stack->pattern = $rule;

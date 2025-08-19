@@ -13,8 +13,8 @@ class LineTokens
 
     /**
      * Create a new instance.
-     * 
-     * @param array<Token> $tokens
+     *
+     * @param  array<Token>  $tokens
      */
     public function __construct(
         public string $lineText,
@@ -32,7 +32,7 @@ class LineTokens
     /**
      * Produce a set of tokens from the given scope list.
      */
-    public function produceFromScopes(AttributedScopeStack | null $scopesList, int $endIndex): void
+    public function produceFromScopes(?AttributedScopeStack $scopesList, int $endIndex): void
     {
         if ($this->lastTokenEndIndex >= $endIndex) {
             return;
@@ -52,7 +52,7 @@ class LineTokens
 
     /**
      * Get all of the tokens in this line.
-     * 
+     *
      * @return array<Token>
      */
     public function getResult(StateStack $stack, int $lineLength): array

@@ -5,10 +5,10 @@ namespace Phiki\CommonMark;
 use League\CommonMark\Environment\EnvironmentBuilderInterface;
 use League\CommonMark\Extension\CommonMark\Node\Block\FencedCode;
 use League\CommonMark\Extension\ConfigurableExtensionInterface;
-use Phiki\Phiki;
-use Phiki\Theme\Theme;
 use League\Config\ConfigurationBuilderInterface;
 use Nette\Schema\Expect;
+use Phiki\Phiki;
+use Phiki\Theme\Theme;
 
 class PhikiExtension implements ConfigurableExtensionInterface
 {

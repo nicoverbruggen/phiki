@@ -22,12 +22,12 @@ class HtmlGenerator
     ) {}
 
     /**
-     * @param array<array<int, HighlightedToken>> $tokens
+     * @param  array<array<int, HighlightedToken>>  $tokens
      */
     public function generate(array $tokens): Root
     {
         $root = new Root([
-            $pre = new Element('pre')
+            $pre = new Element('pre'),
         ]);
 
         $pre->properties->set('class', $preClasses = (new ClassList)
@@ -55,7 +55,7 @@ class HtmlGenerator
         if ($this->grammarName) {
             $pre->properties->set('data-language', $this->grammarName);
         }
-        
+
         $pre->properties->set('style', implode(';', $preStyles));
 
         $pre->children[] = $code = new Element('code');

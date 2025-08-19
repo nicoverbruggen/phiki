@@ -3,7 +3,7 @@
 use Phiki\Phast\ClassList;
 
 it('can add a class', function () {
-    $classes = new ClassList();
+    $classes = new ClassList;
     $classes->add('foo');
 
     expect($classes->contains('foo'))->toBeTrue();
@@ -17,7 +17,7 @@ it('can remove a class', function () {
 });
 
 it('can toggle a class on', function () {
-    $classes = new ClassList();
+    $classes = new ClassList;
     $classes->toggle('foo', true);
 
     expect($classes->contains('foo'))->toBeTrue();
@@ -31,7 +31,7 @@ it('can toggle a class off', function () {
 });
 
 it('can add multiple classes', function () {
-    $classes = new ClassList();
+    $classes = new ClassList;
     $classes->add('foo', 'bar');
 
     expect($classes->contains('foo'))->toBeTrue();
@@ -55,6 +55,6 @@ it('can check if a class exists', function () {
 
 it('can convert to string', function () {
     $classes = new ClassList(['foo', 'bar']);
-    
+
     expect((string) $classes)->toBe('foo bar');
 });

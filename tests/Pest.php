@@ -8,7 +8,7 @@ use Phiki\Highlighting\Highlighter;
 use Phiki\TextMate\Tokenizer;
 use Phiki\Theme\Theme;
 
-function tokenize(string $input, array | Grammar $grammar): array
+function tokenize(string $input, array|Grammar $grammar): array
 {
     if (! $grammar instanceof Grammar) {
         if (! isset($grammar['scopeName'])) {
@@ -42,7 +42,7 @@ function highlight(array $tokens, array $theme): array
                 'editor.foreground' => '#fff',
             ];
         }
-           
+
         $value = Theme::parse($value);
     }
 

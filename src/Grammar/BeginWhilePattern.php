@@ -8,7 +8,7 @@ use Phiki\Contracts\PatternInterface;
 use Phiki\Support\Regex;
 use Phiki\Support\Str;
 
-class BeginWhilePattern implements PatternInterface, HasContentNameInterface
+class BeginWhilePattern implements HasContentNameInterface, PatternInterface
 {
     public function __construct(
         public int $id,
@@ -48,7 +48,7 @@ class BeginWhilePattern implements PatternInterface, HasContentNameInterface
 
     /**
      * Compile the pattern into a list of matchable patterns.
-     * 
+     *
      * @return array<array{ 0: PatternInterface, 1: string }>
      */
     public function compile(ParsedGrammar $grammar, GrammarRepositoryInterface $grammars, bool $allowA, bool $allowG): array

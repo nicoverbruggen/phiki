@@ -5,17 +5,15 @@ namespace Phiki\TextMate;
 use Phiki\Environment\Environment;
 use Phiki\Grammar\BeginEndPattern;
 use Phiki\Grammar\BeginWhilePattern;
-use Phiki\Grammar\CollectionPattern;
 use Phiki\Grammar\EndPattern;
-use Phiki\Grammar\Grammar;
+use Phiki\Grammar\Injections\Injection;
+use Phiki\Grammar\Injections\Prefix;
+use Phiki\Grammar\MatchedInjection;
 use Phiki\Grammar\MatchedPattern;
 use Phiki\Grammar\MatchPattern;
 use Phiki\Grammar\ParsedGrammar;
 use Phiki\Grammar\WhilePattern;
 use Phiki\Token\Token;
-use Phiki\Grammar\Injections\Injection;
-use Phiki\Grammar\Injections\Prefix;
-use Phiki\Grammar\MatchedInjection;
 
 class Tokenizer
 {
@@ -29,7 +27,7 @@ class Tokenizer
 
     /**
      * Tokenize the given text.
-     * 
+     *
      * @return array<Token[]>
      */
     public function tokenize(string $text): array
@@ -46,7 +44,7 @@ class Tokenizer
             nameScopesList: $scopeList,
             contentNameScopesList: $scopeList,
         );
-        
+
         $lines = array_values(preg_split("/\R/", $text));
         $tokens = [];
 
@@ -55,7 +53,7 @@ class Tokenizer
                 $stateStack->reset();
             }
 
-            $lineText = $line . "\n";
+            $lineText = $line."\n";
             $lineLength = strlen($lineText);
             $lineTokens = new LineTokens($lineText);
 
@@ -89,6 +87,7 @@ class Tokenizer
             if ($rule === null) {
                 $lineTokens->produce($stack, $lineLength);
                 $stop = true;
+
                 continue;
             }
 
@@ -124,6 +123,7 @@ class Tokenizer
                     $stack = $popped;
                     $lineTokens->produce($stack, $lineLength);
                     $stop = true;
+
                     continue;
                 }
             } else {
@@ -150,7 +150,7 @@ class Tokenizer
 
                     $contentName = $rule->pattern->getContentName($rule->matches);
                     $contentNameScopesList = $nameScopesList->push($contentName);
-                    
+
                     $stack = $stack->withContentNameScopesList($contentNameScopesList)->withEndRule($rule->pattern->createEndPattern($rule));
 
                     if (! $hasAdvanced && $beforePush->hasSameRuleAs($stack)) {
@@ -158,6 +158,7 @@ class Tokenizer
                         $stack = $stack->pop();
                         $lineTokens->produce($stack, $lineLength);
                         $stop = true;
+
                         continue;
                     }
                 } elseif ($rule->pattern instanceof BeginWhilePattern) {
@@ -176,6 +177,7 @@ class Tokenizer
                         $stack = $stack->pop();
                         $lineTokens->produce($stack, $lineLength);
                         $stop = true;
+
                         continue;
                     }
                 } elseif ($rule->pattern instanceof MatchPattern) {
@@ -190,6 +192,7 @@ class Tokenizer
                         $stack = $stack->safePop();
                         $lineTokens->produce($stack, $lineLength);
                         $stop = true;
+
                         continue;
                     }
                 }
@@ -238,7 +241,7 @@ class Tokenizer
                 $lineTokens->produceFromScopes($stackElement->scopes, $stackElement->endPos);
                 array_pop($localStack);
             }
-            
+
             if (count($localStack) > 0) {
                 $stackElement = $localStack[count($localStack) - 1];
 
@@ -252,11 +255,12 @@ class Tokenizer
                 $nameScopesList = $stack->contentNameScopesList->push($scopeName);
                 $stackClone = $stack->push($captureRule->pattern, $match[1], -1, false, null, $nameScopesList, $nameScopesList);
                 $this->tokenizeString($grammar, mb_substr($lineText, 0, strlen($match[0]) + $match[1]), $isFirstLine && $match[1] === 0, $match[1], $stackClone, $lineTokens, false);
+
                 continue;
             }
 
             $captureRuleScopeName = $captureRule->getScopeName($matches);
-            
+
             if ($captureRuleScopeName !== null) {
                 $base = count($localStack) > 0 ? $localStack[count($localStack) - 1]->scopes : $stack->contentNameScopesList;
                 $captureRuleScopesList = $base->push($captureRuleScopeName);
@@ -313,8 +317,8 @@ class Tokenizer
 
     /**
      * Try to match an injection.
-     * 
-     * @param array<Injection> $injections
+     *
+     * @param  array<Injection>  $injections
      */
     protected function matchInjections(array $injections, ParsedGrammar $grammar, string $lineText, bool $isFirstLine, int $linePos, StateStack $stack, int $anchorPosition): ?MatchedInjection
     {

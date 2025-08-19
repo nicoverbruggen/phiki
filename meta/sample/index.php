@@ -2,7 +2,7 @@
 
 set_time_limit(2);
 
-require_once __DIR__ . '/../../vendor/autoload.php';
+require_once __DIR__.'/../../vendor/autoload.php';
 
 use Phiki\Grammar\Grammar;
 use Phiki\Phiki;
@@ -17,7 +17,7 @@ $withVscodeTextmate = isset($_GET['with-vscode-textmate']) && $_GET['with-vscode
 function generateVscodeTextmateTokens(string $input, Grammar $grammar): array
 {
     $scopeName = $grammar->scopeName();
-    $output = shell_exec("node " . realpath(__DIR__ . '/../generate-vscode-textmate-tokens.mjs') . " " . escapeshellarg($input) . " " . escapeshellarg($scopeName));
+    $output = shell_exec('node '.realpath(__DIR__.'/../generate-vscode-textmate-tokens.mjs').' '.escapeshellarg($input).' '.escapeshellarg($scopeName));
     $raw = json_decode($output, true);
 
     return array_map(fn (array $line) => array_map(fn (array $token) => new Token($token['scopes'], $token['text'], $token['start'], $token['end']), $line), $raw);
@@ -46,24 +46,24 @@ function generateVscodeTextmateTokens(string $input, Grammar $grammar): array
                 <div class="flex flex-col gap-y-2">
                     <label for="grammar" class="text-sm font-medium">Grammar</label>
                     <select name="grammar" id="grammar" class="border border-neutral-300 h-10 w-64 rounded px-2">
-                        <?php foreach (Grammar::cases() as $g): ?>
+                        <?php foreach (Grammar::cases() as $g) { ?>
                             <?php $selected = $g === $grammar ? 'selected' : ''; ?>
                             <option value="<?= $g->value ?>" <?= $selected ?>>
                                 <?= $g->name ?>
                             </option>
-                        <?php endforeach; ?>
+                        <?php } ?>
                     </select>
                 </div>
 
                 <div class="flex flex-col gap-y-2">
                     <label for="theme" class="text-sm font-medium">Theme</label>
                     <select name="theme" id="theme" class="border border-neutral-300 h-10 w-64 rounded px-2">
-                        <?php foreach (Theme::cases() as $t): ?>
+                        <?php foreach (Theme::cases() as $t) { ?>
                             <?php $selected = $t === $theme ? 'selected' : ''; ?>
                             <option value="<?= $t->value ?>" <?= $selected ?>>
                                 <?= $t->name ?>
                             </option>
-                        <?php endforeach; ?>
+                        <?php } ?>
                     </select>
                 </div>
 
@@ -90,9 +90,9 @@ function generateVscodeTextmateTokens(string $input, Grammar $grammar): array
                     <?php dump((new Phiki)->codeToHighlightedTokens($input, $grammar, $theme)) ?>
                 </div> -->
 
-                <?php if ($withVscodeTextmate): ?>
+                <?php if ($withVscodeTextmate) { ?>
                     <?php dump(generateVscodeTextmateTokens($input, $grammar)) ?>
-                <?php endif; ?>
+                <?php } ?>
             </div>
         </form>
     </body>

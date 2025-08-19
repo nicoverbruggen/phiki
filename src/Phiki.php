@@ -3,14 +3,11 @@
 namespace Phiki;
 
 use Phiki\Environment\Environment;
-use Phiki\Generators\HtmlGenerator;
 use Phiki\Generators\PendingHtmlOutput;
-use Phiki\Generators\TerminalGenerator;
 use Phiki\Grammar\Grammar;
 use Phiki\Grammar\ParsedGrammar;
 use Phiki\Highlighting\Highlighter;
 use Phiki\Support\Arr;
-use Phiki\Support\Str;
 use Phiki\TextMate\Tokenizer;
 use Phiki\Theme\ParsedTheme;
 use Phiki\Theme\Theme;

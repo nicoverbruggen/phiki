@@ -3,11 +3,11 @@
 namespace Phiki\Generators;
 
 use Closure;
-use Stringable;
-use Phiki\Token\Token;
-use Phiki\Token\HighlightedToken;
 use Phiki\Grammar\ParsedGrammar;
 use Phiki\Theme\ParsedTheme;
+use Phiki\Token\HighlightedToken;
+use Phiki\Token\Token;
+use Stringable;
 
 class PendingHtmlOutput implements Stringable
 {
@@ -18,7 +18,7 @@ class PendingHtmlOutput implements Stringable
     protected ?Closure $highlightTokensUsing = null;
 
     /**
-     * @param array<string, ParsedTheme> $themes
+     * @param  array<string, ParsedTheme>  $themes
      */
     public function __construct(
         protected string $code,
@@ -27,7 +27,7 @@ class PendingHtmlOutput implements Stringable
     ) {}
 
     /**
-     * @param Closure(string $code, ParsedGrammar $grammar): array<int, array<Token>> $callback
+     * @param  Closure(string $code, ParsedGrammar $grammar): array<int, array<Token>>  $callback
      */
     public function generateTokensUsing(Closure $callback): self
     {
@@ -37,7 +37,7 @@ class PendingHtmlOutput implements Stringable
     }
 
     /**
-     * @param Closure(array<int, array<Token>> $tokens, array<string, ParsedTheme> $theme): array<int, array<HighlightedToken>> $callback
+     * @param  Closure(array<int, array<Token>> $tokens, array<string, ParsedTheme> $theme): array<int, array<HighlightedToken>>  $callback
      */
     public function highlightTokensUsing(Closure $callback): self
     {

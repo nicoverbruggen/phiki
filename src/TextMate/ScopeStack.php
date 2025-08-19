@@ -10,7 +10,7 @@ class ScopeStack implements Stringable
      * Create a new instance.
      */
     public function __construct(
-        public ScopeStack | null $parent,
+        public ?ScopeStack $parent,
         public string $scopeName,
     ) {}
 
@@ -24,7 +24,7 @@ class ScopeStack implements Stringable
 
     /**
      * Get the scope name segments in the stack.
-     * 
+     *
      * @return list<string>
      */
     public function getSegments(): array

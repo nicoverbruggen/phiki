@@ -5,8 +5,8 @@ namespace Phiki\Theme;
 class ParsedTheme
 {
     /**
-     * @param array<string, string> $colors
-     * @param TokenColor[] $tokenColors
+     * @param  array<string, string>  $colors
+     * @param  TokenColor[]  $tokenColors
      */
     public function __construct(
         public string $name,

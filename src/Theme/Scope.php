@@ -2,7 +2,6 @@
 
 namespace Phiki\Theme;
 
-use Phiki\Support\Arr;
 use Phiki\Support\Str;
 
 class Scope
@@ -12,9 +11,9 @@ class Scope
     ) {}
 
     /**
-     * @param array<string> $scopes
+     * @param  array<string>  $scopes
      */
-    public function matches(array $scopes): ScopeMatchResult | false
+    public function matches(array $scopes): ScopeMatchResult|false
     {
         // We want to reverse the token scopes since we will need to check from right to left.
         $reversed = array_reverse($scopes);
@@ -39,7 +38,7 @@ class Scope
                 // based on those rules with some precedence logic too.
                 return new ScopeMatchResult(length: Str::dotCount($this->names[0]), depth: $valuesToKeys[$scope]);
             }
-            
+
             return false;
         }
 
@@ -72,7 +71,7 @@ class Scope
         $matchingScopeDepth = 0;
         // This is the length of the matching scope selector.
         $matchingScopeLength = 0;
-        // This is the index of the matching scope in the reversed token scopes. 
+        // This is the index of the matching scope in the reversed token scopes.
         // We only use this to chop off the scopes after the matching scope since
         // we don't need to check those anymore.
         $matchingScopeIndex = 0;

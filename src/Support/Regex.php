@@ -2,8 +2,6 @@
 
 namespace Phiki\Support;
 
-use Phiki\Exceptions\FailedToSetSearchPositionException;
-use Phiki\Exceptions\GenericPatternException;
 use Stringable;
 
 class Regex implements Stringable

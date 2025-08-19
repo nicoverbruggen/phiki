@@ -5,13 +5,9 @@ namespace Phiki\TextMate;
 use Phiki\Contracts\GrammarRepositoryInterface;
 use Phiki\Contracts\PatternInterface;
 use Phiki\Exceptions\FailedToSetSearchPositionException;
-use Phiki\Exceptions\GenericPatternException;
 use Phiki\Grammar\MatchedPattern;
 use Phiki\Grammar\ParsedGrammar;
 use Phiki\Grammar\WhilePattern;
-use Phiki\Support\Warnings;
-use Throwable;
-use ValueError;
 
 class PatternSearcher
 {
@@ -22,7 +18,7 @@ class PatternSearcher
         protected PatternInterface $pattern,
         protected ParsedGrammar $grammar,
         protected GrammarRepositoryInterface $grammars,
-        protected bool $allowA, 
+        protected bool $allowA,
         protected bool $allowG,
     ) {}
 
@@ -33,7 +29,7 @@ class PatternSearcher
     {
         $patterns = $while && $this->pattern instanceof WhilePattern
             ? [
-                [$this->pattern, $this->pattern->while->get($this->allowA, $this->allowG)]
+                [$this->pattern, $this->pattern->while->get($this->allowA, $this->allowG)],
             ] : $this->pattern->compile($this->grammar, $this->grammars, $this->allowA, $this->allowG);
         $bestLocation = null;
         $bestLength = null;
@@ -46,7 +42,7 @@ class PatternSearcher
             }
 
             if (! mb_ereg_search_setpos($linePos)) {
-                throw new FailedToSetSearchPositionException();
+                throw new FailedToSetSearchPositionException;
             }
 
             $result = mb_ereg_search_pos();
@@ -56,7 +52,7 @@ class PatternSearcher
             }
 
             [$start, $length] = $result;
-            
+
             if ($start === 0) {
                 $bestLocation = $start;
                 $bestMatches = mb_ereg_search_getregs();
@@ -91,6 +87,7 @@ class PatternSearcher
             // The first match is the full match, so we can just use the start position.
             if ($key === 0) {
                 $wellFormedMatches[$key] = [$match, $bestLocation];
+
                 continue;
             }
 
@@ -99,7 +96,7 @@ class PatternSearcher
             // If the capture group is empty, we need to use the same format as PCRE's PREG_OFFSET_CAPTURE,
             // which is an array with an empty match and -1 as the offset.
             if (! $match) {
-                $wellFormedMatches[$key] = ["", -1];
+                $wellFormedMatches[$key] = ['', -1];
 
                 continue;
             }

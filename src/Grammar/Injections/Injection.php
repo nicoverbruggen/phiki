@@ -7,7 +7,7 @@ use Phiki\Contracts\InjectionMatcherInterface;
 use Phiki\Contracts\PatternInterface;
 use Phiki\Grammar\ParsedGrammar;
 
-class Injection implements PatternInterface, InjectionMatcherInterface
+class Injection implements InjectionMatcherInterface, PatternInterface
 {
     public function __construct(
         public int $id,

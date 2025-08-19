@@ -524,7 +524,7 @@ describe('begin/end', function () {
                             'match' => '\\b(foo)\\b',
                         ],
                     ],
-                ]
+                ],
             ],
         ]);
 
@@ -534,7 +534,7 @@ describe('begin/end', function () {
                 new Token(['source.test', 'meta.block.test'], ' ', 5, 6),
                 new Token(['source.test', 'meta.block.test'], 'end', 6, 9),
                 new Token(['source.test'], " foo\n", 9, 14),
-            ]
+            ],
         ]);
     });
 
@@ -551,7 +551,7 @@ describe('begin/end', function () {
                             'match' => '\\b(foo)\\b',
                         ],
                     ],
-                ]
+                ],
             ],
         ]);
 
@@ -563,7 +563,7 @@ describe('begin/end', function () {
                 new Token(['source.test', 'meta.block.test'], ' ', 9, 10),
                 new Token(['source.test', 'meta.block.test'], 'end', 10, 13),
                 new Token(['source.test'], " foo\n", 13, 18),
-            ]
+            ],
         ]);
     });
 });
@@ -616,10 +616,10 @@ describe('while', function () {
                             [
                                 'match' => '.*',
                                 'name' => 'markup.quote.block.line.test',
-                            ]
+                            ],
                         ],
                         'while' => '(^|\\G)\\s*(>) ?',
-                    ]
+                    ],
                 ],
             ]
         );
@@ -639,7 +639,7 @@ describe('while', function () {
                 new Token(['source.test', 'markup.quote.block.test', 'punctuation.definition.quote.begin.test'], '>', 0, 1),
                 new Token(['source.test', 'markup.quote.block.test'], ' ', 1, 2),
                 new Token(['source.test', 'markup.quote.block.test', 'markup.quote.block.line.test'], "third line\n", 2, 13),
-            ]
+            ],
         ]);
     });
 });

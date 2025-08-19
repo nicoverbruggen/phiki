@@ -7,13 +7,13 @@ use Stringable;
 class Properties implements Stringable
 {
     /**
-     * @param array<string, string | \Stringable> $properties
+     * @param  array<string, string | \Stringable>  $properties
      */
     public function __construct(
         public array $properties = [],
     ) {}
 
-    public function set(string $key, string | Stringable $value): self
+    public function set(string $key, string|Stringable $value): self
     {
         $this->properties[$key] = $value;
 
@@ -39,7 +39,7 @@ class Properties implements Stringable
 
     public function __toString(): string
     {
-        $properties = array_filter($this->properties, fn ($value) => !! $value);
+        $properties = array_filter($this->properties, fn ($value) => (bool) $value);
 
         return implode(' ', array_map(
             fn ($key, $value) => sprintf('%s="%s"', $key, $value),

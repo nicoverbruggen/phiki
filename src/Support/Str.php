@@ -37,7 +37,7 @@ class Str
 
     public static function startsWithScope(string $subject, string $scope): bool
     {
-        return $subject === $scope || str_starts_with($subject, trim($scope, '.') . '.');
+        return $subject === $scope || str_starts_with($subject, trim($scope, '.').'.');
     }
 
     public static function dotCount(string $subject): int
@@ -47,7 +47,7 @@ class Str
 
     /**
      * Replace capture references in a scope name with their corresponding capture values.
-     * 
+     *
      * E.g. `storage.type.${1:/downcase}.php` -> `storage.type.const.php`
      */
     public static function replaceScopeNameCapture(string $scopeName, array $captures): string

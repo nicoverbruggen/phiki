@@ -37,7 +37,7 @@ class WhilePattern implements PatternInterface
 
     /**
      * Compile the pattern into a list of matchable patterns.
-     * 
+     *
      * @return array<array{ 0: PatternInterface, 1: string }>
      */
     public function compile(ParsedGrammar $grammar, GrammarRepositoryInterface $grammars, bool $allowA, bool $allowG): array

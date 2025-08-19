@@ -2,12 +2,10 @@
 
 namespace Phiki\Theme;
 
-use Phiki\Support\Arr;
-
 class TokenColor
 {
     /**
-     * @param Scope[] $scope
+     * @param  Scope[]  $scope
      */
     public function __construct(
         public array $scope,

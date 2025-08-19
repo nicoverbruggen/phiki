@@ -2,8 +2,6 @@
 
 namespace Phiki\Theme;
 
-use Phiki\Support\Color;
-
 class TokenSettings
 {
     public function __construct(
@@ -15,8 +13,8 @@ class TokenSettings
     /**
      * Take an array of token settings and flatten them into a single TokenSettings instance
      * without overriding values set by previous items in the array.
-     * 
-     * @param array<TokenSettings> $settings
+     *
+     * @param  array<TokenSettings>  $settings
      */
     public static function flatten(array $settings): TokenSettings
     {

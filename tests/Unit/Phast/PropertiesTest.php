@@ -11,7 +11,7 @@ it('can create a property list with properties', function () {
 });
 
 it('can set a property', function () {
-    $properties = new Properties();
+    $properties = new Properties;
     $properties->set('key1', 'value1');
 
     expect($properties->get('key1'))->toBe('value1');
@@ -24,7 +24,7 @@ it('can get a property', function () {
 });
 
 it('returns null for a non-existing property', function () {
-    $properties = new Properties();
+    $properties = new Properties;
 
     expect($properties->get('non_existing_key'))->toBeNull();
 });
