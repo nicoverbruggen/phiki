@@ -45,13 +45,15 @@ interface TransformerInterface
 
     /**
      * Modify the <span> for each line.
+     * 
+     * @param array<int, HighlightedToken> $line
      */
-    public function line(Element $line): Element;
+    public function line(Element $span, array $line, int $index): Element;
 
     /**
      * Modify the <span> for each token.
      */
-    public function token(Element $token): Element;
+    public function token(Element $span, HighlightedToken $token, int $index, int $line): Element;
 
     /**
      * Modify the HTML output after the AST has been converted.
