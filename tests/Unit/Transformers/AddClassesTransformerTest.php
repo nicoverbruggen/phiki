@@ -14,10 +14,10 @@ it('adds classes to each token element', function () {
             Grammar::Php,
             Theme::GithubLight,
         )
-        ->transformer(new AddClassesTransformer())
+        ->transformer(new AddClassesTransformer)
         ->toString();
 
-    expect($output)->toContain("phiki-source.php");
+    expect($output)->toContain('phiki-source.php');
 });
 
 it('can remove the style attribute', function () {

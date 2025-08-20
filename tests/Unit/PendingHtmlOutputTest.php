@@ -14,7 +14,7 @@ it('calls transformer methods', function () {
         PHP,
         Grammar::Php,
         Theme::GithubLight
-    ) 
+    )
         ->transformer($transformer)
         ->__toString();
 

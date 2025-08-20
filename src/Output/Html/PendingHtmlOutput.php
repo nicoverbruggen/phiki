@@ -170,12 +170,12 @@ class PendingHtmlOutput implements Stringable
                 $span->properties->set('style', implode(';', array_filter($tokenStyles)));
                 $span->children[] = new Text(htmlspecialchars($token->token->text));
 
-                [$span, ] = $this->callTransformerMethod('token', $span, $token, $j, $index);
+                [$span] = $this->callTransformerMethod('token', $span, $token, $j, $index);
 
                 $line->children[] = $span;
             }
 
-            [$line, ] = $this->callTransformerMethod('line', $line, $lineTokens, $index);
+            [$line] = $this->callTransformerMethod('line', $line, $lineTokens, $index);
 
             $code->children[] = $line;
         }

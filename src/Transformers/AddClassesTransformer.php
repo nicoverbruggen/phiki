@@ -18,10 +18,10 @@ class AddClassesTransformer extends AbstractTransformer
      */
     public function token(Element $span, HighlightedToken $token, int $index, int $line): Element
     {
-        $classList = $span->properties->get('class') ?? new ClassList();
-        
+        $classList = $span->properties->get('class') ?? new ClassList;
+
         foreach ($token->token->scopes as $scope) {
-            $classList->add('phiki-' . $scope);
+            $classList->add('phiki-'.$scope);
         }
 
         $span->properties->set('class', $classList);

@@ -4,8 +4,8 @@ namespace Phiki\Contracts;
 
 use Phiki\Phast\Element;
 use Phiki\Phast\Root;
-use Phiki\Token\Token;
 use Phiki\Token\HighlightedToken;
+use Phiki\Token\Token;
 
 interface TransformerInterface
 {
@@ -16,15 +16,15 @@ interface TransformerInterface
 
     /**
      * Modify the tokens before they are highlighted.
-     * 
-     * @param array<int, array<Token>> $tokens
+     *
+     * @param  array<int, array<Token>>  $tokens
      */
     public function tokens(array $tokens): array;
 
     /**
      * Modify the highlighted tokens before they are converted into the HTML AST.
-     * 
-     * @param array<int, array<HighlightedToken>> $tokens
+     *
+     * @param  array<int, array<HighlightedToken>>  $tokens
      */
     public function highlighted(array $tokens): array;
 
@@ -45,8 +45,8 @@ interface TransformerInterface
 
     /**
      * Modify the <span> for each line.
-     * 
-     * @param array<int, HighlightedToken> $line
+     *
+     * @param  array<int, HighlightedToken>  $line
      */
     public function line(Element $span, array $line, int $index): Element;
 

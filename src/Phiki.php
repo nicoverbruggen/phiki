@@ -3,10 +3,10 @@
 namespace Phiki;
 
 use Phiki\Environment\Environment;
-use Phiki\Output\Html\PendingHtmlOutput;
 use Phiki\Grammar\Grammar;
 use Phiki\Grammar\ParsedGrammar;
 use Phiki\Highlighting\Highlighter;
+use Phiki\Output\Html\PendingHtmlOutput;
 use Phiki\Support\Arr;
 use Phiki\TextMate\Tokenizer;
 use Phiki\Theme\ParsedTheme;

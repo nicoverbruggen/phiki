@@ -3,8 +3,8 @@
 namespace Phiki\Tests\Fixtures;
 
 use Phiki\Contracts\TransformerInterface;
-use Phiki\Phast\Root;
 use Phiki\Phast\Element;
+use Phiki\Phast\Root;
 use Phiki\Token\HighlightedToken;
 
 class UselessTransformer implements TransformerInterface
@@ -86,7 +86,7 @@ class UselessTransformer implements TransformerInterface
     public function postprocess(string $html): string
     {
         $this->postprocessed = true;
-        
+
         return $html;
     }
 }

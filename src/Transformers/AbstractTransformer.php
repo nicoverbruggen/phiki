@@ -5,8 +5,8 @@ namespace Phiki\Transformers;
 use Phiki\Contracts\TransformerInterface;
 use Phiki\Phast\Element;
 use Phiki\Phast\Root;
-use Phiki\Token\Token;
 use Phiki\Token\HighlightedToken;
+use Phiki\Token\Token;
 
 class AbstractTransformer implements TransformerInterface
 {
@@ -20,8 +20,8 @@ class AbstractTransformer implements TransformerInterface
 
     /**
      * Modify the tokens before they are highlighted.
-     * 
-     * @param array<int, array<Token>> $tokens
+     *
+     * @param  array<int, array<Token>>  $tokens
      */
     public function tokens(array $tokens): array
     {
@@ -30,8 +30,8 @@ class AbstractTransformer implements TransformerInterface
 
     /**
      * Modify the highlighted tokens before they are converted into the HTML AST.
-     * 
-     * @param array<int, array<HighlightedToken>> $tokens
+     *
+     * @param  array<int, array<HighlightedToken>>  $tokens
      */
     public function highlighted(array $tokens): array
     {
@@ -64,8 +64,8 @@ class AbstractTransformer implements TransformerInterface
 
     /**
      * Modify the <span> for each line.
-     * 
-     * @param array<int, HighlightedToken> $tokens
+     *
+     * @param  array<int, HighlightedToken>  $tokens
      */
     public function line(Element $span, array $tokens, int $index): Element
     {
