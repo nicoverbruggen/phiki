@@ -29,7 +29,7 @@ it('can remove the style attribute', function () {
             Grammar::Php,
             Theme::GithubLight,
         )
-        ->transformer(new AddClassesTransformer(retainStyles: false))
+        ->transformer(new AddClassesTransformer(styles: false))
         ->toString();
 
     expect($output)->toContain('<span class="token phiki-source.php">');

@@ -11,7 +11,7 @@ class AddClassesTransformer extends AbstractTransformer
     /**
      * Create a new instance.
      */
-    public function __construct(private bool $retainStyles = true) {}
+    public function __construct(private bool $styles = true) {}
 
     /**
      * Modify the `<span>` for each token.
@@ -26,7 +26,7 @@ class AddClassesTransformer extends AbstractTransformer
 
         $span->properties->set('class', $classList);
 
-        if (! $this->retainStyles) {
+        if (! $this->styles) {
             $span->properties->remove('style');
         }
 
