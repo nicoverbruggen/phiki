@@ -1,6 +1,6 @@
 {
     "$schema": "https://mintlify.com/docs.json",
-    "theme": "maple",
+    "theme": "willow",
     "name": "Phiki",
     "colors": {
         "primary": "#ff0000"
@@ -44,5 +44,12 @@
                 ]
             }
         ]
+    },
+    "navbar": {
+        "primary": {
+            "label": "Sponsor on GitHub",
+            "href": "https://github.com/sponsors/ryangjchandler",
+            "type": "button"
+        }
     }
 }
