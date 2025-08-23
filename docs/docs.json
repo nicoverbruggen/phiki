@@ -6,6 +6,6 @@
         "primary": "#ff0000"
     },
     "navigation": {
-        
+        "languages": [{ "language": "en" }]
     }
 }
