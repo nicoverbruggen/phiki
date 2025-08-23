@@ -3,7 +3,9 @@
     "theme": "willow",
     "name": "Phiki",
     "colors": {
-        "primary": "#ff0000"
+        "light": "#ffffff",
+        "dark": "#000000",
+        "primary": "#000000"
     },
     "navigation": {
         "groups": [
