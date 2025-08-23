@@ -153,10 +153,19 @@
             "scopes": [
                 "source.astro",
                 "source.ts",
-                "meta.import.ts"
+                "punctuation.terminator.statement.ts"
             ],
-            "text": ";\n",
+            "text": ";",
             "start": 47,
+            "end": 48
+        },
+        {
+            "scopes": [
+                "source.astro",
+                "source.ts"
+            ],
+            "text": "\n",
+            "start": 48,
             "end": 49
         }
     ],
@@ -166,7 +175,7 @@
                 "source.astro",
                 "source.ts",
                 "meta.import.ts",
-                "variable.other.readwrite.alias.ts"
+                "keyword.control.import.ts"
             ],
             "text": "import",
             "start": 0,
@@ -263,10 +272,19 @@
             "scopes": [
                 "source.astro",
                 "source.ts",
-                "meta.import.ts"
+                "punctuation.terminator.statement.ts"
             ],
-            "text": ";\n",
+            "text": ";",
             "start": 75,
+            "end": 76
+        },
+        {
+            "scopes": [
+                "source.astro",
+                "source.ts"
+            ],
+            "text": "\n",
+            "start": 76,
             "end": 77
         }
     ],
@@ -275,8 +293,8 @@
             "scopes": [
                 "source.astro",
                 "source.ts",
-                "meta.import.ts",
-                "variable.other.readwrite.alias.ts"
+                "meta.var.expr.ts",
+                "storage.type.ts"
             ],
             "text": "const",
             "start": 0,
@@ -286,7 +304,7 @@
             "scopes": [
                 "source.astro",
                 "source.ts",
-                "meta.import.ts"
+                "meta.var.expr.ts"
             ],
             "text": " ",
             "start": 5,
@@ -296,8 +314,10 @@
             "scopes": [
                 "source.astro",
                 "source.ts",
-                "meta.import.ts",
-                "variable.other.readwrite.alias.ts"
+                "meta.var.expr.ts",
+                "meta.var-single-variable.expr.ts",
+                "meta.definition.variable.ts",
+                "variable.other.constant.ts"
             ],
             "text": "myFavoritePokemon",
             "start": 6,
@@ -307,17 +327,53 @@
             "scopes": [
                 "source.astro",
                 "source.ts",
-                "meta.import.ts"
+                "meta.var.expr.ts",
+                "meta.var-single-variable.expr.ts"
             ],
-            "text": " = [",
+            "text": " ",
             "start": 23,
+            "end": 24
+        },
+        {
+            "scopes": [
+                "source.astro",
+                "source.ts",
+                "meta.var.expr.ts",
+                "keyword.operator.assignment.ts"
+            ],
+            "text": "=",
+            "start": 24,
+            "end": 25
+        },
+        {
+            "scopes": [
+                "source.astro",
+                "source.ts",
+                "meta.var.expr.ts",
+                "meta.array.literal.ts"
+            ],
+            "text": " ",
+            "start": 25,
+            "end": 26
+        },
+        {
+            "scopes": [
+                "source.astro",
+                "source.ts",
+                "meta.var.expr.ts",
+                "meta.array.literal.ts",
+                "meta.brace.square.ts"
+            ],
+            "text": "[",
+            "start": 26,
             "end": 27
         },
         {
             "scopes": [
                 "source.astro",
                 "source.ts",
-                "meta.import.ts",
+                "meta.var.expr.ts",
+                "meta.array.literal.ts",
                 "comment.block.ts",
                 "punctuation.definition.comment.ts"
             ],
@@ -329,7 +385,8 @@
             "scopes": [
                 "source.astro",
                 "source.ts",
-                "meta.import.ts",
+                "meta.var.expr.ts",
+                "meta.array.literal.ts",
                 "comment.block.ts"
             ],
             "text": " ... ",
@@ -340,7 +397,8 @@
             "scopes": [
                 "source.astro",
                 "source.ts",
-                "meta.import.ts",
+                "meta.var.expr.ts",
+                "meta.array.literal.ts",
                 "comment.block.ts",
                 "punctuation.definition.comment.ts"
             ],
@@ -352,10 +410,31 @@
             "scopes": [
                 "source.astro",
                 "source.ts",
-                "meta.import.ts"
+                "meta.var.expr.ts",
+                "meta.array.literal.ts",
+                "meta.brace.square.ts"
             ],
-            "text": "];\n",
+            "text": "]",
             "start": 36,
+            "end": 37
+        },
+        {
+            "scopes": [
+                "source.astro",
+                "source.ts",
+                "punctuation.terminator.statement.ts"
+            ],
+            "text": ";",
+            "start": 37,
+            "end": 38
+        },
+        {
+            "scopes": [
+                "source.astro",
+                "source.ts"
+            ],
+            "text": "\n",
+            "start": 38,
             "end": 39
         }
     ],
@@ -364,8 +443,8 @@
             "scopes": [
                 "source.astro",
                 "source.ts",
-                "meta.import.ts",
-                "variable.other.readwrite.alias.ts"
+                "meta.var.expr.ts",
+                "storage.type.ts"
             ],
             "text": "const",
             "start": 0,
@@ -375,7 +454,7 @@
             "scopes": [
                 "source.astro",
                 "source.ts",
-                "meta.import.ts"
+                "meta.var.expr.ts"
             ],
             "text": " ",
             "start": 5,
@@ -385,9 +464,9 @@
             "scopes": [
                 "source.astro",
                 "source.ts",
-                "meta.import.ts",
-                "meta.block.ts",
-                "punctuation.definition.block.ts"
+                "meta.var.expr.ts",
+                "meta.object-binding-pattern-variable.ts",
+                "punctuation.definition.binding-pattern.object.ts"
             ],
             "text": "{",
             "start": 6,
@@ -397,8 +476,8 @@
             "scopes": [
                 "source.astro",
                 "source.ts",
-                "meta.import.ts",
-                "meta.block.ts"
+                "meta.var.expr.ts",
+                "meta.object-binding-pattern-variable.ts"
             ],
             "text": " ",
             "start": 7,
@@ -408,9 +487,10 @@
             "scopes": [
                 "source.astro",
                 "source.ts",
-                "meta.import.ts",
-                "meta.block.ts",
-                "variable.other.readwrite.alias.ts"
+                "meta.var.expr.ts",
+                "meta.object-binding-pattern-variable.ts",
+                "meta.definition.variable.ts",
+                "variable.other.constant.ts"
             ],
             "text": "title",
             "start": 8,
@@ -420,8 +500,8 @@
             "scopes": [
                 "source.astro",
                 "source.ts",
-                "meta.import.ts",
-                "meta.block.ts"
+                "meta.var.expr.ts",
+                "meta.object-binding-pattern-variable.ts"
             ],
             "text": " ",
             "start": 13,
@@ -431,9 +511,9 @@
             "scopes": [
                 "source.astro",
                 "source.ts",
-                "meta.import.ts",
-                "meta.block.ts",
-                "punctuation.definition.block.ts"
+                "meta.var.expr.ts",
+                "meta.object-binding-pattern-variable.ts",
+                "punctuation.definition.binding-pattern.object.ts"
             ],
             "text": "}",
             "start": 14,
@@ -443,18 +523,40 @@
             "scopes": [
                 "source.astro",
                 "source.ts",
-                "meta.import.ts"
+                "meta.var.expr.ts",
+                "meta.object-binding-pattern-variable.ts"
             ],
-            "text": " = ",
+            "text": " ",
             "start": 15,
+            "end": 16
+        },
+        {
+            "scopes": [
+                "source.astro",
+                "source.ts",
+                "meta.var.expr.ts",
+                "keyword.operator.assignment.ts"
+            ],
+            "text": "=",
+            "start": 16,
+            "end": 17
+        },
+        {
+            "scopes": [
+                "source.astro",
+                "source.ts",
+                "meta.var.expr.ts"
+            ],
+            "text": " ",
+            "start": 17,
             "end": 18
         },
         {
             "scopes": [
                 "source.astro",
                 "source.ts",
-                "meta.import.ts",
-                "variable.other.readwrite.alias.ts"
+                "meta.var.expr.ts",
+                "variable.other.object.ts"
             ],
             "text": "Astro",
             "start": 18,
@@ -464,7 +566,8 @@
             "scopes": [
                 "source.astro",
                 "source.ts",
-                "meta.import.ts"
+                "meta.var.expr.ts",
+                "punctuation.accessor.ts"
             ],
             "text": ".",
             "start": 23,
@@ -474,8 +577,8 @@
             "scopes": [
                 "source.astro",
                 "source.ts",
-                "meta.import.ts",
-                "variable.other.readwrite.alias.ts"
+                "meta.var.expr.ts",
+                "variable.other.property.ts"
             ],
             "text": "props",
             "start": 24,
@@ -485,10 +588,19 @@
             "scopes": [
                 "source.astro",
                 "source.ts",
-                "meta.import.ts"
+                "punctuation.terminator.statement.ts"
             ],
-            "text": ";\n",
+            "text": ";",
             "start": 29,
+            "end": 30
+        },
+        {
+            "scopes": [
+                "source.astro",
+                "source.ts"
+            ],
+            "text": "\n",
+            "start": 30,
             "end": 31
         }
     ],
@@ -496,11 +608,19 @@
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts"
+                "comment"
             ],
-            "text": "---\n",
+            "text": "---",
             "start": 0,
+            "end": 3
+        },
+        {
+            "scopes": [
+                "source.astro",
+                "text.astro"
+            ],
+            "text": "\n",
+            "start": 3,
             "end": 4
         }
     ],
@@ -508,74 +628,39 @@
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts"
+                "comment.block.astro",
+                "punctuation.definition.comment.astro"
             ],
-            "text": "<!-- ",
+            "text": "<!--",
             "start": 0,
-            "end": 5
+            "end": 4
         },
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "variable.other.readwrite.alias.ts"
+                "comment.block.astro"
             ],
-            "text": "HTML",
-            "start": 5,
-            "end": 9
+            "text": " HTML comments supported! ",
+            "start": 4,
+            "end": 30
         },
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts"
+                "comment.block.astro",
+                "punctuation.definition.comment.astro"
             ],
-            "text": " ",
-            "start": 9,
-            "end": 10
+            "text": "-->",
+            "start": 30,
+            "end": 33
         },
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "variable.other.readwrite.alias.ts"
+                "text.astro"
             ],
-            "text": "comments",
-            "start": 10,
-            "end": 18
-        },
-        {
-            "scopes": [
-                "source.astro",
-                "source.ts",
-                "meta.import.ts"
-            ],
-            "text": " ",
-            "start": 18,
-            "end": 19
-        },
-        {
-            "scopes": [
-                "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "variable.other.readwrite.alias.ts"
-            ],
-            "text": "supported",
-            "start": 19,
-            "end": 28
-        },
-        {
-            "scopes": [
-                "source.astro",
-                "source.ts",
-                "meta.import.ts"
-            ],
-            "text": "! -->\n",
-            "start": 28,
+            "text": "\n",
+            "start": 33,
             "end": 34
         }
     ],
@@ -583,10 +668,7 @@
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "meta.block.ts",
-                "punctuation.definition.block.ts"
+                "punctuation.section.embedded.begin.astro"
             ],
             "text": "{",
             "start": 0,
@@ -595,11 +677,10 @@
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "meta.block.ts",
-                "comment.block.ts",
-                "punctuation.definition.comment.ts"
+                "meta.embedded.expression.astro",
+                "source.tsx",
+                "comment.block.tsx",
+                "punctuation.definition.comment.tsx"
             ],
             "text": "\/*",
             "start": 1,
@@ -608,10 +689,9 @@
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "meta.block.ts",
-                "comment.block.ts"
+                "meta.embedded.expression.astro",
+                "source.tsx",
+                "comment.block.tsx"
             ],
             "text": " JS comment syntax is also valid! ",
             "start": 3,
@@ -620,11 +700,10 @@
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "meta.block.ts",
-                "comment.block.ts",
-                "punctuation.definition.comment.ts"
+                "meta.embedded.expression.astro",
+                "source.tsx",
+                "comment.block.tsx",
+                "punctuation.definition.comment.tsx"
             ],
             "text": "*\/",
             "start": 37,
@@ -633,10 +712,7 @@
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "meta.block.ts",
-                "punctuation.definition.block.ts"
+                "punctuation.section.embedded.end.astro"
             ],
             "text": "}",
             "start": 39,
@@ -645,8 +721,7 @@
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts"
+                "text.astro"
             ],
             "text": "\n",
             "start": 40,
@@ -657,8 +732,7 @@
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts"
+                "text.astro"
             ],
             "text": "\n",
             "start": 0,
@@ -669,8 +743,9 @@
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts"
+                "meta.scope.tag.Banner.astro",
+                "meta.tag.start.astro",
+                "punctuation.definition.tag.begin.astro"
             ],
             "text": "<",
             "start": 0,
@@ -679,9 +754,9 @@
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "variable.other.readwrite.alias.ts"
+                "meta.scope.tag.Banner.astro",
+                "meta.tag.start.astro",
+                "support.class.component.astro"
             ],
             "text": "Banner",
             "start": 1,
@@ -690,11 +765,31 @@
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts"
+                "meta.scope.tag.Banner.astro",
+                "meta.tag.start.astro"
             ],
-            "text": " \/>\n",
+            "text": " ",
             "start": 7,
+            "end": 8
+        },
+        {
+            "scopes": [
+                "source.astro",
+                "meta.scope.tag.Banner.astro",
+                "meta.tag.start.astro",
+                "punctuation.definition.tag.end.astro"
+            ],
+            "text": "\/>",
+            "start": 8,
+            "end": 10
+        },
+        {
+            "scopes": [
+                "source.astro",
+                "text.astro"
+            ],
+            "text": "\n",
+            "start": 10,
             "end": 11
         }
     ],
@@ -702,8 +797,9 @@
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts"
+                "meta.scope.tag.h1.astro",
+                "meta.tag.start.astro",
+                "punctuation.definition.tag.begin.astro"
             ],
             "text": "<",
             "start": 0,
@@ -712,9 +808,9 @@
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "variable.other.readwrite.alias.ts"
+                "meta.scope.tag.h1.astro",
+                "meta.tag.start.astro",
+                "entity.name.tag.astro"
             ],
             "text": "h1",
             "start": 1,
@@ -723,8 +819,9 @@
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts"
+                "meta.scope.tag.h1.astro",
+                "meta.tag.start.astro",
+                "punctuation.definition.tag.end.astro"
             ],
             "text": ">",
             "start": 3,
@@ -733,62 +830,29 @@
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "variable.other.readwrite.alias.ts"
+                "text.astro"
             ],
-            "text": "Hello",
+            "text": "Hello, world!",
             "start": 4,
-            "end": 9
+            "end": 17
         },
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "punctuation.separator.comma.ts"
+                "meta.scope.tag.h1.astro",
+                "meta.tag.end.astro",
+                "punctuation.definition.tag.begin.astro"
             ],
-            "text": ",",
-            "start": 9,
-            "end": 10
-        },
-        {
-            "scopes": [
-                "source.astro",
-                "source.ts",
-                "meta.import.ts"
-            ],
-            "text": " ",
-            "start": 10,
-            "end": 11
-        },
-        {
-            "scopes": [
-                "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "variable.other.readwrite.alias.ts"
-            ],
-            "text": "world",
-            "start": 11,
-            "end": 16
-        },
-        {
-            "scopes": [
-                "source.astro",
-                "source.ts",
-                "meta.import.ts"
-            ],
-            "text": "!<\/",
-            "start": 16,
+            "text": "<\/",
+            "start": 17,
             "end": 19
         },
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "variable.other.readwrite.alias.ts"
+                "meta.scope.tag.h1.astro",
+                "meta.tag.end.astro",
+                "entity.name.tag.astro"
             ],
             "text": "h1",
             "start": 19,
@@ -797,11 +861,21 @@
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts"
+                "meta.scope.tag.h1.astro",
+                "meta.tag.end.astro",
+                "punctuation.definition.tag.end.astro"
             ],
-            "text": ">\n",
+            "text": ">",
             "start": 21,
+            "end": 22
+        },
+        {
+            "scopes": [
+                "source.astro",
+                "text.astro"
+            ],
+            "text": "\n",
+            "start": 22,
             "end": 23
         }
     ],
@@ -809,8 +883,7 @@
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts"
+                "text.astro"
             ],
             "text": "\n",
             "start": 0,
@@ -821,200 +894,39 @@
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts"
+                "comment.block.astro",
+                "punctuation.definition.comment.astro"
             ],
-            "text": "<!-- ",
+            "text": "<!--",
             "start": 0,
-            "end": 5
+            "end": 4
         },
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "variable.other.readwrite.alias.ts"
+                "comment.block.astro"
             ],
-            "text": "Use",
-            "start": 5,
-            "end": 8
+            "text": " Use props and other variables from the component script: ",
+            "start": 4,
+            "end": 62
         },
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts"
+                "comment.block.astro",
+                "punctuation.definition.comment.astro"
             ],
-            "text": " ",
-            "start": 8,
-            "end": 9
+            "text": "-->",
+            "start": 62,
+            "end": 65
         },
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "variable.other.readwrite.alias.ts"
+                "text.astro"
             ],
-            "text": "props",
-            "start": 9,
-            "end": 14
-        },
-        {
-            "scopes": [
-                "source.astro",
-                "source.ts",
-                "meta.import.ts"
-            ],
-            "text": " ",
-            "start": 14,
-            "end": 15
-        },
-        {
-            "scopes": [
-                "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "variable.other.readwrite.alias.ts"
-            ],
-            "text": "and",
-            "start": 15,
-            "end": 18
-        },
-        {
-            "scopes": [
-                "source.astro",
-                "source.ts",
-                "meta.import.ts"
-            ],
-            "text": " ",
-            "start": 18,
-            "end": 19
-        },
-        {
-            "scopes": [
-                "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "variable.other.readwrite.alias.ts"
-            ],
-            "text": "other",
-            "start": 19,
-            "end": 24
-        },
-        {
-            "scopes": [
-                "source.astro",
-                "source.ts",
-                "meta.import.ts"
-            ],
-            "text": " ",
-            "start": 24,
-            "end": 25
-        },
-        {
-            "scopes": [
-                "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "variable.other.readwrite.alias.ts"
-            ],
-            "text": "variables",
-            "start": 25,
-            "end": 34
-        },
-        {
-            "scopes": [
-                "source.astro",
-                "source.ts",
-                "meta.import.ts"
-            ],
-            "text": " ",
-            "start": 34,
-            "end": 35
-        },
-        {
-            "scopes": [
-                "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "keyword.control.from.ts"
-            ],
-            "text": "from",
-            "start": 35,
-            "end": 39
-        },
-        {
-            "scopes": [
-                "source.astro",
-                "source.ts",
-                "meta.import.ts"
-            ],
-            "text": " ",
-            "start": 39,
-            "end": 40
-        },
-        {
-            "scopes": [
-                "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "variable.other.readwrite.alias.ts"
-            ],
-            "text": "the",
-            "start": 40,
-            "end": 43
-        },
-        {
-            "scopes": [
-                "source.astro",
-                "source.ts",
-                "meta.import.ts"
-            ],
-            "text": " ",
-            "start": 43,
-            "end": 44
-        },
-        {
-            "scopes": [
-                "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "variable.other.readwrite.alias.ts"
-            ],
-            "text": "component",
-            "start": 44,
-            "end": 53
-        },
-        {
-            "scopes": [
-                "source.astro",
-                "source.ts",
-                "meta.import.ts"
-            ],
-            "text": " ",
-            "start": 53,
-            "end": 54
-        },
-        {
-            "scopes": [
-                "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "variable.other.readwrite.alias.ts"
-            ],
-            "text": "script",
-            "start": 54,
-            "end": 60
-        },
-        {
-            "scopes": [
-                "source.astro",
-                "source.ts",
-                "meta.import.ts"
-            ],
-            "text": ": -->\n",
-            "start": 60,
+            "text": "\n",
+            "start": 65,
             "end": 66
         }
     ],
@@ -1022,8 +934,9 @@
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts"
+                "meta.scope.tag.p.astro",
+                "meta.tag.start.astro",
+                "punctuation.definition.tag.begin.astro"
             ],
             "text": "<",
             "start": 0,
@@ -1032,9 +945,9 @@
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "variable.other.readwrite.alias.ts"
+                "meta.scope.tag.p.astro",
+                "meta.tag.start.astro",
+                "entity.name.tag.astro"
             ],
             "text": "p",
             "start": 1,
@@ -1043,8 +956,9 @@
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts"
+                "meta.scope.tag.p.astro",
+                "meta.tag.start.astro",
+                "punctuation.definition.tag.end.astro"
             ],
             "text": ">",
             "start": 2,
@@ -1053,10 +967,7 @@
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "meta.block.ts",
-                "punctuation.definition.block.ts"
+                "punctuation.section.embedded.begin.astro"
             ],
             "text": "{",
             "start": 3,
@@ -1065,10 +976,9 @@
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "meta.block.ts",
-                "variable.other.readwrite.alias.ts"
+                "meta.embedded.expression.astro",
+                "source.tsx",
+                "variable.other.readwrite.tsx"
             ],
             "text": "title",
             "start": 4,
@@ -1077,10 +987,7 @@
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "meta.block.ts",
-                "punctuation.definition.block.ts"
+                "punctuation.section.embedded.end.astro"
             ],
             "text": "}",
             "start": 9,
@@ -1089,8 +996,9 @@
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts"
+                "meta.scope.tag.p.astro",
+                "meta.tag.end.astro",
+                "punctuation.definition.tag.begin.astro"
             ],
             "text": "<\/",
             "start": 10,
@@ -1099,9 +1007,9 @@
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "variable.other.readwrite.alias.ts"
+                "meta.scope.tag.p.astro",
+                "meta.tag.end.astro",
+                "entity.name.tag.astro"
             ],
             "text": "p",
             "start": 12,
@@ -1110,11 +1018,21 @@
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts"
+                "meta.scope.tag.p.astro",
+                "meta.tag.end.astro",
+                "punctuation.definition.tag.end.astro"
             ],
-            "text": ">\n",
+            "text": ">",
             "start": 13,
+            "end": 14
+        },
+        {
+            "scopes": [
+                "source.astro",
+                "text.astro"
+            ],
+            "text": "\n",
+            "start": 14,
             "end": 15
         }
     ],
@@ -1122,8 +1040,7 @@
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts"
+                "text.astro"
             ],
             "text": "\n",
             "start": 0,
@@ -1134,266 +1051,39 @@
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts"
+                "comment.block.astro",
+                "punctuation.definition.comment.astro"
             ],
-            "text": "<!-- ",
+            "text": "<!--",
             "start": 0,
-            "end": 5
+            "end": 4
         },
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "variable.other.readwrite.alias.ts"
+                "comment.block.astro"
             ],
-            "text": "Include",
-            "start": 5,
-            "end": 12
+            "text": " Include other UI framework components with a `client:` directive to hydrate: ",
+            "start": 4,
+            "end": 82
         },
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts"
+                "comment.block.astro",
+                "punctuation.definition.comment.astro"
             ],
-            "text": " ",
-            "start": 12,
-            "end": 13
+            "text": "-->",
+            "start": 82,
+            "end": 85
         },
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "variable.other.readwrite.alias.ts"
+                "text.astro"
             ],
-            "text": "other",
-            "start": 13,
-            "end": 18
-        },
-        {
-            "scopes": [
-                "source.astro",
-                "source.ts",
-                "meta.import.ts"
-            ],
-            "text": " ",
-            "start": 18,
-            "end": 19
-        },
-        {
-            "scopes": [
-                "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "variable.other.readwrite.alias.ts"
-            ],
-            "text": "UI",
-            "start": 19,
-            "end": 21
-        },
-        {
-            "scopes": [
-                "source.astro",
-                "source.ts",
-                "meta.import.ts"
-            ],
-            "text": " ",
-            "start": 21,
-            "end": 22
-        },
-        {
-            "scopes": [
-                "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "variable.other.readwrite.alias.ts"
-            ],
-            "text": "framework",
-            "start": 22,
-            "end": 31
-        },
-        {
-            "scopes": [
-                "source.astro",
-                "source.ts",
-                "meta.import.ts"
-            ],
-            "text": " ",
-            "start": 31,
-            "end": 32
-        },
-        {
-            "scopes": [
-                "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "variable.other.readwrite.alias.ts"
-            ],
-            "text": "components",
-            "start": 32,
-            "end": 42
-        },
-        {
-            "scopes": [
-                "source.astro",
-                "source.ts",
-                "meta.import.ts"
-            ],
-            "text": " ",
-            "start": 42,
-            "end": 43
-        },
-        {
-            "scopes": [
-                "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "variable.other.readwrite.alias.ts"
-            ],
-            "text": "with",
-            "start": 43,
-            "end": 47
-        },
-        {
-            "scopes": [
-                "source.astro",
-                "source.ts",
-                "meta.import.ts"
-            ],
-            "text": " ",
-            "start": 47,
-            "end": 48
-        },
-        {
-            "scopes": [
-                "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "variable.other.readwrite.alias.ts"
-            ],
-            "text": "a",
-            "start": 48,
-            "end": 49
-        },
-        {
-            "scopes": [
-                "source.astro",
-                "source.ts",
-                "meta.import.ts"
-            ],
-            "text": " ",
-            "start": 49,
-            "end": 50
-        },
-        {
-            "scopes": [
-                "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "string.template.ts",
-                "punctuation.definition.string.template.begin.ts"
-            ],
-            "text": "`",
-            "start": 50,
-            "end": 51
-        },
-        {
-            "scopes": [
-                "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "string.template.ts"
-            ],
-            "text": "client:",
-            "start": 51,
-            "end": 58
-        },
-        {
-            "scopes": [
-                "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "string.template.ts",
-                "punctuation.definition.string.template.end.ts"
-            ],
-            "text": "`",
-            "start": 58,
-            "end": 59
-        },
-        {
-            "scopes": [
-                "source.astro",
-                "source.ts",
-                "meta.import.ts"
-            ],
-            "text": " ",
-            "start": 59,
-            "end": 60
-        },
-        {
-            "scopes": [
-                "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "variable.other.readwrite.alias.ts"
-            ],
-            "text": "directive",
-            "start": 60,
-            "end": 69
-        },
-        {
-            "scopes": [
-                "source.astro",
-                "source.ts",
-                "meta.import.ts"
-            ],
-            "text": " ",
-            "start": 69,
-            "end": 70
-        },
-        {
-            "scopes": [
-                "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "variable.other.readwrite.alias.ts"
-            ],
-            "text": "to",
-            "start": 70,
-            "end": 72
-        },
-        {
-            "scopes": [
-                "source.astro",
-                "source.ts",
-                "meta.import.ts"
-            ],
-            "text": " ",
-            "start": 72,
-            "end": 73
-        },
-        {
-            "scopes": [
-                "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "variable.other.readwrite.alias.ts"
-            ],
-            "text": "hydrate",
-            "start": 73,
-            "end": 80
-        },
-        {
-            "scopes": [
-                "source.astro",
-                "source.ts",
-                "meta.import.ts"
-            ],
-            "text": ": -->\n",
-            "start": 80,
+            "text": "\n",
+            "start": 85,
             "end": 86
         }
     ],
@@ -1401,8 +1091,9 @@
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts"
+                "meta.scope.tag.ReactPokemonComponent.astro",
+                "meta.tag.start.astro",
+                "punctuation.definition.tag.begin.astro"
             ],
             "text": "<",
             "start": 0,
@@ -1411,9 +1102,9 @@
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "variable.other.readwrite.alias.ts"
+                "meta.scope.tag.ReactPokemonComponent.astro",
+                "meta.tag.start.astro",
+                "support.class.component.astro"
             ],
             "text": "ReactPokemonComponent",
             "start": 1,
@@ -1422,8 +1113,8 @@
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts"
+                "meta.scope.tag.ReactPokemonComponent.astro",
+                "meta.tag.start.astro"
             ],
             "text": " ",
             "start": 22,
@@ -1432,43 +1123,43 @@
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "variable.other.readwrite.alias.ts"
+                "meta.scope.tag.ReactPokemonComponent.astro",
+                "meta.tag.start.astro",
+                "meta.attribute.client:visible.astro",
+                "entity.other.attribute-name.astro"
             ],
-            "text": "client",
+            "text": "client:visible",
             "start": 23,
-            "end": 29
-        },
-        {
-            "scopes": [
-                "source.astro",
-                "source.ts",
-                "meta.import.ts"
-            ],
-            "text": ":",
-            "start": 29,
-            "end": 30
-        },
-        {
-            "scopes": [
-                "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "variable.other.readwrite.alias.ts"
-            ],
-            "text": "visible",
-            "start": 30,
             "end": 37
         },
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts"
+                "meta.scope.tag.ReactPokemonComponent.astro",
+                "meta.tag.start.astro"
             ],
-            "text": " \/>\n",
+            "text": " ",
             "start": 37,
+            "end": 38
+        },
+        {
+            "scopes": [
+                "source.astro",
+                "meta.scope.tag.ReactPokemonComponent.astro",
+                "meta.tag.start.astro",
+                "punctuation.definition.tag.end.astro"
+            ],
+            "text": "\/>",
+            "start": 38,
+            "end": 40
+        },
+        {
+            "scopes": [
+                "source.astro",
+                "text.astro"
+            ],
+            "text": "\n",
+            "start": 40,
             "end": 41
         }
     ],
@@ -1476,8 +1167,7 @@
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts"
+                "text.astro"
             ],
             "text": "\n",
             "start": 0,
@@ -1488,190 +1178,39 @@
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts"
+                "comment.block.astro",
+                "punctuation.definition.comment.astro"
             ],
-            "text": "<!-- ",
+            "text": "<!--",
             "start": 0,
-            "end": 5
+            "end": 4
         },
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "variable.other.readwrite.alias.ts"
+                "comment.block.astro"
             ],
-            "text": "Mix",
-            "start": 5,
-            "end": 8
+            "text": " Mix HTML with JavaScript expressions, similar to JSX: ",
+            "start": 4,
+            "end": 59
         },
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts"
+                "comment.block.astro",
+                "punctuation.definition.comment.astro"
             ],
-            "text": " ",
-            "start": 8,
-            "end": 9
+            "text": "-->",
+            "start": 59,
+            "end": 62
         },
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "variable.other.readwrite.alias.ts"
+                "text.astro"
             ],
-            "text": "HTML",
-            "start": 9,
-            "end": 13
-        },
-        {
-            "scopes": [
-                "source.astro",
-                "source.ts",
-                "meta.import.ts"
-            ],
-            "text": " ",
-            "start": 13,
-            "end": 14
-        },
-        {
-            "scopes": [
-                "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "variable.other.readwrite.alias.ts"
-            ],
-            "text": "with",
-            "start": 14,
-            "end": 18
-        },
-        {
-            "scopes": [
-                "source.astro",
-                "source.ts",
-                "meta.import.ts"
-            ],
-            "text": " ",
-            "start": 18,
-            "end": 19
-        },
-        {
-            "scopes": [
-                "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "variable.other.readwrite.alias.ts"
-            ],
-            "text": "JavaScript",
-            "start": 19,
-            "end": 29
-        },
-        {
-            "scopes": [
-                "source.astro",
-                "source.ts",
-                "meta.import.ts"
-            ],
-            "text": " ",
-            "start": 29,
-            "end": 30
-        },
-        {
-            "scopes": [
-                "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "variable.other.readwrite.alias.ts"
-            ],
-            "text": "expressions",
-            "start": 30,
-            "end": 41
-        },
-        {
-            "scopes": [
-                "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "punctuation.separator.comma.ts"
-            ],
-            "text": ",",
-            "start": 41,
-            "end": 42
-        },
-        {
-            "scopes": [
-                "source.astro",
-                "source.ts",
-                "meta.import.ts"
-            ],
-            "text": " ",
-            "start": 42,
-            "end": 43
-        },
-        {
-            "scopes": [
-                "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "variable.other.readwrite.alias.ts"
-            ],
-            "text": "similar",
-            "start": 43,
-            "end": 50
-        },
-        {
-            "scopes": [
-                "source.astro",
-                "source.ts",
-                "meta.import.ts"
-            ],
-            "text": " ",
-            "start": 50,
-            "end": 51
-        },
-        {
-            "scopes": [
-                "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "variable.other.readwrite.alias.ts"
-            ],
-            "text": "to",
-            "start": 51,
-            "end": 53
-        },
-        {
-            "scopes": [
-                "source.astro",
-                "source.ts",
-                "meta.import.ts"
-            ],
-            "text": " ",
-            "start": 53,
-            "end": 54
-        },
-        {
-            "scopes": [
-                "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "variable.other.readwrite.alias.ts"
-            ],
-            "text": "JSX",
-            "start": 54,
-            "end": 57
-        },
-        {
-            "scopes": [
-                "source.astro",
-                "source.ts",
-                "meta.import.ts"
-            ],
-            "text": ": -->\n",
-            "start": 57,
+            "text": "\n",
+            "start": 62,
             "end": 63
         }
     ],
@@ -1679,8 +1218,9 @@
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts"
+                "meta.scope.tag.ul.astro",
+                "meta.tag.start.astro",
+                "punctuation.definition.tag.begin.astro"
             ],
             "text": "<",
             "start": 0,
@@ -1689,9 +1229,9 @@
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "variable.other.readwrite.alias.ts"
+                "meta.scope.tag.ul.astro",
+                "meta.tag.start.astro",
+                "entity.name.tag.astro"
             ],
             "text": "ul",
             "start": 1,
@@ -1700,11 +1240,21 @@
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts"
+                "meta.scope.tag.ul.astro",
+                "meta.tag.start.astro",
+                "punctuation.definition.tag.end.astro"
             ],
-            "text": ">\n",
+            "text": ">",
             "start": 3,
+            "end": 4
+        },
+        {
+            "scopes": [
+                "source.astro",
+                "text.astro"
+            ],
+            "text": "\n",
+            "start": 4,
             "end": 5
         }
     ],
@@ -1712,8 +1262,7 @@
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts"
+                "text.astro"
             ],
             "text": "  ",
             "start": 0,
@@ -1722,10 +1271,7 @@
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "meta.block.ts",
-                "punctuation.definition.block.ts"
+                "punctuation.section.embedded.begin.astro"
             ],
             "text": "{",
             "start": 2,
@@ -1734,10 +1280,10 @@
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "meta.block.ts",
-                "variable.other.readwrite.alias.ts"
+                "meta.embedded.expression.astro",
+                "source.tsx",
+                "meta.function-call.tsx",
+                "variable.other.object.tsx"
             ],
             "text": "myFavoritePokemon",
             "start": 3,
@@ -1746,9 +1292,10 @@
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "meta.block.ts"
+                "meta.embedded.expression.astro",
+                "source.tsx",
+                "meta.function-call.tsx",
+                "punctuation.accessor.tsx"
             ],
             "text": ".",
             "start": 20,
@@ -1757,10 +1304,10 @@
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "meta.block.ts",
-                "variable.other.readwrite.alias.ts"
+                "meta.embedded.expression.astro",
+                "source.tsx",
+                "meta.function-call.tsx",
+                "entity.name.function.tsx"
             ],
             "text": "map",
             "start": 21,
@@ -1769,21 +1316,35 @@
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "meta.block.ts"
+                "meta.embedded.expression.astro",
+                "source.tsx",
+                "meta.brace.round.tsx"
             ],
-            "text": "((",
+            "text": "(",
             "start": 24,
+            "end": 25
+        },
+        {
+            "scopes": [
+                "source.astro",
+                "meta.embedded.expression.astro",
+                "source.tsx",
+                "meta.arrow.tsx",
+                "meta.parameters.tsx",
+                "punctuation.definition.parameters.begin.tsx"
+            ],
+            "text": "(",
+            "start": 25,
             "end": 26
         },
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "meta.block.ts",
-                "variable.other.readwrite.alias.ts"
+                "meta.embedded.expression.astro",
+                "source.tsx",
+                "meta.arrow.tsx",
+                "meta.parameters.tsx",
+                "variable.parameter.tsx"
             ],
             "text": "data",
             "start": 26,
@@ -1792,21 +1353,71 @@
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "meta.block.ts"
+                "meta.embedded.expression.astro",
+                "source.tsx",
+                "meta.arrow.tsx",
+                "meta.parameters.tsx",
+                "punctuation.definition.parameters.end.tsx"
             ],
-            "text": ") => <",
+            "text": ")",
             "start": 30,
+            "end": 31
+        },
+        {
+            "scopes": [
+                "source.astro",
+                "meta.embedded.expression.astro",
+                "source.tsx",
+                "meta.arrow.tsx"
+            ],
+            "text": " ",
+            "start": 31,
+            "end": 32
+        },
+        {
+            "scopes": [
+                "source.astro",
+                "meta.embedded.expression.astro",
+                "source.tsx",
+                "meta.arrow.tsx",
+                "storage.type.function.arrow.tsx"
+            ],
+            "text": "=>",
+            "start": 32,
+            "end": 34
+        },
+        {
+            "scopes": [
+                "source.astro",
+                "meta.embedded.expression.astro",
+                "source.tsx",
+                "meta.arrow.tsx"
+            ],
+            "text": " ",
+            "start": 34,
+            "end": 35
+        },
+        {
+            "scopes": [
+                "source.astro",
+                "meta.embedded.expression.astro",
+                "source.tsx",
+                "meta.arrow.tsx",
+                "meta.tag.without-attributes.tsx",
+                "punctuation.definition.tag.begin.tsx"
+            ],
+            "text": "<",
+            "start": 35,
             "end": 36
         },
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "meta.block.ts",
-                "variable.other.readwrite.alias.ts"
+                "meta.embedded.expression.astro",
+                "source.tsx",
+                "meta.arrow.tsx",
+                "meta.tag.without-attributes.tsx",
+                "entity.name.tag.tsx"
             ],
             "text": "li",
             "start": 36,
@@ -1815,21 +1426,40 @@
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "meta.block.ts"
+                "meta.embedded.expression.astro",
+                "source.tsx",
+                "meta.arrow.tsx",
+                "meta.tag.without-attributes.tsx",
+                "punctuation.definition.tag.end.tsx"
             ],
-            "text": ">{",
+            "text": ">",
             "start": 38,
+            "end": 39
+        },
+        {
+            "scopes": [
+                "source.astro",
+                "meta.embedded.expression.astro",
+                "source.tsx",
+                "meta.arrow.tsx",
+                "meta.tag.without-attributes.tsx",
+                "meta.jsx.children.tsx",
+                "punctuation.section.embedded.begin.tsx"
+            ],
+            "text": "{",
+            "start": 39,
             "end": 40
         },
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "meta.block.ts",
-                "variable.other.readwrite.alias.ts"
+                "meta.embedded.expression.astro",
+                "source.tsx",
+                "meta.arrow.tsx",
+                "meta.tag.without-attributes.tsx",
+                "meta.jsx.children.tsx",
+                "meta.embedded.expression.tsx",
+                "variable.other.object.tsx"
             ],
             "text": "data",
             "start": 40,
@@ -1838,9 +1468,13 @@
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "meta.block.ts"
+                "meta.embedded.expression.astro",
+                "source.tsx",
+                "meta.arrow.tsx",
+                "meta.tag.without-attributes.tsx",
+                "meta.jsx.children.tsx",
+                "meta.embedded.expression.tsx",
+                "punctuation.accessor.tsx"
             ],
             "text": ".",
             "start": 44,
@@ -1849,10 +1483,13 @@
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "meta.block.ts",
-                "variable.other.readwrite.alias.ts"
+                "meta.embedded.expression.astro",
+                "source.tsx",
+                "meta.arrow.tsx",
+                "meta.tag.without-attributes.tsx",
+                "meta.jsx.children.tsx",
+                "meta.embedded.expression.tsx",
+                "variable.other.property.tsx"
             ],
             "text": "name",
             "start": 45,
@@ -1861,10 +1498,12 @@
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "meta.block.ts",
-                "punctuation.definition.block.ts"
+                "meta.embedded.expression.astro",
+                "source.tsx",
+                "meta.arrow.tsx",
+                "meta.tag.without-attributes.tsx",
+                "meta.jsx.children.tsx",
+                "punctuation.section.embedded.end.tsx"
             ],
             "text": "}",
             "start": 49,
@@ -1873,8 +1512,11 @@
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts"
+                "meta.embedded.expression.astro",
+                "source.tsx",
+                "meta.arrow.tsx",
+                "meta.tag.without-attributes.tsx",
+                "punctuation.definition.tag.begin.tsx"
             ],
             "text": "<\/",
             "start": 50,
@@ -1883,9 +1525,11 @@
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "variable.other.readwrite.alias.ts"
+                "meta.embedded.expression.astro",
+                "source.tsx",
+                "meta.arrow.tsx",
+                "meta.tag.without-attributes.tsx",
+                "entity.name.tag.tsx"
             ],
             "text": "li",
             "start": 52,
@@ -1894,11 +1538,43 @@
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts"
+                "meta.embedded.expression.astro",
+                "source.tsx",
+                "meta.arrow.tsx",
+                "meta.tag.without-attributes.tsx",
+                "punctuation.definition.tag.end.tsx"
             ],
-            "text": ">)}\n",
+            "text": ">",
             "start": 54,
+            "end": 55
+        },
+        {
+            "scopes": [
+                "source.astro",
+                "meta.embedded.expression.astro",
+                "source.tsx",
+                "meta.brace.round.tsx"
+            ],
+            "text": ")",
+            "start": 55,
+            "end": 56
+        },
+        {
+            "scopes": [
+                "source.astro",
+                "punctuation.section.embedded.end.astro"
+            ],
+            "text": "}",
+            "start": 56,
+            "end": 57
+        },
+        {
+            "scopes": [
+                "source.astro",
+                "text.astro"
+            ],
+            "text": "\n",
+            "start": 57,
             "end": 58
         }
     ],
@@ -1906,8 +1582,9 @@
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts"
+                "meta.scope.tag.ul.astro",
+                "meta.tag.end.astro",
+                "punctuation.definition.tag.begin.astro"
             ],
             "text": "<\/",
             "start": 0,
@@ -1916,9 +1593,9 @@
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "variable.other.readwrite.alias.ts"
+                "meta.scope.tag.ul.astro",
+                "meta.tag.end.astro",
+                "entity.name.tag.astro"
             ],
             "text": "ul",
             "start": 2,
@@ -1927,11 +1604,21 @@
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts"
+                "meta.scope.tag.ul.astro",
+                "meta.tag.end.astro",
+                "punctuation.definition.tag.end.astro"
             ],
-            "text": ">\n",
+            "text": ">",
             "start": 4,
+            "end": 5
+        },
+        {
+            "scopes": [
+                "source.astro",
+                "text.astro"
+            ],
+            "text": "\n",
+            "start": 5,
             "end": 6
         }
     ],
@@ -1939,8 +1626,7 @@
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts"
+                "text.astro"
             ],
             "text": "\n",
             "start": 0,
@@ -1951,305 +1637,39 @@
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts"
+                "comment.block.astro",
+                "punctuation.definition.comment.astro"
             ],
-            "text": "<!-- ",
+            "text": "<!--",
             "start": 0,
-            "end": 5
+            "end": 4
         },
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "variable.other.readwrite.alias.ts"
+                "comment.block.astro"
             ],
-            "text": "Use",
-            "start": 5,
-            "end": 8
+            "text": " Use a template directive to build class names from multiple strings or even objects! ",
+            "start": 4,
+            "end": 90
         },
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts"
+                "comment.block.astro",
+                "punctuation.definition.comment.astro"
             ],
-            "text": " ",
-            "start": 8,
-            "end": 9
+            "text": "-->",
+            "start": 90,
+            "end": 93
         },
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "variable.other.readwrite.alias.ts"
+                "text.astro"
             ],
-            "text": "a",
-            "start": 9,
-            "end": 10
-        },
-        {
-            "scopes": [
-                "source.astro",
-                "source.ts",
-                "meta.import.ts"
-            ],
-            "text": " ",
-            "start": 10,
-            "end": 11
-        },
-        {
-            "scopes": [
-                "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "variable.other.readwrite.alias.ts"
-            ],
-            "text": "template",
-            "start": 11,
-            "end": 19
-        },
-        {
-            "scopes": [
-                "source.astro",
-                "source.ts",
-                "meta.import.ts"
-            ],
-            "text": " ",
-            "start": 19,
-            "end": 20
-        },
-        {
-            "scopes": [
-                "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "variable.other.readwrite.alias.ts"
-            ],
-            "text": "directive",
-            "start": 20,
-            "end": 29
-        },
-        {
-            "scopes": [
-                "source.astro",
-                "source.ts",
-                "meta.import.ts"
-            ],
-            "text": " ",
-            "start": 29,
-            "end": 30
-        },
-        {
-            "scopes": [
-                "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "variable.other.readwrite.alias.ts"
-            ],
-            "text": "to",
-            "start": 30,
-            "end": 32
-        },
-        {
-            "scopes": [
-                "source.astro",
-                "source.ts",
-                "meta.import.ts"
-            ],
-            "text": " ",
-            "start": 32,
-            "end": 33
-        },
-        {
-            "scopes": [
-                "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "variable.other.readwrite.alias.ts"
-            ],
-            "text": "build",
-            "start": 33,
-            "end": 38
-        },
-        {
-            "scopes": [
-                "source.astro",
-                "source.ts",
-                "meta.import.ts"
-            ],
-            "text": " ",
-            "start": 38,
-            "end": 39
-        },
-        {
-            "scopes": [
-                "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "variable.other.readwrite.alias.ts"
-            ],
-            "text": "class",
-            "start": 39,
-            "end": 44
-        },
-        {
-            "scopes": [
-                "source.astro",
-                "source.ts",
-                "meta.import.ts"
-            ],
-            "text": " ",
-            "start": 44,
-            "end": 45
-        },
-        {
-            "scopes": [
-                "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "variable.other.readwrite.alias.ts"
-            ],
-            "text": "names",
-            "start": 45,
-            "end": 50
-        },
-        {
-            "scopes": [
-                "source.astro",
-                "source.ts",
-                "meta.import.ts"
-            ],
-            "text": " ",
-            "start": 50,
-            "end": 51
-        },
-        {
-            "scopes": [
-                "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "keyword.control.from.ts"
-            ],
-            "text": "from",
-            "start": 51,
-            "end": 55
-        },
-        {
-            "scopes": [
-                "source.astro",
-                "source.ts",
-                "meta.import.ts"
-            ],
-            "text": " ",
-            "start": 55,
-            "end": 56
-        },
-        {
-            "scopes": [
-                "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "variable.other.readwrite.alias.ts"
-            ],
-            "text": "multiple",
-            "start": 56,
-            "end": 64
-        },
-        {
-            "scopes": [
-                "source.astro",
-                "source.ts",
-                "meta.import.ts"
-            ],
-            "text": " ",
-            "start": 64,
-            "end": 65
-        },
-        {
-            "scopes": [
-                "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "variable.other.readwrite.alias.ts"
-            ],
-            "text": "strings",
-            "start": 65,
-            "end": 72
-        },
-        {
-            "scopes": [
-                "source.astro",
-                "source.ts",
-                "meta.import.ts"
-            ],
-            "text": " ",
-            "start": 72,
-            "end": 73
-        },
-        {
-            "scopes": [
-                "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "variable.other.readwrite.alias.ts"
-            ],
-            "text": "or",
-            "start": 73,
-            "end": 75
-        },
-        {
-            "scopes": [
-                "source.astro",
-                "source.ts",
-                "meta.import.ts"
-            ],
-            "text": " ",
-            "start": 75,
-            "end": 76
-        },
-        {
-            "scopes": [
-                "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "variable.other.readwrite.alias.ts"
-            ],
-            "text": "even",
-            "start": 76,
-            "end": 80
-        },
-        {
-            "scopes": [
-                "source.astro",
-                "source.ts",
-                "meta.import.ts"
-            ],
-            "text": " ",
-            "start": 80,
-            "end": 81
-        },
-        {
-            "scopes": [
-                "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "variable.other.readwrite.alias.ts"
-            ],
-            "text": "objects",
-            "start": 81,
-            "end": 88
-        },
-        {
-            "scopes": [
-                "source.astro",
-                "source.ts",
-                "meta.import.ts"
-            ],
-            "text": "! -->\n",
-            "start": 88,
+            "text": "\n",
+            "start": 93,
             "end": 94
         }
     ],
@@ -2257,8 +1677,9 @@
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts"
+                "meta.scope.tag.p.astro",
+                "meta.tag.start.astro",
+                "punctuation.definition.tag.begin.astro"
             ],
             "text": "<",
             "start": 0,
@@ -2267,9 +1688,9 @@
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "variable.other.readwrite.alias.ts"
+                "meta.scope.tag.p.astro",
+                "meta.tag.start.astro",
+                "entity.name.tag.astro"
             ],
             "text": "p",
             "start": 1,
@@ -2278,8 +1699,8 @@
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts"
+                "meta.scope.tag.p.astro",
+                "meta.tag.start.astro"
             ],
             "text": " ",
             "start": 2,
@@ -2288,40 +1709,22 @@
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "variable.other.readwrite.alias.ts"
+                "meta.scope.tag.p.astro",
+                "meta.tag.start.astro",
+                "meta.attribute.class:list.astro",
+                "entity.other.attribute-name.astro"
             ],
-            "text": "class",
+            "text": "class:list",
             "start": 3,
-            "end": 8
-        },
-        {
-            "scopes": [
-                "source.astro",
-                "source.ts",
-                "meta.import.ts"
-            ],
-            "text": ":",
-            "start": 8,
-            "end": 9
-        },
-        {
-            "scopes": [
-                "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "variable.other.readwrite.alias.ts"
-            ],
-            "text": "list",
-            "start": 9,
             "end": 13
         },
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts"
+                "meta.scope.tag.p.astro",
+                "meta.tag.start.astro",
+                "meta.attribute.class:list.astro",
+                "punctuation.separator.key-value.astro"
             ],
             "text": "=",
             "start": 13,
@@ -2330,10 +1733,10 @@
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "meta.block.ts",
-                "punctuation.definition.block.ts"
+                "meta.scope.tag.p.astro",
+                "meta.tag.start.astro",
+                "meta.attribute.class:list.astro",
+                "punctuation.section.embedded.begin.astro"
             ],
             "text": "{",
             "start": 14,
@@ -2342,9 +1745,13 @@
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "meta.block.ts"
+                "meta.scope.tag.p.astro",
+                "meta.tag.start.astro",
+                "meta.attribute.class:list.astro",
+                "meta.embedded.expression.astro",
+                "source.tsx",
+                "meta.array.literal.tsx",
+                "meta.brace.square.tsx"
             ],
             "text": "[",
             "start": 15,
@@ -2353,22 +1760,60 @@
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "meta.block.ts",
-                "string.quoted.alias.ts"
+                "meta.scope.tag.p.astro",
+                "meta.tag.start.astro",
+                "meta.attribute.class:list.astro",
+                "meta.embedded.expression.astro",
+                "source.tsx",
+                "meta.array.literal.tsx",
+                "string.quoted.double.tsx",
+                "punctuation.definition.string.begin.tsx"
             ],
-            "text": "\"add\"",
+            "text": "\"",
             "start": 16,
+            "end": 17
+        },
+        {
+            "scopes": [
+                "source.astro",
+                "meta.scope.tag.p.astro",
+                "meta.tag.start.astro",
+                "meta.attribute.class:list.astro",
+                "meta.embedded.expression.astro",
+                "source.tsx",
+                "meta.array.literal.tsx",
+                "string.quoted.double.tsx"
+            ],
+            "text": "add",
+            "start": 17,
+            "end": 20
+        },
+        {
+            "scopes": [
+                "source.astro",
+                "meta.scope.tag.p.astro",
+                "meta.tag.start.astro",
+                "meta.attribute.class:list.astro",
+                "meta.embedded.expression.astro",
+                "source.tsx",
+                "meta.array.literal.tsx",
+                "string.quoted.double.tsx",
+                "punctuation.definition.string.end.tsx"
+            ],
+            "text": "\"",
+            "start": 20,
             "end": 21
         },
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "meta.block.ts",
-                "punctuation.separator.comma.ts"
+                "meta.scope.tag.p.astro",
+                "meta.tag.start.astro",
+                "meta.attribute.class:list.astro",
+                "meta.embedded.expression.astro",
+                "source.tsx",
+                "meta.array.literal.tsx",
+                "punctuation.separator.comma.tsx"
             ],
             "text": ",",
             "start": 21,
@@ -2377,9 +1822,12 @@
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "meta.block.ts"
+                "meta.scope.tag.p.astro",
+                "meta.tag.start.astro",
+                "meta.attribute.class:list.astro",
+                "meta.embedded.expression.astro",
+                "source.tsx",
+                "meta.array.literal.tsx"
             ],
             "text": " ",
             "start": 22,
@@ -2388,22 +1836,60 @@
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "meta.block.ts",
-                "string.quoted.alias.ts"
+                "meta.scope.tag.p.astro",
+                "meta.tag.start.astro",
+                "meta.attribute.class:list.astro",
+                "meta.embedded.expression.astro",
+                "source.tsx",
+                "meta.array.literal.tsx",
+                "string.quoted.double.tsx",
+                "punctuation.definition.string.begin.tsx"
             ],
-            "text": "\"dynamic\"",
+            "text": "\"",
             "start": 23,
+            "end": 24
+        },
+        {
+            "scopes": [
+                "source.astro",
+                "meta.scope.tag.p.astro",
+                "meta.tag.start.astro",
+                "meta.attribute.class:list.astro",
+                "meta.embedded.expression.astro",
+                "source.tsx",
+                "meta.array.literal.tsx",
+                "string.quoted.double.tsx"
+            ],
+            "text": "dynamic",
+            "start": 24,
+            "end": 31
+        },
+        {
+            "scopes": [
+                "source.astro",
+                "meta.scope.tag.p.astro",
+                "meta.tag.start.astro",
+                "meta.attribute.class:list.astro",
+                "meta.embedded.expression.astro",
+                "source.tsx",
+                "meta.array.literal.tsx",
+                "string.quoted.double.tsx",
+                "punctuation.definition.string.end.tsx"
+            ],
+            "text": "\"",
+            "start": 31,
             "end": 32
         },
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "meta.block.ts",
-                "punctuation.separator.comma.ts"
+                "meta.scope.tag.p.astro",
+                "meta.tag.start.astro",
+                "meta.attribute.class:list.astro",
+                "meta.embedded.expression.astro",
+                "source.tsx",
+                "meta.array.literal.tsx",
+                "punctuation.separator.comma.tsx"
             ],
             "text": ",",
             "start": 32,
@@ -2412,21 +1898,45 @@
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "meta.block.ts"
+                "meta.scope.tag.p.astro",
+                "meta.tag.start.astro",
+                "meta.attribute.class:list.astro",
+                "meta.embedded.expression.astro",
+                "source.tsx",
+                "meta.array.literal.tsx"
             ],
-            "text": " {",
+            "text": " ",
             "start": 33,
+            "end": 34
+        },
+        {
+            "scopes": [
+                "source.astro",
+                "meta.scope.tag.p.astro",
+                "meta.tag.start.astro",
+                "meta.attribute.class:list.astro",
+                "meta.embedded.expression.astro",
+                "source.tsx",
+                "meta.array.literal.tsx",
+                "meta.objectliteral.tsx",
+                "punctuation.definition.block.tsx"
+            ],
+            "text": "{",
+            "start": 34,
             "end": 35
         },
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "meta.block.ts",
-                "variable.other.readwrite.alias.ts"
+                "meta.scope.tag.p.astro",
+                "meta.tag.start.astro",
+                "meta.attribute.class:list.astro",
+                "meta.embedded.expression.astro",
+                "source.tsx",
+                "meta.array.literal.tsx",
+                "meta.objectliteral.tsx",
+                "meta.object.member.tsx",
+                "meta.object-literal.key.tsx"
             ],
             "text": "classNames",
             "start": 35,
@@ -2435,21 +1945,49 @@
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "meta.block.ts"
+                "meta.scope.tag.p.astro",
+                "meta.tag.start.astro",
+                "meta.attribute.class:list.astro",
+                "meta.embedded.expression.astro",
+                "source.tsx",
+                "meta.array.literal.tsx",
+                "meta.objectliteral.tsx",
+                "meta.object.member.tsx",
+                "meta.object-literal.key.tsx",
+                "punctuation.separator.key-value.tsx"
             ],
-            "text": ": ",
+            "text": ":",
             "start": 45,
+            "end": 46
+        },
+        {
+            "scopes": [
+                "source.astro",
+                "meta.scope.tag.p.astro",
+                "meta.tag.start.astro",
+                "meta.attribute.class:list.astro",
+                "meta.embedded.expression.astro",
+                "source.tsx",
+                "meta.array.literal.tsx",
+                "meta.objectliteral.tsx",
+                "meta.object.member.tsx"
+            ],
+            "text": " ",
+            "start": 46,
             "end": 47
         },
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "meta.block.ts",
-                "variable.other.readwrite.alias.ts"
+                "meta.scope.tag.p.astro",
+                "meta.tag.start.astro",
+                "meta.attribute.class:list.astro",
+                "meta.embedded.expression.astro",
+                "source.tsx",
+                "meta.array.literal.tsx",
+                "meta.objectliteral.tsx",
+                "meta.object.member.tsx",
+                "constant.language.boolean.true.tsx"
             ],
             "text": "true",
             "start": 47,
@@ -2458,10 +1996,14 @@
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "meta.block.ts",
-                "punctuation.definition.block.ts"
+                "meta.scope.tag.p.astro",
+                "meta.tag.start.astro",
+                "meta.attribute.class:list.astro",
+                "meta.embedded.expression.astro",
+                "source.tsx",
+                "meta.array.literal.tsx",
+                "meta.objectliteral.tsx",
+                "punctuation.definition.block.tsx"
             ],
             "text": "}",
             "start": 51,
@@ -2470,11 +2012,58 @@
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts"
+                "meta.scope.tag.p.astro",
+                "meta.tag.start.astro",
+                "meta.attribute.class:list.astro",
+                "meta.embedded.expression.astro",
+                "source.tsx",
+                "meta.array.literal.tsx",
+                "meta.brace.square.tsx"
             ],
-            "text": "]} \/>\n",
+            "text": "]",
             "start": 52,
+            "end": 53
+        },
+        {
+            "scopes": [
+                "source.astro",
+                "meta.scope.tag.p.astro",
+                "meta.tag.start.astro",
+                "meta.attribute.class:list.astro",
+                "punctuation.section.embedded.end.astro"
+            ],
+            "text": "}",
+            "start": 53,
+            "end": 54
+        },
+        {
+            "scopes": [
+                "source.astro",
+                "meta.scope.tag.p.astro",
+                "meta.tag.start.astro"
+            ],
+            "text": " ",
+            "start": 54,
+            "end": 55
+        },
+        {
+            "scopes": [
+                "source.astro",
+                "meta.scope.tag.p.astro",
+                "meta.tag.start.astro",
+                "punctuation.definition.tag.end.astro"
+            ],
+            "text": "\/>",
+            "start": 55,
+            "end": 57
+        },
+        {
+            "scopes": [
+                "source.astro",
+                "text.astro"
+            ],
+            "text": "\n",
+            "start": 57,
             "end": 58
         }
     ],
@@ -2482,8 +2071,7 @@
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts"
+                "text.astro"
             ],
             "text": "\n",
             "start": 0,
@@ -2494,76 +2082,39 @@
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts"
+                "comment.block.astro",
+                "punctuation.definition.comment.astro"
             ],
-            "text": "<!-- ",
+            "text": "<!--",
             "start": 0,
-            "end": 5
+            "end": 4
         },
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "variable.other.readwrite.alias.ts"
+                "comment.block.astro"
             ],
-            "text": "From",
-            "start": 5,
-            "end": 9
+            "text": " From https:\/\/docs.astro.build\/en\/core-concepts\/astro-components\/ ",
+            "start": 4,
+            "end": 70
         },
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts"
+                "comment.block.astro",
+                "punctuation.definition.comment.astro"
             ],
-            "text": " ",
-            "start": 9,
-            "end": 10
+            "text": "-->",
+            "start": 70,
+            "end": 73
         },
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "variable.other.readwrite.alias.ts"
+                "text.astro"
             ],
-            "text": "https",
-            "start": 10,
-            "end": 15
-        },
-        {
-            "scopes": [
-                "source.astro",
-                "source.ts",
-                "meta.import.ts"
-            ],
-            "text": ":",
-            "start": 15,
-            "end": 16
-        },
-        {
-            "scopes": [
-                "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "comment.line.double-slash.ts",
-                "punctuation.definition.comment.ts"
-            ],
-            "text": "\/\/",
-            "start": 16,
-            "end": 18
-        },
-        {
-            "scopes": [
-                "source.astro",
-                "source.ts",
-                "meta.import.ts",
-                "comment.line.double-slash.ts"
-            ],
-            "text": "docs.astro.build\/en\/core-concepts\/astro-components\/ -->\n",
-            "start": 18,
+            "text": "\n",
+            "start": 73,
             "end": 74
         }
     ],
@@ -2571,8 +2122,7 @@
         {
             "scopes": [
                 "source.astro",
-                "source.ts",
-                "meta.import.ts"
+                "text.astro"
             ],
             "text": "\n",
             "start": 0,

@@ -236,7 +236,7 @@
             "scopes": [
                 "source.jinja",
                 "meta.scope.jinja.tag",
-                "variable.other.jinja"
+                "keyword.control.jinja"
             ],
             "text": "for",
             "start": 5,
@@ -597,7 +597,7 @@
             "scopes": [
                 "source.jinja",
                 "meta.scope.jinja.tag",
-                "variable.other.jinja"
+                "keyword.control.jinja"
             ],
             "text": "endfor",
             "start": 5,

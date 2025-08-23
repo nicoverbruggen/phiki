@@ -247,8 +247,14 @@
             "scopes": [
                 "text.shell-session",
                 "source.shell",
+                "meta.statement.shell",
+                "meta.statement.command.shell",
+                "meta.statement.command.name.shell",
+                "meta.statement.command.name.quoted.shell",
                 "string.quoted.single.shell",
-                "punctuation.definition.string.begin.shell"
+                "punctuation.definition.string.begin.shell",
+                "entity.name.function.call.shell",
+                "entity.name.command.shell"
             ],
             "text": "'",
             "start": 7,
@@ -258,7 +264,13 @@
             "scopes": [
                 "text.shell-session",
                 "source.shell",
-                "string.quoted.single.shell"
+                "meta.statement.shell",
+                "meta.statement.command.shell",
+                "meta.statement.command.name.shell",
+                "meta.statement.command.name.continuation",
+                "string.quoted.single",
+                "entity.name.function.call",
+                "entity.name.command"
             ],
             "text": "\n",
             "start": 8,

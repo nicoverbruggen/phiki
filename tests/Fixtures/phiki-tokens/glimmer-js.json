@@ -135,10 +135,18 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js"
+                "punctuation.terminator.statement.js"
             ],
-            "text": ";\n",
+            "text": ";",
             "start": 48,
+            "end": 49
+        },
+        {
+            "scopes": [
+                "source.gjs"
+            ],
+            "text": "\n",
+            "start": 49,
             "end": 50
         }
     ],
@@ -147,7 +155,7 @@
             "scopes": [
                 "source.gjs",
                 "meta.import.js",
-                "variable.other.readwrite.alias.js"
+                "keyword.control.import.js"
             ],
             "text": "import",
             "start": 0,
@@ -278,18 +286,25 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js"
+                "punctuation.terminator.statement.js"
             ],
-            "text": ";\n",
+            "text": ";",
             "start": 41,
+            "end": 42
+        },
+        {
+            "scopes": [
+                "source.gjs"
+            ],
+            "text": "\n",
+            "start": 42,
             "end": 43
         }
     ],
     [
         {
             "scopes": [
-                "source.gjs",
-                "meta.import.js"
+                "source.gjs"
             ],
             "text": "\n",
             "start": 0,
@@ -300,8 +315,8 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js",
-                "variable.other.readwrite.alias.js"
+                "meta.var.expr.js",
+                "storage.type.js"
             ],
             "text": "const",
             "start": 0,
@@ -310,7 +325,7 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js"
+                "meta.var.expr.js"
             ],
             "text": " ",
             "start": 5,
@@ -319,8 +334,10 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js",
-                "variable.other.readwrite.alias.js"
+                "meta.var.expr.js",
+                "meta.var-single-variable.expr.js",
+                "meta.definition.variable.js",
+                "variable.other.constant.js"
             ],
             "text": "plusOne",
             "start": 6,
@@ -329,17 +346,38 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js"
+                "meta.var.expr.js",
+                "meta.var-single-variable.expr.js"
             ],
-            "text": " = ",
+            "text": " ",
             "start": 13,
+            "end": 14
+        },
+        {
+            "scopes": [
+                "source.gjs",
+                "meta.var.expr.js",
+                "keyword.operator.assignment.js"
+            ],
+            "text": "=",
+            "start": 14,
+            "end": 15
+        },
+        {
+            "scopes": [
+                "source.gjs",
+                "meta.var.expr.js"
+            ],
+            "text": " ",
+            "start": 15,
             "end": 16
         },
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js",
-                "variable.other.readwrite.alias.js"
+                "meta.var.expr.js",
+                "meta.function-call.js",
+                "entity.name.function.js"
             ],
             "text": "helper",
             "start": 16,
@@ -348,17 +386,46 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js"
+                "meta.var.expr.js",
+                "meta.brace.round.js"
             ],
-            "text": "(([",
+            "text": "(",
             "start": 22,
+            "end": 23
+        },
+        {
+            "scopes": [
+                "source.gjs",
+                "meta.var.expr.js",
+                "meta.arrow.js",
+                "meta.parameters.js",
+                "punctuation.definition.parameters.begin.js"
+            ],
+            "text": "(",
+            "start": 23,
+            "end": 24
+        },
+        {
+            "scopes": [
+                "source.gjs",
+                "meta.var.expr.js",
+                "meta.arrow.js",
+                "meta.parameters.js",
+                "meta.paramter.array-binding-pattern.js",
+                "punctuation.definition.binding-pattern.array.js"
+            ],
+            "text": "[",
+            "start": 24,
             "end": 25
         },
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js",
-                "variable.other.readwrite.alias.js"
+                "meta.var.expr.js",
+                "meta.arrow.js",
+                "meta.parameters.js",
+                "meta.paramter.array-binding-pattern.js",
+                "variable.parameter.js"
             ],
             "text": "num",
             "start": 25,
@@ -367,17 +434,64 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js"
+                "meta.var.expr.js",
+                "meta.arrow.js",
+                "meta.parameters.js",
+                "meta.paramter.array-binding-pattern.js",
+                "punctuation.definition.binding-pattern.array.js"
             ],
-            "text": "]) => ",
+            "text": "]",
             "start": 28,
+            "end": 29
+        },
+        {
+            "scopes": [
+                "source.gjs",
+                "meta.var.expr.js",
+                "meta.arrow.js",
+                "meta.parameters.js",
+                "punctuation.definition.parameters.end.js"
+            ],
+            "text": ")",
+            "start": 29,
+            "end": 30
+        },
+        {
+            "scopes": [
+                "source.gjs",
+                "meta.var.expr.js",
+                "meta.arrow.js"
+            ],
+            "text": " ",
+            "start": 30,
+            "end": 31
+        },
+        {
+            "scopes": [
+                "source.gjs",
+                "meta.var.expr.js",
+                "meta.arrow.js",
+                "storage.type.function.arrow.js"
+            ],
+            "text": "=>",
+            "start": 31,
+            "end": 33
+        },
+        {
+            "scopes": [
+                "source.gjs",
+                "meta.var.expr.js",
+                "meta.arrow.js"
+            ],
+            "text": " ",
+            "start": 33,
             "end": 34
         },
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js",
-                "variable.other.readwrite.alias.js"
+                "meta.var.expr.js",
+                "variable.other.readwrite.js"
             ],
             "text": "num",
             "start": 34,
@@ -386,18 +500,73 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js"
+                "meta.var.expr.js"
             ],
-            "text": " + 1);\n",
+            "text": " ",
             "start": 37,
+            "end": 38
+        },
+        {
+            "scopes": [
+                "source.gjs",
+                "meta.var.expr.js",
+                "keyword.operator.arithmetic.js"
+            ],
+            "text": "+",
+            "start": 38,
+            "end": 39
+        },
+        {
+            "scopes": [
+                "source.gjs",
+                "meta.var.expr.js"
+            ],
+            "text": " ",
+            "start": 39,
+            "end": 40
+        },
+        {
+            "scopes": [
+                "source.gjs",
+                "meta.var.expr.js",
+                "constant.numeric.decimal.js"
+            ],
+            "text": "1",
+            "start": 40,
+            "end": 41
+        },
+        {
+            "scopes": [
+                "source.gjs",
+                "meta.var.expr.js",
+                "meta.brace.round.js"
+            ],
+            "text": ")",
+            "start": 41,
+            "end": 42
+        },
+        {
+            "scopes": [
+                "source.gjs",
+                "punctuation.terminator.statement.js"
+            ],
+            "text": ";",
+            "start": 42,
+            "end": 43
+        },
+        {
+            "scopes": [
+                "source.gjs"
+            ],
+            "text": "\n",
+            "start": 43,
             "end": 44
         }
     ],
     [
         {
             "scopes": [
-                "source.gjs",
-                "meta.import.js"
+                "source.gjs"
             ],
             "text": "\n",
             "start": 0,
@@ -408,8 +577,8 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js",
-                "variable.other.readwrite.alias.js"
+                "meta.var.expr.js",
+                "storage.type.js"
             ],
             "text": "const",
             "start": 0,
@@ -418,7 +587,7 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js"
+                "meta.var.expr.js"
             ],
             "text": " ",
             "start": 5,
@@ -427,8 +596,10 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js",
-                "variable.other.readwrite.alias.js"
+                "meta.var.expr.js",
+                "meta.var-single-variable.expr.js",
+                "meta.definition.variable.js",
+                "variable.other.constant.js"
             ],
             "text": "setScrollPosition",
             "start": 6,
@@ -437,17 +608,38 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js"
+                "meta.var.expr.js",
+                "meta.var-single-variable.expr.js"
             ],
-            "text": " = ",
+            "text": " ",
             "start": 23,
+            "end": 24
+        },
+        {
+            "scopes": [
+                "source.gjs",
+                "meta.var.expr.js",
+                "keyword.operator.assignment.js"
+            ],
+            "text": "=",
+            "start": 24,
+            "end": 25
+        },
+        {
+            "scopes": [
+                "source.gjs",
+                "meta.var.expr.js"
+            ],
+            "text": " ",
+            "start": 25,
             "end": 26
         },
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js",
-                "variable.other.readwrite.alias.js"
+                "meta.var.expr.js",
+                "meta.function-call.js",
+                "entity.name.function.js"
             ],
             "text": "modifier",
             "start": 26,
@@ -456,17 +648,32 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js"
+                "meta.var.expr.js",
+                "meta.brace.round.js"
             ],
-            "text": "((",
+            "text": "(",
             "start": 34,
+            "end": 35
+        },
+        {
+            "scopes": [
+                "source.gjs",
+                "meta.var.expr.js",
+                "meta.arrow.js",
+                "meta.parameters.js",
+                "punctuation.definition.parameters.begin.js"
+            ],
+            "text": "(",
+            "start": 35,
             "end": 36
         },
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js",
-                "variable.other.readwrite.alias.js"
+                "meta.var.expr.js",
+                "meta.arrow.js",
+                "meta.parameters.js",
+                "variable.parameter.js"
             ],
             "text": "element",
             "start": 36,
@@ -475,8 +682,10 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js",
-                "punctuation.separator.comma.js"
+                "meta.var.expr.js",
+                "meta.arrow.js",
+                "meta.parameters.js",
+                "punctuation.separator.parameter.js"
             ],
             "text": ",",
             "start": 43,
@@ -485,17 +694,36 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js"
+                "meta.var.expr.js",
+                "meta.arrow.js",
+                "meta.parameters.js",
+                "meta.paramter.array-binding-pattern.js"
             ],
-            "text": " [",
+            "text": " ",
             "start": 44,
+            "end": 45
+        },
+        {
+            "scopes": [
+                "source.gjs",
+                "meta.var.expr.js",
+                "meta.arrow.js",
+                "meta.parameters.js",
+                "meta.paramter.array-binding-pattern.js",
+                "punctuation.definition.binding-pattern.array.js"
+            ],
+            "text": "[",
+            "start": 45,
             "end": 46
         },
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js",
-                "variable.other.readwrite.alias.js"
+                "meta.var.expr.js",
+                "meta.arrow.js",
+                "meta.parameters.js",
+                "meta.paramter.array-binding-pattern.js",
+                "variable.parameter.js"
             ],
             "text": "position",
             "start": 46,
@@ -504,16 +732,64 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js"
+                "meta.var.expr.js",
+                "meta.arrow.js",
+                "meta.parameters.js",
+                "meta.paramter.array-binding-pattern.js",
+                "punctuation.definition.binding-pattern.array.js"
             ],
-            "text": "]) => ",
+            "text": "]",
             "start": 54,
+            "end": 55
+        },
+        {
+            "scopes": [
+                "source.gjs",
+                "meta.var.expr.js",
+                "meta.arrow.js",
+                "meta.parameters.js",
+                "punctuation.definition.parameters.end.js"
+            ],
+            "text": ")",
+            "start": 55,
+            "end": 56
+        },
+        {
+            "scopes": [
+                "source.gjs",
+                "meta.var.expr.js",
+                "meta.arrow.js"
+            ],
+            "text": " ",
+            "start": 56,
+            "end": 57
+        },
+        {
+            "scopes": [
+                "source.gjs",
+                "meta.var.expr.js",
+                "meta.arrow.js",
+                "storage.type.function.arrow.js"
+            ],
+            "text": "=>",
+            "start": 57,
+            "end": 59
+        },
+        {
+            "scopes": [
+                "source.gjs",
+                "meta.var.expr.js",
+                "meta.arrow.js"
+            ],
+            "text": " ",
+            "start": 59,
             "end": 60
         },
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js",
+                "meta.var.expr.js",
+                "meta.arrow.js",
                 "meta.block.js",
                 "punctuation.definition.block.js"
             ],
@@ -524,7 +800,8 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js",
+                "meta.var.expr.js",
+                "meta.arrow.js",
                 "meta.block.js"
             ],
             "text": "\n",
@@ -536,7 +813,8 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js",
+                "meta.var.expr.js",
+                "meta.arrow.js",
                 "meta.block.js"
             ],
             "text": "  ",
@@ -546,9 +824,10 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js",
+                "meta.var.expr.js",
+                "meta.arrow.js",
                 "meta.block.js",
-                "variable.other.readwrite.alias.js"
+                "variable.other.object.js"
             ],
             "text": "element",
             "start": 2,
@@ -557,8 +836,10 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js",
-                "meta.block.js"
+                "meta.var.expr.js",
+                "meta.arrow.js",
+                "meta.block.js",
+                "punctuation.accessor.js"
             ],
             "text": ".",
             "start": 9,
@@ -567,9 +848,10 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js",
+                "meta.var.expr.js",
+                "meta.arrow.js",
                 "meta.block.js",
-                "variable.other.readwrite.alias.js"
+                "variable.other.property.js"
             ],
             "text": "scrollTop",
             "start": 10,
@@ -578,19 +860,44 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js",
+                "meta.var.expr.js",
+                "meta.arrow.js",
                 "meta.block.js"
             ],
-            "text": " = ",
+            "text": " ",
             "start": 19,
+            "end": 20
+        },
+        {
+            "scopes": [
+                "source.gjs",
+                "meta.var.expr.js",
+                "meta.arrow.js",
+                "meta.block.js",
+                "keyword.operator.assignment.js"
+            ],
+            "text": "=",
+            "start": 20,
+            "end": 21
+        },
+        {
+            "scopes": [
+                "source.gjs",
+                "meta.var.expr.js",
+                "meta.arrow.js",
+                "meta.block.js"
+            ],
+            "text": " ",
+            "start": 21,
             "end": 22
         },
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js",
+                "meta.var.expr.js",
+                "meta.arrow.js",
                 "meta.block.js",
-                "variable.other.readwrite.alias.js"
+                "variable.other.readwrite.js"
             ],
             "text": "position",
             "start": 22,
@@ -599,7 +906,8 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js",
+                "meta.var.expr.js",
+                "meta.arrow.js",
                 "meta.block.js"
             ],
             "text": "\n",
@@ -611,7 +919,8 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js",
+                "meta.var.expr.js",
+                "meta.arrow.js",
                 "meta.block.js",
                 "punctuation.definition.block.js"
             ],
@@ -622,18 +931,35 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js"
+                "meta.var.expr.js",
+                "meta.brace.round.js"
             ],
-            "text": ");\n",
+            "text": ")",
             "start": 1,
+            "end": 2
+        },
+        {
+            "scopes": [
+                "source.gjs",
+                "punctuation.terminator.statement.js"
+            ],
+            "text": ";",
+            "start": 2,
+            "end": 3
+        },
+        {
+            "scopes": [
+                "source.gjs"
+            ],
+            "text": "\n",
+            "start": 3,
             "end": 4
         }
     ],
     [
         {
             "scopes": [
-                "source.gjs",
-                "meta.import.js"
+                "source.gjs"
             ],
             "text": "\n",
             "start": 0,
@@ -644,7 +970,6 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js",
                 "meta.js.embeddedTemplateWithoutArgs",
                 "punctuation.definition.tag.html"
             ],
@@ -655,7 +980,6 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js",
                 "meta.js.embeddedTemplateWithoutArgs",
                 "entity.name.tag.other.html"
             ],
@@ -666,7 +990,6 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js",
                 "meta.js.embeddedTemplateWithoutArgs",
                 "punctuation.definition.tag.html"
             ],
@@ -677,7 +1000,6 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js",
                 "meta.js.embeddedTemplateWithoutArgs"
             ],
             "text": "\n",
@@ -689,7 +1011,6 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js",
                 "meta.js.embeddedTemplateWithoutArgs"
             ],
             "text": "  ",
@@ -699,7 +1020,6 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js",
                 "meta.js.embeddedTemplateWithoutArgs",
                 "meta.tag.any.ember-handlebars",
                 "punctuation.definition.tag"
@@ -711,7 +1031,6 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js",
                 "meta.js.embeddedTemplateWithoutArgs",
                 "meta.tag.any.ember-handlebars",
                 "entity.name.tag.html.ember-handlebars"
@@ -723,7 +1042,6 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js",
                 "meta.js.embeddedTemplateWithoutArgs",
                 "meta.tag.any.ember-handlebars"
             ],
@@ -734,7 +1052,6 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js",
                 "meta.js.embeddedTemplateWithoutArgs",
                 "meta.tag.any.ember-handlebars",
                 "entity.other.attribute-name.ember-handlebars"
@@ -746,7 +1063,6 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js",
                 "meta.js.embeddedTemplateWithoutArgs",
                 "meta.tag.any.ember-handlebars",
                 "punctuation.separator.key-value.html.ember-handlebars"
@@ -758,7 +1074,6 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js",
                 "meta.js.embeddedTemplateWithoutArgs",
                 "meta.tag.any.ember-handlebars",
                 "string.quoted.double.html.ember-handlebars",
@@ -771,7 +1086,6 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js",
                 "meta.js.embeddedTemplateWithoutArgs",
                 "meta.tag.any.ember-handlebars",
                 "string.quoted.double.html.ember-handlebars"
@@ -783,7 +1097,6 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js",
                 "meta.js.embeddedTemplateWithoutArgs",
                 "meta.tag.any.ember-handlebars",
                 "string.quoted.double.html.ember-handlebars",
@@ -796,7 +1109,6 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js",
                 "meta.js.embeddedTemplateWithoutArgs",
                 "meta.tag.any.ember-handlebars"
             ],
@@ -807,7 +1119,6 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js",
                 "meta.js.embeddedTemplateWithoutArgs",
                 "meta.tag.any.ember-handlebars",
                 "entity.expression.ember-handlebars",
@@ -820,7 +1131,6 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js",
                 "meta.js.embeddedTemplateWithoutArgs",
                 "meta.tag.any.ember-handlebars",
                 "entity.expression.ember-handlebars",
@@ -834,7 +1144,6 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js",
                 "meta.js.embeddedTemplateWithoutArgs",
                 "meta.tag.any.ember-handlebars",
                 "entity.expression.ember-handlebars",
@@ -847,7 +1156,6 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js",
                 "meta.js.embeddedTemplateWithoutArgs",
                 "meta.tag.any.ember-handlebars",
                 "entity.expression.ember-handlebars",
@@ -861,7 +1169,6 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js",
                 "meta.js.embeddedTemplateWithoutArgs",
                 "meta.tag.any.ember-handlebars",
                 "entity.expression.ember-handlebars",
@@ -874,7 +1181,6 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js",
                 "meta.js.embeddedTemplateWithoutArgs",
                 "meta.tag.any.ember-handlebars",
                 "entity.expression.ember-handlebars",
@@ -887,7 +1193,6 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js",
                 "meta.js.embeddedTemplateWithoutArgs",
                 "meta.tag.any.ember-handlebars",
                 "punctuation.definition.tag"
@@ -899,7 +1204,6 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js",
                 "meta.js.embeddedTemplateWithoutArgs"
             ],
             "text": "\n",
@@ -911,7 +1215,6 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js",
                 "meta.js.embeddedTemplateWithoutArgs"
             ],
             "text": "    ",
@@ -921,7 +1224,6 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js",
                 "meta.js.embeddedTemplateWithoutArgs",
                 "entity.expression.ember-handlebars",
                 "punctuation.definition.tag"
@@ -933,7 +1235,6 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js",
                 "meta.js.embeddedTemplateWithoutArgs",
                 "entity.expression.ember-handlebars",
                 "punctuation.definition.tag"
@@ -945,7 +1246,6 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js",
                 "meta.js.embeddedTemplateWithoutArgs",
                 "entity.expression.ember-handlebars",
                 "keyword.control"
@@ -957,7 +1257,6 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js",
                 "meta.js.embeddedTemplateWithoutArgs",
                 "entity.expression.ember-handlebars"
             ],
@@ -968,7 +1267,6 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js",
                 "meta.js.embeddedTemplateWithoutArgs",
                 "entity.expression.ember-handlebars",
                 "support.function",
@@ -981,7 +1279,6 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js",
                 "meta.js.embeddedTemplateWithoutArgs",
                 "entity.expression.ember-handlebars",
                 "support.function"
@@ -993,7 +1290,6 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js",
                 "meta.js.embeddedTemplateWithoutArgs",
                 "entity.expression.ember-handlebars",
                 "keyword.control"
@@ -1005,7 +1301,6 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js",
                 "meta.js.embeddedTemplateWithoutArgs",
                 "entity.expression.ember-handlebars"
             ],
@@ -1016,7 +1311,6 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js",
                 "meta.js.embeddedTemplateWithoutArgs",
                 "entity.expression.ember-handlebars",
                 "keyword.block-params.ember-handlebars",
@@ -1029,7 +1323,6 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js",
                 "meta.js.embeddedTemplateWithoutArgs",
                 "entity.expression.ember-handlebars",
                 "keyword.block-params.ember-handlebars",
@@ -1042,7 +1335,6 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js",
                 "meta.js.embeddedTemplateWithoutArgs",
                 "entity.expression.ember-handlebars",
                 "keyword.block-params.ember-handlebars"
@@ -1054,7 +1346,6 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js",
                 "meta.js.embeddedTemplateWithoutArgs",
                 "entity.expression.ember-handlebars",
                 "keyword.block-params.ember-handlebars",
@@ -1067,7 +1358,6 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js",
                 "meta.js.embeddedTemplateWithoutArgs",
                 "entity.expression.ember-handlebars",
                 "keyword.block-params.ember-handlebars",
@@ -1080,7 +1370,6 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js",
                 "meta.js.embeddedTemplateWithoutArgs",
                 "entity.expression.ember-handlebars",
                 "punctuation.definition.tag"
@@ -1092,7 +1381,6 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js",
                 "meta.js.embeddedTemplateWithoutArgs"
             ],
             "text": "\n",
@@ -1104,7 +1392,6 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js",
                 "meta.js.embeddedTemplateWithoutArgs"
             ],
             "text": "      Item #",
@@ -1114,7 +1401,6 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js",
                 "meta.js.embeddedTemplateWithoutArgs",
                 "entity.expression.ember-handlebars",
                 "keyword.operator"
@@ -1126,7 +1412,6 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js",
                 "meta.js.embeddedTemplateWithoutArgs",
                 "entity.expression.ember-handlebars",
                 "keyword.operator",
@@ -1139,7 +1424,6 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js",
                 "meta.js.embeddedTemplateWithoutArgs",
                 "entity.expression.ember-handlebars",
                 "keyword.operator"
@@ -1151,7 +1435,6 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js",
                 "meta.js.embeddedTemplateWithoutArgs",
                 "entity.expression.ember-handlebars",
                 "support.function"
@@ -1163,7 +1446,6 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js",
                 "meta.js.embeddedTemplateWithoutArgs",
                 "entity.expression.ember-handlebars",
                 "keyword.operator"
@@ -1175,7 +1457,6 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js",
                 "meta.js.embeddedTemplateWithoutArgs"
             ],
             "text": ": ",
@@ -1185,7 +1466,6 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js",
                 "meta.js.embeddedTemplateWithoutArgs",
                 "entity.expression.ember-handlebars",
                 "keyword.operator"
@@ -1197,7 +1477,6 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js",
                 "meta.js.embeddedTemplateWithoutArgs",
                 "entity.expression.ember-handlebars",
                 "support.function",
@@ -1210,7 +1489,6 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js",
                 "meta.js.embeddedTemplateWithoutArgs",
                 "entity.expression.ember-handlebars",
                 "keyword.operator"
@@ -1222,7 +1500,6 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js",
                 "meta.js.embeddedTemplateWithoutArgs"
             ],
             "text": "\n",
@@ -1234,7 +1511,6 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js",
                 "meta.js.embeddedTemplateWithoutArgs"
             ],
             "text": "    ",
@@ -1244,7 +1520,6 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js",
                 "meta.js.embeddedTemplateWithoutArgs",
                 "entity.expression.ember-handlebars",
                 "punctuation.definition.tag"
@@ -1256,7 +1531,6 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js",
                 "meta.js.embeddedTemplateWithoutArgs",
                 "entity.expression.ember-handlebars",
                 "punctuation.definition.tag"
@@ -1268,7 +1542,6 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js",
                 "meta.js.embeddedTemplateWithoutArgs",
                 "entity.expression.ember-handlebars",
                 "keyword.control"
@@ -1280,7 +1553,6 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js",
                 "meta.js.embeddedTemplateWithoutArgs",
                 "entity.expression.ember-handlebars",
                 "punctuation.definition.tag"
@@ -1292,7 +1564,6 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js",
                 "meta.js.embeddedTemplateWithoutArgs"
             ],
             "text": "\n",
@@ -1304,7 +1575,6 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js",
                 "meta.js.embeddedTemplateWithoutArgs"
             ],
             "text": "  ",
@@ -1314,7 +1584,6 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js",
                 "meta.js.embeddedTemplateWithoutArgs",
                 "meta.tag.any.ember-handlebars",
                 "punctuation.definition.tag"
@@ -1326,7 +1595,6 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js",
                 "meta.js.embeddedTemplateWithoutArgs",
                 "meta.tag.any.ember-handlebars",
                 "entity.name.tag.html.ember-handlebars"
@@ -1338,7 +1606,6 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js",
                 "meta.js.embeddedTemplateWithoutArgs",
                 "meta.tag.any.ember-handlebars",
                 "punctuation.definition.tag"
@@ -1350,7 +1617,6 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js",
                 "meta.js.embeddedTemplateWithoutArgs"
             ],
             "text": "\n",
@@ -1362,7 +1628,6 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js",
                 "meta.js.embeddedTemplateWithoutArgs",
                 "punctuation.definition.tag.html"
             ],
@@ -1373,7 +1638,6 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js",
                 "meta.js.embeddedTemplateWithoutArgs",
                 "entity.name.tag.other.html"
             ],
@@ -1384,7 +1648,6 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js",
                 "meta.js.embeddedTemplateWithoutArgs",
                 "punctuation.definition.tag.html"
             ],
@@ -1394,8 +1657,7 @@
         },
         {
             "scopes": [
-                "source.gjs",
-                "meta.import.js"
+                "source.gjs"
             ],
             "text": "\n",
             "start": 11,
@@ -1405,8 +1667,7 @@
     [
         {
             "scopes": [
-                "source.gjs",
-                "meta.import.js"
+                "source.gjs"
             ],
             "text": "\n",
             "start": 0,
@@ -1417,7 +1678,6 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js",
                 "comment.line.double-slash.js",
                 "punctuation.definition.comment.js"
             ],
@@ -1428,19 +1688,25 @@
         {
             "scopes": [
                 "source.gjs",
-                "meta.import.js",
                 "comment.line.double-slash.js"
             ],
-            "text": " From https:\/\/github.com\/ember-template-imports\/ember-template-imports\n",
+            "text": " From https:\/\/github.com\/ember-template-imports\/ember-template-imports",
             "start": 2,
+            "end": 72
+        },
+        {
+            "scopes": [
+                "source.gjs"
+            ],
+            "text": "\n",
+            "start": 72,
             "end": 73
         }
     ],
     [
         {
             "scopes": [
-                "source.gjs",
-                "meta.import.js"
+                "source.gjs"
             ],
             "text": "\n",
             "start": 0,

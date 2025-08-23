@@ -207,8 +207,7 @@
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js"
+                "source.js"
             ],
             "text": "\n",
             "start": 25,
@@ -219,8 +218,7 @@
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js"
+                "source.js"
             ],
             "text": "\n",
             "start": 0,
@@ -232,8 +230,8 @@
             "scopes": [
                 "source.vue",
                 "source.js",
-                "meta.import.js",
-                "variable.other.readwrite.alias.js"
+                "meta.var.expr.js",
+                "storage.type.js"
             ],
             "text": "const",
             "start": 0,
@@ -243,7 +241,7 @@
             "scopes": [
                 "source.vue",
                 "source.js",
-                "meta.import.js"
+                "meta.var.expr.js"
             ],
             "text": " ",
             "start": 5,
@@ -253,8 +251,10 @@
             "scopes": [
                 "source.vue",
                 "source.js",
-                "meta.import.js",
-                "variable.other.readwrite.alias.js"
+                "meta.var.expr.js",
+                "meta.var-single-variable.expr.js",
+                "meta.definition.variable.js",
+                "variable.other.constant.js"
             ],
             "text": "message",
             "start": 6,
@@ -264,18 +264,41 @@
             "scopes": [
                 "source.vue",
                 "source.js",
-                "meta.import.js"
+                "meta.var.expr.js",
+                "meta.var-single-variable.expr.js"
             ],
-            "text": " = ",
+            "text": " ",
             "start": 13,
+            "end": 14
+        },
+        {
+            "scopes": [
+                "source.vue",
+                "source.js",
+                "meta.var.expr.js",
+                "keyword.operator.assignment.js"
+            ],
+            "text": "=",
+            "start": 14,
+            "end": 15
+        },
+        {
+            "scopes": [
+                "source.vue",
+                "source.js",
+                "meta.var.expr.js"
+            ],
+            "text": " ",
+            "start": 15,
             "end": 16
         },
         {
             "scopes": [
                 "source.vue",
                 "source.js",
-                "meta.import.js",
-                "variable.other.readwrite.alias.js"
+                "meta.var.expr.js",
+                "meta.function-call.js",
+                "entity.name.function.js"
             ],
             "text": "ref",
             "start": 16,
@@ -285,7 +308,8 @@
             "scopes": [
                 "source.vue",
                 "source.js",
-                "meta.import.js"
+                "meta.var.expr.js",
+                "meta.brace.round.js"
             ],
             "text": "(",
             "start": 19,
@@ -295,7 +319,7 @@
             "scopes": [
                 "source.vue",
                 "source.js",
-                "meta.import.js",
+                "meta.var.expr.js",
                 "string.quoted.single.js",
                 "punctuation.definition.string.begin.js"
             ],
@@ -307,7 +331,7 @@
             "scopes": [
                 "source.vue",
                 "source.js",
-                "meta.import.js",
+                "meta.var.expr.js",
                 "string.quoted.single.js"
             ],
             "text": "Hello World!",
@@ -318,7 +342,7 @@
             "scopes": [
                 "source.vue",
                 "source.js",
-                "meta.import.js",
+                "meta.var.expr.js",
                 "string.quoted.single.js",
                 "punctuation.definition.string.end.js"
             ],
@@ -330,10 +354,20 @@
             "scopes": [
                 "source.vue",
                 "source.js",
-                "meta.import.js"
+                "meta.var.expr.js",
+                "meta.brace.round.js"
             ],
-            "text": ")\n",
+            "text": ")",
             "start": 34,
+            "end": 35
+        },
+        {
+            "scopes": [
+                "source.vue",
+                "source.js"
+            ],
+            "text": "\n",
+            "start": 35,
             "end": 36
         }
     ],
@@ -341,8 +375,7 @@
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js"
+                "source.js"
             ],
             "text": "\n",
             "start": 0,
@@ -354,8 +387,8 @@
             "scopes": [
                 "source.vue",
                 "source.js",
-                "meta.import.js",
-                "variable.other.readwrite.alias.js"
+                "meta.function.js",
+                "storage.type.function.js"
             ],
             "text": "function",
             "start": 0,
@@ -365,7 +398,7 @@
             "scopes": [
                 "source.vue",
                 "source.js",
-                "meta.import.js"
+                "meta.function.js"
             ],
             "text": " ",
             "start": 8,
@@ -375,8 +408,9 @@
             "scopes": [
                 "source.vue",
                 "source.js",
-                "meta.import.js",
-                "variable.other.readwrite.alias.js"
+                "meta.function.js",
+                "meta.definition.function.js",
+                "entity.name.function.js"
             ],
             "text": "reverseMessage",
             "start": 9,
@@ -386,17 +420,41 @@
             "scopes": [
                 "source.vue",
                 "source.js",
-                "meta.import.js"
+                "meta.function.js",
+                "meta.parameters.js",
+                "punctuation.definition.parameters.begin.js"
             ],
-            "text": "() ",
+            "text": "(",
             "start": 23,
+            "end": 24
+        },
+        {
+            "scopes": [
+                "source.vue",
+                "source.js",
+                "meta.function.js",
+                "meta.parameters.js",
+                "punctuation.definition.parameters.end.js"
+            ],
+            "text": ")",
+            "start": 24,
+            "end": 25
+        },
+        {
+            "scopes": [
+                "source.vue",
+                "source.js",
+                "meta.function.js"
+            ],
+            "text": " ",
+            "start": 25,
             "end": 26
         },
         {
             "scopes": [
                 "source.vue",
                 "source.js",
-                "meta.import.js",
+                "meta.function.js",
                 "meta.block.js",
                 "punctuation.definition.block.js"
             ],
@@ -408,7 +466,7 @@
             "scopes": [
                 "source.vue",
                 "source.js",
-                "meta.import.js",
+                "meta.function.js",
                 "meta.block.js"
             ],
             "text": "\n",
@@ -421,7 +479,7 @@
             "scopes": [
                 "source.vue",
                 "source.js",
-                "meta.import.js",
+                "meta.function.js",
                 "meta.block.js",
                 "punctuation.whitespace.comment.leading.js"
             ],
@@ -433,7 +491,7 @@
             "scopes": [
                 "source.vue",
                 "source.js",
-                "meta.import.js",
+                "meta.function.js",
                 "meta.block.js",
                 "comment.line.double-slash.js",
                 "punctuation.definition.comment.js"
@@ -446,7 +504,7 @@
             "scopes": [
                 "source.vue",
                 "source.js",
-                "meta.import.js",
+                "meta.function.js",
                 "meta.block.js",
                 "comment.line.double-slash.js"
             ],
@@ -458,7 +516,7 @@
             "scopes": [
                 "source.vue",
                 "source.js",
-                "meta.import.js",
+                "meta.function.js",
                 "meta.block.js"
             ],
             "text": "\n",
@@ -471,7 +529,7 @@
             "scopes": [
                 "source.vue",
                 "source.js",
-                "meta.import.js",
+                "meta.function.js",
                 "meta.block.js",
                 "punctuation.whitespace.comment.leading.js"
             ],
@@ -483,7 +541,7 @@
             "scopes": [
                 "source.vue",
                 "source.js",
-                "meta.import.js",
+                "meta.function.js",
                 "meta.block.js",
                 "comment.line.double-slash.js",
                 "punctuation.definition.comment.js"
@@ -496,7 +554,7 @@
             "scopes": [
                 "source.vue",
                 "source.js",
-                "meta.import.js",
+                "meta.function.js",
                 "meta.block.js",
                 "comment.line.double-slash.js"
             ],
@@ -508,7 +566,7 @@
             "scopes": [
                 "source.vue",
                 "source.js",
-                "meta.import.js",
+                "meta.function.js",
                 "meta.block.js"
             ],
             "text": "\n",
@@ -521,7 +579,7 @@
             "scopes": [
                 "source.vue",
                 "source.js",
-                "meta.import.js",
+                "meta.function.js",
                 "meta.block.js"
             ],
             "text": "  ",
@@ -532,9 +590,9 @@
             "scopes": [
                 "source.vue",
                 "source.js",
-                "meta.import.js",
+                "meta.function.js",
                 "meta.block.js",
-                "variable.other.readwrite.alias.js"
+                "variable.other.object.js"
             ],
             "text": "message",
             "start": 2,
@@ -544,8 +602,9 @@
             "scopes": [
                 "source.vue",
                 "source.js",
-                "meta.import.js",
-                "meta.block.js"
+                "meta.function.js",
+                "meta.block.js",
+                "punctuation.accessor.js"
             ],
             "text": ".",
             "start": 9,
@@ -555,9 +614,9 @@
             "scopes": [
                 "source.vue",
                 "source.js",
-                "meta.import.js",
+                "meta.function.js",
                 "meta.block.js",
-                "variable.other.readwrite.alias.js"
+                "variable.other.property.js"
             ],
             "text": "value",
             "start": 10,
@@ -567,20 +626,44 @@
             "scopes": [
                 "source.vue",
                 "source.js",
-                "meta.import.js",
+                "meta.function.js",
                 "meta.block.js"
             ],
-            "text": " = ",
+            "text": " ",
             "start": 15,
+            "end": 16
+        },
+        {
+            "scopes": [
+                "source.vue",
+                "source.js",
+                "meta.function.js",
+                "meta.block.js",
+                "keyword.operator.assignment.js"
+            ],
+            "text": "=",
+            "start": 16,
+            "end": 17
+        },
+        {
+            "scopes": [
+                "source.vue",
+                "source.js",
+                "meta.function.js",
+                "meta.block.js"
+            ],
+            "text": " ",
+            "start": 17,
             "end": 18
         },
         {
             "scopes": [
                 "source.vue",
                 "source.js",
-                "meta.import.js",
+                "meta.function.js",
                 "meta.block.js",
-                "variable.other.readwrite.alias.js"
+                "meta.function-call.js",
+                "variable.other.object.js"
             ],
             "text": "message",
             "start": 18,
@@ -590,8 +673,10 @@
             "scopes": [
                 "source.vue",
                 "source.js",
-                "meta.import.js",
-                "meta.block.js"
+                "meta.function.js",
+                "meta.block.js",
+                "meta.function-call.js",
+                "punctuation.accessor.js"
             ],
             "text": ".",
             "start": 25,
@@ -601,9 +686,10 @@
             "scopes": [
                 "source.vue",
                 "source.js",
-                "meta.import.js",
+                "meta.function.js",
                 "meta.block.js",
-                "variable.other.readwrite.alias.js"
+                "meta.function-call.js",
+                "variable.other.object.property.js"
             ],
             "text": "value",
             "start": 26,
@@ -613,8 +699,10 @@
             "scopes": [
                 "source.vue",
                 "source.js",
-                "meta.import.js",
-                "meta.block.js"
+                "meta.function.js",
+                "meta.block.js",
+                "meta.function-call.js",
+                "punctuation.accessor.js"
             ],
             "text": ".",
             "start": 31,
@@ -624,9 +712,10 @@
             "scopes": [
                 "source.vue",
                 "source.js",
-                "meta.import.js",
+                "meta.function.js",
                 "meta.block.js",
-                "variable.other.readwrite.alias.js"
+                "meta.function-call.js",
+                "entity.name.function.js"
             ],
             "text": "split",
             "start": 32,
@@ -636,8 +725,9 @@
             "scopes": [
                 "source.vue",
                 "source.js",
-                "meta.import.js",
-                "meta.block.js"
+                "meta.function.js",
+                "meta.block.js",
+                "meta.brace.round.js"
             ],
             "text": "(",
             "start": 37,
@@ -647,32 +737,61 @@
             "scopes": [
                 "source.vue",
                 "source.js",
-                "meta.import.js",
+                "meta.function.js",
                 "meta.block.js",
-                "string.quoted.alias.js"
+                "string.quoted.single.js",
+                "punctuation.definition.string.begin.js"
             ],
-            "text": "''",
+            "text": "'",
             "start": 38,
+            "end": 39
+        },
+        {
+            "scopes": [
+                "source.vue",
+                "source.js",
+                "meta.function.js",
+                "meta.block.js",
+                "string.quoted.single.js",
+                "punctuation.definition.string.end.js"
+            ],
+            "text": "'",
+            "start": 39,
             "end": 40
         },
         {
             "scopes": [
                 "source.vue",
                 "source.js",
-                "meta.import.js",
-                "meta.block.js"
+                "meta.function.js",
+                "meta.block.js",
+                "meta.brace.round.js"
             ],
-            "text": ").",
+            "text": ")",
             "start": 40,
+            "end": 41
+        },
+        {
+            "scopes": [
+                "source.vue",
+                "source.js",
+                "meta.function.js",
+                "meta.block.js",
+                "meta.function-call.js",
+                "punctuation.accessor.js"
+            ],
+            "text": ".",
+            "start": 41,
             "end": 42
         },
         {
             "scopes": [
                 "source.vue",
                 "source.js",
-                "meta.import.js",
+                "meta.function.js",
                 "meta.block.js",
-                "variable.other.readwrite.alias.js"
+                "meta.function-call.js",
+                "entity.name.function.js"
             ],
             "text": "reverse",
             "start": 42,
@@ -682,20 +801,47 @@
             "scopes": [
                 "source.vue",
                 "source.js",
-                "meta.import.js",
-                "meta.block.js"
+                "meta.function.js",
+                "meta.block.js",
+                "meta.brace.round.js"
             ],
-            "text": "().",
+            "text": "(",
             "start": 49,
+            "end": 50
+        },
+        {
+            "scopes": [
+                "source.vue",
+                "source.js",
+                "meta.function.js",
+                "meta.block.js",
+                "meta.brace.round.js"
+            ],
+            "text": ")",
+            "start": 50,
+            "end": 51
+        },
+        {
+            "scopes": [
+                "source.vue",
+                "source.js",
+                "meta.function.js",
+                "meta.block.js",
+                "meta.function-call.js",
+                "punctuation.accessor.js"
+            ],
+            "text": ".",
+            "start": 51,
             "end": 52
         },
         {
             "scopes": [
                 "source.vue",
                 "source.js",
-                "meta.import.js",
+                "meta.function.js",
                 "meta.block.js",
-                "variable.other.readwrite.alias.js"
+                "meta.function-call.js",
+                "entity.name.function.js"
             ],
             "text": "join",
             "start": 52,
@@ -705,8 +851,9 @@
             "scopes": [
                 "source.vue",
                 "source.js",
-                "meta.import.js",
-                "meta.block.js"
+                "meta.function.js",
+                "meta.block.js",
+                "meta.brace.round.js"
             ],
             "text": "(",
             "start": 56,
@@ -716,23 +863,49 @@
             "scopes": [
                 "source.vue",
                 "source.js",
-                "meta.import.js",
+                "meta.function.js",
                 "meta.block.js",
-                "string.quoted.alias.js"
+                "string.quoted.single.js",
+                "punctuation.definition.string.begin.js"
             ],
-            "text": "''",
+            "text": "'",
             "start": 57,
+            "end": 58
+        },
+        {
+            "scopes": [
+                "source.vue",
+                "source.js",
+                "meta.function.js",
+                "meta.block.js",
+                "string.quoted.single.js",
+                "punctuation.definition.string.end.js"
+            ],
+            "text": "'",
+            "start": 58,
             "end": 59
         },
         {
             "scopes": [
                 "source.vue",
                 "source.js",
-                "meta.import.js",
+                "meta.function.js",
+                "meta.block.js",
+                "meta.brace.round.js"
+            ],
+            "text": ")",
+            "start": 59,
+            "end": 60
+        },
+        {
+            "scopes": [
+                "source.vue",
+                "source.js",
+                "meta.function.js",
                 "meta.block.js"
             ],
-            "text": ")\n",
-            "start": 59,
+            "text": "\n",
+            "start": 60,
             "end": 61
         }
     ],
@@ -741,7 +914,7 @@
             "scopes": [
                 "source.vue",
                 "source.js",
-                "meta.import.js",
+                "meta.function.js",
                 "meta.block.js",
                 "punctuation.definition.block.js"
             ],
@@ -752,8 +925,7 @@
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js"
+                "source.js"
             ],
             "text": "\n",
             "start": 1,
@@ -764,8 +936,7 @@
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js"
+                "source.js"
             ],
             "text": "\n",
             "start": 0,
@@ -777,8 +948,8 @@
             "scopes": [
                 "source.vue",
                 "source.js",
-                "meta.import.js",
-                "variable.other.readwrite.alias.js"
+                "meta.function.js",
+                "storage.type.function.js"
             ],
             "text": "function",
             "start": 0,
@@ -788,7 +959,7 @@
             "scopes": [
                 "source.vue",
                 "source.js",
-                "meta.import.js"
+                "meta.function.js"
             ],
             "text": " ",
             "start": 8,
@@ -798,8 +969,9 @@
             "scopes": [
                 "source.vue",
                 "source.js",
-                "meta.import.js",
-                "variable.other.readwrite.alias.js"
+                "meta.function.js",
+                "meta.definition.function.js",
+                "entity.name.function.js"
             ],
             "text": "notify",
             "start": 9,
@@ -809,17 +981,41 @@
             "scopes": [
                 "source.vue",
                 "source.js",
-                "meta.import.js"
+                "meta.function.js",
+                "meta.parameters.js",
+                "punctuation.definition.parameters.begin.js"
             ],
-            "text": "() ",
+            "text": "(",
             "start": 15,
+            "end": 16
+        },
+        {
+            "scopes": [
+                "source.vue",
+                "source.js",
+                "meta.function.js",
+                "meta.parameters.js",
+                "punctuation.definition.parameters.end.js"
+            ],
+            "text": ")",
+            "start": 16,
+            "end": 17
+        },
+        {
+            "scopes": [
+                "source.vue",
+                "source.js",
+                "meta.function.js"
+            ],
+            "text": " ",
+            "start": 17,
             "end": 18
         },
         {
             "scopes": [
                 "source.vue",
                 "source.js",
-                "meta.import.js",
+                "meta.function.js",
                 "meta.block.js",
                 "punctuation.definition.block.js"
             ],
@@ -831,7 +1027,7 @@
             "scopes": [
                 "source.vue",
                 "source.js",
-                "meta.import.js",
+                "meta.function.js",
                 "meta.block.js"
             ],
             "text": "\n",
@@ -844,7 +1040,7 @@
             "scopes": [
                 "source.vue",
                 "source.js",
-                "meta.import.js",
+                "meta.function.js",
                 "meta.block.js"
             ],
             "text": "  ",
@@ -855,9 +1051,10 @@
             "scopes": [
                 "source.vue",
                 "source.js",
-                "meta.import.js",
+                "meta.function.js",
                 "meta.block.js",
-                "variable.other.readwrite.alias.js"
+                "meta.function-call.js",
+                "entity.name.function.js"
             ],
             "text": "alert",
             "start": 2,
@@ -867,8 +1064,9 @@
             "scopes": [
                 "source.vue",
                 "source.js",
-                "meta.import.js",
-                "meta.block.js"
+                "meta.function.js",
+                "meta.block.js",
+                "meta.brace.round.js"
             ],
             "text": "(",
             "start": 7,
@@ -878,23 +1076,61 @@
             "scopes": [
                 "source.vue",
                 "source.js",
-                "meta.import.js",
+                "meta.function.js",
                 "meta.block.js",
-                "string.quoted.alias.js"
+                "string.quoted.single.js",
+                "punctuation.definition.string.begin.js"
             ],
-            "text": "'navigation was prevented.'",
+            "text": "'",
             "start": 8,
+            "end": 9
+        },
+        {
+            "scopes": [
+                "source.vue",
+                "source.js",
+                "meta.function.js",
+                "meta.block.js",
+                "string.quoted.single.js"
+            ],
+            "text": "navigation was prevented.",
+            "start": 9,
+            "end": 34
+        },
+        {
+            "scopes": [
+                "source.vue",
+                "source.js",
+                "meta.function.js",
+                "meta.block.js",
+                "string.quoted.single.js",
+                "punctuation.definition.string.end.js"
+            ],
+            "text": "'",
+            "start": 34,
             "end": 35
         },
         {
             "scopes": [
                 "source.vue",
                 "source.js",
-                "meta.import.js",
+                "meta.function.js",
+                "meta.block.js",
+                "meta.brace.round.js"
+            ],
+            "text": ")",
+            "start": 35,
+            "end": 36
+        },
+        {
+            "scopes": [
+                "source.vue",
+                "source.js",
+                "meta.function.js",
                 "meta.block.js"
             ],
-            "text": ")\n",
-            "start": 35,
+            "text": "\n",
+            "start": 36,
             "end": 37
         }
     ],
@@ -903,7 +1139,7 @@
             "scopes": [
                 "source.vue",
                 "source.js",
-                "meta.import.js",
+                "meta.function.js",
                 "meta.block.js",
                 "punctuation.definition.block.js"
             ],
@@ -914,8 +1150,7 @@
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js"
+                "source.js"
             ],
             "text": "\n",
             "start": 1,
@@ -926,8 +1161,7 @@
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js"
+                "punctuation.definition.tag.begin.html.vue"
             ],
             "text": "<\/",
             "start": 0,
@@ -936,9 +1170,7 @@
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js",
-                "variable.other.readwrite.alias.js"
+                "entity.name.tag.script.html.vue"
             ],
             "text": "script",
             "start": 2,
@@ -947,20 +1179,25 @@
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js"
+                "punctuation.definition.tag.end.html.vue"
             ],
-            "text": ">\n",
+            "text": ">",
             "start": 8,
+            "end": 9
+        },
+        {
+            "scopes": [
+                "source.vue"
+            ],
+            "text": "\n",
+            "start": 9,
             "end": 10
         }
     ],
     [
         {
             "scopes": [
-                "source.vue",
-                "source.js",
-                "meta.import.js"
+                "source.vue"
             ],
             "text": "\n",
             "start": 0,
@@ -971,8 +1208,7 @@
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js"
+                "punctuation.definition.tag.begin.html.vue"
             ],
             "text": "<",
             "start": 0,
@@ -981,9 +1217,7 @@
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js",
-                "variable.other.readwrite.alias.js"
+                "entity.name.tag.template.html.vue"
             ],
             "text": "template",
             "start": 1,
@@ -992,11 +1226,20 @@
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js"
+                "meta.tag-stuff",
+                "punctuation.definition.tag.end.html.vue"
             ],
-            "text": ">\n",
+            "text": ">",
             "start": 9,
+            "end": 10
+        },
+        {
+            "scopes": [
+                "source.vue",
+                "text.html.derivative"
+            ],
+            "text": "\n",
+            "start": 10,
             "end": 11
         }
     ],
@@ -1004,19 +1247,29 @@
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js"
+                "text.html.derivative"
             ],
-            "text": "  <",
+            "text": "  ",
             "start": 0,
+            "end": 2
+        },
+        {
+            "scopes": [
+                "source.vue",
+                "text.html.derivative",
+                "meta.tag.structure.h1.start.html",
+                "punctuation.definition.tag.begin.html"
+            ],
+            "text": "<",
+            "start": 2,
             "end": 3
         },
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js",
-                "variable.other.readwrite.alias.js"
+                "text.html.derivative",
+                "meta.tag.structure.h1.start.html",
+                "entity.name.tag.html"
             ],
             "text": "h1",
             "start": 3,
@@ -1025,8 +1278,9 @@
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js"
+                "text.html.derivative",
+                "meta.tag.structure.h1.start.html",
+                "punctuation.definition.tag.end.html"
             ],
             "text": ">",
             "start": 5,
@@ -1035,77 +1289,29 @@
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js",
-                "meta.block.js",
-                "punctuation.definition.block.js"
+                "text.html.derivative"
             ],
-            "text": "{",
+            "text": "{{ message }}",
             "start": 6,
-            "end": 7
+            "end": 19
         },
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js",
-                "meta.block.js"
+                "text.html.derivative",
+                "meta.tag.structure.h1.end.html",
+                "punctuation.definition.tag.begin.html"
             ],
-            "text": "{ ",
-            "start": 7,
-            "end": 9
-        },
-        {
-            "scopes": [
-                "source.vue",
-                "source.js",
-                "meta.import.js",
-                "meta.block.js",
-                "variable.other.readwrite.alias.js"
-            ],
-            "text": "message",
-            "start": 9,
-            "end": 16
-        },
-        {
-            "scopes": [
-                "source.vue",
-                "source.js",
-                "meta.import.js",
-                "meta.block.js"
-            ],
-            "text": " ",
-            "start": 16,
-            "end": 17
-        },
-        {
-            "scopes": [
-                "source.vue",
-                "source.js",
-                "meta.import.js",
-                "meta.block.js",
-                "punctuation.definition.block.js"
-            ],
-            "text": "}",
-            "start": 17,
-            "end": 18
-        },
-        {
-            "scopes": [
-                "source.vue",
-                "source.js",
-                "meta.import.js"
-            ],
-            "text": "}<\/",
-            "start": 18,
+            "text": "<\/",
+            "start": 19,
             "end": 21
         },
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js",
-                "variable.other.readwrite.alias.js"
+                "text.html.derivative",
+                "meta.tag.structure.h1.end.html",
+                "entity.name.tag.html"
             ],
             "text": "h1",
             "start": 21,
@@ -1114,11 +1320,21 @@
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js"
+                "text.html.derivative",
+                "meta.tag.structure.h1.end.html",
+                "punctuation.definition.tag.end.html"
             ],
-            "text": ">\n",
+            "text": ">",
             "start": 23,
+            "end": 24
+        },
+        {
+            "scopes": [
+                "source.vue",
+                "text.html.derivative"
+            ],
+            "text": "\n",
+            "start": 24,
             "end": 25
         }
     ],
@@ -1126,19 +1342,29 @@
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js"
+                "text.html.derivative"
             ],
-            "text": "  <",
+            "text": "  ",
             "start": 0,
+            "end": 2
+        },
+        {
+            "scopes": [
+                "source.vue",
+                "text.html.derivative",
+                "meta.tag.structure.button.start.html",
+                "punctuation.definition.tag.begin.html"
+            ],
+            "text": "<",
+            "start": 2,
             "end": 3
         },
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js",
-                "variable.other.readwrite.alias.js"
+                "text.html.derivative",
+                "meta.tag.structure.button.start.html",
+                "entity.name.tag.html"
             ],
             "text": "button",
             "start": 3,
@@ -1147,29 +1373,32 @@
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js"
+                "text.html.derivative",
+                "meta.tag.structure.button.start.html"
             ],
-            "text": " @",
+            "text": " ",
             "start": 9,
-            "end": 11
+            "end": 10
         },
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js",
-                "variable.other.readwrite.alias.js"
+                "text.html.derivative",
+                "meta.tag.structure.button.start.html",
+                "meta.attribute.unrecognized.@click.html",
+                "entity.other.attribute-name.html"
             ],
-            "text": "click",
-            "start": 11,
+            "text": "@click",
+            "start": 10,
             "end": 16
         },
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js"
+                "text.html.derivative",
+                "meta.tag.structure.button.start.html",
+                "meta.attribute.unrecognized.@click.html",
+                "punctuation.separator.key-value.html"
             ],
             "text": "=",
             "start": 16,
@@ -1178,10 +1407,11 @@
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js",
-                "string.quoted.double.js",
-                "punctuation.definition.string.begin.js"
+                "text.html.derivative",
+                "meta.tag.structure.button.start.html",
+                "meta.attribute.unrecognized.@click.html",
+                "string.quoted.double.html",
+                "punctuation.definition.string.begin.html"
             ],
             "text": "\"",
             "start": 17,
@@ -1190,9 +1420,10 @@
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js",
-                "string.quoted.double.js"
+                "text.html.derivative",
+                "meta.tag.structure.button.start.html",
+                "meta.attribute.unrecognized.@click.html",
+                "string.quoted.double.html"
             ],
             "text": "reverseMessage",
             "start": 18,
@@ -1201,10 +1432,11 @@
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js",
-                "string.quoted.double.js",
-                "punctuation.definition.string.end.js"
+                "text.html.derivative",
+                "meta.tag.structure.button.start.html",
+                "meta.attribute.unrecognized.@click.html",
+                "string.quoted.double.html",
+                "punctuation.definition.string.end.html"
             ],
             "text": "\"",
             "start": 32,
@@ -1213,8 +1445,9 @@
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js"
+                "text.html.derivative",
+                "meta.tag.structure.button.start.html",
+                "punctuation.definition.tag.end.html"
             ],
             "text": ">",
             "start": 33,
@@ -1223,40 +1456,18 @@
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js",
-                "variable.other.readwrite.alias.js"
+                "text.html.derivative"
             ],
-            "text": "Reverse",
+            "text": "Reverse Message",
             "start": 34,
-            "end": 41
-        },
-        {
-            "scopes": [
-                "source.vue",
-                "source.js",
-                "meta.import.js"
-            ],
-            "text": " ",
-            "start": 41,
-            "end": 42
-        },
-        {
-            "scopes": [
-                "source.vue",
-                "source.js",
-                "meta.import.js",
-                "variable.other.readwrite.alias.js"
-            ],
-            "text": "Message",
-            "start": 42,
             "end": 49
         },
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js"
+                "text.html.derivative",
+                "meta.tag.structure.button.end.html",
+                "punctuation.definition.tag.begin.html"
             ],
             "text": "<\/",
             "start": 49,
@@ -1265,9 +1476,9 @@
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js",
-                "variable.other.readwrite.alias.js"
+                "text.html.derivative",
+                "meta.tag.structure.button.end.html",
+                "entity.name.tag.html"
             ],
             "text": "button",
             "start": 51,
@@ -1276,11 +1487,21 @@
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js"
+                "text.html.derivative",
+                "meta.tag.structure.button.end.html",
+                "punctuation.definition.tag.end.html"
             ],
-            "text": ">\n",
+            "text": ">",
             "start": 57,
+            "end": 58
+        },
+        {
+            "scopes": [
+                "source.vue",
+                "text.html.derivative"
+            ],
+            "text": "\n",
+            "start": 58,
             "end": 59
         }
     ],
@@ -1288,19 +1509,29 @@
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js"
+                "text.html.derivative"
             ],
-            "text": "  <",
+            "text": "  ",
             "start": 0,
+            "end": 2
+        },
+        {
+            "scopes": [
+                "source.vue",
+                "text.html.derivative",
+                "meta.tag.structure.button.start.html",
+                "punctuation.definition.tag.begin.html"
+            ],
+            "text": "<",
+            "start": 2,
             "end": 3
         },
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js",
-                "variable.other.readwrite.alias.js"
+                "text.html.derivative",
+                "meta.tag.structure.button.start.html",
+                "entity.name.tag.html"
             ],
             "text": "button",
             "start": 3,
@@ -1309,29 +1540,32 @@
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js"
+                "text.html.derivative",
+                "meta.tag.structure.button.start.html"
             ],
-            "text": " @",
+            "text": " ",
             "start": 9,
-            "end": 11
+            "end": 10
         },
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js",
-                "variable.other.readwrite.alias.js"
+                "text.html.derivative",
+                "meta.tag.structure.button.start.html",
+                "meta.attribute.unrecognized.@click.html",
+                "entity.other.attribute-name.html"
             ],
-            "text": "click",
-            "start": 11,
+            "text": "@click",
+            "start": 10,
             "end": 16
         },
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js"
+                "text.html.derivative",
+                "meta.tag.structure.button.start.html",
+                "meta.attribute.unrecognized.@click.html",
+                "punctuation.separator.key-value.html"
             ],
             "text": "=",
             "start": 16,
@@ -1340,10 +1574,11 @@
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js",
-                "string.quoted.double.js",
-                "punctuation.definition.string.begin.js"
+                "text.html.derivative",
+                "meta.tag.structure.button.start.html",
+                "meta.attribute.unrecognized.@click.html",
+                "string.quoted.double.html",
+                "punctuation.definition.string.begin.html"
             ],
             "text": "\"",
             "start": 17,
@@ -1352,9 +1587,10 @@
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js",
-                "string.quoted.double.js"
+                "text.html.derivative",
+                "meta.tag.structure.button.start.html",
+                "meta.attribute.unrecognized.@click.html",
+                "string.quoted.double.html"
             ],
             "text": "message += '!'",
             "start": 18,
@@ -1363,10 +1599,11 @@
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js",
-                "string.quoted.double.js",
-                "punctuation.definition.string.end.js"
+                "text.html.derivative",
+                "meta.tag.structure.button.start.html",
+                "meta.attribute.unrecognized.@click.html",
+                "string.quoted.double.html",
+                "punctuation.definition.string.end.html"
             ],
             "text": "\"",
             "start": 32,
@@ -1375,8 +1612,9 @@
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js"
+                "text.html.derivative",
+                "meta.tag.structure.button.start.html",
+                "punctuation.definition.tag.end.html"
             ],
             "text": ">",
             "start": 33,
@@ -1385,64 +1623,18 @@
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js",
-                "variable.other.readwrite.alias.js"
+                "text.html.derivative"
             ],
-            "text": "Append",
+            "text": "Append \"!\"",
             "start": 34,
-            "end": 40
-        },
-        {
-            "scopes": [
-                "source.vue",
-                "source.js",
-                "meta.import.js"
-            ],
-            "text": " ",
-            "start": 40,
-            "end": 41
-        },
-        {
-            "scopes": [
-                "source.vue",
-                "source.js",
-                "meta.import.js",
-                "string.quoted.double.js",
-                "punctuation.definition.string.begin.js"
-            ],
-            "text": "\"",
-            "start": 41,
-            "end": 42
-        },
-        {
-            "scopes": [
-                "source.vue",
-                "source.js",
-                "meta.import.js",
-                "string.quoted.double.js"
-            ],
-            "text": "!",
-            "start": 42,
-            "end": 43
-        },
-        {
-            "scopes": [
-                "source.vue",
-                "source.js",
-                "meta.import.js",
-                "string.quoted.double.js",
-                "punctuation.definition.string.end.js"
-            ],
-            "text": "\"",
-            "start": 43,
             "end": 44
         },
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js"
+                "text.html.derivative",
+                "meta.tag.structure.button.end.html",
+                "punctuation.definition.tag.begin.html"
             ],
             "text": "<\/",
             "start": 44,
@@ -1451,9 +1643,9 @@
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js",
-                "variable.other.readwrite.alias.js"
+                "text.html.derivative",
+                "meta.tag.structure.button.end.html",
+                "entity.name.tag.html"
             ],
             "text": "button",
             "start": 46,
@@ -1462,11 +1654,21 @@
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js"
+                "text.html.derivative",
+                "meta.tag.structure.button.end.html",
+                "punctuation.definition.tag.end.html"
             ],
-            "text": ">\n",
+            "text": ">",
             "start": 52,
+            "end": 53
+        },
+        {
+            "scopes": [
+                "source.vue",
+                "text.html.derivative"
+            ],
+            "text": "\n",
+            "start": 53,
             "end": 54
         }
     ],
@@ -1474,19 +1676,29 @@
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js"
+                "text.html.derivative"
             ],
-            "text": "  <",
+            "text": "  ",
             "start": 0,
+            "end": 2
+        },
+        {
+            "scopes": [
+                "source.vue",
+                "text.html.derivative",
+                "meta.tag.inline.a.start.html",
+                "punctuation.definition.tag.begin.html"
+            ],
+            "text": "<",
+            "start": 2,
             "end": 3
         },
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js",
-                "variable.other.readwrite.alias.js"
+                "text.html.derivative",
+                "meta.tag.inline.a.start.html",
+                "entity.name.tag.html"
             ],
             "text": "a",
             "start": 3,
@@ -1495,8 +1707,8 @@
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js"
+                "text.html.derivative",
+                "meta.tag.inline.a.start.html"
             ],
             "text": " ",
             "start": 4,
@@ -1505,9 +1717,10 @@
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js",
-                "variable.other.readwrite.alias.js"
+                "text.html.derivative",
+                "meta.tag.inline.a.start.html",
+                "meta.attribute.href.html",
+                "entity.other.attribute-name.html"
             ],
             "text": "href",
             "start": 5,
@@ -1516,8 +1729,10 @@
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js"
+                "text.html.derivative",
+                "meta.tag.inline.a.start.html",
+                "meta.attribute.href.html",
+                "punctuation.separator.key-value.html"
             ],
             "text": "=",
             "start": 9,
@@ -1526,10 +1741,11 @@
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js",
-                "string.quoted.double.js",
-                "punctuation.definition.string.begin.js"
+                "text.html.derivative",
+                "meta.tag.inline.a.start.html",
+                "meta.attribute.href.html",
+                "string.quoted.double.html",
+                "punctuation.definition.string.begin.html"
             ],
             "text": "\"",
             "start": 10,
@@ -1538,9 +1754,10 @@
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js",
-                "string.quoted.double.js"
+                "text.html.derivative",
+                "meta.tag.inline.a.start.html",
+                "meta.attribute.href.html",
+                "string.quoted.double.html"
             ],
             "text": "https:\/\/vuejs.org",
             "start": 11,
@@ -1549,10 +1766,11 @@
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js",
-                "string.quoted.double.js",
-                "punctuation.definition.string.end.js"
+                "text.html.derivative",
+                "meta.tag.inline.a.start.html",
+                "meta.attribute.href.html",
+                "string.quoted.double.html",
+                "punctuation.definition.string.end.html"
             ],
             "text": "\"",
             "start": 28,
@@ -1561,50 +1779,32 @@
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js"
+                "text.html.derivative",
+                "meta.tag.inline.a.start.html"
             ],
-            "text": " @",
+            "text": " ",
             "start": 29,
-            "end": 31
+            "end": 30
         },
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js",
-                "variable.other.readwrite.alias.js"
+                "text.html.derivative",
+                "meta.tag.inline.a.start.html",
+                "meta.attribute.unrecognized.@click.prevent.html",
+                "entity.other.attribute-name.html"
             ],
-            "text": "click",
-            "start": 31,
-            "end": 36
-        },
-        {
-            "scopes": [
-                "source.vue",
-                "source.js",
-                "meta.import.js"
-            ],
-            "text": ".",
-            "start": 36,
-            "end": 37
-        },
-        {
-            "scopes": [
-                "source.vue",
-                "source.js",
-                "meta.import.js",
-                "variable.other.readwrite.alias.js"
-            ],
-            "text": "prevent",
-            "start": 37,
+            "text": "@click.prevent",
+            "start": 30,
             "end": 44
         },
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js"
+                "text.html.derivative",
+                "meta.tag.inline.a.start.html",
+                "meta.attribute.unrecognized.@click.prevent.html",
+                "punctuation.separator.key-value.html"
             ],
             "text": "=",
             "start": 44,
@@ -1613,10 +1813,11 @@
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js",
-                "string.quoted.double.js",
-                "punctuation.definition.string.begin.js"
+                "text.html.derivative",
+                "meta.tag.inline.a.start.html",
+                "meta.attribute.unrecognized.@click.prevent.html",
+                "string.quoted.double.html",
+                "punctuation.definition.string.begin.html"
             ],
             "text": "\"",
             "start": 45,
@@ -1625,9 +1826,10 @@
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js",
-                "string.quoted.double.js"
+                "text.html.derivative",
+                "meta.tag.inline.a.start.html",
+                "meta.attribute.unrecognized.@click.prevent.html",
+                "string.quoted.double.html"
             ],
             "text": "notify",
             "start": 46,
@@ -1636,10 +1838,11 @@
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js",
-                "string.quoted.double.js",
-                "punctuation.definition.string.end.js"
+                "text.html.derivative",
+                "meta.tag.inline.a.start.html",
+                "meta.attribute.unrecognized.@click.prevent.html",
+                "string.quoted.double.html",
+                "punctuation.definition.string.end.html"
             ],
             "text": "\"",
             "start": 52,
@@ -1648,11 +1851,21 @@
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js"
+                "text.html.derivative",
+                "meta.tag.inline.a.start.html",
+                "punctuation.definition.tag.end.html"
             ],
-            "text": ">\n",
+            "text": ">",
             "start": 53,
+            "end": 54
+        },
+        {
+            "scopes": [
+                "source.vue",
+                "text.html.derivative"
+            ],
+            "text": "\n",
+            "start": 54,
             "end": 55
         }
     ],
@@ -1660,116 +1873,10 @@
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js"
+                "text.html.derivative"
             ],
-            "text": "    ",
+            "text": "    A link with e.preventDefault()\n",
             "start": 0,
-            "end": 4
-        },
-        {
-            "scopes": [
-                "source.vue",
-                "source.js",
-                "meta.import.js",
-                "variable.other.readwrite.alias.js"
-            ],
-            "text": "A",
-            "start": 4,
-            "end": 5
-        },
-        {
-            "scopes": [
-                "source.vue",
-                "source.js",
-                "meta.import.js"
-            ],
-            "text": " ",
-            "start": 5,
-            "end": 6
-        },
-        {
-            "scopes": [
-                "source.vue",
-                "source.js",
-                "meta.import.js",
-                "variable.other.readwrite.alias.js"
-            ],
-            "text": "link",
-            "start": 6,
-            "end": 10
-        },
-        {
-            "scopes": [
-                "source.vue",
-                "source.js",
-                "meta.import.js"
-            ],
-            "text": " ",
-            "start": 10,
-            "end": 11
-        },
-        {
-            "scopes": [
-                "source.vue",
-                "source.js",
-                "meta.import.js",
-                "variable.other.readwrite.alias.js"
-            ],
-            "text": "with",
-            "start": 11,
-            "end": 15
-        },
-        {
-            "scopes": [
-                "source.vue",
-                "source.js",
-                "meta.import.js"
-            ],
-            "text": " ",
-            "start": 15,
-            "end": 16
-        },
-        {
-            "scopes": [
-                "source.vue",
-                "source.js",
-                "meta.import.js",
-                "variable.other.readwrite.alias.js"
-            ],
-            "text": "e",
-            "start": 16,
-            "end": 17
-        },
-        {
-            "scopes": [
-                "source.vue",
-                "source.js",
-                "meta.import.js"
-            ],
-            "text": ".",
-            "start": 17,
-            "end": 18
-        },
-        {
-            "scopes": [
-                "source.vue",
-                "source.js",
-                "meta.import.js",
-                "variable.other.readwrite.alias.js"
-            ],
-            "text": "preventDefault",
-            "start": 18,
-            "end": 32
-        },
-        {
-            "scopes": [
-                "source.vue",
-                "source.js",
-                "meta.import.js"
-            ],
-            "text": "()\n",
-            "start": 32,
             "end": 35
         }
     ],
@@ -1777,19 +1884,29 @@
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js"
+                "text.html.derivative"
             ],
-            "text": "  <\/",
+            "text": "  ",
             "start": 0,
+            "end": 2
+        },
+        {
+            "scopes": [
+                "source.vue",
+                "text.html.derivative",
+                "meta.tag.inline.a.end.html",
+                "punctuation.definition.tag.begin.html"
+            ],
+            "text": "<\/",
+            "start": 2,
             "end": 4
         },
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js",
-                "variable.other.readwrite.alias.js"
+                "text.html.derivative",
+                "meta.tag.inline.a.end.html",
+                "entity.name.tag.html"
             ],
             "text": "a",
             "start": 4,
@@ -1798,11 +1915,21 @@
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js"
+                "text.html.derivative",
+                "meta.tag.inline.a.end.html",
+                "punctuation.definition.tag.end.html"
             ],
-            "text": ">\n",
+            "text": ">",
             "start": 5,
+            "end": 6
+        },
+        {
+            "scopes": [
+                "source.vue",
+                "text.html.derivative"
+            ],
+            "text": "\n",
+            "start": 6,
             "end": 7
         }
     ],
@@ -1810,8 +1937,7 @@
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js"
+                "punctuation.definition.tag.begin.html.vue"
             ],
             "text": "<\/",
             "start": 0,
@@ -1820,9 +1946,7 @@
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js",
-                "variable.other.readwrite.alias.js"
+                "entity.name.tag.template.html.vue"
             ],
             "text": "template",
             "start": 2,
@@ -1831,20 +1955,25 @@
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js"
+                "punctuation.definition.tag.end.html.vue"
             ],
-            "text": ">\n",
+            "text": ">",
             "start": 10,
+            "end": 11
+        },
+        {
+            "scopes": [
+                "source.vue"
+            ],
+            "text": "\n",
+            "start": 11,
             "end": 12
         }
     ],
     [
         {
             "scopes": [
-                "source.vue",
-                "source.js",
-                "meta.import.js"
+                "source.vue"
             ],
             "text": "\n",
             "start": 0,
@@ -1855,8 +1984,7 @@
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js"
+                "punctuation.definition.tag.begin.html.vue"
             ],
             "text": "<",
             "start": 0,
@@ -1865,9 +1993,7 @@
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js",
-                "variable.other.readwrite.alias.js"
+                "entity.name.tag.style.html.vue"
             ],
             "text": "style",
             "start": 1,
@@ -1876,11 +2002,20 @@
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js"
+                "meta.tag-stuff",
+                "punctuation.definition.tag.end.html.vue"
             ],
-            "text": ">\n",
+            "text": ">",
             "start": 6,
+            "end": 7
+        },
+        {
+            "scopes": [
+                "source.vue",
+                "source.css"
+            ],
+            "text": "\n",
+            "start": 7,
             "end": 8
         }
     ],
@@ -1888,9 +2023,9 @@
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js",
-                "variable.other.readwrite.alias.js"
+                "source.css",
+                "meta.selector.css",
+                "entity.name.tag.css"
             ],
             "text": "button",
             "start": 0,
@@ -1899,9 +2034,9 @@
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js",
-                "punctuation.separator.comma.js"
+                "source.css",
+                "meta.selector.css",
+                "punctuation.separator.list.comma.css"
             ],
             "text": ",",
             "start": 6,
@@ -1910,8 +2045,8 @@
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js"
+                "source.css",
+                "meta.selector.css"
             ],
             "text": " ",
             "start": 7,
@@ -1920,9 +2055,9 @@
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js",
-                "variable.other.readwrite.alias.js"
+                "source.css",
+                "meta.selector.css",
+                "entity.name.tag.css"
             ],
             "text": "a",
             "start": 8,
@@ -1931,8 +2066,7 @@
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js"
+                "source.css"
             ],
             "text": " ",
             "start": 9,
@@ -1941,10 +2075,9 @@
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js",
-                "meta.block.js",
-                "punctuation.definition.block.js"
+                "source.css",
+                "meta.property-list.css",
+                "punctuation.section.property-list.begin.bracket.curly.css"
             ],
             "text": "{",
             "start": 10,
@@ -1953,9 +2086,8 @@
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js",
-                "meta.block.js"
+                "source.css",
+                "meta.property-list.css"
             ],
             "text": "\n",
             "start": 11,
@@ -1966,9 +2098,8 @@
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js",
-                "meta.block.js"
+                "source.css",
+                "meta.property-list.css"
             ],
             "text": "  ",
             "start": 0,
@@ -1977,10 +2108,10 @@
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js",
-                "meta.block.js",
-                "variable.other.readwrite.alias.js"
+                "source.css",
+                "meta.property-list.css",
+                "meta.property-name.css",
+                "support.type.property-name.css"
             ],
             "text": "display",
             "start": 2,
@@ -1989,21 +2120,31 @@
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js",
-                "meta.block.js"
+                "source.css",
+                "meta.property-list.css",
+                "punctuation.separator.key-value.css"
             ],
-            "text": ": ",
+            "text": ":",
             "start": 9,
+            "end": 10
+        },
+        {
+            "scopes": [
+                "source.vue",
+                "source.css",
+                "meta.property-list.css"
+            ],
+            "text": " ",
+            "start": 10,
             "end": 11
         },
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js",
-                "meta.block.js",
-                "variable.other.readwrite.alias.js"
+                "source.css",
+                "meta.property-list.css",
+                "meta.property-value.css",
+                "support.constant.property-value.css"
             ],
             "text": "block",
             "start": 11,
@@ -2012,12 +2153,22 @@
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js",
-                "meta.block.js"
+                "source.css",
+                "meta.property-list.css",
+                "punctuation.terminator.rule.css"
             ],
-            "text": ";\n",
+            "text": ";",
             "start": 16,
+            "end": 17
+        },
+        {
+            "scopes": [
+                "source.vue",
+                "source.css",
+                "meta.property-list.css"
+            ],
+            "text": "\n",
+            "start": 17,
             "end": 18
         }
     ],
@@ -2025,9 +2176,8 @@
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js",
-                "meta.block.js"
+                "source.css",
+                "meta.property-list.css"
             ],
             "text": "  ",
             "start": 0,
@@ -2036,56 +2186,56 @@
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js",
-                "meta.block.js",
-                "variable.other.readwrite.alias.js"
+                "source.css",
+                "meta.property-list.css",
+                "meta.property-name.css",
+                "support.type.property-name.css"
             ],
-            "text": "margin",
+            "text": "margin-bottom",
             "start": 2,
-            "end": 8
-        },
-        {
-            "scopes": [
-                "source.vue",
-                "source.js",
-                "meta.import.js",
-                "meta.block.js"
-            ],
-            "text": "-",
-            "start": 8,
-            "end": 9
-        },
-        {
-            "scopes": [
-                "source.vue",
-                "source.js",
-                "meta.import.js",
-                "meta.block.js",
-                "variable.other.readwrite.alias.js"
-            ],
-            "text": "bottom",
-            "start": 9,
             "end": 15
         },
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js",
-                "meta.block.js"
+                "source.css",
+                "meta.property-list.css",
+                "punctuation.separator.key-value.css"
             ],
-            "text": ": 1",
+            "text": ":",
             "start": 15,
+            "end": 16
+        },
+        {
+            "scopes": [
+                "source.vue",
+                "source.css",
+                "meta.property-list.css"
+            ],
+            "text": " ",
+            "start": 16,
+            "end": 17
+        },
+        {
+            "scopes": [
+                "source.vue",
+                "source.css",
+                "meta.property-list.css",
+                "meta.property-value.css",
+                "constant.numeric.css"
+            ],
+            "text": "1",
+            "start": 17,
             "end": 18
         },
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js",
-                "meta.block.js",
-                "variable.other.readwrite.alias.js"
+                "source.css",
+                "meta.property-list.css",
+                "meta.property-value.css",
+                "constant.numeric.css",
+                "keyword.other.unit.1em.css"
             ],
             "text": "em",
             "start": 18,
@@ -2094,12 +2244,22 @@
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js",
-                "meta.block.js"
+                "source.css",
+                "meta.property-list.css",
+                "punctuation.terminator.rule.css"
             ],
-            "text": ";\n",
+            "text": ";",
             "start": 20,
+            "end": 21
+        },
+        {
+            "scopes": [
+                "source.vue",
+                "source.css",
+                "meta.property-list.css"
+            ],
+            "text": "\n",
+            "start": 21,
             "end": 22
         }
     ],
@@ -2107,10 +2267,9 @@
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js",
-                "meta.block.js",
-                "punctuation.definition.block.js"
+                "source.css",
+                "meta.property-list.css",
+                "punctuation.section.property-list.end.bracket.curly.css"
             ],
             "text": "}",
             "start": 0,
@@ -2119,8 +2278,7 @@
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js"
+                "source.css"
             ],
             "text": "\n",
             "start": 1,
@@ -2131,8 +2289,7 @@
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js"
+                "punctuation.definition.tag.begin.html.vue"
             ],
             "text": "<\/",
             "start": 0,
@@ -2141,9 +2298,7 @@
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js",
-                "variable.other.readwrite.alias.js"
+                "entity.name.tag.style.html.vue"
             ],
             "text": "style",
             "start": 2,
@@ -2152,20 +2307,25 @@
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js"
+                "punctuation.definition.tag.end.html.vue"
             ],
-            "text": ">\n",
+            "text": ">",
             "start": 7,
+            "end": 8
+        },
+        {
+            "scopes": [
+                "source.vue"
+            ],
+            "text": "\n",
+            "start": 8,
             "end": 9
         }
     ],
     [
         {
             "scopes": [
-                "source.vue",
-                "source.js",
-                "meta.import.js"
+                "source.vue"
             ],
             "text": "\n",
             "start": 0,
@@ -2176,85 +2336,45 @@
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js"
+                "comment.block.vue",
+                "punctuation.definition.comment.vue"
             ],
-            "text": "<!-- ",
+            "text": "<!--",
             "start": 0,
-            "end": 5
+            "end": 4
         },
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js",
-                "keyword.control.from.js"
+                "comment.block.vue"
             ],
-            "text": "from",
-            "start": 5,
-            "end": 9
+            "text": " from https:\/\/vuejs.org\/examples\/#handling-input ",
+            "start": 4,
+            "end": 53
         },
         {
             "scopes": [
                 "source.vue",
-                "source.js",
-                "meta.import.js"
+                "comment.block.vue",
+                "punctuation.definition.comment.vue"
             ],
-            "text": " ",
-            "start": 9,
-            "end": 10
+            "text": "-->",
+            "start": 53,
+            "end": 56
         },
         {
             "scopes": [
-                "source.vue",
-                "source.js",
-                "meta.import.js",
-                "variable.other.readwrite.alias.js"
+                "source.vue"
             ],
-            "text": "https",
-            "start": 10,
-            "end": 15
-        },
-        {
-            "scopes": [
-                "source.vue",
-                "source.js",
-                "meta.import.js"
-            ],
-            "text": ":",
-            "start": 15,
-            "end": 16
-        },
-        {
-            "scopes": [
-                "source.vue",
-                "source.js",
-                "meta.import.js",
-                "comment.line.double-slash.js",
-                "punctuation.definition.comment.js"
-            ],
-            "text": "\/\/",
-            "start": 16,
-            "end": 18
-        },
-        {
-            "scopes": [
-                "source.vue",
-                "source.js",
-                "meta.import.js",
-                "comment.line.double-slash.js"
-            ],
-            "text": "vuejs.org\/examples\/#handling-input -->\n",
-            "start": 18,
+            "text": "\n",
+            "start": 56,
             "end": 57
         }
     ],
     [
         {
             "scopes": [
-                "source.vue",
-                "source.js",
-                "meta.import.js"
+                "source.vue"
             ],
             "text": "\n",
             "start": 0,

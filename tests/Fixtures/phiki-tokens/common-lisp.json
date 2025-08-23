@@ -4,8 +4,59 @@
             "scopes": [
                 "source.commonlisp"
             ],
-            "text": "(with-test (:name :aprof-instance :skipped-on (",
+            "text": "(with-test (",
             "start": 0,
+            "end": 12
+        },
+        {
+            "scopes": [
+                "source.commonlisp",
+                "entity.name.variable.commonlisp"
+            ],
+            "text": ":name",
+            "start": 12,
+            "end": 17
+        },
+        {
+            "scopes": [
+                "source.commonlisp"
+            ],
+            "text": " ",
+            "start": 17,
+            "end": 18
+        },
+        {
+            "scopes": [
+                "source.commonlisp",
+                "entity.name.variable.commonlisp"
+            ],
+            "text": ":aprof-instance",
+            "start": 18,
+            "end": 33
+        },
+        {
+            "scopes": [
+                "source.commonlisp"
+            ],
+            "text": " ",
+            "start": 33,
+            "end": 34
+        },
+        {
+            "scopes": [
+                "source.commonlisp",
+                "entity.name.variable.commonlisp"
+            ],
+            "text": ":skipped-on",
+            "start": 34,
+            "end": 45
+        },
+        {
+            "scopes": [
+                "source.commonlisp"
+            ],
+            "text": " (",
+            "start": 45,
             "end": 47
         },
         {
@@ -21,8 +72,25 @@
             "scopes": [
                 "source.commonlisp"
             ],
-            "text": " :immobile-space))\n",
+            "text": " ",
             "start": 50,
+            "end": 51
+        },
+        {
+            "scopes": [
+                "source.commonlisp",
+                "entity.name.variable.commonlisp"
+            ],
+            "text": ":immobile-space",
+            "start": 51,
+            "end": 66
+        },
+        {
+            "scopes": [
+                "source.commonlisp"
+            ],
+            "text": "))\n",
+            "start": 66,
             "end": 69
         }
     ],
@@ -120,8 +188,59 @@
             "scopes": [
                 "source.commonlisp"
             ],
-            "text": "                     (sb-aprof:aprof-run #'make-structs :stream s))\n",
+            "text": "                     (",
             "start": 0,
+            "end": 22
+        },
+        {
+            "scopes": [
+                "source.commonlisp",
+                "support.type.package.commonlisp"
+            ],
+            "text": "sb-aprof",
+            "start": 22,
+            "end": 30
+        },
+        {
+            "scopes": [
+                "source.commonlisp"
+            ],
+            "text": ":aprof-run ",
+            "start": 30,
+            "end": 41
+        },
+        {
+            "scopes": [
+                "source.commonlisp",
+                "variable.other.constant.sharpsign.commonlisp"
+            ],
+            "text": "#'",
+            "start": 41,
+            "end": 43
+        },
+        {
+            "scopes": [
+                "source.commonlisp"
+            ],
+            "text": "make-structs ",
+            "start": 43,
+            "end": 56
+        },
+        {
+            "scopes": [
+                "source.commonlisp",
+                "entity.name.variable.commonlisp"
+            ],
+            "text": ":stream",
+            "start": 56,
+            "end": 63
+        },
+        {
+            "scopes": [
+                "source.commonlisp"
+            ],
+            "text": " s))\n",
+            "start": 63,
             "end": 68
         }
     ],
@@ -245,8 +364,25 @@
             "scopes": [
                 "source.commonlisp"
             ],
-            "text": " seen-this t))\n",
+            "text": " seen-this ",
             "start": 45,
+            "end": 56
+        },
+        {
+            "scopes": [
+                "source.commonlisp",
+                "constant.language.commonlisp"
+            ],
+            "text": "t",
+            "start": 56,
+            "end": 57
+        },
+        {
+            "scopes": [
+                "source.commonlisp"
+            ],
+            "text": "))\n",
+            "start": 57,
             "end": 60
         }
     ],
@@ -343,8 +479,25 @@
             "scopes": [
                 "source.commonlisp"
             ],
-            "text": " seen-that t)))\n",
+            "text": " seen-that ",
             "start": 45,
+            "end": 56
+        },
+        {
+            "scopes": [
+                "source.commonlisp",
+                "constant.language.commonlisp"
+            ],
+            "text": "t",
+            "start": 56,
+            "end": 57
+        },
+        {
+            "scopes": [
+                "source.commonlisp"
+            ],
+            "text": ")))\n",
+            "start": 57,
             "end": 61
         }
     ],
@@ -556,8 +709,25 @@
             "scopes": [
                 "source.commonlisp"
             ],
-            "text": " sb-c::instrument-consing))\n",
+            "text": " ",
             "start": 20,
+            "end": 21
+        },
+        {
+            "scopes": [
+                "source.commonlisp",
+                "support.type.package.commonlisp"
+            ],
+            "text": "sb-c",
+            "start": 21,
+            "end": 25
+        },
+        {
+            "scopes": [
+                "source.commonlisp"
+            ],
+            "text": "::instrument-consing))\n",
+            "start": 25,
             "end": 48
         }
     ],
@@ -593,8 +763,25 @@
             "scopes": [
                 "source.commonlisp"
             ],
-            "text": " 'my-list)\n",
+            "text": " ",
             "start": 8,
+            "end": 9
+        },
+        {
+            "scopes": [
+                "source.commonlisp",
+                "variable.other.constant.singlequote.commonlisp"
+            ],
+            "text": "'",
+            "start": 9,
+            "end": 10
+        },
+        {
+            "scopes": [
+                "source.commonlisp"
+            ],
+            "text": "my-list)\n",
+            "start": 10,
             "end": 19
         }
     ],
@@ -611,10 +798,19 @@
     [
         {
             "scopes": [
+                "source.commonlisp",
+                "variable.other.constant.sharpsign.commonlisp"
+            ],
+            "text": "#+",
+            "start": 0,
+            "end": 2
+        },
+        {
+            "scopes": [
                 "source.commonlisp"
             ],
-            "text": "#+nil\n",
-            "start": 0,
+            "text": "nil\n",
+            "start": 2,
             "end": 6
         }
     ],
@@ -640,8 +836,59 @@
             "scopes": [
                 "source.commonlisp"
             ],
-            "text": " ((l (sb-impl::%hash-table-alist sb-c::*checkgen-used-types*)))\n",
+            "text": " ((l (",
             "start": 4,
+            "end": 10
+        },
+        {
+            "scopes": [
+                "source.commonlisp",
+                "support.type.package.commonlisp"
+            ],
+            "text": "sb-impl",
+            "start": 10,
+            "end": 17
+        },
+        {
+            "scopes": [
+                "source.commonlisp"
+            ],
+            "text": "::%hash-table-alist ",
+            "start": 17,
+            "end": 37
+        },
+        {
+            "scopes": [
+                "source.commonlisp",
+                "support.type.package.commonlisp"
+            ],
+            "text": "sb-c",
+            "start": 37,
+            "end": 41
+        },
+        {
+            "scopes": [
+                "source.commonlisp"
+            ],
+            "text": "::",
+            "start": 41,
+            "end": 43
+        },
+        {
+            "scopes": [
+                "source.commonlisp",
+                "string.regexp.earmuffsasterisk.commonlisp"
+            ],
+            "text": "*checkgen-used-types*",
+            "start": 43,
+            "end": 64
+        },
+        {
+            "scopes": [
+                "source.commonlisp"
+            ],
+            "text": ")))\n",
+            "start": 64,
             "end": 68
         }
     ],
@@ -667,8 +914,25 @@
             "scopes": [
                 "source.commonlisp"
             ],
-            "text": " t ",
+            "text": " ",
             "start": 9,
+            "end": 10
+        },
+        {
+            "scopes": [
+                "source.commonlisp",
+                "constant.language.commonlisp"
+            ],
+            "text": "t",
+            "start": 10,
+            "end": 11
+        },
+        {
+            "scopes": [
+                "source.commonlisp"
+            ],
+            "text": " ",
+            "start": 11,
             "end": 12
         },
         {
@@ -788,8 +1052,17 @@
             "scopes": [
                 "source.commonlisp"
             ],
-            "text": " l #'",
+            "text": " l ",
             "start": 15,
+            "end": 18
+        },
+        {
+            "scopes": [
+                "source.commonlisp",
+                "variable.other.constant.sharpsign.commonlisp"
+            ],
+            "text": "#'",
+            "start": 18,
             "end": 20
         },
         {
@@ -805,8 +1078,34 @@
             "scopes": [
                 "source.commonlisp"
             ],
-            "text": " :key #'",
+            "text": " ",
             "start": 21,
+            "end": 22
+        },
+        {
+            "scopes": [
+                "source.commonlisp",
+                "entity.name.variable.commonlisp"
+            ],
+            "text": ":key",
+            "start": 22,
+            "end": 26
+        },
+        {
+            "scopes": [
+                "source.commonlisp"
+            ],
+            "text": " ",
+            "start": 26,
+            "end": 27
+        },
+        {
+            "scopes": [
+                "source.commonlisp",
+                "variable.other.constant.sharpsign.commonlisp"
+            ],
+            "text": "#'",
+            "start": 27,
             "end": 29
         },
         {
@@ -944,8 +1243,25 @@
             "scopes": [
                 "source.commonlisp"
             ],
-            "text": " t ",
+            "text": " ",
             "start": 18,
+            "end": 19
+        },
+        {
+            "scopes": [
+                "source.commonlisp",
+                "constant.language.commonlisp"
+            ],
+            "text": "t",
+            "start": 19,
+            "end": 20
+        },
+        {
+            "scopes": [
+                "source.commonlisp"
+            ],
+            "text": " ",
+            "start": 20,
             "end": 21
         },
         {
@@ -1192,8 +1508,25 @@
             "scopes": [
                 "source.commonlisp"
             ],
-            "text": " t ",
+            "text": " ",
             "start": 9,
+            "end": 10
+        },
+        {
+            "scopes": [
+                "source.commonlisp",
+                "constant.language.commonlisp"
+            ],
+            "text": "t",
+            "start": 10,
+            "end": 11
+        },
+        {
+            "scopes": [
+                "source.commonlisp"
+            ],
+            "text": " ",
+            "start": 11,
             "end": 12
         },
         {
@@ -1313,8 +1646,42 @@
             "scopes": [
                 "source.commonlisp"
             ],
-            "text": ") across sb-c:+backend-internal-errors+\n",
+            "text": ") across ",
             "start": 24,
+            "end": 33
+        },
+        {
+            "scopes": [
+                "source.commonlisp",
+                "support.type.package.commonlisp"
+            ],
+            "text": "sb-c",
+            "start": 33,
+            "end": 37
+        },
+        {
+            "scopes": [
+                "source.commonlisp"
+            ],
+            "text": ":",
+            "start": 37,
+            "end": 38
+        },
+        {
+            "scopes": [
+                "source.commonlisp",
+                "variable.other.constant.earmuffsplus.commonlisp"
+            ],
+            "text": "+backend-internal-errors+",
+            "start": 38,
+            "end": 63
+        },
+        {
+            "scopes": [
+                "source.commonlisp"
+            ],
+            "text": "\n",
+            "start": 63,
             "end": 64
         }
     ],
@@ -1435,8 +1802,42 @@
             "scopes": [
                 "source.commonlisp"
             ],
-            "text": " spec sb-c::*checkgen-used-types*)))\n",
+            "text": " spec ",
             "start": 31,
+            "end": 37
+        },
+        {
+            "scopes": [
+                "source.commonlisp",
+                "support.type.package.commonlisp"
+            ],
+            "text": "sb-c",
+            "start": 37,
+            "end": 41
+        },
+        {
+            "scopes": [
+                "source.commonlisp"
+            ],
+            "text": "::",
+            "start": 41,
+            "end": 43
+        },
+        {
+            "scopes": [
+                "source.commonlisp",
+                "string.regexp.earmuffsasterisk.commonlisp"
+            ],
+            "text": "*checkgen-used-types*",
+            "start": 43,
+            "end": 64
+        },
+        {
+            "scopes": [
+                "source.commonlisp"
+            ],
+            "text": ")))\n",
+            "start": 64,
             "end": 68
         }
     ],
@@ -1479,8 +1880,25 @@
             "scopes": [
                 "source.commonlisp"
             ],
-            "text": " t ",
+            "text": " ",
             "start": 20,
+            "end": 21
+        },
+        {
+            "scopes": [
+                "source.commonlisp",
+                "constant.language.commonlisp"
+            ],
+            "text": "t",
+            "start": 21,
+            "end": 22
+        },
+        {
+            "scopes": [
+                "source.commonlisp"
+            ],
+            "text": " ",
+            "start": 22,
             "end": 23
         },
         {

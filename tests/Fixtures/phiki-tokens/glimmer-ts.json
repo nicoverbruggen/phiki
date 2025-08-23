@@ -154,18 +154,25 @@
         {
             "scopes": [
                 "source.gts",
-                "meta.import.ts"
+                "punctuation.terminator.statement.ts"
             ],
-            "text": ";\n",
+            "text": ";",
             "start": 63,
+            "end": 64
+        },
+        {
+            "scopes": [
+                "source.gts"
+            ],
+            "text": "\n",
+            "start": 64,
             "end": 65
         }
     ],
     [
         {
             "scopes": [
-                "source.gts",
-                "meta.import.ts"
+                "source.gts"
             ],
             "text": "\n",
             "start": 0,
@@ -176,8 +183,8 @@
         {
             "scopes": [
                 "source.gts",
-                "meta.import.ts",
-                "variable.other.readwrite.alias.ts"
+                "meta.var.expr.ts",
+                "storage.type.ts"
             ],
             "text": "const",
             "start": 0,
@@ -186,7 +193,7 @@
         {
             "scopes": [
                 "source.gts",
-                "meta.import.ts"
+                "meta.var.expr.ts"
             ],
             "text": " ",
             "start": 5,
@@ -195,8 +202,10 @@
         {
             "scopes": [
                 "source.gts",
-                "meta.import.ts",
-                "variable.other.readwrite.alias.ts"
+                "meta.var.expr.ts",
+                "meta.var-single-variable.expr.ts",
+                "meta.definition.variable.ts",
+                "variable.other.constant.ts"
             ],
             "text": "Greet",
             "start": 6,
@@ -205,17 +214,33 @@
         {
             "scopes": [
                 "source.gts",
-                "meta.import.ts"
+                "meta.var.expr.ts",
+                "meta.var-single-variable.expr.ts",
+                "meta.type.annotation.ts",
+                "keyword.operator.type.annotation.ts"
             ],
-            "text": ": ",
+            "text": ":",
             "start": 11,
+            "end": 12
+        },
+        {
+            "scopes": [
+                "source.gts",
+                "meta.var.expr.ts",
+                "meta.var-single-variable.expr.ts",
+                "meta.type.annotation.ts"
+            ],
+            "text": " ",
+            "start": 12,
             "end": 13
         },
         {
             "scopes": [
                 "source.gts",
-                "meta.import.ts",
-                "variable.other.readwrite.alias.ts"
+                "meta.var.expr.ts",
+                "meta.var-single-variable.expr.ts",
+                "meta.type.annotation.ts",
+                "entity.name.type.ts"
             ],
             "text": "TemplateOnlyComponent",
             "start": 13,
@@ -224,7 +249,11 @@
         {
             "scopes": [
                 "source.gts",
-                "meta.import.ts"
+                "meta.var.expr.ts",
+                "meta.var-single-variable.expr.ts",
+                "meta.type.annotation.ts",
+                "meta.type.parameters.ts",
+                "punctuation.definition.typeparameters.begin.ts"
             ],
             "text": "<",
             "start": 34,
@@ -233,8 +262,11 @@
         {
             "scopes": [
                 "source.gts",
-                "meta.import.ts",
-                "meta.block.ts",
+                "meta.var.expr.ts",
+                "meta.var-single-variable.expr.ts",
+                "meta.type.annotation.ts",
+                "meta.type.parameters.ts",
+                "meta.object.type.ts",
                 "punctuation.definition.block.ts"
             ],
             "text": "{",
@@ -244,8 +276,12 @@
         {
             "scopes": [
                 "source.gts",
-                "meta.import.ts",
-                "meta.block.ts"
+                "meta.var.expr.ts",
+                "meta.var-single-variable.expr.ts",
+                "meta.type.annotation.ts",
+                "meta.type.parameters.ts",
+                "meta.object.type.ts",
+                "meta.field.declaration.ts"
             ],
             "text": " ",
             "start": 36,
@@ -254,9 +290,14 @@
         {
             "scopes": [
                 "source.gts",
-                "meta.import.ts",
-                "meta.block.ts",
-                "variable.other.readwrite.alias.ts"
+                "meta.var.expr.ts",
+                "meta.var-single-variable.expr.ts",
+                "meta.type.annotation.ts",
+                "meta.type.parameters.ts",
+                "meta.object.type.ts",
+                "meta.field.declaration.ts",
+                "meta.definition.property.ts",
+                "variable.object.property.ts"
             ],
             "text": "name",
             "start": 37,
@@ -265,19 +306,45 @@
         {
             "scopes": [
                 "source.gts",
-                "meta.import.ts",
-                "meta.block.ts"
+                "meta.var.expr.ts",
+                "meta.var-single-variable.expr.ts",
+                "meta.type.annotation.ts",
+                "meta.type.parameters.ts",
+                "meta.object.type.ts",
+                "meta.field.declaration.ts",
+                "meta.type.annotation.ts",
+                "keyword.operator.type.annotation.ts"
             ],
-            "text": ": ",
+            "text": ":",
             "start": 41,
+            "end": 42
+        },
+        {
+            "scopes": [
+                "source.gts",
+                "meta.var.expr.ts",
+                "meta.var-single-variable.expr.ts",
+                "meta.type.annotation.ts",
+                "meta.type.parameters.ts",
+                "meta.object.type.ts",
+                "meta.field.declaration.ts",
+                "meta.type.annotation.ts"
+            ],
+            "text": " ",
+            "start": 42,
             "end": 43
         },
         {
             "scopes": [
                 "source.gts",
-                "meta.import.ts",
-                "meta.block.ts",
-                "variable.other.readwrite.alias.ts"
+                "meta.var.expr.ts",
+                "meta.var-single-variable.expr.ts",
+                "meta.type.annotation.ts",
+                "meta.type.parameters.ts",
+                "meta.object.type.ts",
+                "meta.field.declaration.ts",
+                "meta.type.annotation.ts",
+                "support.type.primitive.ts"
             ],
             "text": "string",
             "start": 43,
@@ -286,8 +353,13 @@
         {
             "scopes": [
                 "source.gts",
-                "meta.import.ts",
-                "meta.block.ts"
+                "meta.var.expr.ts",
+                "meta.var-single-variable.expr.ts",
+                "meta.type.annotation.ts",
+                "meta.type.parameters.ts",
+                "meta.object.type.ts",
+                "meta.field.declaration.ts",
+                "meta.type.annotation.ts"
             ],
             "text": " ",
             "start": 49,
@@ -296,8 +368,11 @@
         {
             "scopes": [
                 "source.gts",
-                "meta.import.ts",
-                "meta.block.ts",
+                "meta.var.expr.ts",
+                "meta.var-single-variable.expr.ts",
+                "meta.type.annotation.ts",
+                "meta.type.parameters.ts",
+                "meta.object.type.ts",
                 "punctuation.definition.block.ts"
             ],
             "text": "}",
@@ -307,16 +382,41 @@
         {
             "scopes": [
                 "source.gts",
-                "meta.import.ts"
+                "meta.var.expr.ts",
+                "meta.var-single-variable.expr.ts",
+                "meta.type.annotation.ts",
+                "meta.type.parameters.ts",
+                "punctuation.definition.typeparameters.end.ts"
             ],
-            "text": "> =",
+            "text": ">",
             "start": 51,
+            "end": 52
+        },
+        {
+            "scopes": [
+                "source.gts",
+                "meta.var.expr.ts",
+                "meta.var-single-variable.expr.ts",
+                "meta.type.annotation.ts"
+            ],
+            "text": " ",
+            "start": 52,
+            "end": 53
+        },
+        {
+            "scopes": [
+                "source.gts",
+                "meta.var.expr.ts",
+                "keyword.operator.assignment.ts"
+            ],
+            "text": "=",
+            "start": 53,
             "end": 54
         },
         {
             "scopes": [
                 "source.gts",
-                "meta.import.ts",
+                "meta.var.expr.ts",
                 "meta.js.embeddedTemplateWithoutArgs"
             ],
             "text": " ",
@@ -326,7 +426,7 @@
         {
             "scopes": [
                 "source.gts",
-                "meta.import.ts",
+                "meta.var.expr.ts",
                 "meta.js.embeddedTemplateWithoutArgs",
                 "punctuation.definition.tag.html"
             ],
@@ -337,7 +437,7 @@
         {
             "scopes": [
                 "source.gts",
-                "meta.import.ts",
+                "meta.var.expr.ts",
                 "meta.js.embeddedTemplateWithoutArgs",
                 "entity.name.tag.other.html"
             ],
@@ -348,7 +448,7 @@
         {
             "scopes": [
                 "source.gts",
-                "meta.import.ts",
+                "meta.var.expr.ts",
                 "meta.js.embeddedTemplateWithoutArgs",
                 "punctuation.definition.tag.html"
             ],
@@ -359,7 +459,7 @@
         {
             "scopes": [
                 "source.gts",
-                "meta.import.ts",
+                "meta.var.expr.ts",
                 "meta.js.embeddedTemplateWithoutArgs"
             ],
             "text": "\n",
@@ -371,7 +471,7 @@
         {
             "scopes": [
                 "source.gts",
-                "meta.import.ts",
+                "meta.var.expr.ts",
                 "meta.js.embeddedTemplateWithoutArgs"
             ],
             "text": "  ",
@@ -381,7 +481,7 @@
         {
             "scopes": [
                 "source.gts",
-                "meta.import.ts",
+                "meta.var.expr.ts",
                 "meta.js.embeddedTemplateWithoutArgs",
                 "meta.tag.any.ember-handlebars",
                 "punctuation.definition.tag"
@@ -393,7 +493,7 @@
         {
             "scopes": [
                 "source.gts",
-                "meta.import.ts",
+                "meta.var.expr.ts",
                 "meta.js.embeddedTemplateWithoutArgs",
                 "meta.tag.any.ember-handlebars",
                 "entity.name.tag.html.ember-handlebars"
@@ -405,7 +505,7 @@
         {
             "scopes": [
                 "source.gts",
-                "meta.import.ts",
+                "meta.var.expr.ts",
                 "meta.js.embeddedTemplateWithoutArgs",
                 "meta.tag.any.ember-handlebars",
                 "punctuation.definition.tag"
@@ -417,7 +517,7 @@
         {
             "scopes": [
                 "source.gts",
-                "meta.import.ts",
+                "meta.var.expr.ts",
                 "meta.js.embeddedTemplateWithoutArgs"
             ],
             "text": "Hello, ",
@@ -427,7 +527,7 @@
         {
             "scopes": [
                 "source.gts",
-                "meta.import.ts",
+                "meta.var.expr.ts",
                 "meta.js.embeddedTemplateWithoutArgs",
                 "entity.expression.ember-handlebars",
                 "keyword.operator"
@@ -439,7 +539,7 @@
         {
             "scopes": [
                 "source.gts",
-                "meta.import.ts",
+                "meta.var.expr.ts",
                 "meta.js.embeddedTemplateWithoutArgs",
                 "entity.expression.ember-handlebars",
                 "support.function",
@@ -452,7 +552,7 @@
         {
             "scopes": [
                 "source.gts",
-                "meta.import.ts",
+                "meta.var.expr.ts",
                 "meta.js.embeddedTemplateWithoutArgs",
                 "entity.expression.ember-handlebars",
                 "support.function"
@@ -464,7 +564,7 @@
         {
             "scopes": [
                 "source.gts",
-                "meta.import.ts",
+                "meta.var.expr.ts",
                 "meta.js.embeddedTemplateWithoutArgs",
                 "entity.expression.ember-handlebars",
                 "keyword.operator"
@@ -476,7 +576,7 @@
         {
             "scopes": [
                 "source.gts",
-                "meta.import.ts",
+                "meta.var.expr.ts",
                 "meta.js.embeddedTemplateWithoutArgs"
             ],
             "text": "!",
@@ -486,7 +586,7 @@
         {
             "scopes": [
                 "source.gts",
-                "meta.import.ts",
+                "meta.var.expr.ts",
                 "meta.js.embeddedTemplateWithoutArgs",
                 "meta.tag.any.ember-handlebars",
                 "punctuation.definition.tag"
@@ -498,7 +598,7 @@
         {
             "scopes": [
                 "source.gts",
-                "meta.import.ts",
+                "meta.var.expr.ts",
                 "meta.js.embeddedTemplateWithoutArgs",
                 "meta.tag.any.ember-handlebars",
                 "entity.name.tag.html.ember-handlebars"
@@ -510,7 +610,7 @@
         {
             "scopes": [
                 "source.gts",
-                "meta.import.ts",
+                "meta.var.expr.ts",
                 "meta.js.embeddedTemplateWithoutArgs",
                 "meta.tag.any.ember-handlebars",
                 "punctuation.definition.tag"
@@ -522,7 +622,7 @@
         {
             "scopes": [
                 "source.gts",
-                "meta.import.ts",
+                "meta.var.expr.ts",
                 "meta.js.embeddedTemplateWithoutArgs"
             ],
             "text": "\n",
@@ -534,7 +634,7 @@
         {
             "scopes": [
                 "source.gts",
-                "meta.import.ts",
+                "meta.var.expr.ts",
                 "meta.js.embeddedTemplateWithoutArgs",
                 "punctuation.definition.tag.html"
             ],
@@ -545,7 +645,7 @@
         {
             "scopes": [
                 "source.gts",
-                "meta.import.ts",
+                "meta.var.expr.ts",
                 "meta.js.embeddedTemplateWithoutArgs",
                 "entity.name.tag.other.html"
             ],
@@ -556,7 +656,7 @@
         {
             "scopes": [
                 "source.gts",
-                "meta.import.ts",
+                "meta.var.expr.ts",
                 "meta.js.embeddedTemplateWithoutArgs",
                 "punctuation.definition.tag.html"
             ],
@@ -566,8 +666,7 @@
         },
         {
             "scopes": [
-                "source.gts",
-                "meta.import.ts"
+                "source.gts"
             ],
             "text": "\n",
             "start": 11,
@@ -577,8 +676,7 @@
     [
         {
             "scopes": [
-                "source.gts",
-                "meta.import.ts"
+                "source.gts"
             ],
             "text": "\n",
             "start": 0,
@@ -589,7 +687,6 @@
         {
             "scopes": [
                 "source.gts",
-                "meta.import.ts",
                 "comment.line.double-slash.ts",
                 "punctuation.definition.comment.ts"
             ],
@@ -600,19 +697,25 @@
         {
             "scopes": [
                 "source.gts",
-                "meta.import.ts",
                 "comment.line.double-slash.ts"
             ],
-            "text": " From https:\/\/rfcs.emberjs.com\/id\/0779-first-class-component-templates\n",
+            "text": " From https:\/\/rfcs.emberjs.com\/id\/0779-first-class-component-templates",
             "start": 2,
+            "end": 72
+        },
+        {
+            "scopes": [
+                "source.gts"
+            ],
+            "text": "\n",
+            "start": 72,
             "end": 73
         }
     ],
     [
         {
             "scopes": [
-                "source.gts",
-                "meta.import.ts"
+                "source.gts"
             ],
             "text": "\n",
             "start": 0,

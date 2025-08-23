@@ -166,8 +166,7 @@
         },
         {
             "scopes": [
-                "source.vue-vine",
-                "meta.import.vue-vine"
+                "source.vue-vine"
             ],
             "text": "\n",
             "start": 35,
@@ -177,8 +176,7 @@
     [
         {
             "scopes": [
-                "source.vue-vine",
-                "meta.import.vue-vine"
+                "source.vue-vine"
             ],
             "text": "\n",
             "start": 0,
@@ -189,8 +187,8 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
-                "variable.other.readwrite.alias.vue-vine"
+                "meta.function.vue-vine",
+                "storage.type.function.vue-vine"
             ],
             "text": "function",
             "start": 0,
@@ -199,7 +197,7 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine"
+                "meta.function.vue-vine"
             ],
             "text": " ",
             "start": 8,
@@ -208,8 +206,9 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
-                "variable.other.readwrite.alias.vue-vine"
+                "meta.function.vue-vine",
+                "meta.definition.function.ts",
+                "entity.name.function.vue-vine"
             ],
             "text": "ChildComp",
             "start": 9,
@@ -218,7 +217,9 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine"
+                "meta.function.vue-vine",
+                "meta.parameters.vue-vine",
+                "punctuation.definition.parameters.begin.vue-vine"
             ],
             "text": "(",
             "start": 18,
@@ -227,8 +228,9 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
-                "variable.other.readwrite.alias.vue-vine"
+                "meta.function.vue-vine",
+                "meta.parameters.vue-vine",
+                "variable.parameter.vue-vine"
             ],
             "text": "props",
             "start": 19,
@@ -237,17 +239,33 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine"
+                "meta.function.vue-vine",
+                "meta.parameters.vue-vine",
+                "meta.type.annotation.vue-vine",
+                "keyword.operator.type.annotation.vue-vine"
             ],
-            "text": ": ",
+            "text": ":",
             "start": 24,
+            "end": 25
+        },
+        {
+            "scopes": [
+                "source.vue-vine",
+                "meta.function.vue-vine",
+                "meta.parameters.vue-vine",
+                "meta.type.annotation.vue-vine"
+            ],
+            "text": " ",
+            "start": 25,
             "end": 26
         },
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
-                "meta.block.vue-vine",
+                "meta.function.vue-vine",
+                "meta.parameters.vue-vine",
+                "meta.type.annotation.vue-vine",
+                "meta.object.type.vue-vine",
                 "punctuation.definition.block.vue-vine"
             ],
             "text": "{",
@@ -257,8 +275,10 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
-                "meta.block.vue-vine"
+                "meta.function.vue-vine",
+                "meta.parameters.vue-vine",
+                "meta.type.annotation.vue-vine",
+                "meta.object.type.vue-vine"
             ],
             "text": "\n",
             "start": 27,
@@ -269,8 +289,11 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
-                "meta.block.vue-vine"
+                "meta.function.vue-vine",
+                "meta.parameters.vue-vine",
+                "meta.type.annotation.vue-vine",
+                "meta.object.type.vue-vine",
+                "meta.field.declaration.vue-vine"
             ],
             "text": "  ",
             "start": 0,
@@ -279,9 +302,13 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
-                "meta.block.vue-vine",
-                "variable.other.readwrite.alias.vue-vine"
+                "meta.function.vue-vine",
+                "meta.parameters.vue-vine",
+                "meta.type.annotation.vue-vine",
+                "meta.object.type.vue-vine",
+                "meta.field.declaration.vue-vine",
+                "meta.definition.property.ts",
+                "variable.object.property.vue-vine"
             ],
             "text": "foo",
             "start": 2,
@@ -290,19 +317,42 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
-                "meta.block.vue-vine"
+                "meta.function.vue-vine",
+                "meta.parameters.vue-vine",
+                "meta.type.annotation.vue-vine",
+                "meta.object.type.vue-vine",
+                "meta.field.declaration.vue-vine",
+                "meta.type.annotation.vue-vine",
+                "keyword.operator.type.annotation.vue-vine"
             ],
-            "text": ": ",
+            "text": ":",
             "start": 5,
+            "end": 6
+        },
+        {
+            "scopes": [
+                "source.vue-vine",
+                "meta.function.vue-vine",
+                "meta.parameters.vue-vine",
+                "meta.type.annotation.vue-vine",
+                "meta.object.type.vue-vine",
+                "meta.field.declaration.vue-vine",
+                "meta.type.annotation.vue-vine"
+            ],
+            "text": " ",
+            "start": 6,
             "end": 7
         },
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
-                "meta.block.vue-vine",
-                "variable.other.readwrite.alias.vue-vine"
+                "meta.function.vue-vine",
+                "meta.parameters.vue-vine",
+                "meta.type.annotation.vue-vine",
+                "meta.object.type.vue-vine",
+                "meta.field.declaration.vue-vine",
+                "meta.type.annotation.vue-vine",
+                "support.type.primitive.vue-vine"
             ],
             "text": "string",
             "start": 7,
@@ -311,8 +361,12 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
-                "meta.block.vue-vine"
+                "meta.function.vue-vine",
+                "meta.parameters.vue-vine",
+                "meta.type.annotation.vue-vine",
+                "meta.object.type.vue-vine",
+                "meta.field.declaration.vue-vine",
+                "meta.type.annotation.vue-vine"
             ],
             "text": "\n",
             "start": 13,
@@ -323,8 +377,11 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
-                "meta.block.vue-vine"
+                "meta.function.vue-vine",
+                "meta.parameters.vue-vine",
+                "meta.type.annotation.vue-vine",
+                "meta.object.type.vue-vine",
+                "meta.field.declaration.vue-vine"
             ],
             "text": "  ",
             "start": 0,
@@ -333,9 +390,13 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
-                "meta.block.vue-vine",
-                "variable.other.readwrite.alias.vue-vine"
+                "meta.function.vue-vine",
+                "meta.parameters.vue-vine",
+                "meta.type.annotation.vue-vine",
+                "meta.object.type.vue-vine",
+                "meta.field.declaration.vue-vine",
+                "meta.definition.property.ts",
+                "variable.object.property.vue-vine"
             ],
             "text": "bar",
             "start": 2,
@@ -344,19 +405,56 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
-                "meta.block.vue-vine"
+                "meta.function.vue-vine",
+                "meta.parameters.vue-vine",
+                "meta.type.annotation.vue-vine",
+                "meta.object.type.vue-vine",
+                "meta.field.declaration.vue-vine",
+                "keyword.operator.optional.vue-vine"
             ],
-            "text": "?: ",
+            "text": "?",
             "start": 5,
+            "end": 6
+        },
+        {
+            "scopes": [
+                "source.vue-vine",
+                "meta.function.vue-vine",
+                "meta.parameters.vue-vine",
+                "meta.type.annotation.vue-vine",
+                "meta.object.type.vue-vine",
+                "meta.field.declaration.vue-vine",
+                "meta.type.annotation.vue-vine",
+                "keyword.operator.type.annotation.vue-vine"
+            ],
+            "text": ":",
+            "start": 6,
+            "end": 7
+        },
+        {
+            "scopes": [
+                "source.vue-vine",
+                "meta.function.vue-vine",
+                "meta.parameters.vue-vine",
+                "meta.type.annotation.vue-vine",
+                "meta.object.type.vue-vine",
+                "meta.field.declaration.vue-vine",
+                "meta.type.annotation.vue-vine"
+            ],
+            "text": " ",
+            "start": 7,
             "end": 8
         },
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
-                "meta.block.vue-vine",
-                "variable.other.readwrite.alias.vue-vine"
+                "meta.function.vue-vine",
+                "meta.parameters.vue-vine",
+                "meta.type.annotation.vue-vine",
+                "meta.object.type.vue-vine",
+                "meta.field.declaration.vue-vine",
+                "meta.type.annotation.vue-vine",
+                "support.type.primitive.vue-vine"
             ],
             "text": "boolean",
             "start": 8,
@@ -365,8 +463,12 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
-                "meta.block.vue-vine"
+                "meta.function.vue-vine",
+                "meta.parameters.vue-vine",
+                "meta.type.annotation.vue-vine",
+                "meta.object.type.vue-vine",
+                "meta.field.declaration.vue-vine",
+                "meta.type.annotation.vue-vine"
             ],
             "text": "\n",
             "start": 15,
@@ -377,8 +479,10 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
-                "meta.block.vue-vine",
+                "meta.function.vue-vine",
+                "meta.parameters.vue-vine",
+                "meta.type.annotation.vue-vine",
+                "meta.object.type.vue-vine",
                 "punctuation.definition.block.vue-vine"
             ],
             "text": "}",
@@ -388,16 +492,27 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine"
+                "meta.function.vue-vine",
+                "meta.parameters.vue-vine",
+                "punctuation.definition.parameters.end.vue-vine"
             ],
-            "text": ") ",
+            "text": ")",
             "start": 1,
+            "end": 2
+        },
+        {
+            "scopes": [
+                "source.vue-vine",
+                "meta.function.vue-vine"
+            ],
+            "text": " ",
+            "start": 2,
             "end": 3
         },
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
+                "meta.function.vue-vine",
                 "meta.block.vue-vine",
                 "punctuation.definition.block.vue-vine"
             ],
@@ -408,7 +523,7 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
+                "meta.function.vue-vine",
                 "meta.block.vue-vine"
             ],
             "text": "\n",
@@ -420,7 +535,7 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
+                "meta.function.vue-vine",
                 "meta.block.vue-vine"
             ],
             "text": "  ",
@@ -430,9 +545,10 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
+                "meta.function.vue-vine",
                 "meta.block.vue-vine",
-                "variable.other.readwrite.alias.vue-vine"
+                "meta.var.expr.vue-vine",
+                "storage.type.vue-vine"
             ],
             "text": "const",
             "start": 2,
@@ -441,8 +557,9 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
-                "meta.block.vue-vine"
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "meta.var.expr.vue-vine"
             ],
             "text": " ",
             "start": 7,
@@ -451,9 +568,12 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
+                "meta.function.vue-vine",
                 "meta.block.vue-vine",
-                "variable.other.readwrite.alias.vue-vine"
+                "meta.var.expr.vue-vine",
+                "meta.var-single-variable.expr.vue-vine",
+                "meta.definition.variable.ts",
+                "variable.other.constant.vue-vine"
             ],
             "text": "count",
             "start": 8,
@@ -462,19 +582,46 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
-                "meta.block.vue-vine"
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "meta.var.expr.vue-vine",
+                "meta.var-single-variable.expr.vue-vine"
             ],
-            "text": " = ",
+            "text": " ",
             "start": 13,
+            "end": 14
+        },
+        {
+            "scopes": [
+                "source.vue-vine",
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "meta.var.expr.vue-vine",
+                "keyword.operator.assignment.vue-vine"
+            ],
+            "text": "=",
+            "start": 14,
+            "end": 15
+        },
+        {
+            "scopes": [
+                "source.vue-vine",
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "meta.var.expr.vue-vine"
+            ],
+            "text": " ",
+            "start": 15,
             "end": 16
         },
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
+                "meta.function.vue-vine",
                 "meta.block.vue-vine",
-                "variable.other.readwrite.alias.vue-vine"
+                "meta.var.expr.vue-vine",
+                "meta.function-call.vue-vine",
+                "entity.name.function.vue-vine"
             ],
             "text": "ref",
             "start": 16,
@@ -483,11 +630,47 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "meta.var.expr.vue-vine",
+                "meta.brace.round.vue-vine"
+            ],
+            "text": "(",
+            "start": 19,
+            "end": 20
+        },
+        {
+            "scopes": [
+                "source.vue-vine",
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "meta.var.expr.vue-vine",
+                "constant.numeric.decimal.vue-vine"
+            ],
+            "text": "0",
+            "start": 20,
+            "end": 21
+        },
+        {
+            "scopes": [
+                "source.vue-vine",
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "meta.var.expr.vue-vine",
+                "meta.brace.round.vue-vine"
+            ],
+            "text": ")",
+            "start": 21,
+            "end": 22
+        },
+        {
+            "scopes": [
+                "source.vue-vine",
+                "meta.function.vue-vine",
                 "meta.block.vue-vine"
             ],
-            "text": "(0)\n",
-            "start": 19,
+            "text": "\n",
+            "start": 22,
             "end": 23
         }
     ],
@@ -495,7 +678,7 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
+                "meta.function.vue-vine",
                 "meta.block.vue-vine"
             ],
             "text": "  ",
@@ -505,9 +688,10 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
+                "meta.function.vue-vine",
                 "meta.block.vue-vine",
-                "variable.other.readwrite.alias.vue-vine"
+                "meta.var.expr.vue-vine",
+                "storage.type.vue-vine"
             ],
             "text": "const",
             "start": 2,
@@ -516,8 +700,9 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
-                "meta.block.vue-vine"
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "meta.var.expr.vue-vine"
             ],
             "text": " ",
             "start": 7,
@@ -526,9 +711,12 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
+                "meta.function.vue-vine",
                 "meta.block.vue-vine",
-                "variable.other.readwrite.alias.vue-vine"
+                "meta.var.expr.vue-vine",
+                "meta.var-single-variable.expr.vue-vine",
+                "meta.definition.variable.ts",
+                "variable.other.constant.vue-vine"
             ],
             "text": "double",
             "start": 8,
@@ -537,19 +725,46 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
-                "meta.block.vue-vine"
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "meta.var.expr.vue-vine",
+                "meta.var-single-variable.expr.vue-vine"
             ],
-            "text": " = ",
+            "text": " ",
             "start": 14,
+            "end": 15
+        },
+        {
+            "scopes": [
+                "source.vue-vine",
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "meta.var.expr.vue-vine",
+                "keyword.operator.assignment.vue-vine"
+            ],
+            "text": "=",
+            "start": 15,
+            "end": 16
+        },
+        {
+            "scopes": [
+                "source.vue-vine",
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "meta.var.expr.vue-vine"
+            ],
+            "text": " ",
+            "start": 16,
             "end": 17
         },
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
+                "meta.function.vue-vine",
                 "meta.block.vue-vine",
-                "variable.other.readwrite.alias.vue-vine"
+                "meta.var.expr.vue-vine",
+                "meta.function-call.vue-vine",
+                "entity.name.function.vue-vine"
             ],
             "text": "computed",
             "start": 17,
@@ -558,19 +773,87 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
-                "meta.block.vue-vine"
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "meta.var.expr.vue-vine",
+                "meta.brace.round.vue-vine"
             ],
-            "text": "(() => ",
+            "text": "(",
             "start": 25,
+            "end": 26
+        },
+        {
+            "scopes": [
+                "source.vue-vine",
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "meta.var.expr.vue-vine",
+                "meta.arrow.vue-vine",
+                "meta.parameters.vue-vine",
+                "punctuation.definition.parameters.begin.vue-vine"
+            ],
+            "text": "(",
+            "start": 26,
+            "end": 27
+        },
+        {
+            "scopes": [
+                "source.vue-vine",
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "meta.var.expr.vue-vine",
+                "meta.arrow.vue-vine",
+                "meta.parameters.vue-vine",
+                "punctuation.definition.parameters.end.vue-vine"
+            ],
+            "text": ")",
+            "start": 27,
+            "end": 28
+        },
+        {
+            "scopes": [
+                "source.vue-vine",
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "meta.var.expr.vue-vine",
+                "meta.arrow.vue-vine"
+            ],
+            "text": " ",
+            "start": 28,
+            "end": 29
+        },
+        {
+            "scopes": [
+                "source.vue-vine",
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "meta.var.expr.vue-vine",
+                "meta.arrow.vue-vine",
+                "storage.type.function.arrow.vue-vine"
+            ],
+            "text": "=>",
+            "start": 29,
+            "end": 31
+        },
+        {
+            "scopes": [
+                "source.vue-vine",
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "meta.var.expr.vue-vine",
+                "meta.arrow.vue-vine"
+            ],
+            "text": " ",
+            "start": 31,
             "end": 32
         },
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
+                "meta.function.vue-vine",
                 "meta.block.vue-vine",
-                "variable.other.readwrite.alias.vue-vine"
+                "meta.var.expr.vue-vine",
+                "variable.other.readwrite.vue-vine"
             ],
             "text": "count",
             "start": 32,
@@ -579,8 +862,9 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
-                "meta.block.vue-vine"
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "meta.var.expr.vue-vine"
             ],
             "text": " ",
             "start": 37,
@@ -589,9 +873,10 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
+                "meta.function.vue-vine",
                 "meta.block.vue-vine",
-                "constant.language.import-export-all.vue-vine"
+                "meta.var.expr.vue-vine",
+                "keyword.operator.arithmetic.vue-vine"
             ],
             "text": "*",
             "start": 38,
@@ -600,11 +885,46 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "meta.var.expr.vue-vine"
+            ],
+            "text": " ",
+            "start": 39,
+            "end": 40
+        },
+        {
+            "scopes": [
+                "source.vue-vine",
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "meta.var.expr.vue-vine",
+                "constant.numeric.decimal.vue-vine"
+            ],
+            "text": "2",
+            "start": 40,
+            "end": 41
+        },
+        {
+            "scopes": [
+                "source.vue-vine",
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "meta.var.expr.vue-vine",
+                "meta.brace.round.vue-vine"
+            ],
+            "text": ")",
+            "start": 41,
+            "end": 42
+        },
+        {
+            "scopes": [
+                "source.vue-vine",
+                "meta.function.vue-vine",
                 "meta.block.vue-vine"
             ],
-            "text": " 2)\n",
-            "start": 39,
+            "text": "\n",
+            "start": 42,
             "end": 43
         }
     ],
@@ -612,7 +932,7 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
+                "meta.function.vue-vine",
                 "meta.block.vue-vine"
             ],
             "text": "\n",
@@ -624,7 +944,7 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
+                "meta.function.vue-vine",
                 "meta.block.vue-vine"
             ],
             "text": "  ",
@@ -634,9 +954,9 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
+                "meta.function.vue-vine",
                 "meta.block.vue-vine",
-                "variable.other.readwrite.alias.vue-vine"
+                "keyword.control.flow.vue-vine"
             ],
             "text": "return",
             "start": 2,
@@ -645,7 +965,7 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
+                "meta.function.vue-vine",
                 "meta.block.vue-vine"
             ],
             "text": " ",
@@ -655,9 +975,9 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
+                "meta.function.vue-vine",
                 "meta.block.vue-vine",
-                "variable.other.readwrite.alias.vue-vine"
+                "entity.name.function.vine-template.vue-vine"
             ],
             "text": "vine",
             "start": 9,
@@ -666,11 +986,23 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
-                "meta.block.vue-vine"
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "punctuation.definition.string.vine-template.begin.vue-vine"
             ],
-            "text": "`\n",
+            "text": "`",
             "start": 13,
+            "end": 14
+        },
+        {
+            "scopes": [
+                "source.vue-vine",
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine"
+            ],
+            "text": "\n",
+            "start": 14,
             "end": 15
         }
     ],
@@ -678,19 +1010,35 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
-                "meta.block.vue-vine"
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine"
             ],
-            "text": "    <",
+            "text": "    ",
             "start": 0,
+            "end": 4
+        },
+        {
+            "scopes": [
+                "source.vue-vine",
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine",
+                "meta.tag.block.any.html",
+                "punctuation.definition.tag.begin.html"
+            ],
+            "text": "<",
+            "start": 4,
             "end": 5
         },
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
+                "meta.function.vue-vine",
                 "meta.block.vue-vine",
-                "variable.other.readwrite.alias.vue-vine"
+                "variable.vine-template.vue-vine",
+                "meta.tag.block.any.html",
+                "entity.name.tag.block.any.html"
             ],
             "text": "div",
             "start": 5,
@@ -699,8 +1047,10 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
-                "meta.block.vue-vine"
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine",
+                "meta.tag.block.any.html"
             ],
             "text": " ",
             "start": 8,
@@ -709,9 +1059,11 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
+                "meta.function.vue-vine",
                 "meta.block.vue-vine",
-                "variable.other.readwrite.alias.vue-vine"
+                "variable.vine-template.vue-vine",
+                "meta.tag.block.any.html",
+                "entity.other.attribute-name.html"
             ],
             "text": "class",
             "start": 9,
@@ -720,53 +1072,78 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
-                "meta.block.vue-vine"
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine",
+                "meta.tag.block.any.html"
             ],
-            "text": "=\"",
+            "text": "=",
             "start": 14,
+            "end": 15
+        },
+        {
+            "scopes": [
+                "source.vue-vine",
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine",
+                "meta.tag.block.any.html",
+                "string.quoted.double.html",
+                "punctuation.definition.string.begin.html"
+            ],
+            "text": "\"",
+            "start": 15,
             "end": 16
         },
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
+                "meta.function.vue-vine",
                 "meta.block.vue-vine",
-                "variable.other.readwrite.alias.vue-vine"
+                "variable.vine-template.vue-vine",
+                "meta.tag.block.any.html",
+                "string.quoted.double.html"
             ],
-            "text": "child",
+            "text": "child-comp",
             "start": 16,
-            "end": 21
-        },
-        {
-            "scopes": [
-                "source.vue-vine",
-                "meta.import.vue-vine",
-                "meta.block.vue-vine"
-            ],
-            "text": "-",
-            "start": 21,
-            "end": 22
-        },
-        {
-            "scopes": [
-                "source.vue-vine",
-                "meta.import.vue-vine",
-                "meta.block.vue-vine",
-                "variable.other.readwrite.alias.vue-vine"
-            ],
-            "text": "comp",
-            "start": 22,
             "end": 26
         },
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
-                "meta.block.vue-vine"
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine",
+                "meta.tag.block.any.html",
+                "string.quoted.double.html",
+                "punctuation.definition.string.end.html"
             ],
-            "text": "\">\n",
+            "text": "\"",
             "start": 26,
+            "end": 27
+        },
+        {
+            "scopes": [
+                "source.vue-vine",
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine",
+                "meta.tag.block.any.html",
+                "punctuation.definition.tag.end.html"
+            ],
+            "text": ">",
+            "start": 27,
+            "end": 28
+        },
+        {
+            "scopes": [
+                "source.vue-vine",
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine"
+            ],
+            "text": "\n",
+            "start": 28,
             "end": 29
         }
     ],
@@ -774,19 +1151,35 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
-                "meta.block.vue-vine"
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine"
             ],
-            "text": "      <",
+            "text": "      ",
             "start": 0,
+            "end": 6
+        },
+        {
+            "scopes": [
+                "source.vue-vine",
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine",
+                "meta.tag.block.any.html",
+                "punctuation.definition.tag.begin.html"
+            ],
+            "text": "<",
+            "start": 6,
             "end": 7
         },
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
+                "meta.function.vue-vine",
                 "meta.block.vue-vine",
-                "variable.other.readwrite.alias.vue-vine"
+                "variable.vine-template.vue-vine",
+                "meta.tag.block.any.html",
+                "entity.name.tag.block.any.html"
             ],
             "text": "h3",
             "start": 7,
@@ -795,19 +1188,62 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
-                "meta.block.vue-vine"
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine",
+                "meta.tag.block.any.html",
+                "punctuation.definition.tag.end.html"
             ],
-            "text": "> {{ ",
+            "text": ">",
             "start": 9,
+            "end": 10
+        },
+        {
+            "scopes": [
+                "source.vue-vine",
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine"
+            ],
+            "text": " ",
+            "start": 10,
+            "end": 11
+        },
+        {
+            "scopes": [
+                "source.vue-vine",
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine",
+                "expression.embedded.vue",
+                "punctuation.definition.interpolation.begin.html.vue"
+            ],
+            "text": "{{",
+            "start": 11,
+            "end": 13
+        },
+        {
+            "scopes": [
+                "source.vue-vine",
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine",
+                "expression.embedded.vue",
+                "source.ts.embedded.html.vue"
+            ],
+            "text": " ",
+            "start": 13,
             "end": 14
         },
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
+                "meta.function.vue-vine",
                 "meta.block.vue-vine",
-                "variable.other.readwrite.alias.vue-vine"
+                "variable.vine-template.vue-vine",
+                "expression.embedded.vue",
+                "source.ts.embedded.html.vue",
+                "variable.other.readwrite.ts"
             ],
             "text": "foo",
             "start": 14,
@@ -816,8 +1252,11 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
-                "meta.block.vue-vine"
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine",
+                "expression.embedded.vue",
+                "source.ts.embedded.html.vue"
             ],
             "text": " ",
             "start": 17,
@@ -826,28 +1265,48 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
+                "meta.function.vue-vine",
                 "meta.block.vue-vine",
-                "punctuation.definition.block.vue-vine"
+                "variable.vine-template.vue-vine",
+                "expression.embedded.vue",
+                "punctuation.definition.interpolation.end.html.vue"
             ],
-            "text": "}",
+            "text": "}}",
             "start": 18,
-            "end": 19
+            "end": 20
         },
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine"
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine"
             ],
-            "text": "} <\/",
-            "start": 19,
+            "text": " ",
+            "start": 20,
+            "end": 21
+        },
+        {
+            "scopes": [
+                "source.vue-vine",
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine",
+                "meta.tag.block.any.html",
+                "punctuation.definition.tag.begin.html"
+            ],
+            "text": "<\/",
+            "start": 21,
             "end": 23
         },
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
-                "variable.other.readwrite.alias.vue-vine"
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine",
+                "meta.tag.block.any.html",
+                "entity.name.tag.block.any.html"
             ],
             "text": "h3",
             "start": 23,
@@ -856,10 +1315,25 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine"
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine",
+                "meta.tag.block.any.html",
+                "punctuation.definition.tag.end.html"
             ],
-            "text": ">\n",
+            "text": ">",
             "start": 25,
+            "end": 26
+        },
+        {
+            "scopes": [
+                "source.vue-vine",
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine"
+            ],
+            "text": "\n",
+            "start": 26,
             "end": 27
         }
     ],
@@ -867,17 +1341,35 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine"
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine"
             ],
-            "text": "      <",
+            "text": "      ",
             "start": 0,
+            "end": 6
+        },
+        {
+            "scopes": [
+                "source.vue-vine",
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine",
+                "meta.tag.block.any.html",
+                "punctuation.definition.tag.begin.html"
+            ],
+            "text": "<",
+            "start": 6,
             "end": 7
         },
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
-                "variable.other.readwrite.alias.vue-vine"
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine",
+                "meta.tag.block.any.html",
+                "entity.name.tag.block.any.html"
             ],
             "text": "p",
             "start": 7,
@@ -886,58 +1378,62 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine"
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine",
+                "meta.tag.block.any.html",
+                "punctuation.definition.tag.end.html"
             ],
-            "text": "> ",
+            "text": ">",
             "start": 8,
-            "end": 10
+            "end": 9
         },
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
-                "variable.other.readwrite.alias.vue-vine"
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine"
             ],
-            "text": "Count",
-            "start": 10,
-            "end": 15
-        },
-        {
-            "scopes": [
-                "source.vue-vine",
-                "meta.import.vue-vine"
-            ],
-            "text": " = ",
-            "start": 15,
+            "text": " Count = ",
+            "start": 9,
             "end": 18
         },
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
+                "meta.function.vue-vine",
                 "meta.block.vue-vine",
-                "punctuation.definition.block.vue-vine"
+                "variable.vine-template.vue-vine",
+                "expression.embedded.vue",
+                "punctuation.definition.interpolation.begin.html.vue"
             ],
-            "text": "{",
+            "text": "{{",
             "start": 18,
-            "end": 19
+            "end": 20
         },
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
-                "meta.block.vue-vine"
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine",
+                "expression.embedded.vue",
+                "source.ts.embedded.html.vue"
             ],
-            "text": "{ ",
-            "start": 19,
+            "text": " ",
+            "start": 20,
             "end": 21
         },
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
+                "meta.function.vue-vine",
                 "meta.block.vue-vine",
-                "variable.other.readwrite.alias.vue-vine"
+                "variable.vine-template.vue-vine",
+                "expression.embedded.vue",
+                "source.ts.embedded.html.vue",
+                "variable.other.readwrite.ts"
             ],
             "text": "count",
             "start": 21,
@@ -946,8 +1442,11 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
-                "meta.block.vue-vine"
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine",
+                "expression.embedded.vue",
+                "source.ts.embedded.html.vue"
             ],
             "text": " ",
             "start": 26,
@@ -956,28 +1455,48 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
+                "meta.function.vue-vine",
                 "meta.block.vue-vine",
-                "punctuation.definition.block.vue-vine"
+                "variable.vine-template.vue-vine",
+                "expression.embedded.vue",
+                "punctuation.definition.interpolation.end.html.vue"
             ],
-            "text": "}",
+            "text": "}}",
             "start": 27,
-            "end": 28
+            "end": 29
         },
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine"
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine"
             ],
-            "text": "} <\/",
-            "start": 28,
+            "text": " ",
+            "start": 29,
+            "end": 30
+        },
+        {
+            "scopes": [
+                "source.vue-vine",
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine",
+                "meta.tag.block.any.html",
+                "punctuation.definition.tag.begin.html"
+            ],
+            "text": "<\/",
+            "start": 30,
             "end": 32
         },
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
-                "variable.other.readwrite.alias.vue-vine"
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine",
+                "meta.tag.block.any.html",
+                "entity.name.tag.block.any.html"
             ],
             "text": "p",
             "start": 32,
@@ -986,10 +1505,25 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine"
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine",
+                "meta.tag.block.any.html",
+                "punctuation.definition.tag.end.html"
             ],
-            "text": ">\n",
+            "text": ">",
             "start": 33,
+            "end": 34
+        },
+        {
+            "scopes": [
+                "source.vue-vine",
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine"
+            ],
+            "text": "\n",
+            "start": 34,
             "end": 35
         }
     ],
@@ -997,17 +1531,35 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine"
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine"
             ],
-            "text": "      <",
+            "text": "      ",
             "start": 0,
+            "end": 6
+        },
+        {
+            "scopes": [
+                "source.vue-vine",
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine",
+                "meta.tag.block.any.html",
+                "punctuation.definition.tag.begin.html"
+            ],
+            "text": "<",
+            "start": 6,
             "end": 7
         },
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
-                "variable.other.readwrite.alias.vue-vine"
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine",
+                "meta.tag.block.any.html",
+                "entity.name.tag.block.any.html"
             ],
             "text": "p",
             "start": 7,
@@ -1016,7 +1568,10 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine"
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine",
+                "meta.tag.block.any.html"
             ],
             "text": " ",
             "start": 8,
@@ -1025,27 +1580,26 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
-                "variable.other.readwrite.alias.vue-vine"
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine",
+                "meta.tag.block.any.html",
+                "meta.directive.vue",
+                "entity.other.attribute-name.html"
             ],
-            "text": "v",
+            "text": "v-",
             "start": 9,
-            "end": 10
-        },
-        {
-            "scopes": [
-                "source.vue-vine",
-                "meta.import.vue-vine"
-            ],
-            "text": "-",
-            "start": 10,
             "end": 11
         },
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
-                "variable.other.readwrite.alias.vue-vine"
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine",
+                "meta.tag.block.any.html",
+                "meta.directive.vue",
+                "entity.other.attribute-name.html"
             ],
             "text": "show",
             "start": 11,
@@ -1054,7 +1608,12 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine"
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine",
+                "meta.tag.block.any.html",
+                "meta.directive.vue",
+                "punctuation.separator.key-value.html"
             ],
             "text": "=",
             "start": 15,
@@ -1063,9 +1622,13 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
-                "string.quoted.double.vue-vine",
-                "punctuation.definition.string.begin.vue-vine"
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine",
+                "meta.tag.block.any.html",
+                "meta.directive.vue",
+                "source.directive.vue",
+                "punctuation.definition.string.begin.html"
             ],
             "text": "\"",
             "start": 16,
@@ -1074,8 +1637,13 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
-                "string.quoted.double.vue-vine"
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine",
+                "meta.tag.block.any.html",
+                "meta.directive.vue",
+                "source.directive.vue",
+                "variable.other.readwrite.js"
             ],
             "text": "bar",
             "start": 17,
@@ -1084,9 +1652,13 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
-                "string.quoted.double.vue-vine",
-                "punctuation.definition.string.end.vue-vine"
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine",
+                "meta.tag.block.any.html",
+                "meta.directive.vue",
+                "source.directive.vue",
+                "punctuation.definition.string.end.html"
             ],
             "text": "\"",
             "start": 20,
@@ -1095,58 +1667,62 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine"
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine",
+                "meta.tag.block.any.html",
+                "punctuation.definition.tag.end.html"
             ],
-            "text": "> ",
+            "text": ">",
             "start": 21,
-            "end": 23
+            "end": 22
         },
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
-                "variable.other.readwrite.alias.vue-vine"
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine"
             ],
-            "text": "Double",
-            "start": 23,
-            "end": 29
-        },
-        {
-            "scopes": [
-                "source.vue-vine",
-                "meta.import.vue-vine"
-            ],
-            "text": " = ",
-            "start": 29,
+            "text": " Double = ",
+            "start": 22,
             "end": 32
         },
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
+                "meta.function.vue-vine",
                 "meta.block.vue-vine",
-                "punctuation.definition.block.vue-vine"
+                "variable.vine-template.vue-vine",
+                "expression.embedded.vue",
+                "punctuation.definition.interpolation.begin.html.vue"
             ],
-            "text": "{",
+            "text": "{{",
             "start": 32,
-            "end": 33
+            "end": 34
         },
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
-                "meta.block.vue-vine"
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine",
+                "expression.embedded.vue",
+                "source.ts.embedded.html.vue"
             ],
-            "text": "{ ",
-            "start": 33,
+            "text": " ",
+            "start": 34,
             "end": 35
         },
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
+                "meta.function.vue-vine",
                 "meta.block.vue-vine",
-                "variable.other.readwrite.alias.vue-vine"
+                "variable.vine-template.vue-vine",
+                "expression.embedded.vue",
+                "source.ts.embedded.html.vue",
+                "variable.other.readwrite.ts"
             ],
             "text": "double",
             "start": 35,
@@ -1155,8 +1731,11 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
-                "meta.block.vue-vine"
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine",
+                "expression.embedded.vue",
+                "source.ts.embedded.html.vue"
             ],
             "text": " ",
             "start": 41,
@@ -1165,28 +1744,48 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
+                "meta.function.vue-vine",
                 "meta.block.vue-vine",
-                "punctuation.definition.block.vue-vine"
+                "variable.vine-template.vue-vine",
+                "expression.embedded.vue",
+                "punctuation.definition.interpolation.end.html.vue"
             ],
-            "text": "}",
+            "text": "}}",
             "start": 42,
-            "end": 43
+            "end": 44
         },
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine"
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine"
             ],
-            "text": "} <\/",
-            "start": 43,
+            "text": " ",
+            "start": 44,
+            "end": 45
+        },
+        {
+            "scopes": [
+                "source.vue-vine",
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine",
+                "meta.tag.block.any.html",
+                "punctuation.definition.tag.begin.html"
+            ],
+            "text": "<\/",
+            "start": 45,
             "end": 47
         },
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
-                "variable.other.readwrite.alias.vue-vine"
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine",
+                "meta.tag.block.any.html",
+                "entity.name.tag.block.any.html"
             ],
             "text": "p",
             "start": 47,
@@ -1195,10 +1794,25 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine"
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine",
+                "meta.tag.block.any.html",
+                "punctuation.definition.tag.end.html"
             ],
-            "text": ">\n",
+            "text": ">",
             "start": 48,
+            "end": 49
+        },
+        {
+            "scopes": [
+                "source.vue-vine",
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine"
+            ],
+            "text": "\n",
+            "start": 49,
             "end": 50
         }
     ],
@@ -1206,17 +1820,35 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine"
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine"
             ],
-            "text": "    <\/",
+            "text": "    ",
             "start": 0,
+            "end": 4
+        },
+        {
+            "scopes": [
+                "source.vue-vine",
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine",
+                "meta.tag.block.any.html",
+                "punctuation.definition.tag.begin.html"
+            ],
+            "text": "<\/",
+            "start": 4,
             "end": 6
         },
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
-                "variable.other.readwrite.alias.vue-vine"
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine",
+                "meta.tag.block.any.html",
+                "entity.name.tag.block.any.html"
             ],
             "text": "div",
             "start": 6,
@@ -1225,10 +1857,25 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine"
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine",
+                "meta.tag.block.any.html",
+                "punctuation.definition.tag.end.html"
             ],
-            "text": ">\n",
+            "text": ">",
             "start": 9,
+            "end": 10
+        },
+        {
+            "scopes": [
+                "source.vue-vine",
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine"
+            ],
+            "text": "\n",
+            "start": 10,
             "end": 11
         }
     ],
@@ -1236,7 +1883,9 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine"
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine"
             ],
             "text": "  ",
             "start": 0,
@@ -1245,8 +1894,9 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
-                "punctuation.definition.string.template.begin.vue-vine"
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "punctuation.definition.string.vine-template.end.vue-vine"
             ],
             "text": "`",
             "start": 2,
@@ -1255,8 +1905,8 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
-                "string.template.vue-vine"
+                "meta.function.vue-vine",
+                "meta.block.vue-vine"
             ],
             "text": "\n",
             "start": 3,
@@ -1267,18 +1917,27 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine"
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "punctuation.definition.block.vue-vine"
             ],
-            "text": "}\n",
+            "text": "}",
             "start": 0,
+            "end": 1
+        },
+        {
+            "scopes": [
+                "source.vue-vine"
+            ],
+            "text": "\n",
+            "start": 1,
             "end": 2
         }
     ],
     [
         {
             "scopes": [
-                "source.vue-vine",
-                "meta.import.vue-vine"
+                "source.vue-vine"
             ],
             "text": "\n",
             "start": 0,
@@ -1289,8 +1948,8 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
-                "variable.other.readwrite.alias.vue-vine"
+                "meta.function.vue-vine",
+                "keyword.control.export.vue-vine"
             ],
             "text": "export",
             "start": 0,
@@ -1299,7 +1958,7 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine"
+                "meta.function.vue-vine"
             ],
             "text": " ",
             "start": 6,
@@ -1308,8 +1967,8 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
-                "variable.other.readwrite.alias.vue-vine"
+                "meta.function.vue-vine",
+                "storage.type.function.vue-vine"
             ],
             "text": "function",
             "start": 7,
@@ -1318,7 +1977,7 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine"
+                "meta.function.vue-vine"
             ],
             "text": " ",
             "start": 15,
@@ -1327,8 +1986,9 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
-                "variable.other.readwrite.alias.vue-vine"
+                "meta.function.vue-vine",
+                "meta.definition.function.ts",
+                "entity.name.function.vue-vine"
             ],
             "text": "App",
             "start": 16,
@@ -1337,16 +1997,38 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine"
+                "meta.function.vue-vine",
+                "meta.parameters.vue-vine",
+                "punctuation.definition.parameters.begin.vue-vine"
             ],
-            "text": "() ",
+            "text": "(",
             "start": 19,
+            "end": 20
+        },
+        {
+            "scopes": [
+                "source.vue-vine",
+                "meta.function.vue-vine",
+                "meta.parameters.vue-vine",
+                "punctuation.definition.parameters.end.vue-vine"
+            ],
+            "text": ")",
+            "start": 20,
+            "end": 21
+        },
+        {
+            "scopes": [
+                "source.vue-vine",
+                "meta.function.vue-vine"
+            ],
+            "text": " ",
+            "start": 21,
             "end": 22
         },
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
+                "meta.function.vue-vine",
                 "meta.block.vue-vine",
                 "punctuation.definition.block.vue-vine"
             ],
@@ -1357,7 +2039,7 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
+                "meta.function.vue-vine",
                 "meta.block.vue-vine"
             ],
             "text": "\n",
@@ -1369,7 +2051,7 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
+                "meta.function.vue-vine",
                 "meta.block.vue-vine"
             ],
             "text": "  ",
@@ -1379,9 +2061,10 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
+                "meta.function.vue-vine",
                 "meta.block.vue-vine",
-                "variable.other.readwrite.alias.vue-vine"
+                "meta.var.expr.vue-vine",
+                "storage.type.vue-vine"
             ],
             "text": "const",
             "start": 2,
@@ -1390,8 +2073,9 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
-                "meta.block.vue-vine"
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "meta.var.expr.vue-vine"
             ],
             "text": " ",
             "start": 7,
@@ -1400,9 +2084,12 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
+                "meta.function.vue-vine",
                 "meta.block.vue-vine",
-                "variable.other.readwrite.alias.vue-vine"
+                "meta.var.expr.vue-vine",
+                "meta.var-single-variable.expr.vue-vine",
+                "meta.definition.variable.ts",
+                "variable.other.constant.vue-vine"
             ],
             "text": "msg",
             "start": 8,
@@ -1411,19 +2098,46 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
-                "meta.block.vue-vine"
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "meta.var.expr.vue-vine",
+                "meta.var-single-variable.expr.vue-vine"
             ],
-            "text": " = ",
+            "text": " ",
             "start": 11,
+            "end": 12
+        },
+        {
+            "scopes": [
+                "source.vue-vine",
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "meta.var.expr.vue-vine",
+                "keyword.operator.assignment.vue-vine"
+            ],
+            "text": "=",
+            "start": 12,
+            "end": 13
+        },
+        {
+            "scopes": [
+                "source.vue-vine",
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "meta.var.expr.vue-vine"
+            ],
+            "text": " ",
+            "start": 13,
             "end": 14
         },
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
+                "meta.function.vue-vine",
                 "meta.block.vue-vine",
-                "variable.other.readwrite.alias.vue-vine"
+                "meta.var.expr.vue-vine",
+                "meta.function-call.vue-vine",
+                "entity.name.function.vue-vine"
             ],
             "text": "ref",
             "start": 14,
@@ -1432,11 +2146,61 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "meta.var.expr.vue-vine",
+                "meta.brace.round.vue-vine"
+            ],
+            "text": "(",
+            "start": 17,
+            "end": 18
+        },
+        {
+            "scopes": [
+                "source.vue-vine",
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "meta.var.expr.vue-vine",
+                "string.quoted.single.vue-vine",
+                "punctuation.definition.string.begin.vue-vine"
+            ],
+            "text": "'",
+            "start": 18,
+            "end": 19
+        },
+        {
+            "scopes": [
+                "source.vue-vine",
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "meta.var.expr.vue-vine",
+                "string.quoted.single.vue-vine",
+                "punctuation.definition.string.end.vue-vine"
+            ],
+            "text": "'",
+            "start": 19,
+            "end": 20
+        },
+        {
+            "scopes": [
+                "source.vue-vine",
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "meta.var.expr.vue-vine",
+                "meta.brace.round.vue-vine"
+            ],
+            "text": ")",
+            "start": 20,
+            "end": 21
+        },
+        {
+            "scopes": [
+                "source.vue-vine",
+                "meta.function.vue-vine",
                 "meta.block.vue-vine"
             ],
-            "text": "('')\n",
-            "start": 17,
+            "text": "\n",
+            "start": 21,
             "end": 22
         }
     ],
@@ -1444,7 +2208,7 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
+                "meta.function.vue-vine",
                 "meta.block.vue-vine"
             ],
             "text": "\n",
@@ -1456,7 +2220,7 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
+                "meta.function.vue-vine",
                 "meta.block.vue-vine"
             ],
             "text": "  ",
@@ -1466,9 +2230,9 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
+                "meta.function.vue-vine",
                 "meta.block.vue-vine",
-                "variable.other.readwrite.alias.vue-vine"
+                "keyword.control.flow.vue-vine"
             ],
             "text": "return",
             "start": 2,
@@ -1477,7 +2241,7 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
+                "meta.function.vue-vine",
                 "meta.block.vue-vine"
             ],
             "text": " ",
@@ -1487,9 +2251,9 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
+                "meta.function.vue-vine",
                 "meta.block.vue-vine",
-                "variable.other.readwrite.alias.vue-vine"
+                "entity.name.function.vine-template.vue-vine"
             ],
             "text": "vine",
             "start": 9,
@@ -1498,11 +2262,23 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
-                "meta.block.vue-vine"
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "punctuation.definition.string.vine-template.begin.vue-vine"
             ],
-            "text": "`\n",
+            "text": "`",
             "start": 13,
+            "end": 14
+        },
+        {
+            "scopes": [
+                "source.vue-vine",
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine"
+            ],
+            "text": "\n",
+            "start": 14,
             "end": 15
         }
     ],
@@ -1510,19 +2286,35 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
-                "meta.block.vue-vine"
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine"
             ],
-            "text": "    <",
+            "text": "    ",
             "start": 0,
+            "end": 4
+        },
+        {
+            "scopes": [
+                "source.vue-vine",
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine",
+                "meta.tag.block.any.html",
+                "punctuation.definition.tag.begin.html"
+            ],
+            "text": "<",
+            "start": 4,
             "end": 5
         },
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
+                "meta.function.vue-vine",
                 "meta.block.vue-vine",
-                "variable.other.readwrite.alias.vue-vine"
+                "variable.vine-template.vue-vine",
+                "meta.tag.block.any.html",
+                "entity.name.tag.block.any.html"
             ],
             "text": "div",
             "start": 5,
@@ -1531,8 +2323,10 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
-                "meta.block.vue-vine"
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine",
+                "meta.tag.block.any.html"
             ],
             "text": " ",
             "start": 8,
@@ -1541,9 +2335,11 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
+                "meta.function.vue-vine",
                 "meta.block.vue-vine",
-                "variable.other.readwrite.alias.vue-vine"
+                "variable.vine-template.vue-vine",
+                "meta.tag.block.any.html",
+                "entity.other.attribute-name.html"
             ],
             "text": "class",
             "start": 9,
@@ -1552,19 +2348,37 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
-                "meta.block.vue-vine"
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine",
+                "meta.tag.block.any.html"
             ],
-            "text": "=\"",
+            "text": "=",
             "start": 14,
+            "end": 15
+        },
+        {
+            "scopes": [
+                "source.vue-vine",
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine",
+                "meta.tag.block.any.html",
+                "string.quoted.double.html",
+                "punctuation.definition.string.begin.html"
+            ],
+            "text": "\"",
+            "start": 15,
             "end": 16
         },
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
+                "meta.function.vue-vine",
                 "meta.block.vue-vine",
-                "variable.other.readwrite.alias.vue-vine"
+                "variable.vine-template.vue-vine",
+                "meta.tag.block.any.html",
+                "string.quoted.double.html"
             ],
             "text": "app",
             "start": 16,
@@ -1573,11 +2387,39 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
-                "meta.block.vue-vine"
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine",
+                "meta.tag.block.any.html",
+                "string.quoted.double.html",
+                "punctuation.definition.string.end.html"
             ],
-            "text": "\">\n",
+            "text": "\"",
             "start": 19,
+            "end": 20
+        },
+        {
+            "scopes": [
+                "source.vue-vine",
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine",
+                "meta.tag.block.any.html",
+                "punctuation.definition.tag.end.html"
+            ],
+            "text": ">",
+            "start": 20,
+            "end": 21
+        },
+        {
+            "scopes": [
+                "source.vue-vine",
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine"
+            ],
+            "text": "\n",
+            "start": 21,
             "end": 22
         }
     ],
@@ -1585,19 +2427,35 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
-                "meta.block.vue-vine"
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine"
             ],
-            "text": "      <",
+            "text": "      ",
             "start": 0,
+            "end": 6
+        },
+        {
+            "scopes": [
+                "source.vue-vine",
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine",
+                "meta.tag.block.any.html",
+                "punctuation.definition.tag.begin.html"
+            ],
+            "text": "<",
+            "start": 6,
             "end": 7
         },
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
+                "meta.function.vue-vine",
                 "meta.block.vue-vine",
-                "variable.other.readwrite.alias.vue-vine"
+                "variable.vine-template.vue-vine",
+                "meta.tag.block.any.html",
+                "support.class.component.html"
             ],
             "text": "ChildComp",
             "start": 7,
@@ -1606,8 +2464,10 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
-                "meta.block.vue-vine"
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine",
+                "meta.tag.block.any.html"
             ],
             "text": " ",
             "start": 16,
@@ -1616,9 +2476,11 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
+                "meta.function.vue-vine",
                 "meta.block.vue-vine",
-                "variable.other.readwrite.alias.vue-vine"
+                "variable.vine-template.vue-vine",
+                "meta.tag.block.any.html",
+                "entity.other.attribute-name.html"
             ],
             "text": "foo",
             "start": 17,
@@ -1627,61 +2489,76 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
-                "meta.block.vue-vine"
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine",
+                "meta.tag.block.any.html"
             ],
-            "text": "=\"",
+            "text": "=",
             "start": 20,
+            "end": 21
+        },
+        {
+            "scopes": [
+                "source.vue-vine",
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine",
+                "meta.tag.block.any.html",
+                "string.quoted.double.html",
+                "punctuation.definition.string.begin.html"
+            ],
+            "text": "\"",
+            "start": 21,
             "end": 22
         },
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
+                "meta.function.vue-vine",
                 "meta.block.vue-vine",
-                "variable.other.readwrite.alias.vue-vine"
+                "variable.vine-template.vue-vine",
+                "meta.tag.block.any.html",
+                "string.quoted.double.html"
             ],
-            "text": "hello",
+            "text": "hello world",
             "start": 22,
-            "end": 27
-        },
-        {
-            "scopes": [
-                "source.vue-vine",
-                "meta.import.vue-vine",
-                "meta.block.vue-vine"
-            ],
-            "text": " ",
-            "start": 27,
-            "end": 28
-        },
-        {
-            "scopes": [
-                "source.vue-vine",
-                "meta.import.vue-vine",
-                "meta.block.vue-vine",
-                "variable.other.readwrite.alias.vue-vine"
-            ],
-            "text": "world",
-            "start": 28,
             "end": 33
         },
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
-                "meta.block.vue-vine"
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine",
+                "meta.tag.block.any.html",
+                "string.quoted.double.html",
+                "punctuation.definition.string.end.html"
             ],
-            "text": "\" ",
+            "text": "\"",
             "start": 33,
+            "end": 34
+        },
+        {
+            "scopes": [
+                "source.vue-vine",
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine",
+                "meta.tag.block.any.html"
+            ],
+            "text": " ",
+            "start": 34,
             "end": 35
         },
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
+                "meta.function.vue-vine",
                 "meta.block.vue-vine",
-                "variable.other.readwrite.alias.vue-vine"
+                "variable.vine-template.vue-vine",
+                "meta.tag.block.any.html",
+                "entity.other.attribute-name.html"
             ],
             "text": "bar",
             "start": 35,
@@ -1690,11 +2567,37 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
-                "meta.block.vue-vine"
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine",
+                "meta.tag.block.any.html"
             ],
-            "text": " \/>\n",
+            "text": " \/",
             "start": 38,
+            "end": 40
+        },
+        {
+            "scopes": [
+                "source.vue-vine",
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine",
+                "meta.tag.block.any.html",
+                "punctuation.definition.tag.end.html"
+            ],
+            "text": ">",
+            "start": 40,
+            "end": 41
+        },
+        {
+            "scopes": [
+                "source.vue-vine",
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine"
+            ],
+            "text": "\n",
+            "start": 41,
             "end": 42
         }
     ],
@@ -1702,19 +2605,35 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
-                "meta.block.vue-vine"
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine"
             ],
-            "text": "      <",
+            "text": "      ",
             "start": 0,
+            "end": 6
+        },
+        {
+            "scopes": [
+                "source.vue-vine",
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine",
+                "meta.tag.block.any.html",
+                "punctuation.definition.tag.begin.html"
+            ],
+            "text": "<",
+            "start": 6,
             "end": 7
         },
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
+                "meta.function.vue-vine",
                 "meta.block.vue-vine",
-                "variable.other.readwrite.alias.vue-vine"
+                "variable.vine-template.vue-vine",
+                "meta.tag.block.any.html",
+                "entity.name.tag.block.any.html"
             ],
             "text": "input",
             "start": 7,
@@ -1723,8 +2642,10 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
-                "meta.block.vue-vine"
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine",
+                "meta.tag.block.any.html"
             ],
             "text": " ",
             "start": 12,
@@ -1733,30 +2654,26 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
+                "meta.function.vue-vine",
                 "meta.block.vue-vine",
-                "variable.other.readwrite.alias.vue-vine"
+                "variable.vine-template.vue-vine",
+                "meta.tag.block.any.html",
+                "meta.directive.vue",
+                "entity.other.attribute-name.html"
             ],
-            "text": "v",
+            "text": "v-",
             "start": 13,
-            "end": 14
-        },
-        {
-            "scopes": [
-                "source.vue-vine",
-                "meta.import.vue-vine",
-                "meta.block.vue-vine"
-            ],
-            "text": "-",
-            "start": 14,
             "end": 15
         },
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
+                "meta.function.vue-vine",
                 "meta.block.vue-vine",
-                "variable.other.readwrite.alias.vue-vine"
+                "variable.vine-template.vue-vine",
+                "meta.tag.block.any.html",
+                "meta.directive.vue",
+                "entity.other.attribute-name.html"
             ],
             "text": "model",
             "start": 15,
@@ -1765,19 +2682,42 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
-                "meta.block.vue-vine"
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine",
+                "meta.tag.block.any.html",
+                "meta.directive.vue",
+                "punctuation.separator.key-value.html"
             ],
-            "text": "=\"",
+            "text": "=",
             "start": 20,
+            "end": 21
+        },
+        {
+            "scopes": [
+                "source.vue-vine",
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine",
+                "meta.tag.block.any.html",
+                "meta.directive.vue",
+                "source.directive.vue",
+                "punctuation.definition.string.begin.html"
+            ],
+            "text": "\"",
+            "start": 21,
             "end": 22
         },
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
+                "meta.function.vue-vine",
                 "meta.block.vue-vine",
-                "variable.other.readwrite.alias.vue-vine"
+                "variable.vine-template.vue-vine",
+                "meta.tag.block.any.html",
+                "meta.directive.vue",
+                "source.directive.vue",
+                "variable.other.readwrite.js"
             ],
             "text": "msg",
             "start": 22,
@@ -1786,19 +2726,38 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
-                "meta.block.vue-vine"
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine",
+                "meta.tag.block.any.html",
+                "meta.directive.vue",
+                "source.directive.vue",
+                "punctuation.definition.string.end.html"
             ],
-            "text": "\" ",
+            "text": "\"",
             "start": 25,
+            "end": 26
+        },
+        {
+            "scopes": [
+                "source.vue-vine",
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine",
+                "meta.tag.block.any.html"
+            ],
+            "text": " ",
+            "start": 26,
             "end": 27
         },
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
+                "meta.function.vue-vine",
                 "meta.block.vue-vine",
-                "variable.other.readwrite.alias.vue-vine"
+                "variable.vine-template.vue-vine",
+                "meta.tag.block.any.html",
+                "entity.other.attribute-name.html"
             ],
             "text": "type",
             "start": 27,
@@ -1807,19 +2766,37 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
-                "meta.block.vue-vine"
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine",
+                "meta.tag.block.any.html"
             ],
-            "text": "=\"",
+            "text": "=",
             "start": 31,
+            "end": 32
+        },
+        {
+            "scopes": [
+                "source.vue-vine",
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine",
+                "meta.tag.block.any.html",
+                "string.quoted.double.html",
+                "punctuation.definition.string.begin.html"
+            ],
+            "text": "\"",
+            "start": 32,
             "end": 33
         },
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
+                "meta.function.vue-vine",
                 "meta.block.vue-vine",
-                "variable.other.readwrite.alias.vue-vine"
+                "variable.vine-template.vue-vine",
+                "meta.tag.block.any.html",
+                "string.quoted.double.html"
             ],
             "text": "text",
             "start": 33,
@@ -1828,11 +2805,51 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
-                "meta.block.vue-vine"
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine",
+                "meta.tag.block.any.html",
+                "string.quoted.double.html",
+                "punctuation.definition.string.end.html"
             ],
-            "text": "\" \/>\n",
+            "text": "\"",
             "start": 37,
+            "end": 38
+        },
+        {
+            "scopes": [
+                "source.vue-vine",
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine",
+                "meta.tag.block.any.html"
+            ],
+            "text": " \/",
+            "start": 38,
+            "end": 40
+        },
+        {
+            "scopes": [
+                "source.vue-vine",
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine",
+                "meta.tag.block.any.html",
+                "punctuation.definition.tag.end.html"
+            ],
+            "text": ">",
+            "start": 40,
+            "end": 41
+        },
+        {
+            "scopes": [
+                "source.vue-vine",
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine"
+            ],
+            "text": "\n",
+            "start": 41,
             "end": 42
         }
     ],
@@ -1840,19 +2857,35 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
-                "meta.block.vue-vine"
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine"
             ],
-            "text": "      <",
+            "text": "      ",
             "start": 0,
+            "end": 6
+        },
+        {
+            "scopes": [
+                "source.vue-vine",
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine",
+                "meta.tag.block.any.html",
+                "punctuation.definition.tag.begin.html"
+            ],
+            "text": "<",
+            "start": 6,
             "end": 7
         },
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
+                "meta.function.vue-vine",
                 "meta.block.vue-vine",
-                "variable.other.readwrite.alias.vue-vine"
+                "variable.vine-template.vue-vine",
+                "meta.tag.block.any.html",
+                "entity.name.tag.block.any.html"
             ],
             "text": "p",
             "start": 7,
@@ -1861,40 +2894,62 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
-                "meta.block.vue-vine"
-            ],
-            "text": "> ",
-            "start": 8,
-            "end": 10
-        },
-        {
-            "scopes": [
-                "source.vue-vine",
-                "meta.import.vue-vine",
+                "meta.function.vue-vine",
                 "meta.block.vue-vine",
-                "variable.other.readwrite.alias.vue-vine"
+                "variable.vine-template.vue-vine",
+                "meta.tag.block.any.html",
+                "punctuation.definition.tag.end.html"
             ],
-            "text": "Message",
-            "start": 10,
-            "end": 17
+            "text": ">",
+            "start": 8,
+            "end": 9
         },
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
-                "meta.block.vue-vine"
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine"
             ],
-            "text": ": {{ ",
-            "start": 17,
+            "text": " Message: ",
+            "start": 9,
+            "end": 19
+        },
+        {
+            "scopes": [
+                "source.vue-vine",
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine",
+                "expression.embedded.vue",
+                "punctuation.definition.interpolation.begin.html.vue"
+            ],
+            "text": "{{",
+            "start": 19,
+            "end": 21
+        },
+        {
+            "scopes": [
+                "source.vue-vine",
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine",
+                "expression.embedded.vue",
+                "source.ts.embedded.html.vue"
+            ],
+            "text": " ",
+            "start": 21,
             "end": 22
         },
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
+                "meta.function.vue-vine",
                 "meta.block.vue-vine",
-                "variable.other.readwrite.alias.vue-vine"
+                "variable.vine-template.vue-vine",
+                "expression.embedded.vue",
+                "source.ts.embedded.html.vue",
+                "variable.other.readwrite.ts"
             ],
             "text": "msg",
             "start": 22,
@@ -1903,8 +2958,11 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
-                "meta.block.vue-vine"
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine",
+                "expression.embedded.vue",
+                "source.ts.embedded.html.vue"
             ],
             "text": " ",
             "start": 25,
@@ -1913,28 +2971,48 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
+                "meta.function.vue-vine",
                 "meta.block.vue-vine",
-                "punctuation.definition.block.vue-vine"
+                "variable.vine-template.vue-vine",
+                "expression.embedded.vue",
+                "punctuation.definition.interpolation.end.html.vue"
             ],
-            "text": "}",
+            "text": "}}",
             "start": 26,
-            "end": 27
+            "end": 28
         },
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine"
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine"
             ],
-            "text": "} <\/",
-            "start": 27,
+            "text": " ",
+            "start": 28,
+            "end": 29
+        },
+        {
+            "scopes": [
+                "source.vue-vine",
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine",
+                "meta.tag.block.any.html",
+                "punctuation.definition.tag.begin.html"
+            ],
+            "text": "<\/",
+            "start": 29,
             "end": 31
         },
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
-                "variable.other.readwrite.alias.vue-vine"
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine",
+                "meta.tag.block.any.html",
+                "entity.name.tag.block.any.html"
             ],
             "text": "p",
             "start": 31,
@@ -1943,10 +3021,25 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine"
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine",
+                "meta.tag.block.any.html",
+                "punctuation.definition.tag.end.html"
             ],
-            "text": ">\n",
+            "text": ">",
             "start": 32,
+            "end": 33
+        },
+        {
+            "scopes": [
+                "source.vue-vine",
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine"
+            ],
+            "text": "\n",
+            "start": 33,
             "end": 34
         }
     ],
@@ -1954,17 +3047,35 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine"
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine"
             ],
-            "text": "    <\/",
+            "text": "    ",
             "start": 0,
+            "end": 4
+        },
+        {
+            "scopes": [
+                "source.vue-vine",
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine",
+                "meta.tag.block.any.html",
+                "punctuation.definition.tag.begin.html"
+            ],
+            "text": "<\/",
+            "start": 4,
             "end": 6
         },
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
-                "variable.other.readwrite.alias.vue-vine"
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine",
+                "meta.tag.block.any.html",
+                "entity.name.tag.block.any.html"
             ],
             "text": "div",
             "start": 6,
@@ -1973,10 +3084,25 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine"
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine",
+                "meta.tag.block.any.html",
+                "punctuation.definition.tag.end.html"
             ],
-            "text": ">\n",
+            "text": ">",
             "start": 9,
+            "end": 10
+        },
+        {
+            "scopes": [
+                "source.vue-vine",
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine"
+            ],
+            "text": "\n",
+            "start": 10,
             "end": 11
         }
     ],
@@ -1984,7 +3110,9 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine"
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "variable.vine-template.vue-vine"
             ],
             "text": "  ",
             "start": 0,
@@ -1993,8 +3121,9 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
-                "punctuation.definition.string.template.begin.vue-vine"
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "punctuation.definition.string.vine-template.end.vue-vine"
             ],
             "text": "`",
             "start": 2,
@@ -2003,8 +3132,8 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine",
-                "string.template.vue-vine"
+                "meta.function.vue-vine",
+                "meta.block.vue-vine"
             ],
             "text": "\n",
             "start": 3,
@@ -2015,18 +3144,27 @@
         {
             "scopes": [
                 "source.vue-vine",
-                "meta.import.vue-vine"
+                "meta.function.vue-vine",
+                "meta.block.vue-vine",
+                "punctuation.definition.block.vue-vine"
             ],
-            "text": "}\n",
+            "text": "}",
             "start": 0,
+            "end": 1
+        },
+        {
+            "scopes": [
+                "source.vue-vine"
+            ],
+            "text": "\n",
+            "start": 1,
             "end": 2
         }
     ],
     [
         {
             "scopes": [
-                "source.vue-vine",
-                "meta.import.vue-vine"
+                "source.vue-vine"
             ],
             "text": "\n",
             "start": 0,

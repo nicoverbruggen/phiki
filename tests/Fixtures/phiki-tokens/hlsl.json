@@ -50,8 +50,25 @@
             "scopes": [
                 "source.hlsl"
             ],
-            "text": " Position   : SV_POSITION;\n",
+            "text": " Position   : ",
             "start": 10,
+            "end": 24
+        },
+        {
+            "scopes": [
+                "source.hlsl",
+                "support.variable.semantic.sm4.hlsl"
+            ],
+            "text": "SV_POSITION",
+            "start": 24,
+            "end": 35
+        },
+        {
+            "scopes": [
+                "source.hlsl"
+            ],
+            "text": ";\n",
+            "start": 35,
             "end": 37
         }
     ],
@@ -77,8 +94,25 @@
             "scopes": [
                 "source.hlsl"
             ],
-            "text": " Diffuse    : COLOR0;\n",
+            "text": " Diffuse    : ",
             "start": 10,
+            "end": 24
+        },
+        {
+            "scopes": [
+                "source.hlsl",
+                "support.variable.semantic.hlsl"
+            ],
+            "text": "COLOR0",
+            "start": 24,
+            "end": 30
+        },
+        {
+            "scopes": [
+                "source.hlsl"
+            ],
+            "text": ";\n",
+            "start": 30,
             "end": 32
         }
     ],
@@ -104,8 +138,25 @@
             "scopes": [
                 "source.hlsl"
             ],
-            "text": " TextureUV  : TEXCOORD0;\n",
+            "text": " TextureUV  : ",
             "start": 10,
+            "end": 24
+        },
+        {
+            "scopes": [
+                "source.hlsl",
+                "support.variable.semantic.hlsl"
+            ],
+            "text": "TEXCOORD0",
+            "start": 24,
+            "end": 33
+        },
+        {
+            "scopes": [
+                "source.hlsl"
+            ],
+            "text": ";\n",
+            "start": 33,
             "end": 35
         }
     ],
@@ -168,8 +219,25 @@
             "scopes": [
                 "source.hlsl"
             ],
-            "text": " vPos : POSITION,\n",
+            "text": " vPos : ",
             "start": 31,
+            "end": 39
+        },
+        {
+            "scopes": [
+                "source.hlsl",
+                "support.variable.semantic.hlsl"
+            ],
+            "text": "POSITION",
+            "start": 39,
+            "end": 47
+        },
+        {
+            "scopes": [
+                "source.hlsl"
+            ],
+            "text": ",\n",
+            "start": 47,
             "end": 49
         }
     ],
@@ -195,8 +263,25 @@
             "scopes": [
                 "source.hlsl"
             ],
-            "text": " vNormal : NORMAL,\n",
+            "text": " vNormal : ",
             "start": 31,
+            "end": 42
+        },
+        {
+            "scopes": [
+                "source.hlsl",
+                "support.variable.semantic.hlsl"
+            ],
+            "text": "NORMAL",
+            "start": 42,
+            "end": 48
+        },
+        {
+            "scopes": [
+                "source.hlsl"
+            ],
+            "text": ",\n",
+            "start": 48,
             "end": 50
         }
     ],
@@ -222,8 +307,25 @@
             "scopes": [
                 "source.hlsl"
             ],
-            "text": " vTexCoord0 : TEXCOORD,\n",
+            "text": " vTexCoord0 : ",
             "start": 31,
+            "end": 45
+        },
+        {
+            "scopes": [
+                "source.hlsl",
+                "support.variable.semantic.hlsl"
+            ],
+            "text": "TEXCOORD",
+            "start": 45,
+            "end": 53
+        },
+        {
+            "scopes": [
+                "source.hlsl"
+            ],
+            "text": ",\n",
+            "start": 53,
             "end": 55
         }
     ],

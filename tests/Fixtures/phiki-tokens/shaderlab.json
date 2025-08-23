@@ -721,8 +721,27 @@
                 "source.shaderlab",
                 "meta.cgblock"
             ],
-            "text": " vertex : POSITION;\n",
+            "text": " vertex : ",
             "start": 22,
+            "end": 32
+        },
+        {
+            "scopes": [
+                "source.shaderlab",
+                "meta.cgblock",
+                "support.variable.semantic.hlsl"
+            ],
+            "text": "POSITION",
+            "start": 32,
+            "end": 40
+        },
+        {
+            "scopes": [
+                "source.shaderlab",
+                "meta.cgblock"
+            ],
+            "text": ";\n",
+            "start": 40,
             "end": 42
         }
     ],
@@ -751,8 +770,27 @@
                 "source.shaderlab",
                 "meta.cgblock"
             ],
-            "text": " uv : TEXCOORD0;\n",
+            "text": " uv : ",
             "start": 22,
+            "end": 28
+        },
+        {
+            "scopes": [
+                "source.shaderlab",
+                "meta.cgblock",
+                "support.variable.semantic.hlsl"
+            ],
+            "text": "TEXCOORD0",
+            "start": 28,
+            "end": 37
+        },
+        {
+            "scopes": [
+                "source.shaderlab",
+                "meta.cgblock"
+            ],
+            "text": ";\n",
+            "start": 37,
             "end": 39
         }
     ],
@@ -844,8 +882,27 @@
                 "source.shaderlab",
                 "meta.cgblock"
             ],
-            "text": " uv : TEXCOORD0;\n",
+            "text": " uv : ",
             "start": 22,
+            "end": 28
+        },
+        {
+            "scopes": [
+                "source.shaderlab",
+                "meta.cgblock",
+                "support.variable.semantic.hlsl"
+            ],
+            "text": "TEXCOORD0",
+            "start": 28,
+            "end": 37
+        },
+        {
+            "scopes": [
+                "source.shaderlab",
+                "meta.cgblock"
+            ],
+            "text": ";\n",
+            "start": 37,
             "end": 39
         }
     ],
@@ -923,8 +980,27 @@
                 "source.shaderlab",
                 "meta.cgblock"
             ],
-            "text": " vertex : SV_POSITION;\n",
+            "text": " vertex : ",
             "start": 22,
+            "end": 32
+        },
+        {
+            "scopes": [
+                "source.shaderlab",
+                "meta.cgblock",
+                "support.variable.semantic.sm4.hlsl"
+            ],
+            "text": "SV_POSITION",
+            "start": 32,
+            "end": 43
+        },
+        {
+            "scopes": [
+                "source.shaderlab",
+                "meta.cgblock"
+            ],
+            "text": ";\n",
+            "start": 43,
             "end": 45
         }
     ],
@@ -1259,8 +1335,27 @@
                 "source.shaderlab",
                 "meta.cgblock"
             ],
-            "text": " (v2f i) : SV_Target\n",
+            "text": " (v2f i) : ",
             "start": 23,
+            "end": 34
+        },
+        {
+            "scopes": [
+                "source.shaderlab",
+                "meta.cgblock",
+                "support.variable.semantic.sm4.hlsl"
+            ],
+            "text": "SV_Target",
+            "start": 34,
+            "end": 43
+        },
+        {
+            "scopes": [
+                "source.shaderlab",
+                "meta.cgblock"
+            ],
+            "text": "\n",
+            "start": 43,
             "end": 44
         }
     ],

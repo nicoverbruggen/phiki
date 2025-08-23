@@ -1324,8 +1324,19 @@
                 "meta.property-list.css",
                 "meta.property-value.css"
             ],
-            "text": ", ",
+            "text": ",",
             "start": 32,
+            "end": 33
+        },
+        {
+            "scopes": [
+                "source.stylus",
+                "meta.property-list.css",
+                "meta.property-list.css",
+                "meta.property-value.css"
+            ],
+            "text": " ",
+            "start": 33,
             "end": 34
         },
         {
@@ -1347,8 +1358,19 @@
                 "meta.property-list.css",
                 "meta.property-value.css"
             ],
-            "text": ", ",
+            "text": ",",
             "start": 39,
+            "end": 40
+        },
+        {
+            "scopes": [
+                "source.stylus",
+                "meta.property-list.css",
+                "meta.property-list.css",
+                "meta.property-value.css"
+            ],
+            "text": " ",
+            "start": 40,
             "end": 41
         },
         {

@@ -278,10 +278,18 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts"
+                "punctuation.terminator.statement.ts"
             ],
-            "text": ";\n",
+            "text": ";",
             "start": 41,
+            "end": 42
+        },
+        {
+            "scopes": [
+                "source.ts"
+            ],
+            "text": "\n",
+            "start": 42,
             "end": 43
         }
     ],
@@ -289,10 +297,8 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.var-single-variable.expr.ts",
-                "meta.definition.variable.ts",
-                "variable.other.constant.ts"
+                "meta.type.declaration.ts",
+                "storage.type.type.ts"
             ],
             "text": "type",
             "start": 0,
@@ -301,17 +307,35 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.var-single-variable.expr.ts"
+                "meta.type.declaration.ts"
             ],
-            "text": " PersonType ",
+            "text": " ",
             "start": 4,
+            "end": 5
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.type.declaration.ts",
+                "entity.name.type.alias.ts"
+            ],
+            "text": "PersonType",
+            "start": 5,
+            "end": 15
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.type.declaration.ts"
+            ],
+            "text": " ",
+            "start": 15,
             "end": 16
         },
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
+                "meta.type.declaration.ts",
                 "keyword.operator.assignment.ts"
             ],
             "text": "=",
@@ -321,7 +345,7 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts"
+                "meta.type.declaration.ts"
             ],
             "text": " ",
             "start": 17,
@@ -330,7 +354,7 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
+                "meta.type.declaration.ts",
                 "keyword.operator.expression.typeof.ts"
             ],
             "text": "typeof",
@@ -340,7 +364,7 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts"
+                "meta.type.declaration.ts"
             ],
             "text": " ",
             "start": 24,
@@ -349,7 +373,7 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
+                "meta.type.declaration.ts",
                 "variable.other.readwrite.ts"
             ],
             "text": "person",
@@ -359,16 +383,23 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts"
+                "punctuation.terminator.statement.ts"
             ],
-            "text": ";  ",
+            "text": ";",
             "start": 31,
+            "end": 32
+        },
+        {
+            "scopes": [
+                "source.ts"
+            ],
+            "text": "  ",
+            "start": 32,
             "end": 34
         },
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
                 "comment.line.double-slash.ts",
                 "punctuation.definition.comment.ts"
             ],
@@ -379,7 +410,6 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
                 "comment.line.double-slash.ts"
             ],
             "text": " { name: string; age: number }",
@@ -388,8 +418,7 @@
         },
         {
             "scopes": [
-                "source.ts",
-                "meta.var.expr.ts"
+                "source.ts"
             ],
             "text": "\n",
             "start": 66,
@@ -399,8 +428,7 @@
     [
         {
             "scopes": [
-                "source.ts",
-                "meta.var.expr.ts"
+                "source.ts"
             ],
             "text": "\n",
             "start": 0,
@@ -411,7 +439,6 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
                 "comment.line.double-slash.ts",
                 "punctuation.definition.comment.ts"
             ],
@@ -422,7 +449,6 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
                 "comment.line.double-slash.ts"
             ],
             "text": " 'satisfies' to ensure a type matches but allows more specific types",
@@ -431,8 +457,7 @@
         },
         {
             "scopes": [
-                "source.ts",
-                "meta.var.expr.ts"
+                "source.ts"
             ],
             "text": "\n",
             "start": 70,
@@ -443,10 +468,8 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.var-single-variable.expr.ts",
-                "meta.definition.variable.ts",
-                "variable.other.constant.ts"
+                "meta.type.declaration.ts",
+                "storage.type.type.ts"
             ],
             "text": "type",
             "start": 0,
@@ -455,17 +478,35 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.var-single-variable.expr.ts"
+                "meta.type.declaration.ts"
             ],
-            "text": " Animal ",
+            "text": " ",
             "start": 4,
+            "end": 5
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.type.declaration.ts",
+                "entity.name.type.alias.ts"
+            ],
+            "text": "Animal",
+            "start": 5,
+            "end": 11
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.type.declaration.ts"
+            ],
+            "text": " ",
+            "start": 11,
             "end": 12
         },
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
+                "meta.type.declaration.ts",
                 "keyword.operator.assignment.ts"
             ],
             "text": "=",
@@ -475,7 +516,7 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts"
+                "meta.type.declaration.ts"
             ],
             "text": " ",
             "start": 13,
@@ -484,8 +525,8 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
+                "meta.type.declaration.ts",
+                "meta.object.type.ts",
                 "punctuation.definition.block.ts"
             ],
             "text": "{",
@@ -495,8 +536,9 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts"
+                "meta.type.declaration.ts",
+                "meta.object.type.ts",
+                "meta.field.declaration.ts"
             ],
             "text": " ",
             "start": 15,
@@ -505,10 +547,11 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.object-literal.key.ts"
+                "meta.type.declaration.ts",
+                "meta.object.type.ts",
+                "meta.field.declaration.ts",
+                "meta.definition.property.ts",
+                "variable.object.property.ts"
             ],
             "text": "name",
             "start": 16,
@@ -517,11 +560,11 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.object-literal.key.ts",
-                "punctuation.separator.key-value.ts"
+                "meta.type.declaration.ts",
+                "meta.object.type.ts",
+                "meta.field.declaration.ts",
+                "meta.type.annotation.ts",
+                "keyword.operator.type.annotation.ts"
             ],
             "text": ":",
             "start": 20,
@@ -530,9 +573,10 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts"
+                "meta.type.declaration.ts",
+                "meta.object.type.ts",
+                "meta.field.declaration.ts",
+                "meta.type.annotation.ts"
             ],
             "text": " ",
             "start": 21,
@@ -541,10 +585,11 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "variable.other.readwrite.ts"
+                "meta.type.declaration.ts",
+                "meta.object.type.ts",
+                "meta.field.declaration.ts",
+                "meta.type.annotation.ts",
+                "support.type.primitive.ts"
             ],
             "text": "string",
             "start": 22,
@@ -553,9 +598,10 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts"
+                "meta.type.declaration.ts",
+                "meta.object.type.ts",
+                "meta.field.declaration.ts",
+                "meta.type.annotation.ts"
             ],
             "text": " ",
             "start": 28,
@@ -564,8 +610,8 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
+                "meta.type.declaration.ts",
+                "meta.object.type.ts",
                 "punctuation.definition.block.ts"
             ],
             "text": "}",
@@ -575,10 +621,18 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts"
+                "punctuation.terminator.statement.ts"
             ],
-            "text": ";\n",
+            "text": ";",
             "start": 30,
+            "end": 31
+        },
+        {
+            "scopes": [
+                "source.ts"
+            ],
+            "text": "\n",
+            "start": 31,
             "end": 32
         }
     ],
@@ -896,18 +950,25 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts"
+                "punctuation.terminator.statement.ts"
             ],
-            "text": ";\n",
+            "text": ";",
             "start": 73,
+            "end": 74
+        },
+        {
+            "scopes": [
+                "source.ts"
+            ],
+            "text": "\n",
+            "start": 74,
             "end": 75
         }
     ],
     [
         {
             "scopes": [
-                "source.ts",
-                "meta.var.expr.ts"
+                "source.ts"
             ],
             "text": "\n",
             "start": 0,
@@ -918,7 +979,6 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
                 "comment.line.double-slash.ts",
                 "punctuation.definition.comment.ts"
             ],
@@ -929,7 +989,6 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
                 "comment.line.double-slash.ts"
             ],
             "text": " Generics with 'extends' and default values",
@@ -938,8 +997,7 @@
         },
         {
             "scopes": [
-                "source.ts",
-                "meta.var.expr.ts"
+                "source.ts"
             ],
             "text": "\n",
             "start": 45,
@@ -950,10 +1008,8 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.var-single-variable.expr.ts",
-                "meta.definition.variable.ts",
-                "variable.other.constant.ts"
+                "meta.function.ts",
+                "storage.type.function.ts"
             ],
             "text": "function",
             "start": 0,
@@ -962,17 +1018,144 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.var-single-variable.expr.ts"
+                "meta.function.ts"
             ],
-            "text": " identity<T extends number | string ",
+            "text": " ",
             "start": 8,
+            "end": 9
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.function.ts",
+                "meta.definition.function.ts",
+                "entity.name.function.ts"
+            ],
+            "text": "identity",
+            "start": 9,
+            "end": 17
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.function.ts",
+                "meta.type.parameters.ts",
+                "punctuation.definition.typeparameters.begin.ts"
+            ],
+            "text": "<",
+            "start": 17,
+            "end": 18
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.function.ts",
+                "meta.type.parameters.ts",
+                "entity.name.type.ts"
+            ],
+            "text": "T",
+            "start": 18,
+            "end": 19
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.function.ts",
+                "meta.type.parameters.ts"
+            ],
+            "text": " ",
+            "start": 19,
+            "end": 20
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.function.ts",
+                "meta.type.parameters.ts",
+                "storage.modifier.ts"
+            ],
+            "text": "extends",
+            "start": 20,
+            "end": 27
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.function.ts",
+                "meta.type.parameters.ts"
+            ],
+            "text": " ",
+            "start": 27,
+            "end": 28
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.function.ts",
+                "meta.type.parameters.ts",
+                "support.type.primitive.ts"
+            ],
+            "text": "number",
+            "start": 28,
+            "end": 34
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.function.ts",
+                "meta.type.parameters.ts"
+            ],
+            "text": " ",
+            "start": 34,
+            "end": 35
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.function.ts",
+                "meta.type.parameters.ts",
+                "keyword.operator.type.ts"
+            ],
+            "text": "|",
+            "start": 35,
+            "end": 36
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.function.ts",
+                "meta.type.parameters.ts"
+            ],
+            "text": " ",
+            "start": 36,
+            "end": 37
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.function.ts",
+                "meta.type.parameters.ts",
+                "support.type.primitive.ts"
+            ],
+            "text": "string",
+            "start": 37,
+            "end": 43
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.function.ts",
+                "meta.type.parameters.ts"
+            ],
+            "text": " ",
+            "start": 43,
             "end": 44
         },
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
+                "meta.function.ts",
+                "meta.type.parameters.ts",
                 "keyword.operator.assignment.ts"
             ],
             "text": "=",
@@ -982,7 +1165,8 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts"
+                "meta.function.ts",
+                "meta.type.parameters.ts"
             ],
             "text": " ",
             "start": 45,
@@ -991,8 +1175,9 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "variable.other.readwrite.ts"
+                "meta.function.ts",
+                "meta.type.parameters.ts",
+                "support.type.primitive.ts"
             ],
             "text": "string",
             "start": 46,
@@ -1001,8 +1186,9 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "keyword.operator.relational.ts"
+                "meta.function.ts",
+                "meta.type.parameters.ts",
+                "punctuation.definition.typeparameters.end.ts"
             ],
             "text": ">",
             "start": 52,
@@ -1011,8 +1197,7 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.arrow.ts",
+                "meta.function.ts",
                 "meta.parameters.ts",
                 "punctuation.definition.parameters.begin.ts"
             ],
@@ -1023,8 +1208,7 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.arrow.ts",
+                "meta.function.ts",
                 "meta.parameters.ts",
                 "variable.parameter.ts"
             ],
@@ -1035,8 +1219,7 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.arrow.ts",
+                "meta.function.ts",
                 "meta.parameters.ts",
                 "meta.type.annotation.ts",
                 "keyword.operator.type.annotation.ts"
@@ -1048,8 +1231,7 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.arrow.ts",
+                "meta.function.ts",
                 "meta.parameters.ts",
                 "meta.type.annotation.ts"
             ],
@@ -1060,8 +1242,7 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.arrow.ts",
+                "meta.function.ts",
                 "meta.parameters.ts",
                 "meta.type.annotation.ts",
                 "entity.name.type.ts"
@@ -1073,8 +1254,7 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.arrow.ts",
+                "meta.function.ts",
                 "meta.parameters.ts",
                 "punctuation.definition.parameters.end.ts"
             ],
@@ -1085,9 +1265,8 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.arrow.ts",
-                "meta.return.type.arrow.ts",
+                "meta.function.ts",
+                "meta.return.type.ts",
                 "keyword.operator.type.annotation.ts"
             ],
             "text": ":",
@@ -1097,9 +1276,8 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.arrow.ts",
-                "meta.return.type.arrow.ts"
+                "meta.function.ts",
+                "meta.return.type.ts"
             ],
             "text": " ",
             "start": 62,
@@ -1108,9 +1286,8 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.arrow.ts",
-                "meta.return.type.arrow.ts",
+                "meta.function.ts",
+                "meta.return.type.ts",
                 "entity.name.type.ts"
             ],
             "text": "T",
@@ -1120,9 +1297,8 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.arrow.ts",
-                "meta.return.type.arrow.ts"
+                "meta.function.ts",
+                "meta.return.type.ts"
             ],
             "text": " ",
             "start": 64,
@@ -1131,8 +1307,8 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
+                "meta.function.ts",
+                "meta.block.ts",
                 "punctuation.definition.block.ts"
             ],
             "text": "{",
@@ -1142,8 +1318,8 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts"
+                "meta.function.ts",
+                "meta.block.ts"
             ],
             "text": "\n",
             "start": 66,
@@ -1154,11 +1330,64 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts"
+                "meta.function.ts",
+                "meta.block.ts"
             ],
-            "text": "  return arg;\n",
+            "text": "  ",
             "start": 0,
+            "end": 2
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.function.ts",
+                "meta.block.ts",
+                "keyword.control.flow.ts"
+            ],
+            "text": "return",
+            "start": 2,
+            "end": 8
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.function.ts",
+                "meta.block.ts"
+            ],
+            "text": " ",
+            "start": 8,
+            "end": 9
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.function.ts",
+                "meta.block.ts",
+                "variable.other.readwrite.ts"
+            ],
+            "text": "arg",
+            "start": 9,
+            "end": 12
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.function.ts",
+                "meta.block.ts",
+                "punctuation.terminator.statement.ts"
+            ],
+            "text": ";",
+            "start": 12,
+            "end": 13
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.function.ts",
+                "meta.block.ts"
+            ],
+            "text": "\n",
+            "start": 13,
             "end": 14
         }
     ],
@@ -1166,8 +1395,8 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
+                "meta.function.ts",
+                "meta.block.ts",
                 "punctuation.definition.block.ts"
             ],
             "text": "}",
@@ -1176,8 +1405,7 @@
         },
         {
             "scopes": [
-                "source.ts",
-                "meta.var.expr.ts"
+                "source.ts"
             ],
             "text": "\n",
             "start": 1,
@@ -1187,8 +1415,7 @@
     [
         {
             "scopes": [
-                "source.ts",
-                "meta.var.expr.ts"
+                "source.ts"
             ],
             "text": "\n",
             "start": 0,
@@ -1200,9 +1427,7 @@
             "scopes": [
                 "source.ts",
                 "meta.var.expr.ts",
-                "meta.var-single-variable.expr.ts",
-                "meta.definition.variable.ts",
-                "variable.other.constant.ts"
+                "storage.type.ts"
             ],
             "text": "let",
             "start": 0,
@@ -1211,11 +1436,32 @@
         {
             "scopes": [
                 "source.ts",
+                "meta.var.expr.ts"
+            ],
+            "text": " ",
+            "start": 3,
+            "end": 4
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.var.expr.ts",
+                "meta.var-single-variable.expr.ts",
+                "meta.definition.variable.ts",
+                "variable.other.readwrite.ts"
+            ],
+            "text": "str",
+            "start": 4,
+            "end": 7
+        },
+        {
+            "scopes": [
+                "source.ts",
                 "meta.var.expr.ts",
                 "meta.var-single-variable.expr.ts"
             ],
-            "text": " str ",
-            "start": 3,
+            "text": " ",
+            "start": 7,
             "end": 8
         },
         {
@@ -1271,16 +1517,23 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts"
+                "punctuation.terminator.statement.ts"
             ],
-            "text": ";  ",
+            "text": ";",
             "start": 20,
+            "end": 21
+        },
+        {
+            "scopes": [
+                "source.ts"
+            ],
+            "text": "  ",
+            "start": 21,
             "end": 23
         },
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
                 "comment.line.double-slash.ts",
                 "punctuation.definition.comment.ts"
             ],
@@ -1291,7 +1544,6 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
                 "comment.line.double-slash.ts"
             ],
             "text": " Default type is string",
@@ -1300,8 +1552,7 @@
         },
         {
             "scopes": [
-                "source.ts",
-                "meta.var.expr.ts"
+                "source.ts"
             ],
             "text": "\n",
             "start": 48,
@@ -1313,9 +1564,7 @@
             "scopes": [
                 "source.ts",
                 "meta.var.expr.ts",
-                "meta.var-single-variable.expr.ts",
-                "meta.definition.variable.ts",
-                "variable.other.constant.ts"
+                "storage.type.ts"
             ],
             "text": "let",
             "start": 0,
@@ -1324,11 +1573,32 @@
         {
             "scopes": [
                 "source.ts",
+                "meta.var.expr.ts"
+            ],
+            "text": " ",
+            "start": 3,
+            "end": 4
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.var.expr.ts",
+                "meta.var-single-variable.expr.ts",
+                "meta.definition.variable.ts",
+                "variable.other.readwrite.ts"
+            ],
+            "text": "num",
+            "start": 4,
+            "end": 7
+        },
+        {
+            "scopes": [
+                "source.ts",
                 "meta.var.expr.ts",
                 "meta.var-single-variable.expr.ts"
             ],
-            "text": " num ",
-            "start": 3,
+            "text": " ",
+            "start": 7,
             "end": 8
         },
         {
@@ -1394,16 +1664,23 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts"
+                "punctuation.terminator.statement.ts"
             ],
-            "text": ";  ",
+            "text": ";",
             "start": 22,
+            "end": 23
+        },
+        {
+            "scopes": [
+                "source.ts"
+            ],
+            "text": "  ",
+            "start": 23,
             "end": 25
         },
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
                 "comment.line.double-slash.ts",
                 "punctuation.definition.comment.ts"
             ],
@@ -1414,7 +1691,6 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
                 "comment.line.double-slash.ts"
             ],
             "text": " T inferred as number",
@@ -1423,8 +1699,7 @@
         },
         {
             "scopes": [
-                "source.ts",
-                "meta.var.expr.ts"
+                "source.ts"
             ],
             "text": "\n",
             "start": 48,
@@ -1434,8 +1709,7 @@
     [
         {
             "scopes": [
-                "source.ts",
-                "meta.var.expr.ts"
+                "source.ts"
             ],
             "text": "\n",
             "start": 0,
@@ -1446,7 +1720,6 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
                 "comment.line.double-slash.ts",
                 "punctuation.definition.comment.ts"
             ],
@@ -1457,7 +1730,6 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
                 "comment.line.double-slash.ts"
             ],
             "text": " 'extends' with interface and class",
@@ -1466,8 +1738,7 @@
         },
         {
             "scopes": [
-                "source.ts",
-                "meta.var.expr.ts"
+                "source.ts"
             ],
             "text": "\n",
             "start": 37,
@@ -1478,10 +1749,8 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.var-single-variable.expr.ts",
-                "meta.definition.variable.ts",
-                "variable.other.constant.ts"
+                "meta.interface.ts",
+                "storage.type.interface.ts"
             ],
             "text": "interface",
             "start": 0,
@@ -1490,17 +1759,45 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.var-single-variable.expr.ts"
+                "meta.interface.ts"
             ],
-            "text": " HasLength {",
+            "text": " ",
             "start": 9,
+            "end": 10
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.interface.ts",
+                "entity.name.type.interface.ts"
+            ],
+            "text": "HasLength",
+            "start": 10,
+            "end": 19
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.interface.ts"
+            ],
+            "text": " ",
+            "start": 19,
+            "end": 20
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.interface.ts",
+                "punctuation.definition.block.ts"
+            ],
+            "text": "{",
+            "start": 20,
             "end": 21
         },
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts"
+                "meta.interface.ts"
             ],
             "text": "\n",
             "start": 21,
@@ -1511,7 +1808,8 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts"
+                "meta.interface.ts",
+                "meta.field.declaration.ts"
             ],
             "text": "  ",
             "start": 0,
@@ -1520,10 +1818,10 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.var-single-variable.expr.ts",
-                "meta.definition.variable.ts",
-                "variable.other.constant.ts"
+                "meta.interface.ts",
+                "meta.field.declaration.ts",
+                "meta.definition.property.ts",
+                "variable.object.property.ts"
             ],
             "text": "length",
             "start": 2,
@@ -1532,8 +1830,8 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.var-single-variable.expr.ts",
+                "meta.interface.ts",
+                "meta.field.declaration.ts",
                 "meta.type.annotation.ts",
                 "keyword.operator.type.annotation.ts"
             ],
@@ -1544,8 +1842,8 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.var-single-variable.expr.ts",
+                "meta.interface.ts",
+                "meta.field.declaration.ts",
                 "meta.type.annotation.ts"
             ],
             "text": " ",
@@ -1555,8 +1853,8 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.var-single-variable.expr.ts",
+                "meta.interface.ts",
+                "meta.field.declaration.ts",
                 "meta.type.annotation.ts",
                 "support.type.primitive.ts"
             ],
@@ -1567,10 +1865,20 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts"
+                "meta.interface.ts",
+                "punctuation.terminator.statement.ts"
             ],
-            "text": ";\n",
+            "text": ";",
             "start": 16,
+            "end": 17
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.interface.ts"
+            ],
+            "text": "\n",
+            "start": 17,
             "end": 18
         }
     ],
@@ -1578,18 +1886,26 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts"
+                "meta.interface.ts",
+                "punctuation.definition.block.ts"
             ],
-            "text": "}\n",
+            "text": "}",
             "start": 0,
+            "end": 1
+        },
+        {
+            "scopes": [
+                "source.ts"
+            ],
+            "text": "\n",
+            "start": 1,
             "end": 2
         }
     ],
     [
         {
             "scopes": [
-                "source.ts",
-                "meta.var.expr.ts"
+                "source.ts"
             ],
             "text": "\n",
             "start": 0,
@@ -1600,10 +1916,8 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.var-single-variable.expr.ts",
-                "meta.definition.variable.ts",
-                "variable.other.constant.ts"
+                "meta.function.ts",
+                "storage.type.function.ts"
             ],
             "text": "function",
             "start": 0,
@@ -1612,17 +1926,102 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.var-single-variable.expr.ts"
+                "meta.function.ts"
             ],
-            "text": " logLength<T extends HasLength ",
+            "text": " ",
             "start": 8,
+            "end": 9
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.function.ts",
+                "meta.definition.function.ts",
+                "entity.name.function.ts"
+            ],
+            "text": "logLength",
+            "start": 9,
+            "end": 18
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.function.ts",
+                "meta.type.parameters.ts",
+                "punctuation.definition.typeparameters.begin.ts"
+            ],
+            "text": "<",
+            "start": 18,
+            "end": 19
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.function.ts",
+                "meta.type.parameters.ts",
+                "entity.name.type.ts"
+            ],
+            "text": "T",
+            "start": 19,
+            "end": 20
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.function.ts",
+                "meta.type.parameters.ts"
+            ],
+            "text": " ",
+            "start": 20,
+            "end": 21
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.function.ts",
+                "meta.type.parameters.ts",
+                "storage.modifier.ts"
+            ],
+            "text": "extends",
+            "start": 21,
+            "end": 28
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.function.ts",
+                "meta.type.parameters.ts"
+            ],
+            "text": " ",
+            "start": 28,
+            "end": 29
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.function.ts",
+                "meta.type.parameters.ts",
+                "entity.name.type.ts"
+            ],
+            "text": "HasLength",
+            "start": 29,
+            "end": 38
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.function.ts",
+                "meta.type.parameters.ts"
+            ],
+            "text": " ",
+            "start": 38,
             "end": 39
         },
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
+                "meta.function.ts",
+                "meta.type.parameters.ts",
                 "keyword.operator.assignment.ts"
             ],
             "text": "=",
@@ -1632,7 +2031,8 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts"
+                "meta.function.ts",
+                "meta.type.parameters.ts"
             ],
             "text": " ",
             "start": 40,
@@ -1641,8 +2041,9 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "variable.other.readwrite.ts"
+                "meta.function.ts",
+                "meta.type.parameters.ts",
+                "support.type.primitive.ts"
             ],
             "text": "string",
             "start": 41,
@@ -1651,8 +2052,9 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "keyword.operator.relational.ts"
+                "meta.function.ts",
+                "meta.type.parameters.ts",
+                "punctuation.definition.typeparameters.end.ts"
             ],
             "text": ">",
             "start": 47,
@@ -1661,8 +2063,7 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.arrow.ts",
+                "meta.function.ts",
                 "meta.parameters.ts",
                 "punctuation.definition.parameters.begin.ts"
             ],
@@ -1673,8 +2074,7 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.arrow.ts",
+                "meta.function.ts",
                 "meta.parameters.ts",
                 "variable.parameter.ts"
             ],
@@ -1685,8 +2085,7 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.arrow.ts",
+                "meta.function.ts",
                 "meta.parameters.ts",
                 "meta.type.annotation.ts",
                 "keyword.operator.type.annotation.ts"
@@ -1698,8 +2097,7 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.arrow.ts",
+                "meta.function.ts",
                 "meta.parameters.ts",
                 "meta.type.annotation.ts"
             ],
@@ -1710,8 +2108,7 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.arrow.ts",
+                "meta.function.ts",
                 "meta.parameters.ts",
                 "meta.type.annotation.ts",
                 "entity.name.type.ts"
@@ -1723,8 +2120,7 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.arrow.ts",
+                "meta.function.ts",
                 "meta.parameters.ts",
                 "punctuation.definition.parameters.end.ts"
             ],
@@ -1735,9 +2131,8 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.arrow.ts",
-                "meta.return.type.arrow.ts",
+                "meta.function.ts",
+                "meta.return.type.ts",
                 "keyword.operator.type.annotation.ts"
             ],
             "text": ":",
@@ -1747,9 +2142,8 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.arrow.ts",
-                "meta.return.type.arrow.ts"
+                "meta.function.ts",
+                "meta.return.type.ts"
             ],
             "text": " ",
             "start": 57,
@@ -1758,9 +2152,8 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.arrow.ts",
-                "meta.return.type.arrow.ts",
+                "meta.function.ts",
+                "meta.return.type.ts",
                 "support.type.primitive.ts"
             ],
             "text": "void",
@@ -1770,9 +2163,8 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.arrow.ts",
-                "meta.return.type.arrow.ts"
+                "meta.function.ts",
+                "meta.return.type.ts"
             ],
             "text": " ",
             "start": 62,
@@ -1781,8 +2173,8 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
+                "meta.function.ts",
+                "meta.block.ts",
                 "punctuation.definition.block.ts"
             ],
             "text": "{",
@@ -1792,8 +2184,8 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts"
+                "meta.function.ts",
+                "meta.block.ts"
             ],
             "text": "\n",
             "start": 64,
@@ -1804,11 +2196,123 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts"
+                "meta.function.ts",
+                "meta.block.ts"
             ],
-            "text": "  console.log(arg.length);\n",
+            "text": "  ",
             "start": 0,
+            "end": 2
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.function.ts",
+                "meta.block.ts",
+                "meta.function-call.ts",
+                "variable.other.object.ts"
+            ],
+            "text": "console",
+            "start": 2,
+            "end": 9
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.function.ts",
+                "meta.block.ts",
+                "meta.function-call.ts",
+                "punctuation.accessor.ts"
+            ],
+            "text": ".",
+            "start": 9,
+            "end": 10
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.function.ts",
+                "meta.block.ts",
+                "meta.function-call.ts",
+                "entity.name.function.ts"
+            ],
+            "text": "log",
+            "start": 10,
+            "end": 13
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.function.ts",
+                "meta.block.ts",
+                "meta.brace.round.ts"
+            ],
+            "text": "(",
+            "start": 13,
+            "end": 14
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.function.ts",
+                "meta.block.ts",
+                "variable.other.object.ts"
+            ],
+            "text": "arg",
+            "start": 14,
+            "end": 17
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.function.ts",
+                "meta.block.ts",
+                "punctuation.accessor.ts"
+            ],
+            "text": ".",
+            "start": 17,
+            "end": 18
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.function.ts",
+                "meta.block.ts",
+                "support.variable.property.ts"
+            ],
+            "text": "length",
+            "start": 18,
+            "end": 24
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.function.ts",
+                "meta.block.ts",
+                "meta.brace.round.ts"
+            ],
+            "text": ")",
+            "start": 24,
+            "end": 25
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.function.ts",
+                "meta.block.ts",
+                "punctuation.terminator.statement.ts"
+            ],
+            "text": ";",
+            "start": 25,
+            "end": 26
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.function.ts",
+                "meta.block.ts"
+            ],
+            "text": "\n",
+            "start": 26,
             "end": 27
         }
     ],
@@ -1816,8 +2320,8 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
+                "meta.function.ts",
+                "meta.block.ts",
                 "punctuation.definition.block.ts"
             ],
             "text": "}",
@@ -1826,8 +2330,7 @@
         },
         {
             "scopes": [
-                "source.ts",
-                "meta.var.expr.ts"
+                "source.ts"
             ],
             "text": "\n",
             "start": 1,
@@ -1837,8 +2340,7 @@
     [
         {
             "scopes": [
-                "source.ts",
-                "meta.var.expr.ts"
+                "source.ts"
             ],
             "text": "\n",
             "start": 0,
@@ -1849,10 +2351,8 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.var-single-variable.expr.ts",
-                "meta.definition.variable.ts",
-                "variable.other.constant.ts"
+                "meta.function-call.ts",
+                "entity.name.function.ts"
             ],
             "text": "logLength",
             "start": 0,
@@ -1861,8 +2361,7 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.var-single-variable.expr.ts"
+                "meta.brace.round.ts"
             ],
             "text": "(",
             "start": 9,
@@ -1871,8 +2370,6 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.var-single-variable.expr.ts",
                 "string.quoted.double.ts",
                 "punctuation.definition.string.begin.ts"
             ],
@@ -1883,8 +2380,6 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.var-single-variable.expr.ts",
                 "string.quoted.double.ts"
             ],
             "text": "Hello",
@@ -1894,8 +2389,6 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.var-single-variable.expr.ts",
                 "string.quoted.double.ts",
                 "punctuation.definition.string.end.ts"
             ],
@@ -1906,8 +2399,7 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.var-single-variable.expr.ts"
+                "meta.brace.round.ts"
             ],
             "text": ")",
             "start": 17,
@@ -1916,16 +2408,23 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts"
+                "punctuation.terminator.statement.ts"
             ],
-            "text": ";    ",
+            "text": ";",
             "start": 18,
+            "end": 19
+        },
+        {
+            "scopes": [
+                "source.ts"
+            ],
+            "text": "    ",
+            "start": 19,
             "end": 23
         },
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
                 "comment.line.double-slash.ts",
                 "punctuation.definition.comment.ts"
             ],
@@ -1936,7 +2435,6 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
                 "comment.line.double-slash.ts"
             ],
             "text": " OK: string has length (default is string)",
@@ -1945,8 +2443,7 @@
         },
         {
             "scopes": [
-                "source.ts",
-                "meta.var.expr.ts"
+                "source.ts"
             ],
             "text": "\n",
             "start": 67,
@@ -1957,10 +2454,8 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.var-single-variable.expr.ts",
-                "meta.definition.variable.ts",
-                "variable.other.constant.ts"
+                "meta.function-call.ts",
+                "entity.name.function.ts"
             ],
             "text": "logLength",
             "start": 0,
@@ -1969,17 +2464,36 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.var-single-variable.expr.ts"
+                "meta.brace.round.ts"
             ],
-            "text": "([1",
+            "text": "(",
             "start": 9,
+            "end": 10
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.array.literal.ts",
+                "meta.brace.square.ts"
+            ],
+            "text": "[",
+            "start": 10,
+            "end": 11
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.array.literal.ts",
+                "constant.numeric.decimal.ts"
+            ],
+            "text": "1",
+            "start": 11,
             "end": 12
         },
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
+                "meta.array.literal.ts",
                 "punctuation.separator.comma.ts"
             ],
             "text": ",",
@@ -1989,16 +2503,26 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts"
+                "meta.array.literal.ts"
             ],
-            "text": " 2",
+            "text": " ",
             "start": 13,
+            "end": 14
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.array.literal.ts",
+                "constant.numeric.decimal.ts"
+            ],
+            "text": "2",
+            "start": 14,
             "end": 15
         },
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
+                "meta.array.literal.ts",
                 "punctuation.separator.comma.ts"
             ],
             "text": ",",
@@ -2008,16 +2532,61 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts"
+                "meta.array.literal.ts"
             ],
-            "text": " 3]);  ",
+            "text": " ",
             "start": 16,
+            "end": 17
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.array.literal.ts",
+                "constant.numeric.decimal.ts"
+            ],
+            "text": "3",
+            "start": 17,
+            "end": 18
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.array.literal.ts",
+                "meta.brace.square.ts"
+            ],
+            "text": "]",
+            "start": 18,
+            "end": 19
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.brace.round.ts"
+            ],
+            "text": ")",
+            "start": 19,
+            "end": 20
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "punctuation.terminator.statement.ts"
+            ],
+            "text": ";",
+            "start": 20,
+            "end": 21
+        },
+        {
+            "scopes": [
+                "source.ts"
+            ],
+            "text": "  ",
+            "start": 21,
             "end": 23
         },
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
                 "comment.line.double-slash.ts",
                 "punctuation.definition.comment.ts"
             ],
@@ -2028,7 +2597,6 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
                 "comment.line.double-slash.ts"
             ],
             "text": " OK: array has length",
@@ -2037,8 +2605,7 @@
         },
         {
             "scopes": [
-                "source.ts",
-                "meta.var.expr.ts"
+                "source.ts"
             ],
             "text": "\n",
             "start": 46,
@@ -2049,7 +2616,6 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
                 "comment.line.double-slash.ts",
                 "punctuation.definition.comment.ts"
             ],
@@ -2060,7 +2626,6 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
                 "comment.line.double-slash.ts"
             ],
             "text": " logLength(123);      \/\/ Error: number doesn't have length",
@@ -2069,8 +2634,7 @@
         },
         {
             "scopes": [
-                "source.ts",
-                "meta.var.expr.ts"
+                "source.ts"
             ],
             "text": "\n",
             "start": 60,
@@ -2080,8 +2644,7 @@
     [
         {
             "scopes": [
-                "source.ts",
-                "meta.var.expr.ts"
+                "source.ts"
             ],
             "text": "\n",
             "start": 0,
@@ -2092,7 +2655,6 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
                 "comment.line.double-slash.ts",
                 "punctuation.definition.comment.ts"
             ],
@@ -2103,7 +2665,6 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
                 "comment.line.double-slash.ts"
             ],
             "text": " 'typeof' with functions",
@@ -2112,8 +2673,7 @@
         },
         {
             "scopes": [
-                "source.ts",
-                "meta.var.expr.ts"
+                "source.ts"
             ],
             "text": "\n",
             "start": 26,
@@ -2124,10 +2684,8 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.var-single-variable.expr.ts",
-                "meta.definition.variable.ts",
-                "variable.other.constant.ts"
+                "meta.function.ts",
+                "storage.type.function.ts"
             ],
             "text": "function",
             "start": 0,
@@ -2136,18 +2694,50 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.var-single-variable.expr.ts"
+                "meta.function.ts"
             ],
-            "text": " add(x",
+            "text": " ",
             "start": 8,
+            "end": 9
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.function.ts",
+                "meta.definition.function.ts",
+                "entity.name.function.ts"
+            ],
+            "text": "add",
+            "start": 9,
+            "end": 12
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.function.ts",
+                "meta.parameters.ts",
+                "punctuation.definition.parameters.begin.ts"
+            ],
+            "text": "(",
+            "start": 12,
+            "end": 13
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.function.ts",
+                "meta.parameters.ts",
+                "variable.parameter.ts"
+            ],
+            "text": "x",
+            "start": 13,
             "end": 14
         },
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.var-single-variable.expr.ts",
+                "meta.function.ts",
+                "meta.parameters.ts",
                 "meta.type.annotation.ts",
                 "keyword.operator.type.annotation.ts"
             ],
@@ -2158,8 +2748,8 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.var-single-variable.expr.ts",
+                "meta.function.ts",
+                "meta.parameters.ts",
                 "meta.type.annotation.ts"
             ],
             "text": " ",
@@ -2169,8 +2759,8 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.var-single-variable.expr.ts",
+                "meta.function.ts",
+                "meta.parameters.ts",
                 "meta.type.annotation.ts",
                 "support.type.primitive.ts"
             ],
@@ -2181,8 +2771,9 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "punctuation.separator.comma.ts"
+                "meta.function.ts",
+                "meta.parameters.ts",
+                "punctuation.separator.parameter.ts"
             ],
             "text": ",",
             "start": 22,
@@ -2191,7 +2782,8 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts"
+                "meta.function.ts",
+                "meta.parameters.ts"
             ],
             "text": " ",
             "start": 23,
@@ -2200,10 +2792,9 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.var-single-variable.expr.ts",
-                "meta.definition.variable.ts",
-                "variable.other.constant.ts"
+                "meta.function.ts",
+                "meta.parameters.ts",
+                "variable.parameter.ts"
             ],
             "text": "y",
             "start": 24,
@@ -2212,8 +2803,8 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.var-single-variable.expr.ts",
+                "meta.function.ts",
+                "meta.parameters.ts",
                 "meta.type.annotation.ts",
                 "keyword.operator.type.annotation.ts"
             ],
@@ -2224,8 +2815,8 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.var-single-variable.expr.ts",
+                "meta.function.ts",
+                "meta.parameters.ts",
                 "meta.type.annotation.ts"
             ],
             "text": " ",
@@ -2235,8 +2826,8 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.var-single-variable.expr.ts",
+                "meta.function.ts",
+                "meta.parameters.ts",
                 "meta.type.annotation.ts",
                 "support.type.primitive.ts"
             ],
@@ -2247,8 +2838,9 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.var-single-variable.expr.ts"
+                "meta.function.ts",
+                "meta.parameters.ts",
+                "punctuation.definition.parameters.end.ts"
             ],
             "text": ")",
             "start": 33,
@@ -2257,9 +2849,8 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.var-single-variable.expr.ts",
-                "meta.type.annotation.ts",
+                "meta.function.ts",
+                "meta.return.type.ts",
                 "keyword.operator.type.annotation.ts"
             ],
             "text": ":",
@@ -2269,9 +2860,8 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.var-single-variable.expr.ts",
-                "meta.type.annotation.ts"
+                "meta.function.ts",
+                "meta.return.type.ts"
             ],
             "text": " ",
             "start": 35,
@@ -2280,9 +2870,8 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.var-single-variable.expr.ts",
-                "meta.type.annotation.ts",
+                "meta.function.ts",
+                "meta.return.type.ts",
                 "support.type.primitive.ts"
             ],
             "text": "number",
@@ -2292,9 +2881,8 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.var-single-variable.expr.ts",
-                "meta.type.annotation.ts"
+                "meta.function.ts",
+                "meta.return.type.ts"
             ],
             "text": " ",
             "start": 42,
@@ -2303,8 +2891,9 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.var-single-variable.expr.ts"
+                "meta.function.ts",
+                "meta.block.ts",
+                "punctuation.definition.block.ts"
             ],
             "text": "{",
             "start": 43,
@@ -2313,7 +2902,8 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts"
+                "meta.function.ts",
+                "meta.block.ts"
             ],
             "text": "\n",
             "start": 44,
@@ -2324,7 +2914,8 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts"
+                "meta.function.ts",
+                "meta.block.ts"
             ],
             "text": "  ",
             "start": 0,
@@ -2333,10 +2924,9 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.var-single-variable.expr.ts",
-                "meta.definition.variable.ts",
-                "variable.other.constant.ts"
+                "meta.function.ts",
+                "meta.block.ts",
+                "keyword.control.flow.ts"
             ],
             "text": "return",
             "start": 2,
@@ -2345,20 +2935,85 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.var-single-variable.expr.ts"
+                "meta.function.ts",
+                "meta.block.ts"
             ],
-            "text": " x + y",
+            "text": " ",
             "start": 8,
+            "end": 9
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.function.ts",
+                "meta.block.ts",
+                "variable.other.readwrite.ts"
+            ],
+            "text": "x",
+            "start": 9,
+            "end": 10
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.function.ts",
+                "meta.block.ts"
+            ],
+            "text": " ",
+            "start": 10,
+            "end": 11
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.function.ts",
+                "meta.block.ts",
+                "keyword.operator.arithmetic.ts"
+            ],
+            "text": "+",
+            "start": 11,
+            "end": 12
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.function.ts",
+                "meta.block.ts"
+            ],
+            "text": " ",
+            "start": 12,
+            "end": 13
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.function.ts",
+                "meta.block.ts",
+                "variable.other.readwrite.ts"
+            ],
+            "text": "y",
+            "start": 13,
             "end": 14
         },
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts"
+                "meta.function.ts",
+                "meta.block.ts",
+                "punctuation.terminator.statement.ts"
             ],
-            "text": ";\n",
+            "text": ";",
             "start": 14,
+            "end": 15
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.function.ts",
+                "meta.block.ts"
+            ],
+            "text": "\n",
+            "start": 15,
             "end": 16
         }
     ],
@@ -2366,18 +3021,27 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts"
+                "meta.function.ts",
+                "meta.block.ts",
+                "punctuation.definition.block.ts"
             ],
-            "text": "}\n",
+            "text": "}",
             "start": 0,
+            "end": 1
+        },
+        {
+            "scopes": [
+                "source.ts"
+            ],
+            "text": "\n",
+            "start": 1,
             "end": 2
         }
     ],
     [
         {
             "scopes": [
-                "source.ts",
-                "meta.var.expr.ts"
+                "source.ts"
             ],
             "text": "\n",
             "start": 0,
@@ -2388,10 +3052,8 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.var-single-variable.expr.ts",
-                "meta.definition.variable.ts",
-                "variable.other.constant.ts"
+                "meta.type.declaration.ts",
+                "storage.type.type.ts"
             ],
             "text": "type",
             "start": 0,
@@ -2400,17 +3062,35 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.var-single-variable.expr.ts"
+                "meta.type.declaration.ts"
             ],
-            "text": " AddFunctionType ",
+            "text": " ",
             "start": 4,
+            "end": 5
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.type.declaration.ts",
+                "entity.name.type.alias.ts"
+            ],
+            "text": "AddFunctionType",
+            "start": 5,
+            "end": 20
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.type.declaration.ts"
+            ],
+            "text": " ",
+            "start": 20,
             "end": 21
         },
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
+                "meta.type.declaration.ts",
                 "keyword.operator.assignment.ts"
             ],
             "text": "=",
@@ -2420,7 +3100,7 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts"
+                "meta.type.declaration.ts"
             ],
             "text": " ",
             "start": 22,
@@ -2429,7 +3109,7 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
+                "meta.type.declaration.ts",
                 "keyword.operator.expression.typeof.ts"
             ],
             "text": "typeof",
@@ -2439,7 +3119,7 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts"
+                "meta.type.declaration.ts"
             ],
             "text": " ",
             "start": 29,
@@ -2448,7 +3128,7 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
+                "meta.type.declaration.ts",
                 "variable.other.readwrite.ts"
             ],
             "text": "add",
@@ -2458,16 +3138,23 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts"
+                "punctuation.terminator.statement.ts"
             ],
-            "text": ";  ",
+            "text": ";",
             "start": 33,
+            "end": 34
+        },
+        {
+            "scopes": [
+                "source.ts"
+            ],
+            "text": "  ",
+            "start": 34,
             "end": 36
         },
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
                 "comment.line.double-slash.ts",
                 "punctuation.definition.comment.ts"
             ],
@@ -2478,7 +3165,6 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
                 "comment.line.double-slash.ts"
             ],
             "text": " (x: number, y: number) => number",
@@ -2487,8 +3173,7 @@
         },
         {
             "scopes": [
-                "source.ts",
-                "meta.var.expr.ts"
+                "source.ts"
             ],
             "text": "\n",
             "start": 71,
@@ -2498,8 +3183,7 @@
     [
         {
             "scopes": [
-                "source.ts",
-                "meta.var.expr.ts"
+                "source.ts"
             ],
             "text": "\n",
             "start": 0,
@@ -2510,7 +3194,6 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
                 "comment.line.double-slash.ts",
                 "punctuation.definition.comment.ts"
             ],
@@ -2521,7 +3204,6 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
                 "comment.line.double-slash.ts"
             ],
             "text": " Generic interfaces with 'extends' and default types",
@@ -2530,8 +3212,7 @@
         },
         {
             "scopes": [
-                "source.ts",
-                "meta.var.expr.ts"
+                "source.ts"
             ],
             "text": "\n",
             "start": 54,
@@ -2542,10 +3223,8 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.var-single-variable.expr.ts",
-                "meta.definition.variable.ts",
-                "variable.other.constant.ts"
+                "meta.interface.ts",
+                "storage.type.interface.ts"
             ],
             "text": "interface",
             "start": 0,
@@ -2554,17 +3233,101 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.var-single-variable.expr.ts"
+                "meta.interface.ts"
             ],
-            "text": " Box<T extends object ",
+            "text": " ",
             "start": 9,
+            "end": 10
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.interface.ts",
+                "entity.name.type.interface.ts"
+            ],
+            "text": "Box",
+            "start": 10,
+            "end": 13
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.interface.ts",
+                "meta.type.parameters.ts",
+                "punctuation.definition.typeparameters.begin.ts"
+            ],
+            "text": "<",
+            "start": 13,
+            "end": 14
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.interface.ts",
+                "meta.type.parameters.ts",
+                "entity.name.type.ts"
+            ],
+            "text": "T",
+            "start": 14,
+            "end": 15
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.interface.ts",
+                "meta.type.parameters.ts"
+            ],
+            "text": " ",
+            "start": 15,
+            "end": 16
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.interface.ts",
+                "meta.type.parameters.ts",
+                "storage.modifier.ts"
+            ],
+            "text": "extends",
+            "start": 16,
+            "end": 23
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.interface.ts",
+                "meta.type.parameters.ts"
+            ],
+            "text": " ",
+            "start": 23,
+            "end": 24
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.interface.ts",
+                "meta.type.parameters.ts",
+                "support.type.builtin.ts"
+            ],
+            "text": "object",
+            "start": 24,
+            "end": 30
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.interface.ts",
+                "meta.type.parameters.ts"
+            ],
+            "text": " ",
+            "start": 30,
             "end": 31
         },
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
+                "meta.interface.ts",
+                "meta.type.parameters.ts",
                 "keyword.operator.assignment.ts"
             ],
             "text": "=",
@@ -2574,7 +3337,8 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts"
+                "meta.interface.ts",
+                "meta.type.parameters.ts"
             ],
             "text": " ",
             "start": 32,
@@ -2583,8 +3347,9 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
+                "meta.interface.ts",
+                "meta.type.parameters.ts",
+                "meta.object.type.ts",
                 "punctuation.definition.block.ts"
             ],
             "text": "{",
@@ -2594,8 +3359,10 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts"
+                "meta.interface.ts",
+                "meta.type.parameters.ts",
+                "meta.object.type.ts",
+                "meta.field.declaration.ts"
             ],
             "text": " ",
             "start": 34,
@@ -2604,10 +3371,12 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.object-literal.key.ts"
+                "meta.interface.ts",
+                "meta.type.parameters.ts",
+                "meta.object.type.ts",
+                "meta.field.declaration.ts",
+                "meta.definition.property.ts",
+                "variable.object.property.ts"
             ],
             "text": "message",
             "start": 35,
@@ -2616,11 +3385,12 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.object-literal.key.ts",
-                "punctuation.separator.key-value.ts"
+                "meta.interface.ts",
+                "meta.type.parameters.ts",
+                "meta.object.type.ts",
+                "meta.field.declaration.ts",
+                "meta.type.annotation.ts",
+                "keyword.operator.type.annotation.ts"
             ],
             "text": ":",
             "start": 42,
@@ -2629,9 +3399,11 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts"
+                "meta.interface.ts",
+                "meta.type.parameters.ts",
+                "meta.object.type.ts",
+                "meta.field.declaration.ts",
+                "meta.type.annotation.ts"
             ],
             "text": " ",
             "start": 43,
@@ -2640,10 +3412,12 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "variable.other.readwrite.ts"
+                "meta.interface.ts",
+                "meta.type.parameters.ts",
+                "meta.object.type.ts",
+                "meta.field.declaration.ts",
+                "meta.type.annotation.ts",
+                "support.type.primitive.ts"
             ],
             "text": "string",
             "start": 44,
@@ -2652,9 +3426,11 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts"
+                "meta.interface.ts",
+                "meta.type.parameters.ts",
+                "meta.object.type.ts",
+                "meta.field.declaration.ts",
+                "meta.type.annotation.ts"
             ],
             "text": " ",
             "start": 50,
@@ -2663,8 +3439,9 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
+                "meta.interface.ts",
+                "meta.type.parameters.ts",
+                "meta.object.type.ts",
                 "punctuation.definition.block.ts"
             ],
             "text": "}",
@@ -2674,8 +3451,9 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "keyword.operator.relational.ts"
+                "meta.interface.ts",
+                "meta.type.parameters.ts",
+                "punctuation.definition.typeparameters.end.ts"
             ],
             "text": ">",
             "start": 52,
@@ -2684,7 +3462,7 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts"
+                "meta.interface.ts"
             ],
             "text": " ",
             "start": 53,
@@ -2693,8 +3471,7 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
+                "meta.interface.ts",
                 "punctuation.definition.block.ts"
             ],
             "text": "{",
@@ -2704,8 +3481,7 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts"
+                "meta.interface.ts"
             ],
             "text": "\n",
             "start": 55,
@@ -2716,8 +3492,8 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts"
+                "meta.interface.ts",
+                "meta.field.declaration.ts"
             ],
             "text": "  ",
             "start": 0,
@@ -2726,10 +3502,10 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.object-literal.key.ts"
+                "meta.interface.ts",
+                "meta.field.declaration.ts",
+                "meta.definition.property.ts",
+                "variable.object.property.ts"
             ],
             "text": "content",
             "start": 2,
@@ -2738,11 +3514,10 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.object-literal.key.ts",
-                "punctuation.separator.key-value.ts"
+                "meta.interface.ts",
+                "meta.field.declaration.ts",
+                "meta.type.annotation.ts",
+                "keyword.operator.type.annotation.ts"
             ],
             "text": ":",
             "start": 9,
@@ -2751,9 +3526,9 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts"
+                "meta.interface.ts",
+                "meta.field.declaration.ts",
+                "meta.type.annotation.ts"
             ],
             "text": " ",
             "start": 10,
@@ -2762,10 +3537,10 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "variable.other.constant.ts"
+                "meta.interface.ts",
+                "meta.field.declaration.ts",
+                "meta.type.annotation.ts",
+                "entity.name.type.ts"
             ],
             "text": "T",
             "start": 11,
@@ -2774,12 +3549,20 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts"
+                "meta.interface.ts",
+                "punctuation.terminator.statement.ts"
             ],
-            "text": ";\n",
+            "text": ";",
             "start": 12,
+            "end": 13
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.interface.ts"
+            ],
+            "text": "\n",
+            "start": 13,
             "end": 14
         }
     ],
@@ -2787,8 +3570,7 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
+                "meta.interface.ts",
                 "punctuation.definition.block.ts"
             ],
             "text": "}",
@@ -2797,8 +3579,7 @@
         },
         {
             "scopes": [
-                "source.ts",
-                "meta.var.expr.ts"
+                "source.ts"
             ],
             "text": "\n",
             "start": 1,
@@ -2808,8 +3589,7 @@
     [
         {
             "scopes": [
-                "source.ts",
-                "meta.var.expr.ts"
+                "source.ts"
             ],
             "text": "\n",
             "start": 0,
@@ -2821,9 +3601,7 @@
             "scopes": [
                 "source.ts",
                 "meta.var.expr.ts",
-                "meta.var-single-variable.expr.ts",
-                "meta.definition.variable.ts",
-                "variable.other.constant.ts"
+                "storage.type.ts"
             ],
             "text": "let",
             "start": 0,
@@ -2832,11 +3610,22 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.var-single-variable.expr.ts"
+                "meta.var.expr.ts"
             ],
-            "text": " defaultBox",
+            "text": " ",
             "start": 3,
+            "end": 4
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.var.expr.ts",
+                "meta.var-single-variable.expr.ts",
+                "meta.definition.variable.ts",
+                "variable.other.readwrite.ts"
+            ],
+            "text": "defaultBox",
+            "start": 4,
             "end": 14
         },
         {
@@ -3123,16 +3912,23 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts"
+                "punctuation.terminator.statement.ts"
             ],
-            "text": ";  ",
+            "text": ";",
             "start": 55,
+            "end": 56
+        },
+        {
+            "scopes": [
+                "source.ts"
+            ],
+            "text": "  ",
+            "start": 56,
             "end": 58
         },
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
                 "comment.line.double-slash.ts",
                 "punctuation.definition.comment.ts"
             ],
@@ -3143,7 +3939,6 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
                 "comment.line.double-slash.ts"
             ],
             "text": " Uses default type",
@@ -3152,8 +3947,7 @@
         },
         {
             "scopes": [
-                "source.ts",
-                "meta.var.expr.ts"
+                "source.ts"
             ],
             "text": "\n",
             "start": 78,
@@ -3165,9 +3959,7 @@
             "scopes": [
                 "source.ts",
                 "meta.var.expr.ts",
-                "meta.var-single-variable.expr.ts",
-                "meta.definition.variable.ts",
-                "variable.other.constant.ts"
+                "storage.type.ts"
             ],
             "text": "let",
             "start": 0,
@@ -3176,11 +3968,22 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.var-single-variable.expr.ts"
+                "meta.var.expr.ts"
             ],
-            "text": " customBox",
+            "text": " ",
             "start": 3,
+            "end": 4
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.var.expr.ts",
+                "meta.var-single-variable.expr.ts",
+                "meta.definition.variable.ts",
+                "variable.other.readwrite.ts"
+            ],
+            "text": "customBox",
+            "start": 4,
             "end": 13
         },
         {
@@ -3583,18 +4386,25 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts"
+                "punctuation.terminator.statement.ts"
             ],
-            "text": ";\n",
+            "text": ";",
             "start": 69,
+            "end": 70
+        },
+        {
+            "scopes": [
+                "source.ts"
+            ],
+            "text": "\n",
+            "start": 70,
             "end": 71
         }
     ],
     [
         {
             "scopes": [
-                "source.ts",
-                "meta.var.expr.ts"
+                "source.ts"
             ],
             "text": "\n",
             "start": 0,
@@ -3605,7 +4415,6 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
                 "comment.line.double-slash.ts",
                 "punctuation.definition.comment.ts"
             ],
@@ -3616,7 +4425,6 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
                 "comment.line.double-slash.ts"
             ],
             "text": " Complex example with 'satisfies' and default generics",
@@ -3625,8 +4433,7 @@
         },
         {
             "scopes": [
-                "source.ts",
-                "meta.var.expr.ts"
+                "source.ts"
             ],
             "text": "\n",
             "start": 56,
@@ -3637,10 +4444,8 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.var-single-variable.expr.ts",
-                "meta.definition.variable.ts",
-                "variable.other.constant.ts"
+                "meta.type.declaration.ts",
+                "storage.type.type.ts"
             ],
             "text": "type",
             "start": 0,
@@ -3649,17 +4454,35 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.var-single-variable.expr.ts"
+                "meta.type.declaration.ts"
             ],
-            "text": " Task ",
+            "text": " ",
             "start": 4,
+            "end": 5
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.type.declaration.ts",
+                "entity.name.type.alias.ts"
+            ],
+            "text": "Task",
+            "start": 5,
+            "end": 9
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.type.declaration.ts"
+            ],
+            "text": " ",
+            "start": 9,
             "end": 10
         },
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
+                "meta.type.declaration.ts",
                 "keyword.operator.assignment.ts"
             ],
             "text": "=",
@@ -3669,7 +4492,7 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts"
+                "meta.type.declaration.ts"
             ],
             "text": " ",
             "start": 11,
@@ -3678,8 +4501,8 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
+                "meta.type.declaration.ts",
+                "meta.object.type.ts",
                 "punctuation.definition.block.ts"
             ],
             "text": "{",
@@ -3689,8 +4512,8 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts"
+                "meta.type.declaration.ts",
+                "meta.object.type.ts"
             ],
             "text": "\n",
             "start": 13,
@@ -3701,8 +4524,9 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts"
+                "meta.type.declaration.ts",
+                "meta.object.type.ts",
+                "meta.field.declaration.ts"
             ],
             "text": "  ",
             "start": 0,
@@ -3711,10 +4535,11 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.object-literal.key.ts"
+                "meta.type.declaration.ts",
+                "meta.object.type.ts",
+                "meta.field.declaration.ts",
+                "meta.definition.property.ts",
+                "variable.object.property.ts"
             ],
             "text": "title",
             "start": 2,
@@ -3723,11 +4548,11 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.object-literal.key.ts",
-                "punctuation.separator.key-value.ts"
+                "meta.type.declaration.ts",
+                "meta.object.type.ts",
+                "meta.field.declaration.ts",
+                "meta.type.annotation.ts",
+                "keyword.operator.type.annotation.ts"
             ],
             "text": ":",
             "start": 7,
@@ -3736,9 +4561,10 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts"
+                "meta.type.declaration.ts",
+                "meta.object.type.ts",
+                "meta.field.declaration.ts",
+                "meta.type.annotation.ts"
             ],
             "text": " ",
             "start": 8,
@@ -3747,10 +4573,11 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "variable.other.readwrite.ts"
+                "meta.type.declaration.ts",
+                "meta.object.type.ts",
+                "meta.field.declaration.ts",
+                "meta.type.annotation.ts",
+                "support.type.primitive.ts"
             ],
             "text": "string",
             "start": 9,
@@ -3759,12 +4586,22 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts"
+                "meta.type.declaration.ts",
+                "meta.object.type.ts",
+                "punctuation.terminator.statement.ts"
             ],
-            "text": ";\n",
+            "text": ";",
             "start": 15,
+            "end": 16
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.type.declaration.ts",
+                "meta.object.type.ts"
+            ],
+            "text": "\n",
+            "start": 16,
             "end": 17
         }
     ],
@@ -3772,9 +4609,9 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts"
+                "meta.type.declaration.ts",
+                "meta.object.type.ts",
+                "meta.field.declaration.ts"
             ],
             "text": "  ",
             "start": 0,
@@ -3783,10 +4620,11 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "variable.other.readwrite.ts"
+                "meta.type.declaration.ts",
+                "meta.object.type.ts",
+                "meta.field.declaration.ts",
+                "meta.definition.property.ts",
+                "variable.object.property.ts"
             ],
             "text": "description",
             "start": 2,
@@ -3795,10 +4633,10 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "keyword.operator.ternary.ts"
+                "meta.type.declaration.ts",
+                "meta.object.type.ts",
+                "meta.field.declaration.ts",
+                "keyword.operator.optional.ts"
             ],
             "text": "?",
             "start": 13,
@@ -3807,10 +4645,11 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "keyword.operator.ternary.ts"
+                "meta.type.declaration.ts",
+                "meta.object.type.ts",
+                "meta.field.declaration.ts",
+                "meta.type.annotation.ts",
+                "keyword.operator.type.annotation.ts"
             ],
             "text": ":",
             "start": 14,
@@ -3819,9 +4658,10 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts"
+                "meta.type.declaration.ts",
+                "meta.object.type.ts",
+                "meta.field.declaration.ts",
+                "meta.type.annotation.ts"
             ],
             "text": " ",
             "start": 15,
@@ -3830,10 +4670,11 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "variable.other.readwrite.ts"
+                "meta.type.declaration.ts",
+                "meta.object.type.ts",
+                "meta.field.declaration.ts",
+                "meta.type.annotation.ts",
+                "support.type.primitive.ts"
             ],
             "text": "string",
             "start": 16,
@@ -3842,12 +4683,22 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts"
+                "meta.type.declaration.ts",
+                "meta.object.type.ts",
+                "punctuation.terminator.statement.ts"
             ],
-            "text": ";\n",
+            "text": ";",
             "start": 22,
+            "end": 23
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.type.declaration.ts",
+                "meta.object.type.ts"
+            ],
+            "text": "\n",
+            "start": 23,
             "end": 24
         }
     ],
@@ -3855,9 +4706,9 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts"
+                "meta.type.declaration.ts",
+                "meta.object.type.ts",
+                "meta.field.declaration.ts"
             ],
             "text": "  ",
             "start": 0,
@@ -3866,10 +4717,11 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "variable.other.readwrite.ts"
+                "meta.type.declaration.ts",
+                "meta.object.type.ts",
+                "meta.field.declaration.ts",
+                "meta.definition.property.ts",
+                "variable.object.property.ts"
             ],
             "text": "completed",
             "start": 2,
@@ -3878,21 +4730,36 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts"
+                "meta.type.declaration.ts",
+                "meta.object.type.ts",
+                "meta.field.declaration.ts",
+                "meta.type.annotation.ts",
+                "keyword.operator.type.annotation.ts"
             ],
-            "text": ": ",
+            "text": ":",
             "start": 11,
+            "end": 12
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.type.declaration.ts",
+                "meta.object.type.ts",
+                "meta.field.declaration.ts",
+                "meta.type.annotation.ts"
+            ],
+            "text": " ",
+            "start": 12,
             "end": 13
         },
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "variable.other.readwrite.ts"
+                "meta.type.declaration.ts",
+                "meta.object.type.ts",
+                "meta.field.declaration.ts",
+                "meta.type.annotation.ts",
+                "support.type.primitive.ts"
             ],
             "text": "boolean",
             "start": 13,
@@ -3901,12 +4768,22 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts"
+                "meta.type.declaration.ts",
+                "meta.object.type.ts",
+                "punctuation.terminator.statement.ts"
             ],
-            "text": ";\n",
+            "text": ";",
             "start": 20,
+            "end": 21
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.type.declaration.ts",
+                "meta.object.type.ts"
+            ],
+            "text": "\n",
+            "start": 21,
             "end": 22
         }
     ],
@@ -3914,8 +4791,8 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
+                "meta.type.declaration.ts",
+                "meta.object.type.ts",
                 "punctuation.definition.block.ts"
             ],
             "text": "}",
@@ -3925,18 +4802,25 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts"
+                "punctuation.terminator.statement.ts"
             ],
-            "text": ";\n",
+            "text": ";",
             "start": 1,
+            "end": 2
+        },
+        {
+            "scopes": [
+                "source.ts"
+            ],
+            "text": "\n",
+            "start": 2,
             "end": 3
         }
     ],
     [
         {
             "scopes": [
-                "source.ts",
-                "meta.var.expr.ts"
+                "source.ts"
             ],
             "text": "\n",
             "start": 0,
@@ -4374,16 +5258,23 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts"
+                "punctuation.terminator.statement.ts"
             ],
-            "text": ";  ",
+            "text": ";",
             "start": 16,
+            "end": 17
+        },
+        {
+            "scopes": [
+                "source.ts"
+            ],
+            "text": "  ",
+            "start": 17,
             "end": 19
         },
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
                 "comment.line.double-slash.ts",
                 "punctuation.definition.comment.ts"
             ],
@@ -4394,7 +5285,6 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
                 "comment.line.double-slash.ts"
             ],
             "text": " Allows priority but ensures Task structure",
@@ -4403,8 +5293,7 @@
         },
         {
             "scopes": [
-                "source.ts",
-                "meta.var.expr.ts"
+                "source.ts"
             ],
             "text": "\n",
             "start": 64,
@@ -4414,8 +5303,7 @@
     [
         {
             "scopes": [
-                "source.ts",
-                "meta.var.expr.ts"
+                "source.ts"
             ],
             "text": "\n",
             "start": 0,
@@ -4426,7 +5314,6 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
                 "comment.line.double-slash.ts",
                 "punctuation.definition.comment.ts"
             ],
@@ -4437,7 +5324,6 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
                 "comment.line.double-slash.ts"
             ],
             "text": " Generic function with default type",
@@ -4446,8 +5332,7 @@
         },
         {
             "scopes": [
-                "source.ts",
-                "meta.var.expr.ts"
+                "source.ts"
             ],
             "text": "\n",
             "start": 37,
@@ -4458,10 +5343,8 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.var-single-variable.expr.ts",
-                "meta.definition.variable.ts",
-                "variable.other.constant.ts"
+                "meta.function.ts",
+                "storage.type.function.ts"
             ],
             "text": "function",
             "start": 0,
@@ -4470,17 +5353,60 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.var-single-variable.expr.ts"
+                "meta.function.ts"
             ],
-            "text": " wrapInArray<T ",
+            "text": " ",
             "start": 8,
+            "end": 9
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.function.ts",
+                "meta.definition.function.ts",
+                "entity.name.function.ts"
+            ],
+            "text": "wrapInArray",
+            "start": 9,
+            "end": 20
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.function.ts",
+                "meta.type.parameters.ts",
+                "punctuation.definition.typeparameters.begin.ts"
+            ],
+            "text": "<",
+            "start": 20,
+            "end": 21
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.function.ts",
+                "meta.type.parameters.ts",
+                "entity.name.type.ts"
+            ],
+            "text": "T",
+            "start": 21,
+            "end": 22
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.function.ts",
+                "meta.type.parameters.ts"
+            ],
+            "text": " ",
+            "start": 22,
             "end": 23
         },
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
+                "meta.function.ts",
+                "meta.type.parameters.ts",
                 "keyword.operator.assignment.ts"
             ],
             "text": "=",
@@ -4490,7 +5416,8 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts"
+                "meta.function.ts",
+                "meta.type.parameters.ts"
             ],
             "text": " ",
             "start": 24,
@@ -4499,8 +5426,9 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "variable.other.readwrite.ts"
+                "meta.function.ts",
+                "meta.type.parameters.ts",
+                "support.type.primitive.ts"
             ],
             "text": "string",
             "start": 25,
@@ -4509,8 +5437,9 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "keyword.operator.relational.ts"
+                "meta.function.ts",
+                "meta.type.parameters.ts",
+                "punctuation.definition.typeparameters.end.ts"
             ],
             "text": ">",
             "start": 31,
@@ -4519,8 +5448,7 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.arrow.ts",
+                "meta.function.ts",
                 "meta.parameters.ts",
                 "punctuation.definition.parameters.begin.ts"
             ],
@@ -4531,8 +5459,7 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.arrow.ts",
+                "meta.function.ts",
                 "meta.parameters.ts",
                 "variable.parameter.ts"
             ],
@@ -4543,8 +5470,7 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.arrow.ts",
+                "meta.function.ts",
                 "meta.parameters.ts",
                 "meta.type.annotation.ts",
                 "keyword.operator.type.annotation.ts"
@@ -4556,8 +5482,7 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.arrow.ts",
+                "meta.function.ts",
                 "meta.parameters.ts",
                 "meta.type.annotation.ts"
             ],
@@ -4568,8 +5493,7 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.arrow.ts",
+                "meta.function.ts",
                 "meta.parameters.ts",
                 "meta.type.annotation.ts",
                 "entity.name.type.ts"
@@ -4581,8 +5505,7 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.arrow.ts",
+                "meta.function.ts",
                 "meta.parameters.ts",
                 "punctuation.definition.parameters.end.ts"
             ],
@@ -4593,9 +5516,8 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.arrow.ts",
-                "meta.return.type.arrow.ts",
+                "meta.function.ts",
+                "meta.return.type.ts",
                 "keyword.operator.type.annotation.ts"
             ],
             "text": ":",
@@ -4605,9 +5527,8 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.arrow.ts",
-                "meta.return.type.arrow.ts"
+                "meta.function.ts",
+                "meta.return.type.ts"
             ],
             "text": " ",
             "start": 43,
@@ -4616,9 +5537,8 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.arrow.ts",
-                "meta.return.type.arrow.ts",
+                "meta.function.ts",
+                "meta.return.type.ts",
                 "entity.name.type.ts"
             ],
             "text": "T",
@@ -4628,9 +5548,8 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.arrow.ts",
-                "meta.return.type.arrow.ts",
+                "meta.function.ts",
+                "meta.return.type.ts",
                 "meta.type.tuple.ts",
                 "meta.brace.square.ts"
             ],
@@ -4641,9 +5560,8 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.arrow.ts",
-                "meta.return.type.arrow.ts",
+                "meta.function.ts",
+                "meta.return.type.ts",
                 "meta.type.tuple.ts",
                 "meta.brace.square.ts"
             ],
@@ -4654,9 +5572,8 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.arrow.ts",
-                "meta.return.type.arrow.ts"
+                "meta.function.ts",
+                "meta.return.type.ts"
             ],
             "text": " ",
             "start": 47,
@@ -4665,8 +5582,8 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
+                "meta.function.ts",
+                "meta.block.ts",
                 "punctuation.definition.block.ts"
             ],
             "text": "{",
@@ -4676,8 +5593,8 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts"
+                "meta.function.ts",
+                "meta.block.ts"
             ],
             "text": "\n",
             "start": 49,
@@ -4688,20 +5605,40 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts"
+                "meta.function.ts",
+                "meta.block.ts"
             ],
-            "text": "  return ",
+            "text": "  ",
             "start": 0,
+            "end": 2
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.function.ts",
+                "meta.block.ts",
+                "keyword.control.flow.ts"
+            ],
+            "text": "return",
+            "start": 2,
+            "end": 8
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.function.ts",
+                "meta.block.ts",
+                "meta.array.literal.ts"
+            ],
+            "text": " ",
+            "start": 8,
             "end": 9
         },
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.object-literal.key.ts",
+                "meta.function.ts",
+                "meta.block.ts",
                 "meta.array.literal.ts",
                 "meta.brace.square.ts"
             ],
@@ -4712,10 +5649,8 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.object-literal.key.ts",
+                "meta.function.ts",
+                "meta.block.ts",
                 "meta.array.literal.ts",
                 "variable.other.readwrite.ts"
             ],
@@ -4726,10 +5661,8 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.object-literal.key.ts",
+                "meta.function.ts",
+                "meta.block.ts",
                 "meta.array.literal.ts",
                 "meta.brace.square.ts"
             ],
@@ -4740,13 +5673,22 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.object-literal.key.ts"
+                "meta.function.ts",
+                "meta.block.ts",
+                "punctuation.terminator.statement.ts"
             ],
-            "text": ";\n",
+            "text": ";",
             "start": 16,
+            "end": 17
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.function.ts",
+                "meta.block.ts"
+            ],
+            "text": "\n",
+            "start": 17,
             "end": 18
         }
     ],
@@ -4754,24 +5696,27 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.object-literal.key.ts"
+                "meta.function.ts",
+                "meta.block.ts",
+                "punctuation.definition.block.ts"
             ],
-            "text": "}\n",
+            "text": "}",
             "start": 0,
+            "end": 1
+        },
+        {
+            "scopes": [
+                "source.ts"
+            ],
+            "text": "\n",
+            "start": 1,
             "end": 2
         }
     ],
     [
         {
             "scopes": [
-                "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.object-literal.key.ts"
+                "source.ts"
             ],
             "text": "\n",
             "start": 0,
@@ -4783,21 +5728,113 @@
             "scopes": [
                 "source.ts",
                 "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.object-literal.key.ts"
+                "storage.type.ts"
             ],
-            "text": "const stringArray = wrapInArray();  ",
+            "text": "const",
             "start": 0,
-            "end": 36
+            "end": 5
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.var.expr.ts"
+            ],
+            "text": " ",
+            "start": 5,
+            "end": 6
         },
         {
             "scopes": [
                 "source.ts",
                 "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.object-literal.key.ts",
+                "meta.var-single-variable.expr.ts",
+                "meta.definition.variable.ts",
+                "variable.other.constant.ts"
+            ],
+            "text": "stringArray",
+            "start": 6,
+            "end": 17
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.var.expr.ts",
+                "meta.var-single-variable.expr.ts"
+            ],
+            "text": " ",
+            "start": 17,
+            "end": 18
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.var.expr.ts",
+                "keyword.operator.assignment.ts"
+            ],
+            "text": "=",
+            "start": 18,
+            "end": 19
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.var.expr.ts"
+            ],
+            "text": " ",
+            "start": 19,
+            "end": 20
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.var.expr.ts",
+                "meta.function-call.ts",
+                "entity.name.function.ts"
+            ],
+            "text": "wrapInArray",
+            "start": 20,
+            "end": 31
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.var.expr.ts",
+                "meta.brace.round.ts"
+            ],
+            "text": "(",
+            "start": 31,
+            "end": 32
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.var.expr.ts",
+                "meta.brace.round.ts"
+            ],
+            "text": ")",
+            "start": 32,
+            "end": 33
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "punctuation.terminator.statement.ts"
+            ],
+            "text": ";",
+            "start": 33,
+            "end": 34
+        },
+        {
+            "scopes": [
+                "source.ts"
+            ],
+            "text": "  ",
+            "start": 34,
+            "end": 36
+        },
+        {
+            "scopes": [
+                "source.ts",
                 "comment.line.double-slash.ts",
                 "punctuation.definition.comment.ts"
             ],
@@ -4808,10 +5845,6 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.object-literal.key.ts",
                 "comment.line.double-slash.ts"
             ],
             "text": " Default to string",
@@ -4820,11 +5853,7 @@
         },
         {
             "scopes": [
-                "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.object-literal.key.ts"
+                "source.ts"
             ],
             "text": "\n",
             "start": 56,
@@ -4836,21 +5865,123 @@
             "scopes": [
                 "source.ts",
                 "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.object-literal.key.ts"
+                "storage.type.ts"
             ],
-            "text": "const numberArray = wrapInArray(42);  ",
+            "text": "const",
             "start": 0,
-            "end": 38
+            "end": 5
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.var.expr.ts"
+            ],
+            "text": " ",
+            "start": 5,
+            "end": 6
         },
         {
             "scopes": [
                 "source.ts",
                 "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.object-literal.key.ts",
+                "meta.var-single-variable.expr.ts",
+                "meta.definition.variable.ts",
+                "variable.other.constant.ts"
+            ],
+            "text": "numberArray",
+            "start": 6,
+            "end": 17
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.var.expr.ts",
+                "meta.var-single-variable.expr.ts"
+            ],
+            "text": " ",
+            "start": 17,
+            "end": 18
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.var.expr.ts",
+                "keyword.operator.assignment.ts"
+            ],
+            "text": "=",
+            "start": 18,
+            "end": 19
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.var.expr.ts"
+            ],
+            "text": " ",
+            "start": 19,
+            "end": 20
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.var.expr.ts",
+                "meta.function-call.ts",
+                "entity.name.function.ts"
+            ],
+            "text": "wrapInArray",
+            "start": 20,
+            "end": 31
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.var.expr.ts",
+                "meta.brace.round.ts"
+            ],
+            "text": "(",
+            "start": 31,
+            "end": 32
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.var.expr.ts",
+                "constant.numeric.decimal.ts"
+            ],
+            "text": "42",
+            "start": 32,
+            "end": 34
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.var.expr.ts",
+                "meta.brace.round.ts"
+            ],
+            "text": ")",
+            "start": 34,
+            "end": 35
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "punctuation.terminator.statement.ts"
+            ],
+            "text": ";",
+            "start": 35,
+            "end": 36
+        },
+        {
+            "scopes": [
+                "source.ts"
+            ],
+            "text": "  ",
+            "start": 36,
+            "end": 38
+        },
+        {
+            "scopes": [
+                "source.ts",
                 "comment.line.double-slash.ts",
                 "punctuation.definition.comment.ts"
             ],
@@ -4861,10 +5992,6 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.object-literal.key.ts",
                 "comment.line.double-slash.ts"
             ],
             "text": " T inferred as number",
@@ -4873,11 +6000,7 @@
         },
         {
             "scopes": [
-                "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.object-literal.key.ts"
+                "source.ts"
             ],
             "text": "\n",
             "start": 61,
@@ -4887,11 +6010,7 @@
     [
         {
             "scopes": [
-                "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.object-literal.key.ts"
+                "source.ts"
             ],
             "text": "\n",
             "start": 0,
@@ -4902,10 +6021,6 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.object-literal.key.ts",
                 "comment.block.documentation.ts",
                 "punctuation.definition.comment.ts"
             ],
@@ -4916,10 +6031,6 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.object-literal.key.ts",
                 "comment.block.documentation.ts"
             ],
             "text": "\n",
@@ -4931,10 +6042,6 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.object-literal.key.ts",
                 "comment.block.documentation.ts"
             ],
             "text": " * Combines two generic types into a tuple.\n",
@@ -4946,10 +6053,6 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.object-literal.key.ts",
                 "comment.block.documentation.ts"
             ],
             "text": " * \n",
@@ -4961,10 +6064,6 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.object-literal.key.ts",
                 "comment.block.documentation.ts"
             ],
             "text": " * ",
@@ -4974,10 +6073,6 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.object-literal.key.ts",
                 "comment.block.documentation.ts",
                 "storage.type.class.jsdoc",
                 "punctuation.definition.block.tag.jsdoc"
@@ -4989,10 +6084,6 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.object-literal.key.ts",
                 "comment.block.documentation.ts",
                 "storage.type.class.jsdoc"
             ],
@@ -5003,10 +6094,6 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.object-literal.key.ts",
                 "comment.block.documentation.ts"
             ],
             "text": " ",
@@ -5016,10 +6103,6 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.object-literal.key.ts",
                 "comment.block.documentation.ts",
                 "variable.other.jsdoc"
             ],
@@ -5030,10 +6113,6 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.object-literal.key.ts",
                 "comment.block.documentation.ts"
             ],
             "text": " - The first type.\n",
@@ -5045,10 +6124,6 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.object-literal.key.ts",
                 "comment.block.documentation.ts"
             ],
             "text": " * ",
@@ -5058,10 +6133,6 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.object-literal.key.ts",
                 "comment.block.documentation.ts",
                 "storage.type.class.jsdoc",
                 "punctuation.definition.block.tag.jsdoc"
@@ -5073,10 +6144,6 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.object-literal.key.ts",
                 "comment.block.documentation.ts",
                 "storage.type.class.jsdoc"
             ],
@@ -5087,10 +6154,6 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.object-literal.key.ts",
                 "comment.block.documentation.ts"
             ],
             "text": " ",
@@ -5100,10 +6163,6 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.object-literal.key.ts",
                 "comment.block.documentation.ts",
                 "variable.other.jsdoc"
             ],
@@ -5114,10 +6173,6 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.object-literal.key.ts",
                 "comment.block.documentation.ts"
             ],
             "text": " - The second type.\n",
@@ -5129,10 +6184,6 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.object-literal.key.ts",
                 "comment.block.documentation.ts"
             ],
             "text": " * ",
@@ -5142,10 +6193,6 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.object-literal.key.ts",
                 "comment.block.documentation.ts",
                 "storage.type.class.jsdoc",
                 "punctuation.definition.block.tag.jsdoc"
@@ -5157,10 +6204,6 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.object-literal.key.ts",
                 "comment.block.documentation.ts",
                 "storage.type.class.jsdoc"
             ],
@@ -5171,10 +6214,6 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.object-literal.key.ts",
                 "comment.block.documentation.ts"
             ],
             "text": " ",
@@ -5184,10 +6223,6 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.object-literal.key.ts",
                 "comment.block.documentation.ts",
                 "entity.name.type.instance.jsdoc",
                 "punctuation.definition.bracket.curly.begin.jsdoc"
@@ -5199,10 +6234,6 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.object-literal.key.ts",
                 "comment.block.documentation.ts",
                 "entity.name.type.instance.jsdoc"
             ],
@@ -5213,10 +6244,6 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.object-literal.key.ts",
                 "comment.block.documentation.ts",
                 "entity.name.type.instance.jsdoc",
                 "punctuation.definition.bracket.curly.end.jsdoc"
@@ -5228,10 +6255,6 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.object-literal.key.ts",
                 "comment.block.documentation.ts"
             ],
             "text": " ",
@@ -5241,10 +6264,6 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.object-literal.key.ts",
                 "comment.block.documentation.ts",
                 "variable.other.jsdoc"
             ],
@@ -5255,10 +6274,6 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.object-literal.key.ts",
                 "comment.block.documentation.ts"
             ],
             "text": " - The first value.\n",
@@ -5270,10 +6285,6 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.object-literal.key.ts",
                 "comment.block.documentation.ts"
             ],
             "text": " * ",
@@ -5283,10 +6294,6 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.object-literal.key.ts",
                 "comment.block.documentation.ts",
                 "storage.type.class.jsdoc",
                 "punctuation.definition.block.tag.jsdoc"
@@ -5298,10 +6305,6 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.object-literal.key.ts",
                 "comment.block.documentation.ts",
                 "storage.type.class.jsdoc"
             ],
@@ -5312,10 +6315,6 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.object-literal.key.ts",
                 "comment.block.documentation.ts"
             ],
             "text": " ",
@@ -5325,10 +6324,6 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.object-literal.key.ts",
                 "comment.block.documentation.ts",
                 "entity.name.type.instance.jsdoc",
                 "punctuation.definition.bracket.curly.begin.jsdoc"
@@ -5340,10 +6335,6 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.object-literal.key.ts",
                 "comment.block.documentation.ts",
                 "entity.name.type.instance.jsdoc"
             ],
@@ -5354,10 +6345,6 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.object-literal.key.ts",
                 "comment.block.documentation.ts",
                 "entity.name.type.instance.jsdoc",
                 "punctuation.definition.bracket.curly.end.jsdoc"
@@ -5369,10 +6356,6 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.object-literal.key.ts",
                 "comment.block.documentation.ts"
             ],
             "text": " ",
@@ -5382,10 +6365,6 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.object-literal.key.ts",
                 "comment.block.documentation.ts",
                 "variable.other.jsdoc"
             ],
@@ -5396,10 +6375,6 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.object-literal.key.ts",
                 "comment.block.documentation.ts"
             ],
             "text": " - The second value.\n",
@@ -5411,10 +6386,6 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.object-literal.key.ts",
                 "comment.block.documentation.ts"
             ],
             "text": " * ",
@@ -5424,10 +6395,6 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.object-literal.key.ts",
                 "comment.block.documentation.ts",
                 "storage.type.class.jsdoc",
                 "punctuation.definition.block.tag.jsdoc"
@@ -5439,10 +6406,6 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.object-literal.key.ts",
                 "comment.block.documentation.ts",
                 "storage.type.class.jsdoc"
             ],
@@ -5453,10 +6416,6 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.object-literal.key.ts",
                 "comment.block.documentation.ts"
             ],
             "text": " ",
@@ -5466,10 +6425,6 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.object-literal.key.ts",
                 "comment.block.documentation.ts",
                 "entity.name.type.instance.jsdoc",
                 "punctuation.definition.bracket.curly.begin.jsdoc"
@@ -5481,10 +6436,6 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.object-literal.key.ts",
                 "comment.block.documentation.ts",
                 "entity.name.type.instance.jsdoc"
             ],
@@ -5495,10 +6446,6 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.object-literal.key.ts",
                 "comment.block.documentation.ts",
                 "entity.name.type.instance.jsdoc"
             ],
@@ -5509,10 +6456,6 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.object-literal.key.ts",
                 "comment.block.documentation.ts",
                 "entity.name.type.instance.jsdoc"
             ],
@@ -5523,10 +6466,6 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.object-literal.key.ts",
                 "comment.block.documentation.ts",
                 "entity.name.type.instance.jsdoc",
                 "punctuation.definition.bracket.curly.end.jsdoc"
@@ -5538,10 +6477,6 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.object-literal.key.ts",
                 "comment.block.documentation.ts"
             ],
             "text": " ",
@@ -5551,10 +6486,6 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.object-literal.key.ts",
                 "comment.block.documentation.ts"
             ],
             "text": "A",
@@ -5564,10 +6495,6 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.object-literal.key.ts",
                 "comment.block.documentation.ts"
             ],
             "text": " tuple containing both values.\n",
@@ -5579,10 +6506,6 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.object-literal.key.ts",
                 "comment.block.documentation.ts"
             ],
             "text": " ",
@@ -5592,10 +6515,6 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.object-literal.key.ts",
                 "comment.block.documentation.ts",
                 "punctuation.definition.comment.ts"
             ],
@@ -5605,11 +6524,7 @@
         },
         {
             "scopes": [
-                "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.object-literal.key.ts"
+                "source.ts"
             ],
             "text": "\n",
             "start": 3,
@@ -5620,23 +6535,127 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.object-literal.key.ts"
+                "meta.function.ts",
+                "storage.type.function.ts"
             ],
-            "text": "function combine<T, U>(first",
+            "text": "function",
             "start": 0,
+            "end": 8
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.function.ts"
+            ],
+            "text": " ",
+            "start": 8,
+            "end": 9
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.function.ts",
+                "meta.definition.function.ts",
+                "entity.name.function.ts"
+            ],
+            "text": "combine",
+            "start": 9,
+            "end": 16
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.function.ts",
+                "meta.type.parameters.ts",
+                "punctuation.definition.typeparameters.begin.ts"
+            ],
+            "text": "<",
+            "start": 16,
+            "end": 17
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.function.ts",
+                "meta.type.parameters.ts",
+                "entity.name.type.ts"
+            ],
+            "text": "T",
+            "start": 17,
+            "end": 18
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.function.ts",
+                "meta.type.parameters.ts",
+                "punctuation.separator.comma.ts"
+            ],
+            "text": ",",
+            "start": 18,
+            "end": 19
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.function.ts",
+                "meta.type.parameters.ts"
+            ],
+            "text": " ",
+            "start": 19,
+            "end": 20
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.function.ts",
+                "meta.type.parameters.ts",
+                "entity.name.type.ts"
+            ],
+            "text": "U",
+            "start": 20,
+            "end": 21
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.function.ts",
+                "meta.type.parameters.ts",
+                "punctuation.definition.typeparameters.end.ts"
+            ],
+            "text": ">",
+            "start": 21,
+            "end": 22
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.function.ts",
+                "meta.parameters.ts",
+                "punctuation.definition.parameters.begin.ts"
+            ],
+            "text": "(",
+            "start": 22,
+            "end": 23
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.function.ts",
+                "meta.parameters.ts",
+                "variable.parameter.ts"
+            ],
+            "text": "first",
+            "start": 23,
             "end": 28
         },
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.object-literal.key.ts",
-                "punctuation.separator.key-value.ts"
+                "meta.function.ts",
+                "meta.parameters.ts",
+                "meta.type.annotation.ts",
+                "keyword.operator.type.annotation.ts"
             ],
             "text": ":",
             "start": 28,
@@ -5645,9 +6664,9 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts"
+                "meta.function.ts",
+                "meta.parameters.ts",
+                "meta.type.annotation.ts"
             ],
             "text": " ",
             "start": 29,
@@ -5656,10 +6675,10 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "variable.other.constant.ts"
+                "meta.function.ts",
+                "meta.parameters.ts",
+                "meta.type.annotation.ts",
+                "entity.name.type.ts"
             ],
             "text": "T",
             "start": 30,
@@ -5668,9 +6687,9 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "punctuation.separator.comma.ts"
+                "meta.function.ts",
+                "meta.parameters.ts",
+                "punctuation.separator.parameter.ts"
             ],
             "text": ",",
             "start": 31,
@@ -5679,8 +6698,8 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts"
+                "meta.function.ts",
+                "meta.parameters.ts"
             ],
             "text": " ",
             "start": 32,
@@ -5689,10 +6708,9 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.object-literal.key.ts"
+                "meta.function.ts",
+                "meta.parameters.ts",
+                "variable.parameter.ts"
             ],
             "text": "second",
             "start": 33,
@@ -5701,11 +6719,10 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.object-literal.key.ts",
-                "punctuation.separator.key-value.ts"
+                "meta.function.ts",
+                "meta.parameters.ts",
+                "meta.type.annotation.ts",
+                "keyword.operator.type.annotation.ts"
             ],
             "text": ":",
             "start": 39,
@@ -5714,9 +6731,9 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts"
+                "meta.function.ts",
+                "meta.parameters.ts",
+                "meta.type.annotation.ts"
             ],
             "text": " ",
             "start": 40,
@@ -5725,10 +6742,10 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "variable.other.constant.ts"
+                "meta.function.ts",
+                "meta.parameters.ts",
+                "meta.type.annotation.ts",
+                "entity.name.type.ts"
             ],
             "text": "U",
             "start": 41,
@@ -5737,21 +6754,30 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts"
+                "meta.function.ts",
+                "meta.parameters.ts",
+                "punctuation.definition.parameters.end.ts"
             ],
-            "text": "):",
+            "text": ")",
             "start": 42,
+            "end": 43
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.function.ts",
+                "meta.return.type.ts",
+                "keyword.operator.type.annotation.ts"
+            ],
+            "text": ":",
+            "start": 43,
             "end": 44
         },
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.array.literal.ts"
+                "meta.function.ts",
+                "meta.return.type.ts"
             ],
             "text": " ",
             "start": 44,
@@ -5760,10 +6786,9 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.array.literal.ts",
+                "meta.function.ts",
+                "meta.return.type.ts",
+                "meta.type.tuple.ts",
                 "meta.brace.square.ts"
             ],
             "text": "[",
@@ -5773,11 +6798,10 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.array.literal.ts",
-                "variable.other.constant.ts"
+                "meta.function.ts",
+                "meta.return.type.ts",
+                "meta.type.tuple.ts",
+                "entity.name.type.ts"
             ],
             "text": "T",
             "start": 46,
@@ -5786,10 +6810,9 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.array.literal.ts",
+                "meta.function.ts",
+                "meta.return.type.ts",
+                "meta.type.tuple.ts",
                 "punctuation.separator.comma.ts"
             ],
             "text": ",",
@@ -5799,10 +6822,9 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.array.literal.ts"
+                "meta.function.ts",
+                "meta.return.type.ts",
+                "meta.type.tuple.ts"
             ],
             "text": " ",
             "start": 48,
@@ -5811,11 +6833,10 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.array.literal.ts",
-                "variable.other.constant.ts"
+                "meta.function.ts",
+                "meta.return.type.ts",
+                "meta.type.tuple.ts",
+                "entity.name.type.ts"
             ],
             "text": "U",
             "start": 49,
@@ -5824,10 +6845,9 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.array.literal.ts",
+                "meta.function.ts",
+                "meta.return.type.ts",
+                "meta.type.tuple.ts",
                 "meta.brace.square.ts"
             ],
             "text": "]",
@@ -5837,9 +6857,8 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts"
+                "meta.function.ts",
+                "meta.return.type.ts"
             ],
             "text": " ",
             "start": 51,
@@ -5848,10 +6867,8 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.objectliteral.ts",
+                "meta.function.ts",
+                "meta.block.ts",
                 "punctuation.definition.block.ts"
             ],
             "text": "{",
@@ -5861,10 +6878,8 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.objectliteral.ts"
+                "meta.function.ts",
+                "meta.block.ts"
             ],
             "text": "\n",
             "start": 53,
@@ -5875,24 +6890,40 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.objectliteral.ts"
+                "meta.function.ts",
+                "meta.block.ts"
             ],
-            "text": "  return ",
+            "text": "  ",
             "start": 0,
+            "end": 2
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.function.ts",
+                "meta.block.ts",
+                "keyword.control.flow.ts"
+            ],
+            "text": "return",
+            "start": 2,
+            "end": 8
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.function.ts",
+                "meta.block.ts",
+                "meta.array.literal.ts"
+            ],
+            "text": " ",
+            "start": 8,
             "end": 9
         },
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.object-literal.key.ts",
+                "meta.function.ts",
+                "meta.block.ts",
                 "meta.array.literal.ts",
                 "meta.brace.square.ts"
             ],
@@ -5903,12 +6934,8 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.object-literal.key.ts",
+                "meta.function.ts",
+                "meta.block.ts",
                 "meta.array.literal.ts",
                 "variable.other.readwrite.ts"
             ],
@@ -5919,12 +6946,8 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.object-literal.key.ts",
+                "meta.function.ts",
+                "meta.block.ts",
                 "meta.array.literal.ts",
                 "punctuation.separator.comma.ts"
             ],
@@ -5935,12 +6958,8 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.object-literal.key.ts",
+                "meta.function.ts",
+                "meta.block.ts",
                 "meta.array.literal.ts"
             ],
             "text": " ",
@@ -5950,12 +6969,8 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.object-literal.key.ts",
+                "meta.function.ts",
+                "meta.block.ts",
                 "meta.array.literal.ts",
                 "variable.other.readwrite.ts"
             ],
@@ -5966,12 +6981,8 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.object-literal.key.ts",
+                "meta.function.ts",
+                "meta.block.ts",
                 "meta.array.literal.ts",
                 "meta.brace.square.ts"
             ],
@@ -5982,15 +6993,22 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.object-literal.key.ts"
+                "meta.function.ts",
+                "meta.block.ts",
+                "punctuation.terminator.statement.ts"
             ],
-            "text": ";\n",
+            "text": ";",
             "start": 24,
+            "end": 25
+        },
+        {
+            "scopes": [
+                "source.ts",
+                "meta.function.ts",
+                "meta.block.ts"
+            ],
+            "text": "\n",
+            "start": 25,
             "end": 26
         }
     ],
@@ -5998,28 +7016,27 @@
         {
             "scopes": [
                 "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.object-literal.key.ts"
+                "meta.function.ts",
+                "meta.block.ts",
+                "punctuation.definition.block.ts"
             ],
-            "text": "}\n",
+            "text": "}",
             "start": 0,
+            "end": 1
+        },
+        {
+            "scopes": [
+                "source.ts"
+            ],
+            "text": "\n",
+            "start": 1,
             "end": 2
         }
     ],
     [
         {
             "scopes": [
-                "source.ts",
-                "meta.var.expr.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.objectliteral.ts",
-                "meta.object.member.ts",
-                "meta.object-literal.key.ts"
+                "source.ts"
             ],
             "text": "\n",
             "start": 0,

@@ -1448,7 +1448,8 @@
             "scopes": [
                 "source.shell",
                 "meta.case.shell",
-                "meta.case.entry.body.shell"
+                "meta.case.entry.body.shell",
+                "meta.statement.shell"
             ],
             "text": "\t",
             "start": 0,
@@ -1770,7 +1771,8 @@
             "scopes": [
                 "source.shell",
                 "meta.case.shell",
-                "meta.case.entry.body.shell"
+                "meta.case.entry.body.shell",
+                "meta.statement.shell"
             ],
             "text": "\t",
             "start": 0,
@@ -1886,7 +1888,8 @@
             "scopes": [
                 "source.shell",
                 "meta.case.shell",
-                "meta.case.entry.body.shell"
+                "meta.case.entry.body.shell",
+                "meta.statement.shell"
             ],
             "text": "\t",
             "start": 0,
