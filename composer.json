@@ -74,5 +74,15 @@
                 "Phiki\\Adapters\\Laravel\\PhikiServiceProvider"
             ]
         }
-    }
+    },
+    "funding": [
+        {
+            "type": "github",
+            "url": "https://github.com/sponsors/ryangjchandler"
+        },
+        {
+            "type": "other",
+            "url": "https://buymeacoffee.com/ryangjchandler"
+        }
+    ]
 }
