@@ -10,6 +10,7 @@
             {
                 "group": "Quick start",
                 "pages": [
+                    "overview",
                     "quick-start-guide",
                     "upgrade-2.0"
                 ]
@@ -17,7 +18,6 @@
             {
                 "group": "Getting started",
                 "pages": [
-                    "overview",
                     "installation"
                 ]
             },
