@@ -1,0 +1,111 @@
+---
+title: Laravel
+description: Learn how to use Phiki in a Laravel application.
+keywords: ['laravel']
+---
+
+If you have installed Phiki inside of a Laravel application, there are a couple of additional ways you can use it.
+
+## Facade
+
+If you're manually highlighting code with Phiki, you can replace the usage of `Phiki\Phiki` with a facade.
+
+```php
+use Phiki\Adapters\Laravel\Facades\Phiki;
+
+$html = Phiki::codeToHtml("<?php echo ...", Grammar::Php, Theme::GithubLight)->toString();
+```
+
+### Registering custom extensions
+
+If you wish to register a custom extension, you can do so in the `boot` method of a service provider.
+
+```php
+use Phiki\Adapters\Laravel\Facades\Phiki;
+use App\Phiki\MyCustomExtension;
+
+class AppServiceProvider extends ServiceProvider
+{
+    public function boot(): void
+    {
+        Phiki::extend(new MyCustomExtension);
+    }
+}
+```
+
+### Registering custom grammars and themes
+
+If you wish to register a custom grammar or theme in a Laravel application, you can do so in the `boot` method of a service provider.
+
+```php
+use Phiki\Adapters\Laravel\Facades\Phiki;
+
+class AppServiceProvider extends ServiceProvider
+{
+    public function boot(): void
+    {
+        Phiki::grammar('my-grammar', __DIR__ . '/path/to/grammar.json');
+        Phiki::theme('my-theme', __DIR__ . '/path/to/theme.json');
+    }
+}
+```
+
+## `Str::markdown()`
+
+If you're using the `Str::markdown()` helper method, you can use Phiki's [CommonMark](/commonmark) extension to highlight code blocks inside of your Markdown.
+
+```php
+use Illuminate\Support\Str;
+use Phiki\Adapters\CommonMark\PhikiExtension;
+use Phiki\Theme\Theme;
+
+Str::markdown($markdown, extensions: [
+    new PhikiExtension(Theme::GithubLight),
+]);
+```
+
+### Enabling the gutter
+
+As per the documentation on Phiki's [gutter](/highlighting-code), you can enable the gutter by enabling it in the `PhikiExtension` constructor.
+
+```php
+use Illuminate\Support\Str;
+use Phiki\Adapters\CommonMark\PhikiExtension;
+use Phiki\Theme\Theme;
+
+Str::markdown($markdown, extensions: [
+    new PhikiExtension(Theme::GithubLight, withGutter: true),
+]);
+```
+
+### Using multiple themes
+
+As per the documentation on [Multiple themes](/multiple-themes), you can also pass in an array of themes to the `PhikiExtension` constructor.
+
+```php
+use Illuminate\Support\Str;
+use Phiki\Adapters\CommonMark\PhikiExtension;
+use Phiki\Theme\Theme;
+
+Str::markdown($markdown, extensions: [
+    new PhikiExtension([
+        'light' => Theme::GithubLight,
+        'dark' => Theme::GithubDark,
+    ]),
+]);
+```
+
+### Using customizations
+
+If you have registered custom extensions, grammars, or theme using the `Phiki` facade as shown above, you can use them inside of your Markdown by resolving the `Phiki\Phiki` singleton from Laravel's service container and passing it to the `PhikiExtension` constructor.
+
+```php
+use Illuminate\Support\Str;
+use Phiki\Adapters\CommonMark\PhikiExtension;
+use Phiki\Theme\Theme;
+use Phiki\Phiki;
+
+Str::markdown($markdown, extensions: [
+    new PhikiExtension(Theme::GithubLight, resolve(Phiki::class)),
+]);
+```

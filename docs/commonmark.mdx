@@ -1,0 +1,59 @@
+---
+title: CommonMark
+description: "Learn how to use Phiki with The PHP League's CommonMark library."
+---
+
+If you're using `league/commonmark` to parse and render Markdown in your PHP project, you can easily integrate Phiki using our custom extension.
+
+```php
+use League\CommonMark\Environment\Environment;
+use League\CommonMark\Extension\CommonMark\CommonMarkCoreExtension;
+use League\CommonMark\MarkdownConverter;
+use Phiki\Adapters\CommonMark\PhikiExtension;
+use Phiki\Theme\Theme;
+
+$environment = new Environment;
+$environment
+    ->addExtension(new CommonMarkCoreExtension)
+    ->addExtension(new PhikiExtension(Theme::GithubLight));
+
+$converter = new MarkdownConverter($environment);
+$output = $converter->convert("My awesome blog post with code blocks...");
+```
+
+### Enabling the gutter
+
+You can enable the gutter by specifying the `withGutter` argument in the `PhikiExtension` constructor.
+
+```php
+use League\CommonMark\Environment\Environment;
+use League\CommonMark\Extension\CommonMark\CommonMarkCoreExtension;
+use League\CommonMark\MarkdownConverter;
+use Phiki\Adapters\CommonMark\PhikiExtension;
+use Phiki\Theme\Theme;
+
+$environment = new Environment;
+$environment
+    ->addExtension(new CommonMarkCoreExtension)
+    ->addExtension(new PhikiExtension(Theme::GithubLight, withGutter: true)); // [!code ++]
+```
+
+### Using multiple themes
+
+You can also pass in an array of themes to the `PhikiExtension` constructor.
+
+```php
+use League\CommonMark\Environment\Environment;
+use League\CommonMark\Extension\CommonMark\CommonMarkCoreExtension;
+use League\CommonMark\MarkdownConverter;
+use Phiki\Adapters\CommonMark\PhikiExtension;
+use Phiki\Theme\Theme;
+
+$environment = new Environment;
+$environment
+    ->addExtension(new CommonMarkCoreExtension)
+    ->addExtension(new PhikiExtension([ // [!code ++]
+        'light' => Theme::GithubLight, // [!code ++]
+        'dark' => Theme::GithubDark, // [!code ++]
+    ])); // [!code ++]
+```

@@ -1,0 +1,58 @@
+---
+title: Overview
+keywords: ['overview', 'introduction', 'about', 'phiki']
+---
+
+Phiki is a PHP package for syntax highlighting code using TextMate grammar files and Visual Studio Code themes. It is designed to be a replacement for other syntax highlighters such as [Shiki](https://shiki.style/) and [Highlight.php](https://github.com/scrivo/highlight.php).
+
+It has zero third-party dependencies, making it easy to integrate into any PHP project.
+
+## How it works
+
+Phiki uses TextMate grammar files to tokenize your code and then highlights them using Visual Studio Code themes. This allows for a high degree of highlighting accuracy and makes your code look like it was highlighted in your favourite code editor.
+
+<Steps>
+    <Step title="Tokenization">
+    Phiki starts by tokenizing your code using a TextMate grammar file.
+
+    This breaks your code into smaller pieces of text with detailed "scope" information.
+
+    <Info>A **scope** is a dot-separate string that describes the type of text. For example, in PHP, a variable might have the scope `variable.other.php`.</Info>
+    </Step>
+
+    <Step title="Highlighting">
+    Once Phiki has tokenize your code, it then uses a Visual Studo Code theme to highlight the tokens.
+
+    The scopes from each token are used to match against a ruleset in the theme file. This ruleset defines the background color, foreground color, and font style for the token.
+
+    The tokens are transformed into a special `HighlightedToken` object that contains the raw token and the "settings" / style information.
+    </Step> 
+
+    <Step title="Structuring">
+    After producing a set of highlighted tokens, Phiki then creates an AST-like structure to represent the desired HTML output.
+
+    This intermediate structure allows for easier manipulation of the final output without requiring complex string operations.
+    </Step>
+
+    <Step title="Transformation">
+    If required, Phiki can then transform the intermediate structure. This is typically where extensions will hook into the process to modify the AST and add additional features such as line highlighting, class names, etc.
+    </Step>
+
+    <Step title="Rendering">
+    Finally, Phiki takes the final AST and "stringifies" it into HTML. 
+
+    This HTML can then be outputted directly to the browser, inside of a template file, or saved to disk.
+    </Step>
+</Steps>
+
+## Why it exists
+
+As a former user of Shiki and Highlight.php, I found both packages to be lacking in certain areas.
+
+Highlight.php was moderately performant, but the quality of the highlighting was poor. It was a port of the popular [highlight.js](https://highlightjs.org/) library, which also suffers from the same issues.
+
+Shiki, on the other hand, produced good looking output, but was slow to run from a PHP application as it required spawning a Node.js process to do the actual highlighting. This made it impractical to use in live-rendered applications.
+
+Phiki aims to solve these issues by providing a pure PHP implementation of both a TextMate tokenizer and Visual Studo Code highlighter. This allows for high-quality highlighting without the need for any third-party dependencies or services.
+
+On top of this, I'm a curious software developer who enjoys building things and pushing the limits of what is possible with PHP.

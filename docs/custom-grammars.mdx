@@ -1,0 +1,51 @@
+---
+title: Custom grammars
+description: Learn how to create and use custom grammars in your projects.
+---
+
+Phiki comes with a set of built-in grammars for popular programming languages, but you can also create and use your own custom grammars. This is particularly useful if you're working with a language that isn't supported out of the box.
+
+<Tip>To learn more about writing custom TextMate grammars, check out the [Visual Studio Code documentation on syntax highlighting](https://code.visualstudio.com/api/language-extensions/syntax-highlight-guide).</Tip>
+
+## Local files
+
+If your grammar is stored in a local JSON file, you can load it by passing the slug of the grammar and file path to the `grammar()` method.
+
+```php
+use Phiki\Phiki;
+
+$phiki = (new Phiki)
+    ->grammar('my-language', '/path/to/my-language.json');
+```
+
+## Runtime grammars
+
+You can also define grammars at runtime by providing a grammar definition as an associative array to the `Grammar::parse()` method.
+
+```php
+use Phiki\Phiki;
+use Phiki\Grammar\Grammar;
+
+$phiki = (new Phiki)
+    ->grammar('my-language', Grammar::parse([
+        'name' => 'my-language',
+        'scopeName' => 'source.my-language',
+        'patterns' => [
+            // ...
+        ],
+        'repository' => [
+            // ...
+        ]
+    ]));
+```
+
+## Usage
+
+To use your custom grammar, simply pass the slug you defined when registering the grammar instead of a `Phiki\Grammar\Grammar` enum value.
+
+```php
+$html = (new Phiki)
+    ->grammar('my-language', '/path/to/my-language.json')
+    ->codeToHtml('Your code here...', 'my-language', Theme::GithubLight)
+    ->toString();
+```

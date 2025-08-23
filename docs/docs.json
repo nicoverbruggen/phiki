@@ -10,7 +10,30 @@
             {
                 "group": "Getting started",
                 "pages": [
-                    "installation"
+                    "overview",
+                    "installation",
+                    "quick-start"
+                ]
+            },
+            {
+                "group": "Usage",
+                "pages": [
+                    "highlighting-code",
+                    "multi-themes"
+                ]
+            },
+            {
+                "group": "Extending",
+                "pages": [
+                    "custom-grammars",
+                    "custom-themes"
+                ]
+            },
+            {
+                "group": "Integrations",
+                "pages": [
+                    "commonmark",
+                    "laravel"
                 ]
             }
         ]

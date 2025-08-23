@@ -1,0 +1,50 @@
+---
+title: Custom themes
+description: Learn how to create and use custom themes in your projects.
+---
+
+Phiki comes with a set of built-in Visual Studio Code themes, but you can also create and use your own custom theme.
+
+<Tip>To learn more about writing custom Visual Studio Code themes, check out the [Visual Studio Code documentation on theming](https://code.visualstudio.com/docs/configure/themes#_create-your-own-color-theme).</Tip>
+
+## Local files
+
+If your theme is stored in a local JSON file, you can load it by passing the slug of the theme and file path to the `theme()` method.
+
+```php
+use Phiki\Phiki;
+
+$phiki = (new Phiki)
+    ->theme('my-theme', '/path/to/my-theme.json');
+```
+
+## Runtime themes
+
+You can also define themes at runtime by providing a theme definition as an associative array to the `Theme::parse()` method.
+
+```php
+use Phiki\Phiki;
+use Phiki\Theme\Theme;
+
+$phiki = (new Phiki)
+    ->theme('my-theme', Theme::parse([
+        'name' => 'my-theme',
+        'colors' => [
+            // ...
+        ],
+        'tokenColors' => [
+            // ...
+        ]
+    ]));
+```
+
+## Usage
+
+To use your custom theme, simply pass the slug you defined when registering the theme instead of a `Phiki\Theme\Theme` enum value.
+
+```php
+$html = (new Phiki)
+    ->theme('my-theme', '/path/to/my-theme.json')
+    ->codeToHtml('Your code here...', Grammar::Php, 'my-theme')
+    ->toString();
+```

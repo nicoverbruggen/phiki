@@ -1,0 +1,34 @@
+---
+title: "Quick start"
+description: "A quick guide to get you started with Phiki."
+keywords: ['quick start', 'getting started', 'setup', 'composer', 'install']
+---
+
+<Steps>
+    <Step title="Install Phiki">
+    ```sh
+    composer require phiki/phiki:^2.0
+    ```
+    </Step>
+
+    <Step title="Create a new Phiki instance">
+    ```php lines
+    use Phiki\Phiki;
+
+    $phiki = new Phiki();
+    ```
+    </Step>
+
+    <Step title="Highlight your code">
+    ```php lines
+    use Phiki\Grammar\Grammar;
+    use Phiki\Theme\Theme;
+
+    $code = file_get_contents('path/to/your/code.php');
+    $highlighted = $phiki->codeToHtml($code, Grammar::Php, Theme::GithubLight);
+
+    echo $highlighted;
+    ```
+    </Step>
+</Steps>
+

@@ -1,0 +1,64 @@
+---
+title: "Multiple themes"
+description: "Learn how to highlight code blocks with multiple themes."
+keywords: ["themes", "multi themes", "highlight", "code blocks"]
+---
+
+The majority of modern websites support both light and dark themes. To ensure that your code blocks look great under both circumstances, Phiki allows you to specify multiple themes when highlighting code.
+
+To do this, you can pass an array of theme names to the `Phiki::codeToHtml()` method.
+
+```php lines
+use Phiki\Phiki;
+use Phiki\Grammar\Grammar;
+use Phiki\Theme\Theme;
+
+$html = (new Phiki)
+    ->codeToHtml("<?php echo ...", Grammar::Php, [
+        'light' => Theme::GithubLight,
+        'dark' => Theme::GithubDark,
+    ])
+    ->toString();
+```
+
+Phiki will use the first theme in the array as the default theme, and will add a set of CSS variables for each additional theme.
+
+The CSS variables are named using the format `--phiki-{key}-{property}`, where `{key}` is the key you specified in the themes array (e.g. `dark`), and `{property}` is the name of the CSS property (e.g. `background-color`, `color`, etc.).
+
+### Query-based dark mode
+
+To apply the dark theme based on the user's system preferences, you can use the following CSS:
+
+```css
+@media (prefers-color-scheme: dark) {
+    .phiki,
+    .phiki span {
+        color: var(--phiki-dark-color) !important;
+        background-color: var(--phiki-dark-background-color) !important;
+        font-style: var(--phiki-dark-font-style) !important;
+        font-weight: var(--phiki-dark-font-weight) !important;
+        text-decoration: var(--phiki-dark-text-decoration) !important;
+    }
+}
+```
+
+### Class-based dark mode
+
+If you're using a class-based approach to toggle between light and dark mode, you can use the following CSS:
+
+```css
+html.dark .phiki,
+html.dark .phiki span {
+    color: var(--phiki-dark-color) !important;
+    background-color: var(--phiki-dark-background-color) !important;
+    font-style: var(--phiki-dark-font-style) !important;
+    font-weight: var(--phiki-dark-font-weight) !important;
+    text-decoration: var(--phiki-dark-text-decoration) !important;
+}
+```
+
+## Beyond light and dark
+
+The examples above are based on light and dark themes, but you're not limited to just those two.
+
+You can use any keys you like in the themes array and Phiki will generate the appropriate CSS variables for each theme. You can then use your own CSS to apply the themes when necessary.

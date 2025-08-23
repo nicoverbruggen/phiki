@@ -1,0 +1,83 @@
+---
+title: "Highlighting code"
+description: "Learn how to highlight code snippets with Phiki."
+keywords: ["highlighting", "code", "syntax highlighting", "Phiki"]
+---
+
+To generate syntax highlighted code snippets with Phiki, you can use the `Phiki::codeToHtml()` method.
+
+```php lines
+use Phiki\Phiki;
+use Phiki\Grammar\Grammar;
+use Phiki\Theme\Theme;
+
+$html = (new Phiki)
+    ->codeToHtml("<?php echo ...", Grammar::Php, Theme::GithubLight)
+    ->toString();
+```
+
+This method takes three parameters:
+1. The code you want to highlight as a `string`.
+2. The grammar (or language) of the code.
+3. The theme you want to use for highlighting.
+
+Phiki ships with several grammars and themes out of the box. You can find the full list of available grammars and themes in the [Available grammars and themes](/available-grammars-and-themes) reference page.
+
+## Styling
+
+Phiki applies all of its styling using inline `style` attributes, so there's no need to add any CSS to your project to get started.
+
+However, you may want to add some basic styles to the `<pre>` element that Phiki generates to improve the overall appearance of code blocks. Here is a sample CSS snippet you can use:
+
+```css
+pre {
+    font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font-size: 0.875rem; /* 14px */
+    padding: 1rem 1.5rem; /* 16px 24px */
+    border-radius: 0.375rem; /* 6px */
+    overflow-x: auto;
+}
+```
+
+## Gutter
+
+By default, Phiki does not include a gutter (line numbers) in the generated HTML. However, you can enable it by calling the `withGutter()` method on the result of `codeToHtml()`.
+
+```php
+use Phiki\Phiki;
+use Phiki\Grammar\Grammar;
+use Phiki\Theme\Theme;
+
+$html = (new Phiki)
+    ->codeToHtml("<?php echo ...", Grammar::Php, Theme::GithubLight)
+    ->withGutter()
+    ->toString();
+```
+
+This will add a gutter to the left side of the code block with line numbers for each line of code.
+
+The line number elements use the `editorLineNumber.foreground` styles provided by your chosen theme, but you can override these styles using CSS.
+
+```css
+.line-number {
+    /* Your custom styles go here. */
+}
+```
+
+### Changing the starting line number
+
+If you wish to change the starting line number from the default of `1`, you can use the `startingLine()` method.
+
+```php
+use Phiki\Phiki;
+use Phiki\Grammar\Grammar;
+use Phiki\Theme\Theme;
+
+$html = (new Phiki)
+    ->codeToHtml("<?php echo ...", Grammar::Php, Theme::GithubLight)
+    ->withGutter()
+    ->startingLine(5)
+    ->toString();
+```
+
+The first line of code will now be numbered `5`, the second line `6`, and so on.
