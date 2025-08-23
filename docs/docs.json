@@ -16,14 +16,9 @@
                 ]
             },
             {
-                "group": "Getting started",
-                "pages": [
-                    "installation"
-                ]
-            },
-            {
                 "group": "Usage",
                 "pages": [
+                    "installation",
                     "highlighting-code",
                     "multi-themes"
                 ]
