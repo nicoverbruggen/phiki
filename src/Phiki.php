@@ -12,6 +12,7 @@ use Phiki\Support\Arr;
 use Phiki\TextMate\Tokenizer;
 use Phiki\Theme\ParsedTheme;
 use Phiki\Theme\Theme;
+use Psr\SimpleCache\CacheInterface;
 
 class Phiki
 {
@@ -55,6 +56,7 @@ class Phiki
     public function codeToHtml(string $code, string|Grammar $grammar, string|array|Theme $theme): PendingHtmlOutput
     {
         return (new PendingHtmlOutput($code, $this->environment->grammars->resolve($grammar), $this->wrapThemes($theme)))
+            ->cache($this->environment->cache)
             ->generateTokensUsing(fn (string $code, ParsedGrammar $grammar) => $this->codeToTokens($code, $grammar))
             ->highlightTokensUsing(fn (array $tokens, array $themes) => $this->tokensToHighlightedTokens($tokens, $themes));
     }
@@ -85,6 +87,13 @@ class Phiki
     public function theme(string $name, string|ParsedTheme $pathOrTheme): static
     {
         $this->environment->themes->register($name, $pathOrTheme);
+
+        return $this;
+    }
+
+    public function cache(CacheInterface $cache): static
+    {
+        $this->environment->cache($cache);
 
         return $this;
     }
