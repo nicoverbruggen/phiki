@@ -8,11 +8,17 @@
     "navigation": {
         "groups": [
             {
+                "group": "Quick start",
+                "pages": [
+                    "quick-start-guide",
+                    "upgrade-2.0"
+                ]
+            },
+            {
                 "group": "Getting started",
                 "pages": [
                     "overview",
-                    "installation",
-                    "quick-start"
+                    "installation"
                 ]
             },
             {
