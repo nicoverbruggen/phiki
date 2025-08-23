@@ -26,7 +26,8 @@
                 "group": "Extending",
                 "pages": [
                     "custom-grammars",
-                    "custom-themes"
+                    "custom-themes",
+                    "custom-extensions"
                 ]
             },
             {

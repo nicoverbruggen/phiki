@@ -28,4 +28,18 @@ class Environment
 
         return $this;
     }
+
+    public function grammar(string $slug, string|ParsedGrammar $grammar): static
+    {
+        $this->grammars->register($slug, $grammar);
+
+        return $this;
+    }
+
+    public function theme(string $slug, string|ParsedTheme $theme): static
+    {
+        $this->themes->register($slug, $theme);
+
+        return $this;
+    }
 }
