@@ -3,7 +3,7 @@
 namespace Phiki;
 
 use Phiki\Contracts\ExtensionInterface;
-use Phiki\Environment\Environment;
+use Phiki\Environment;
 use Phiki\Grammar\Grammar;
 use Phiki\Grammar\ParsedGrammar;
 use Phiki\Highlighting\Highlighter;
@@ -15,12 +15,11 @@ use Phiki\Theme\Theme;
 
 class Phiki
 {
-    protected Environment $environment;
+    public readonly Environment $environment;
 
-    public function __construct(?Environment $environment = null)
+    public function __construct()
     {
-        $this->environment = $environment ?? Environment::default();
-        $this->environment->validate();
+        $this->environment = new Environment;
     }
 
     public function environment(): Environment
@@ -30,7 +29,7 @@ class Phiki
 
     public function codeToTokens(string $code, string|Grammar|ParsedGrammar $grammar): array
     {
-        $grammar = $this->environment->resolveGrammar($grammar);
+        $grammar = $this->environment->grammars->resolve($grammar);
         $tokenizer = new Tokenizer($grammar, $this->environment);
 
         return $tokenizer->tokenize($code);
@@ -55,7 +54,7 @@ class Phiki
 
     public function codeToHtml(string $code, string|Grammar $grammar, string|array|Theme $theme): PendingHtmlOutput
     {
-        return (new PendingHtmlOutput($code, $this->environment->resolveGrammar($grammar), $this->wrapThemes($theme)))
+        return (new PendingHtmlOutput($code, $this->environment->grammars->resolve($grammar), $this->wrapThemes($theme)))
             ->generateTokensUsing(fn (string $code, ParsedGrammar $grammar) => $this->codeToTokens($code, $grammar))
             ->highlightTokensUsing(fn (array $tokens, array $themes) => $this->tokensToHighlightedTokens($tokens, $themes));
     }
@@ -66,26 +65,26 @@ class Phiki
             $themes = ['default' => $themes];
         }
 
-        return Arr::map($themes, fn (string|Theme|ParsedTheme $theme): ParsedTheme => $this->environment->resolveTheme($theme));
+        return Arr::map($themes, fn (string|Theme|ParsedTheme $theme): ParsedTheme => $this->environment->themes->resolve($theme));
     }
 
-    public function addExtension(ExtensionInterface $extension): static
+    public function extend(ExtensionInterface $extension): static
     {
-        $this->environment->addExtension($extension);
+        $this->environment->extend($extension);
 
         return $this;
     }
 
-    public function registerGrammar(string $name, string|ParsedGrammar $pathOrGrammar): static
+    public function grammar(string $name, string|ParsedGrammar $pathOrGrammar): static
     {
-        $this->environment->getGrammarRepository()->register($name, $pathOrGrammar);
+        $this->environment->grammars->register($name, $pathOrGrammar);
 
         return $this;
     }
     
-    public function registerTheme(string $name, string|ParsedTheme $pathOrTheme): static
+    public function theme(string $name, string|ParsedTheme $pathOrTheme): static
     {
-        $this->environment->getThemeRepository()->register($name, $pathOrTheme);
+        $this->environment->themes->register($name, $pathOrTheme);
 
         return $this;
     }

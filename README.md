@@ -53,7 +53,7 @@ All you need to do is register the extension through a CommonMark `Environment` 
 use League\CommonMark\Environment\Environment;
 use League\CommonMark\Extension\CommonMark\CommonMarkCoreExtension;
 use League\CommonMark\MarkdownConverter;
-use Phiki\CommonMark\PhikiExtension;
+use Phiki\Adapters\CommonMark\PhikiExtension;
 
 $environment = new Environment;
 $environment
@@ -73,7 +73,7 @@ $output = $converter->convert(<<<'MD'
 If you're using Laravel's `Str::markdown()` or `str()->markdown()` methods, you can use the same CommonMark extension by passing it through to the method.
 
 ```php
-use Phiki\CommonMark\PhikiExtension;
+use Phiki\Adapters\CommonMark\PhikiExtension;
 
 Str::markdown('...', extensions: [
     new PhikiExtension('github-dark'),
@@ -87,20 +87,11 @@ To use a language or theme that Phiki doesn't support, you need to register it w
 This can be done by building a custom `Environment` object and telling Phiki to use this instead of the default one.
 
 ```php
-use Phiki\Environment\Environment;
+use Phiki\Phiki;
 
-$environment = Environment::default();
-
-// Register a custom language.
-$environment
-    ->getGrammarRepository()
-    ->register('my-language', __DIR__ . '/../path/to/grammar.json');
-
-$environment
-    ->getThemeRepository()
-    ->register('my-theme', __DIR__ . '/../path/to/theme.json');
-
-$phiki = new Phiki($environment);
+$phiki = (new Phiki)
+    ->grammar('my-language', __DIR__ . '/../path/to/grammar.json')
+    ->theme('my-theme', __DIR__ . '/../path/to/theme.json');
 
 $phiki->codeToHtml('...', 'my-language', 'my-theme');
 ```

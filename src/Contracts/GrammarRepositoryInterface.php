@@ -2,16 +2,13 @@
 
 namespace Phiki\Contracts;
 
+use Phiki\Grammar\Grammar;
 use Phiki\Grammar\ParsedGrammar;
 
 interface GrammarRepositoryInterface
 {
     /**
      * Get a grammar from the repository.
-     *
-     * If the grammar is not already loaded, it will be loaded and cached.
-     *
-     * @param  string  $name  The name of the grammar.
      *
      * @throws \Phiki\Exceptions\UnrecognisedGrammarException If the grammar is not registered.
      */
@@ -20,24 +17,22 @@ interface GrammarRepositoryInterface
     /**
      * Get a grammar from the repository by scope name.
      *
-     * @param  string  $scope  The name of the scope.
-     *
      * @throws \Phiki\Exceptions\UnrecognisedGrammarException If the grammar is not registered.
      */
     public function getFromScope(string $scope): ParsedGrammar;
 
     /**
      * Check whether a grammar exists in the repository.
-     *
-     * @param  string  $name  The name of the grammar.
      */
     public function has(string $name): bool;
 
     /**
-     * Register a new Grammar to use when highlighting.
-     *
-     * @param  string  $name  The name of the grammar.
-     * @param  string|ParsedGrammar  $pathOrGrammar  The path to the grammar file or the grammar itself.
+     * Register a new grammar to use when highlighting.
      */
     public function register(string $name, string|ParsedGrammar $pathOrGrammar): void;
+
+    /**
+     * Resolve the given grammar from the repository.
+     */
+    public function resolve(string|Grammar|ParsedGrammar $theme): ParsedGrammar;
 }
