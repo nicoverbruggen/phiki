@@ -1,5 +1,6 @@
 ---
 title: Upgrading from 1.x to 2.0
+sidebarTitle: Upgrade guide
 ---
 
 Phiki 2.0 introduces several breaking changes from the 1.x series. This guide will help you upgrade your code to be compatible with the new version.
@@ -10,8 +11,120 @@ To upgrade from Phiki 1.x to 2.0, run the following command:
 composer require phiki/phiki:^2.0
 ```
 
+The likelihood of encountering issues during the upgrade process depends on how extensively you were using or relying on certain features of Phiki.
+
+Please consult the sections below to understand the changes and how they might affect your code before opening an issue on the repository.
+
 ## High impact changes
+
+### `Phiki::codeToHtml()` signature changed
+
+This method now returns an instance of `Phiki\Output\Html\PendingHtmlOutput` instead of a raw string. This new object allows for more flexibility and lazy rendering of the final HTML output.
+
+If you need to get the HTML string immediately, you can call the `toString()` and `__toString()` methods or cast it to a `(string)`.
+
+To improve the usability of this method, the following parameters have been removed:
+* `withGutter` – replaced with a `withGutter()` method on the returned object.
+* `withWrapper` – if you were using this, see the "Medium impact changes" section below for more information.
+
+### Terminal support removed
+
+The terminal output feature has been removed due to low usage and maintenance overhead.
+
+There is currently no alternative for this feature, but it may be reintroduced in a future separate package.
+
+### Namespace changes
+
+* The `Phiki\Environment\Environment` class is now `Phiki\Environment`.
+* The `Phiki\CommonMark\PhikiExtension` class is now `Phiki\Adapters\CommonMark\PhikiExtension`.
+
+### Custom environment support removed
+
+The ability to pass a custom `Phiki\Environment` instance to the `Phiki` constructor has been removed.
+
+This was a rarely used feature that added unnecessary complexity to the codebase.
+
+### Changes to extension registration
+
+Since the custom environment support has been removed, the method to register extensions has been moved to the `Phiki` class.
+
+If you need to register an extension, you can use the `Phiki::extend()` method:
+
+```php
+$phiki = (new Phiki)
+    ->extend(new MyCustomExtension());
+```
+
+### Changes to custom grammar and theme registration
+
+Since the custom environment support has been removed, the methods to register custom grammars and themes have been moved to the `Phiki` class.
+
+If you need to register a custom grammar, you can use the `Phiki::grammar()` method:
+
+```php
+$phiki = (new Phiki)
+    ->grammar('my-custom-grammar', '/path/to/grammar.json');
+```
+
+Similarly, to register a custom theme, you can use the `Phiki::theme()` method:
+
+```php
+$phiki = (new Phiki)
+    ->theme('my-custom-theme', '/path/to/theme.json');
+```
 
 ## Medium impact changes
 
+### API for accessing repositories changed
+
+If you were previously using the `getGrammarRepository()` or `getThemeRepository()` methods on the `Phiki\Environment\Environment` class, you can now access these repositories directly from the `Phiki::$environment` property.
+
+```php
+$phiki = new Phiki();
+
+$phiki->environment->grammars->...;
+$phiki->environment->themes->...;
+```
+
+These properties are `readonly`, so you cannot replace them, but you can still interact with them as you did before.
+
+### `HtmlGenerator` class removed
+
+The `Phiki\Generators\HtmlGenerator` class has been removed. Its functionality has been integrated into the `Phiki\Output\Html\PendingHtmlOutput` class returned by `Phiki::codeToHtml()`.
+
+### Automatic language detection removed
+
+This feature has been removed due to its unreliability and the complexity it adds to the codebase.
+
+Phiki only supported two languages (`php` and `js`) for automatic detection which was not enough to be useful.
+
+It's now recommended that you always specify the language when using `Phiki::codeToHtml()` or the Phiki CommonMark extension.
+
+### `withWrapper` option removed
+
+If you are passing `withWrapper: true` to `Phiki::codeToHtml()` or the Phiki CommonMark extension, this feature has now been removed.
+
+It was originally added to support a feature on my personal site but was never officially documented. Since there are alternative methods to achieve the same result, it has been removed to simplify the codebase.
+
 ## Low impact changes
+
+### Tokenizer rewrite
+
+The `Tokenizer` class has been completely rewritten to improve performance and accuracy.
+
+It now uses PHP's `mbstring` extension since that uses Oniguruma under the hood, which is the same RegEx engine behind Shiki and `vscode-textmate`.
+
+This will only affect you if you were extending the `Tokenizer` class since the underlying methods and properties have changed to accommodate the new implementation.
+
+### Highlighter rewrite
+
+The `Highlighter` class has also been rewritten to improve performance and accuracy.
+
+The previous implementation uses a very naive approach to applying styles to scoped tokens which resulted in "scope selectors" not being applied correctly.
+
+This has now been resolved in the new implementation at the cost of some performance.
+
+### Namespace changes
+
+* `Phiki\Tokenizer` is now `Phiki\TextMate\Tokenizer`
+* `Phiki\Highlighter` is now `Phiki\Highlighting\Highlighter`
