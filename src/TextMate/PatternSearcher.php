@@ -46,7 +46,7 @@ class PatternSearcher
                 throw new FailedToSetSearchPositionException;
             }
 
-            $result = mb_ereg_search_pos($regex);
+            $result = @mb_ereg_search_pos($regex);
 
             if ($result === false) {
                 continue;
