@@ -6,6 +6,13 @@
         "primary": "#ff0000"
     },
     "navigation": {
-        "languages": [{ "language": "en" }]
+        "groups": [
+            {
+                "group": "Getting started",
+                "pages": [
+                    "installation"
+                ]
+            }
+        ]
     }
 }
