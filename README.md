@@ -16,6 +16,12 @@ composer require phiki/phiki
 
 For more information on how to integrate Phiki into your application, please [visit the official documentation](https://phiki.dev).
 
+## Support my work
+
+If you find Phiki useful, please consider supporting me through [GitHub Sponsors](https://github.com/sponsors/ryangjchandler) or [Buy me a Coffee](https://buymeacoffee.com/ryangjchandler).
+
+All sponsorships go towards the maintenance and continuous improvement of my open source projects.
+
 ## Credits
 
 * [Ryan Chandler](https://github.com/ryangjchandler)
