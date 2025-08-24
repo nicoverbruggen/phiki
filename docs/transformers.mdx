@@ -2,4 +2,46 @@
 title: Transformers
 ---
 
+Phiki allows you to modify data at various stages in the syntax highlighting process.
 
+We refer to these as "transformers" and they can be used to modify the input code, individual tokens, the HTML AST and the final HTML output and the return values from each "hook" are passed to the next.
+
+All transformers must implement the `Phiki\Contracts\TransformerInterface` interface.
+
+<Tip>
+If you only need to modify data at a specific stage, you can extend the `Phiki\Transformers\AbstractTransformer` class instead and override the methods you need.
+</Tip>
+
+## Using transformers
+
+To use a transformer, provide an instance of one to the `PendingHtmlOutput::transformer()` method when highlighting code.
+
+```php
+use Phiki\Phiki;
+use Phiki\Theme\Theme;
+use Phiki\Transformers\AbstractTransformer;
+
+class MyTransformer extends AbstractTransformer
+{
+    // Implement the methods you need here...
+}
+
+$html = (new Phiki)
+    ->codeToHtml("<?php echo ...", Grammar::Php, Theme::GithubLight)
+    ->transformer(new MyTransformer)
+    ->toString();
+```
+
+## Available hooks
+
+| Method | Description |
+| --- | --- |
+| `preprocess` | Modify the input code before it is tokenized. |
+| `tokens` | Modify the array of tokens after tokenization but before highlighting. |
+| `highlighted` | Modify the array of highlighted tokens after highlighting but before structuring. |
+| `root` | Modify the root node of the HTML AST, usually contains a single `<pre>` element. |
+| `pre` | Modify the `<pre>` element in the HTML AST, usually contains a single `<code>` element. |
+| `code` | Modify the `<code>` element in the HTML AST, usually contains 1 `<span>` element for each line. |
+| `line` | Modify each line element in the HTML AST, usually a `<span>` element. |
+| `token` | Modify each token element in the HTML AST, usually a `<span>` element. |
+| `postprocess` | Modify the final HTML output before it is returned as a string. |
