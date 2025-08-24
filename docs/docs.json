@@ -52,7 +52,7 @@
     },
     "navbar": {
         "primary": {
-            "label": "Sponsor on GitHub",
+            "label": "Support via GitHub",
             "href": "https://github.com/sponsors/ryangjchandler",
             "type": "button"
         }
