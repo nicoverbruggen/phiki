@@ -53,6 +53,12 @@
                     "commonmark",
                     "laravel"
                 ]
+            },
+            {
+                "group": "Reference",
+                "pages": [
+                    "available-grammars-and-themes"
+                ]
             }
         ]
     },
