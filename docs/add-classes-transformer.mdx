@@ -1,0 +1,40 @@
+---
+title: AddClassesTransformer
+---
+
+Phiki provides the `Phiki\Transformers\AddClassesTransformer` transformer out of the box, which allows you to automatically add scope-based CSS classes to HTML elements.
+
+## Usage
+
+To use the `AddClassesTransformer`, apply it to your pending HTML content:
+
+```php
+use Phiki\Phiki;
+use Phiki\Transformers\AddClassesTransformer;
+
+$html = (new Phiki)
+    ->codeToHtml("<?php ...", Grammar::Php, Theme::GithubLight)
+    ->transformer(new AddClassesTransformer)
+    ->toString();
+```
+
+The generated HTML will include CSS classes based on the scope names for each token, for example `phiki-source.php`. You can then use these classes in your CSS to style specific elements:
+
+```css
+.token[class^="phiki-keyword"] {
+    color: blue !important;
+}
+```
+
+## Disabling `style` attributes
+
+If you want to disable the inline `style` attributes added by Phiki, you can pass the `styles: false` argument to the constructor.
+
+```php
+$html = (new Phiki)
+    ->codeToHtml("<?php ...", Grammar::Php, Theme::GithubLight)
+    ->transformer(new AddClassesTransformer(styles: false))
+    ->toString();
+```
+
+This will result in HTML elements for tokens that only have the `class` attribute, allowing you to fully control the styling through CSS.

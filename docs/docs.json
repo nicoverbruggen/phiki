@@ -38,7 +38,13 @@
             {
                 "group": "Advanced",
                 "pages": [
-                    "transformers"
+                    {
+                        "group": "Transformers",
+                        "pages": [
+                            "transformers",
+                            "add-classes-transformer"
+                        ]
+                    }
                 ]
             },
             {
