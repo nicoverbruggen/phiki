@@ -57,7 +57,8 @@
             {
                 "group": "Reference",
                 "pages": [
-                    "available-grammars-and-themes"
+                    "available-grammars-and-themes",
+                    "textmate-grammars"
                 ]
             }
         ]
