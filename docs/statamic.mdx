@@ -1,0 +1,28 @@
+---
+title: Statamic
+description: Learn how to use Phiki in a Statamic application.
+keywords: ['statamic']
+---
+
+If you have installed Phiki inside of a Statamic application, then you can use the CommonMark extension to highlight code blocks in your Markdown content.
+
+You can enable the extension by registering it with Statamic's Markdown class inside the `boot` method of a service provider.
+
+```php
+use Statamic\Facades\Markdown;
+use Phiki\Adapters\CommonMark\PhikiExtension;
+use Phiki\Theme\Theme;
+use Phiki\Phiki;
+
+class AppServiceProvider extends ServiceProvider
+{
+    public function boot(): void
+    {
+        Markdown::addExtension(fn () => new PhikiExtension(Theme::GithubLight, resolve(Phiki::class)));
+    }
+}
+```
+
+For more information on using the `PhikiExtension`, see the [CommonMark](/commonmark) documentation.
+
+If you wish to customize Phiki further, you can also refer to the [Laravel](/laravel) documentation since Statamic is built on top of Laravel.
