@@ -1,0 +1,27 @@
+---
+title: Decorations
+---
+
+Decorations allow you to apply custom classes to specific lines in the generated HTML. This is useful if you want to style certain regions of your code blocks differently, such as focusing attention on specific lines or adding custom colors.
+
+## Usage
+
+To use decorations, you can pass a `LineDecoration` instance to the `PendingHtmlOutput::decoration()` method.
+
+```php
+use Phiki\Transformers\Decorations\LineDecoration;
+
+$output = (new Phiki)
+    ->codeToHtml('<?php echo ...', Grammar::Php, Theme::GithubLight)
+    ->decoration(
+        LineDecoration::forLine(0)->addClass('focus'),
+    );
+```
+
+This will add the `focus` class to the first line of the code block, since lines are zero-indexed.
+
+## Substring decorations
+
+At the time of writing, you can only decorate entire lines. 
+
+There are plans to support substring decorations in a future release, which will allow you to apply classes to specific parts of a line. This is quite an involved feature so it may take some time to implement.
