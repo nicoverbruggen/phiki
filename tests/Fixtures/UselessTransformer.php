@@ -6,8 +6,10 @@ use Phiki\Contracts\TransformerInterface;
 use Phiki\Phast\Element;
 use Phiki\Phast\Root;
 use Phiki\Token\HighlightedToken;
+use Phiki\Transformers\AbstractTransformer;
+use Phiki\Transformers\Meta;
 
-class UselessTransformer implements TransformerInterface
+class UselessTransformer extends AbstractTransformer
 {
     public $preprocessed = false;
 
@@ -88,5 +90,10 @@ class UselessTransformer implements TransformerInterface
         $this->postprocessed = true;
 
         return $html;
+    }
+
+    public function meta(): Meta
+    {
+        return $this->meta;
     }
 }
