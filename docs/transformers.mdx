@@ -32,6 +32,12 @@ $html = (new Phiki)
     ->toString();
 ```
 
+<Warning>
+    Transformers are applied in the order they are added. If you add mutliple transformers, the output from one will be passed to the next.
+
+    Be careful when modifying the HTML AST, especially if you are adding or removing elements, as this can break the structure expected by later transformers.
+</Warning>
+
 ## Available hooks
 
 | Method | Description |
