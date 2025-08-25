@@ -8,7 +8,7 @@ use Phiki\Transformers\AbstractTransformer;
 class DecorationTransformer extends AbstractTransformer
 {
     /**
-     * @param array<int, LineDecoration> $decorations
+     * @param  array<int, LineDecoration>  $decorations
      */
     public function __construct(
         public array &$decorations,

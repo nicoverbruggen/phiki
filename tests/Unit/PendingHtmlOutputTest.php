@@ -71,7 +71,7 @@ it('can cache the generated HTML', function () {
             Theme::GithubLight,
         )
         ->cache($cache);
-    
+
     $pending->toString();
 
     expect($cache->has($pending->cacheKey()))->toBeTrue();
@@ -89,7 +89,7 @@ it('can read from cache', function () {
             Theme::GithubLight,
         )
         ->cache($cache);
-    
+
     $pending->toString();
 
     $pending2 = (new Phiki)

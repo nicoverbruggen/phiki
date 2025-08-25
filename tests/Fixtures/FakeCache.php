@@ -16,18 +16,21 @@ class FakeCache implements CacheInterface
     public function set($key, $value, $ttl = null): bool
     {
         $this->store[$key] = $value;
+
         return true;
     }
 
     public function delete($key): bool
     {
         unset($this->store[$key]);
+
         return true;
     }
 
     public function clear(): bool
     {
         $this->store = [];
+
         return true;
     }
 
@@ -37,6 +40,7 @@ class FakeCache implements CacheInterface
         foreach ($keys as $key) {
             $results[$key] = $this->get($key, $default);
         }
+
         return $results;
     }
 
@@ -45,6 +49,7 @@ class FakeCache implements CacheInterface
         foreach ($values as $key => $value) {
             $this->set($key, $value, $ttl);
         }
+
         return true;
     }
 
@@ -53,6 +58,7 @@ class FakeCache implements CacheInterface
         foreach ($keys as $key) {
             $this->delete($key);
         }
+
         return true;
     }
 

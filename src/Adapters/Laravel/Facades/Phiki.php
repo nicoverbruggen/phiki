@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Facade;
  * @method static \Phiki\Phiki grammar(string $name, string|\Phiki\Grammar\ParsedGrammar $pathOrGrammar)
  * @method static \Phiki\Phiki theme(string $name, string|\Phiki\Theme\ParsedTheme $pathOrTheme)
  * @method static \Phiki\Phiki cache(\Psr\SimpleCache\CacheInterface $cache)
- * 
+ *
  * @see \Phiki\Phiki
  */
 class Phiki extends Facade

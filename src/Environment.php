@@ -3,11 +3,9 @@
 namespace Phiki;
 
 use Phiki\Contracts\ExtensionInterface;
-use Phiki\Grammar\Grammar;
 use Phiki\Grammar\GrammarRepository;
 use Phiki\Grammar\ParsedGrammar;
 use Phiki\Theme\ParsedTheme;
-use Phiki\Theme\Theme;
 use Phiki\Theme\ThemeRepository;
 use Psr\SimpleCache\CacheInterface;
 

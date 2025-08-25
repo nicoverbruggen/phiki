@@ -27,7 +27,7 @@ it('can render the given code with a custom starting line number', function () {
 <x-phiki::code grammar="php" theme="github-light" gutter :starting-line="10">
 echo "Hello, world!";
 </x-phiki::code>
-BLADE);  
+BLADE);
 
     expect($output)->toContain('10</span>');
 });

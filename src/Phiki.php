@@ -3,7 +3,6 @@
 namespace Phiki;
 
 use Phiki\Contracts\ExtensionInterface;
-use Phiki\Environment;
 use Phiki\Grammar\Grammar;
 use Phiki\Grammar\ParsedGrammar;
 use Phiki\Highlighting\Highlighter;
@@ -83,7 +82,7 @@ class Phiki
 
         return $this;
     }
-    
+
     public function theme(string $name, string|ParsedTheme $pathOrTheme): static
     {
         $this->environment->themes->register($name, $pathOrTheme);

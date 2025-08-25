@@ -7,10 +7,10 @@ use Phiki\Phast\ClassList;
 class LineDecoration
 {
     /**
-     * @param int | array<int> $line
+     * @param  int | array<int>  $line
      */
     public function __construct(
-        public int | array $line,
+        public int|array $line,
         public ClassList $classes,
     ) {}
 

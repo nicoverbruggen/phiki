@@ -12,19 +12,19 @@ it('can return the environment object', function () {
 });
 
 it('can register a custom grammar', function () {
-    Phiki::grammar('custom', __DIR__ . '/../../../Fixtures/example.json');
+    Phiki::grammar('custom', __DIR__.'/../../../Fixtures/example.json');
 
     expect(Phiki::environment()->grammars->has('custom'))->toBeTrue();
 });
 
 it('can register a custom theme', function () {
-    Phiki::theme('custom', __DIR__ . '/../../../Fixtures/theme.json');
+    Phiki::theme('custom', __DIR__.'/../../../Fixtures/theme.json');
 
     expect(Phiki::environment()->themes->has('custom'))->toBeTrue();
 });
 
 it('can register an extension', function () {
-    $extension = new EmptyExtension();
+    $extension = new EmptyExtension;
 
     Phiki::extend($extension);
 

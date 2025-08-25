@@ -13,7 +13,6 @@ use Phiki\Support\Arr;
 use Phiki\Theme\ParsedTheme;
 use Phiki\Token\HighlightedToken;
 use Phiki\Token\Token;
-use Phiki\Transformers\Decorations\DecorationsTransformer;
 use Phiki\Transformers\Decorations\DecorationTransformer;
 use Phiki\Transformers\Decorations\LineDecoration;
 use Psr\SimpleCache\CacheInterface;
@@ -110,7 +109,7 @@ class PendingHtmlOutput implements Stringable
 
     public function cacheKey(): string
     {
-        return 'phiki_html_' . md5(serialize([
+        return 'phiki_html_'.md5(serialize([
             $this->code,
             $this->grammar->scopeName,
             array_keys($this->themes),
