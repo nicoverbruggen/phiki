@@ -7,14 +7,18 @@ use Phiki\Contracts\TransformerInterface;
 use Phiki\Grammar\ParsedGrammar;
 use Phiki\Phast\ClassList;
 use Phiki\Phast\Element;
+use Phiki\Phast\Properties;
 use Phiki\Phast\Root;
 use Phiki\Phast\Text;
 use Phiki\Support\Arr;
 use Phiki\Theme\ParsedTheme;
 use Phiki\Token\HighlightedToken;
 use Phiki\Token\Token;
+use Phiki\Transformers\Decorations\CodeDecoration;
 use Phiki\Transformers\Decorations\DecorationTransformer;
+use Phiki\Transformers\Decorations\GutterDecoration;
 use Phiki\Transformers\Decorations\LineDecoration;
+use Phiki\Transformers\Decorations\PreDecoration;
 use Phiki\Transformers\Meta;
 use Psr\SimpleCache\CacheInterface;
 use Stringable;
@@ -87,7 +91,7 @@ class PendingHtmlOutput implements Stringable
         return $this;
     }
 
-    public function decoration(LineDecoration ...$decorations): self
+    public function decoration(LineDecoration | PreDecoration | CodeDecoration | GutterDecoration ...$decorations): self
     {
         if (! Arr::any($this->transformers, fn (TransformerInterface $transformer) => $transformer instanceof DecorationTransformer)) {
             $this->transformers[] = new DecorationTransformer($this->decorations);
@@ -205,15 +209,14 @@ class PendingHtmlOutput implements Stringable
 
         $pre->properties->set('style', implode(';', $preStyles));
 
-        $code = new Element('code');
+        $code = new Element('code', new Properties(['class' => new ClassList]));
 
         foreach ($highlightedTokens as $index => $lineTokens) {
             $line = new Element('span');
             $line->properties->set('class', new ClassList(['line']));
 
             if ($this->withGutter) {
-                $line->children[] = $gutter = new Element('span');
-
+                $gutter = new Element('span');
                 $gutter->properties->set('class', new ClassList(['line-number']));
 
                 $lineNumberColor = $this->getDefaultTheme()->colors['editorLineNumber.foreground'] ?? null;
@@ -224,6 +227,10 @@ class PendingHtmlOutput implements Stringable
                 ])));
 
                 $gutter->children[] = new Text(sprintf('%2d', $this->startingLineNumber + $index));
+                
+                [$gutter] = $this->callTransformerMethod('gutter', $gutter, $index);
+
+                $line->children[] = $gutter;
             }
 
             foreach ($lineTokens as $j => $token) {
