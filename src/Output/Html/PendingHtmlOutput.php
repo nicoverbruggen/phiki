@@ -3,6 +3,8 @@
 namespace Phiki\Output\Html;
 
 use Closure;
+use Phiki\Contracts\RequiresGrammarInterface;
+use Phiki\Contracts\RequiresThemesInterface;
 use Phiki\Contracts\TransformerInterface;
 use Phiki\Grammar\ParsedGrammar;
 use Phiki\Phast\ClassList;
@@ -173,6 +175,14 @@ class PendingHtmlOutput implements Stringable
 
         foreach ($this->transformers as $transformer) {
             $transformer->withMeta($this->meta);
+
+            if ($transformer instanceof RequiresGrammarInterface) {
+                $transformer->withGrammar($this->grammar);
+            }
+
+            if ($transformer instanceof RequiresThemesInterface) {
+                $transformer->withThemes($this->themes);
+            }
         }
 
         [$code] = $this->callTransformerMethod('preprocess', $this->code);
