@@ -4,7 +4,6 @@ use League\CommonMark\Environment\Environment;
 use League\CommonMark\Extension\CommonMark\CommonMarkCoreExtension;
 use League\CommonMark\MarkdownConverter;
 use Phiki\Adapters\CommonMark\PhikiExtension;
-use Phiki\Tests\Fixtures\UselessTransformer;
 use Phiki\Theme\Theme;
 
 it('registers renderers', function () {

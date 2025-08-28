@@ -53,7 +53,7 @@ function highlight(array $tokens, array $theme): array
 
 function markdown(string $input, Theme $theme = Theme::GithubLight): string
 {
-    $environment = new Environment();
+    $environment = new Environment;
     $environment->addExtension(new CommonMarkCoreExtension)->addExtension(new PhikiExtension($theme));
     $converter = new MarkdownConverter($environment);
 

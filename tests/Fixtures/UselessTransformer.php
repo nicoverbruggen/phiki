@@ -2,7 +2,6 @@
 
 namespace Phiki\Tests\Fixtures;
 
-use Phiki\Contracts\TransformerInterface;
 use Phiki\Phast\Element;
 use Phiki\Phast\Root;
 use Phiki\Token\HighlightedToken;

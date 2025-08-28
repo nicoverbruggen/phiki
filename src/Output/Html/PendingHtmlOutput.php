@@ -91,7 +91,7 @@ class PendingHtmlOutput implements Stringable
         return $this;
     }
 
-    public function decoration(LineDecoration | PreDecoration | CodeDecoration | GutterDecoration ...$decorations): self
+    public function decoration(LineDecoration|PreDecoration|CodeDecoration|GutterDecoration ...$decorations): self
     {
         if (! Arr::any($this->transformers, fn (TransformerInterface $transformer) => $transformer instanceof DecorationTransformer)) {
             $this->transformers[] = new DecorationTransformer($this->decorations);
@@ -168,7 +168,7 @@ class PendingHtmlOutput implements Stringable
         }
 
         if (! isset($this->meta)) {
-            $this->meta = new Meta();
+            $this->meta = new Meta;
         }
 
         foreach ($this->transformers as $transformer) {
@@ -227,7 +227,7 @@ class PendingHtmlOutput implements Stringable
                 ])));
 
                 $gutter->children[] = new Text(sprintf('%2d', $this->startingLineNumber + $index));
-                
+
                 [$gutter] = $this->callTransformerMethod('gutter', $gutter, $index);
 
                 $line->children[] = $gutter;

@@ -16,13 +16,13 @@ class LineDecoration
 
     public static function forLine(int $line): self
     {
-        return new self($line, new ClassList());
+        return new self($line, new ClassList);
     }
 
     public function class(string ...$classes): self
     {
         $this->classes->add(...$classes);
-        
+
         return $this;
     }
 

@@ -12,7 +12,7 @@ class GutterDecoration
 
     public static function make(): self
     {
-        return new self(new ClassList());
+        return new self(new ClassList);
     }
 
     public function class(string ...$classes): self

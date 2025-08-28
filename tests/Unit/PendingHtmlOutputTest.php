@@ -107,7 +107,8 @@ it('can read from cache', function () {
 });
 
 it('passes meta to transformers', function () {
-    $transformer = new class extends UselessTransformer {
+    $transformer = new class extends UselessTransformer
+    {
         public function meta(): Meta
         {
             return $this->meta;
@@ -123,7 +124,7 @@ it('passes meta to transformers', function () {
             Theme::GithubLight,
         )
         ->transformer($transformer)
-        ->withMeta($meta = new Meta())
+        ->withMeta($meta = new Meta)
         ->toString();
 
     expect($transformer->meta())->toBe($meta);

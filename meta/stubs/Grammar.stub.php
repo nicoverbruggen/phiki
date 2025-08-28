@@ -16,7 +16,7 @@ enum Grammar: string
         return match ($this) {
             {aliases}
             self::Antlers => [],
-            self::Txt => [],
+            self::Txt => ['plaintext', 'text', 'plain'],
         };
     }
 

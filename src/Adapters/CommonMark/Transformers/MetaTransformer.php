@@ -3,7 +3,6 @@
 namespace Phiki\Adapters\CommonMark\Transformers;
 
 use Phiki\Phast\Element;
-use Phiki\Support\Arr;
 use Phiki\Transformers\AbstractTransformer;
 
 class MetaTransformer extends AbstractTransformer
@@ -62,9 +61,9 @@ class MetaTransformer extends AbstractTransformer
         }
 
         $highlights = array_map(
-            fn(array $part) => count($part) > 1 ? $part : $part[0],
+            fn (array $part) => count($part) > 1 ? $part : $part[0],
             array_map(
-                fn(string $part) => array_map(fn(string $number) => intval($number), explode('-', trim($part))),
+                fn (string $part) => array_map(fn (string $number) => intval($number), explode('-', trim($part))),
                 explode(',', $highlights)
             )
         );
@@ -84,9 +83,9 @@ class MetaTransformer extends AbstractTransformer
         }
 
         $focuses = array_map(
-            fn(array $part) => count($part) > 1 ? $part : $part[0],
+            fn (array $part) => count($part) > 1 ? $part : $part[0],
             array_map(
-                fn(string $part) => array_map(fn(string $number) => intval($number), explode('-', trim($part))),
+                fn (string $part) => array_map(fn (string $number) => intval($number), explode('-', trim($part))),
                 explode(',', $focuses)
             )
         );
